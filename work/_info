@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
 !i10d 8192
@@ -8,3 +9,207 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/22.1std
+vaddsub_16bit
+Z0 !s110 1708382111
+!i10b 1
+!s100 Ik@4MbW;ZmUkH5dghoIF]2
+ISgMgclL[ck57[;Jol5Db03
+Z1 dI:/ece552/project
+w1708376973
+8I:/ece552/project/addsub_16bit.v
+FI:/ece552/project/addsub_16bit.v
+!i122 79
+Z2 L0 6 28
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1708382110.000000
+!s107 I:/ece552/project/addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_16bit.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vaddsub_4bit
+Z7 !s110 1708382112
+!i10b 1
+!s100 ODnAY0?o24;6jdS6l]R>g1
+Iz:QVhj4R=CNH_EBhfc4a@3
+R1
+w1708377754
+8I:/ece552/project/addsub_4bit.v
+FI:/ece552/project/addsub_4bit.v
+!i122 81
+R2
+R3
+R4
+r1
+!s85 0
+31
+Z8 !s108 1708382111.000000
+!s107 I:/ece552/project/addsub_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_4bit.v|
+!i113 0
+R5
+R6
+vALU
+Z9 !s110 1708382109
+!i10b 1
+!s100 l_I7R1FRNFX6Be69]UX^U0
+IZMVd2BM>:VY497Yn:@Bj:2
+R1
+w1707864895
+8I:/ece552/project/ALU.v
+FI:/ece552/project/ALU.v
+!i122 77
+L0 6 33
+R3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1708382109.000000
+!s107 I:/ece552/project/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ALU.v|
+!i113 0
+R5
+R6
+n@a@l@u
+vfull_adder_1bit
+!s110 1708382108
+!i10b 1
+!s100 WN4M^lz?8kX_P@GVTobbO1
+IDekGXkig_7703i=6IJ:lZ3
+R1
+w1708376543
+8I:/ece552/project/FA.v
+FI:/ece552/project/FA.v
+!i122 75
+L0 6 8
+R3
+R4
+r1
+!s85 0
+31
+Z11 !s108 1708382108.000000
+!s107 I:/ece552/project/FA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/FA.v|
+!i113 0
+R5
+R6
+vPADDSB
+R9
+!i10b 1
+!s100 U;lIjkGd?Y2iDYH=6@L?:2
+IeAQ?LWgTff3ERZbf=a8@E0
+R1
+w1708377908
+8I:/ece552/project/PADDSB.v
+FI:/ece552/project/PADDSB.v
+!i122 76
+L0 6 19
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 I:/ece552/project/PADDSB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PADDSB.v|
+!i113 0
+R5
+R6
+n@p@a@d@d@s@b
+vPSA_16bit
+!s110 1708376979
+!i10b 1
+!s100 Bd;chfH1AB?VaRbnRODFo0
+Iz1@bHg0D[[5dYJD_;Q<hm1
+R1
+w1708304266
+8I:/ece552/project/PSA_16bit.v
+FI:/ece552/project/PSA_16bit.v
+!i122 23
+L0 6 22
+R3
+R4
+r1
+!s85 0
+31
+!s108 1708376979.000000
+!s107 I:/ece552/project/PSA_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PSA_16bit.v|
+!i113 0
+R5
+R6
+n@p@s@a_16bit
+vRED
+R7
+!i10b 1
+!s100 GC7zG37Gmo62ij;6`Q1Io0
+IzKNnf>YhY5AiO=W3gB0`03
+R1
+w1708380553
+8I:/ece552/project/RED.v
+FI:/ece552/project/RED.v
+!i122 82
+L0 6 21
+R3
+R4
+r1
+!s85 0
+31
+!s108 1708382112.000000
+!s107 I:/ece552/project/RED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RED.v|
+!i113 0
+R5
+R6
+n@r@e@d
+vShifter
+!s110 1708382110
+!i10b 1
+!s100 IQ2bPn195;9TL[oSIJc<Z3
+I3alYYVX5COlT@O6SI1QTQ2
+R1
+w1708382106
+8I:/ece552/project/Shifter.v
+FI:/ece552/project/Shifter.v
+!i122 78
+L0 6 23
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 I:/ece552/project/Shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Shifter.v|
+!i113 0
+R5
+R6
+n@shifter
+vXOR
+R0
+!i10b 1
+!s100 nG0YI9>Bg]5XEKhGCRd^H1
+I^ALGYT=_aj7VN7oi>eF:F3
+R1
+w1708381287
+8I:/ece552/project/XOR.v
+FI:/ece552/project/XOR.v
+!i122 80
+L0 6 7
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 I:/ece552/project/XOR.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
+!i113 0
+R5
+R6
+n@x@o@r

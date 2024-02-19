@@ -1,0 +1,43 @@
+I:/ece552/project/addsub_16bit.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/addsub_16bit.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module addsub_16bit
+
+Top level modules:
+	addsub_16bit
+
+} {} {}} I:/ece552/project/addsub_4bit.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/addsub_4bit.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module addsub_4bit
+
+Top level modules:
+	addsub_4bit
+
+} {} {}} I:/ece552/project/PADDSB.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/PADDSB.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module PADDSB
+
+Top level modules:
+	PADDSB
+
+} {} {}} I:/ece552/project/ALU.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/ALU.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} I:/ece552/project/RED.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/RED.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module RED
+
+Top level modules:
+	RED
+
+} {} {}} I:/ece552/project/FA.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/FA.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module full_adder_1bit
+
+Top level modules:
+	full_adder_1bit
+
+} {} {}}
