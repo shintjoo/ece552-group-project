@@ -10,16 +10,26 @@ output [3:0] Sum; 	//sum output
 
 
 wire [3:0] B_comp;
-wire [3:0] Cin;
-wire [3:0] Cout;
+wire [3:0] C;
 wire [3:0] sum_res;
 wire ovfl_pos;
 wire ovfl_neg; //To indicate overflow
+wire [3:0] P, G; //to store propogate and generate signals
 
 assign B_comp = (sub == 1) ? ~B : B;	//Check whether B needs to be negated or not
-assign Cin[3:0] = {Cout[2:0], sub};	//Create a vector for Cin with sub being the initial carry in
 
-full_adder_1bit FA1[3:0](.A(A), .B(B_comp), .Cin(Cin), .S(sum_res), .Cout(Cout)); //Example of using the one bit full adder (which you must also design)
+//Generate and Propogate signals
+assign G = A & B_comp;
+assign P = A ^ B_comp;
+
+//Carry look ahead logic
+assign C[0] = sub; 
+assign C[1] = G[0] | (P[0] & C[0]);
+assign C[2] = G[1] | (P[1] & G[0]) | (P[1] & P[0] & C[0]);
+assign C[3] = G[2] | (P[2] & G[1]) | (P[2] & P[1] & G[0]) | (P[2] & P[1] & P[0] & C[0]);
+
+//calculate sum
+assign sum_res = P ^ C;
 
 //check if both inputs are positive
 assign ovfl_pos = ~A[3] & ~B_comp[3] & sum_res[3]; 
