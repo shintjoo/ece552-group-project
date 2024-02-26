@@ -5,7 +5,15 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	Shifter
 
-} {} {}} I:/ece552/project/XOR.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/XOR.v
+} {} {}} I:/ece552/project/PADDSB_tb.sv {0 {vlog -work work -vopt -sv -stats=none I:/ece552/project/PADDSB_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module PADDSB_tb
+** Error: (vlog-13069) I:/ece552/project/PADDSB_tb.sv(41): near "else": syntax error, unexpected else.
+** Error: I:/ece552/project/PADDSB_tb.sv(50): (vlog-2730) Undefined variable: 'Error'.
+** Error: I:/ece552/project/PADDSB_tb.sv(50): (vlog-2730) Undefined variable: 'ovfl_check'.
+** Error: (vlog-13069) I:/ece552/project/PADDSB_tb.sv(65): near "endmodule": syntax error, unexpected endmodule, expecting class.
+
+} {4.0 8.0} {}} I:/ece552/project/XOR.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/XOR.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module XOR
 
@@ -26,7 +34,7 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	RED
 
-} {} {}} I:/ece552/project/Shifter_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\Shifter_tb.sv}
+} {} {}} I:/ece552/project/Shifter_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/Shifter_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module Shifter_tb
 
@@ -68,14 +76,14 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	addsub_16bit
 
-} {} {}} I:/ece552/project/XOR_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\XOR_tb.sv}
+} {} {}} I:/ece552/project/XOR_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/XOR_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module XOR_tb
 
 Top level modules:
 	XOR_tb
 
-} {} {}} I:/ece552/project/adder_4bit_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\adder_4bit_tb.sv}
+} {} {}} I:/ece552/project/adder_4bit_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/adder_4bit_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module adder_4bit_tb
 
