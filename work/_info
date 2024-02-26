@@ -13,6 +13,27 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
@@ -22,212 +43,303 @@ R0
 cModel Technology
 Z1 dC:/intelFPGA_lite/22.1std
 T_opt
-!s110 1708658663
-VF<aVQT=Ul8oWBESOn`OL=1
-04 9 4 work PADDSB_tb fast 0
-=2-089204da99d9-65d80fe6-90-3284
-!s124 OEM10U22 
-Z2 o-quiet -auto_acc_if_foreign -work work +acc
-Z3 tCvgOpt 0
+!s110 1708914836
+VSXaFL=LCWYaX[@9aIe5Uf1
+04 10 4 work Shifter_tb fast 0
+=1-089204da8b12-65dbf893-15e-4754
+Z2 !s124 OEM10U2 
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
 n@_opt
-Z4 OL;O;2021.2;73
+Z5 OL;O;2021.2;73
 R1
 T_opt1
-!s110 1708907267
-VHzMdk2<YDe^zHj?QafG]82
-Z5 04 13 4 work adder_4bit_tb fast 0
-=1-089204da8b12-65dbdb02-1a8-51f8
-Z6 !s124 OEM10U2 
-o-quiet -auto_acc_if_foreign -work work
+!s110 1708922949
+VVVY<:H0BGCZEmAB3mNj@K2
+04 14 4 work addsub_4bit_tb fast 0
+=8-089204da8b12-65dc1844-1a9-3440
+!s124 OEM10U5 
 R3
-n@_opt1
 R4
-R1
+n@_opt1
+R5
 T_opt2
 !s110 1708907288
 Vfmf4a6?NiVcm2JHnNWM>m1
-R5
+04 13 4 work adder_4bit_tb fast 0
 =1-089204da8b12-65dbdb17-324-5af4
-R6
 R2
 R3
-n@_opt2
 R4
+n@_opt2
+R5
+R1
 vadder_16bit_tb
-Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1708907231
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1708921746
 !i10b 1
 !s100 Va[O?9<VFJb[Y=iUS<caY2
-Ije[DY51nBI:bGC3:MZZ>N3
+IVA_:81V:XkdEZ0?:NTQgF0
 S1
-Z8 dI:/ece552/project
-Z9 w1708656049
-8I:/ece552/project/adder_16bit_tb.sv
-FI:/ece552/project/adder_16bit_tb.sv
-!i122 207
-Z10 L0 1 49
-Z11 VDg1SIo80bB@j0V0VzS_@n1
-Z12 OL;L;2021.2;73
+Z7 dI:/ece552/project
+Z8 w1708656049
+8I:\ece552\project\adder_16bit_tb.sv
+FI:\ece552\project\adder_16bit_tb.sv
+!i122 360
+Z9 L0 1 49
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1708907230.000000
-!s107 I:/ece552/project/adder_16bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_16bit_tb.sv|
+Z12 !s108 1708921746.000000
+!s107 I:\ece552\project\adder_16bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:\ece552\project\adder_16bit_tb.sv|
 !i113 0
 Z13 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
-vadder_4bit_tb
+R4
+vadder_4bit
+Z14 !s110 1708921757
+!i10b 1
+!s100 L18B@aL^YUS1NEmFgg<Y91
+IPEAQ44n_]7AGbUhY;jUJA0
 R7
-!s110 1708907230
+w1708921295
+8I:\ece552\project\adder_4bit.v
+FI:\ece552\project\adder_4bit.v
+!i122 376
+L0 6 41
+R10
+R11
+r1
+!s85 0
+31
+Z15 !s108 1708921756.000000
+!s107 I:\ece552\project\adder_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\adder_4bit.v|
+!i113 0
+Z16 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vadder_4bit_tb
+R6
+!s110 1708914808
 !i10b 1
 !s100 H<Q9algEFER3[_5S1IWhj1
 I5lVJAW7iP[=MRaJm[U8j92
 S1
+R7
 R8
-R9
 8I:/ece552/project/adder_4bit_tb.sv
 FI:/ece552/project/adder_4bit_tb.sv
-!i122 206
+!i122 236
+R9
 R10
 R11
-R12
 r1
 !s85 0
 31
-!s108 1708907229.000000
+!s108 1708914807.000000
 !s107 I:/ece552/project/adder_4bit_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_4bit_tb.sv|
 !i113 0
 R13
-R3
+R4
 vaddsub_16bit
-Z14 !s110 1708907232
+Z17 !s110 1708921747
 !i10b 1
 !s100 hBa:ONRKV`J6QW;Ckc>=d3
-Im`3NiU<GD35c:[N@YTHfl2
+I;D50nlVOBh;Fe3M216C3Z1
+R7
 R8
-R9
-8I:/ece552/project/addsub_16bit.v
-FI:/ece552/project/addsub_16bit.v
-!i122 208
+8I:\ece552\project\addsub_16bit.v
+FI:\ece552\project\addsub_16bit.v
+!i122 361
 L0 6 28
+R10
 R11
-R12
 r1
 !s85 0
 31
-!s108 1708907231.000000
-!s107 I:/ece552/project/addsub_16bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_16bit.v|
+R12
+!s107 I:\ece552\project\addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\addsub_16bit.v|
 !i113 0
-Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R3
+R16
+R4
 vaddsub_4bit
-!s110 1708907255
+!s110 1708914809
 !i10b 1
-!s100 Zm;K>bT0L=WFSjTiMkfil1
-IV>mn5Nl7[4:Q<KFSKW6ne1
-R8
-w1708907251
-8I:/ece552/project/addsub_4bit.v
-FI:/ece552/project/addsub_4bit.v
-!i122 217
-L0 6 39
+!s100 2doabOaRzINcV6H]>0:On1
+Ialj^SPIYP>jWecG^UDiFj1
+R7
+w1708914776
+8I:\ece552\project\addsub_4bit.v
+FI:\ece552\project\addsub_4bit.v
+!i122 238
+L0 6 43
+R10
 R11
-R12
 r1
 !s85 0
 31
-!s108 1708907255.000000
-!s107 I:/ece552/project/addsub_4bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_4bit.v|
+!s108 1708914808.000000
+!s107 I:\ece552\project\addsub_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\addsub_4bit.v|
 !i113 0
-R15
-R3
+R16
+R4
+vaddsub_4bit_tb
+R6
+!s110 1708922945
+!i10b 1
+!s100 E`<YFV0U<^Ab;77MIVF^[1
+IDE=Yd;JYE=O0;:885_lI<0
+S1
+R7
+w1708922940
+8I:/ece552/project/addsub_4bit_tb.sv
+FI:/ece552/project/addsub_4bit_tb.sv
+!i122 383
+L0 1 104
+R10
+R11
+r1
+!s85 0
+31
+!s108 1708922944.000000
+!s107 I:/ece552/project/addsub_4bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/addsub_4bit_tb.sv|
+!i113 0
+R13
+R4
 vALU
-R14
+R17
 !i10b 1
 !s100 l_I7R1FRNFX6Be69]UX^U0
 IZMVd2BM>:VY497Yn:@Bj:2
-R8
+R7
 w1707864895
 8I:/ece552/project/ALU.v
 FI:/ece552/project/ALU.v
-!i122 209
+!i122 362
 L0 6 33
+R10
 R11
-R12
 r1
 !s85 0
 31
-Z16 !s108 1708907232.000000
+!s108 1708921747.000000
 !s107 I:/ece552/project/ALU.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ALU.v|
 !i113 0
-R15
-R3
+R16
+R4
 n@a@l@u
+vBitCell
+!s110 1708921748
+!i10b 1
+!s100 VEEal[P1NTi@<hW=0mgnc3
+I8QGJLM;8W4hF>=m?o0AMH2
+R7
+w1708910731
+8I:/ece552/project/BitCell.v
+FI:/ece552/project/BitCell.v
+!i122 363
+Z18 L0 6 18
+R10
+R11
+r1
+!s85 0
+31
+Z19 !s108 1708921748.000000
+!s107 I:/ece552/project/BitCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/BitCell.v|
+!i113 0
+R16
+R4
+n@bit@cell
+vdff
+Z20 !s110 1708921749
+!i10b 1
+!s100 Z9V@F2c50oH6kZfdURZd60
+I<7MAnkMn4;`:i7Qfo^]Kd0
+R7
+w1708651211
+8I:/ece552/project/D-Flip-Flop.v
+FI:/ece552/project/D-Flip-Flop.v
+!i122 364
+L0 3 17
+R10
+R11
+r1
+!s85 0
+31
+R19
+!s107 I:/ece552/project/D-Flip-Flop.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/D-Flip-Flop.v|
+!i113 0
+R16
+R4
 vfull_adder_1bit
-R14
+R20
 !i10b 1
 !s100 WN4M^lz?8kX_P@GVTobbO1
 IDekGXkig_7703i=6IJ:lZ3
-R8
+R7
 w1708376543
 8I:/ece552/project/FA.v
 FI:/ece552/project/FA.v
-!i122 210
+!i122 365
 L0 6 8
+R10
 R11
-R12
 r1
 !s85 0
 31
-R16
+Z21 !s108 1708921749.000000
 !s107 I:/ece552/project/FA.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/FA.v|
 !i113 0
-R15
-R3
+R16
+R4
 vPADDSB
-!s110 1708907233
+!s110 1708921750
 !i10b 1
 !s100 U;lIjkGd?Y2iDYH=6@L?:2
-IeAQ?LWgTff3ERZbf=a8@E0
-R8
+I71WK1oE12gKaM_G^ZefU^2
+R7
 w1708377908
-8I:/ece552/project/PADDSB.v
-FI:/ece552/project/PADDSB.v
-!i122 211
-L0 6 19
+8I:\ece552\project\PADDSB.v
+FI:\ece552\project\PADDSB.v
+!i122 366
+Z22 L0 6 19
+R10
 R11
-R12
 r1
 !s85 0
 31
-!s108 1708907233.000000
-!s107 I:/ece552/project/PADDSB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PADDSB.v|
+R21
+!s107 I:\ece552\project\PADDSB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\PADDSB.v|
 !i113 0
-R15
-R3
+R16
+R4
 n@p@a@d@d@s@b
 vPADDSB_tb
-R7
+R6
 !s110 1708658656
 !i10b 1
 !s100 j;1l8Q2QDY2i5CN8OJh9B0
 Ii=HEkz7_fbG@lIbBOLkQJ1
 S1
-R8
+R7
 w1708658647
 8I:\ece552\project\PADDSB_tb.sv
 FI:\ece552\project\PADDSB_tb.sv
 !i122 200
 L0 6 32
+R10
 R11
-R12
 r1
 !s85 0
 31
@@ -236,21 +348,21 @@ r1
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:\ece552\project\PADDSB_tb.sv|
 !i113 0
 R13
-R3
+R4
 n@p@a@d@d@s@b_tb
 vPSA_16bit
 !s110 1708376979
 !i10b 1
 !s100 Bd;chfH1AB?VaRbnRODFo0
 Iz1@bHg0D[[5dYJD_;Q<hm1
-R8
+R7
 w1708304266
 8I:/ece552/project/PSA_16bit.v
 FI:/ece552/project/PSA_16bit.v
 !i122 23
 L0 6 22
+R10
 R11
-R12
 r1
 !s85 0
 31
@@ -258,125 +370,239 @@ r1
 !s107 I:/ece552/project/PSA_16bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PSA_16bit.v|
 !i113 0
-R15
-R3
+R16
+R4
 n@p@s@a_16bit
+vReadDecoder_4_16
+!s110 1708921751
+!i10b 1
+!s100 @46Ka==R9<A0L_:Ak3V?83
+IRV>e0LGH<M5MB_AVY8dW01
+R7
+w1708910730
+8I:/ece552/project/ReadDecoder_4_16.v
+FI:/ece552/project/ReadDecoder_4_16.v
+!i122 367
+L0 6 13
+R10
+R11
+r1
+!s85 0
+31
+Z23 !s108 1708921751.000000
+!s107 I:/ece552/project/ReadDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ReadDecoder_4_16.v|
+!i113 0
+R16
+R4
+n@read@decoder_4_16
 vRED
-Z17 !s110 1708907234
+Z24 !s110 1708921752
 !i10b 1
 !s100 GC7zG37Gmo62ij;6`Q1Io0
 IzKNnf>YhY5AiO=W3gB0`03
-R8
+R7
 w1708380553
 8I:/ece552/project/RED.v
 FI:/ece552/project/RED.v
-!i122 212
+!i122 368
 L0 6 21
+R10
 R11
-R12
 r1
 !s85 0
 31
-Z18 !s108 1708907234.000000
+R23
 !s107 I:/ece552/project/RED.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RED.v|
 !i113 0
-R15
-R3
+R16
+R4
 n@r@e@d
+vRegister
+R24
+!i10b 1
+!s100 lFBebeJ90K?Rg59_YabO62
+I?EE8kSRHjfnd?6BOBnWRP2
+R7
+w1708910722
+8I:/ece552/project/Register.v
+FI:/ece552/project/Register.v
+!i122 369
+L0 6 10
+R10
+R11
+r1
+!s85 0
+31
+Z25 !s108 1708921752.000000
+!s107 I:/ece552/project/Register.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Register.v|
+!i113 0
+R16
+R4
+n@register
+vRegisterFile
+!s110 1708921753
+!i10b 1
+!s100 61Q]4_IV@Vd;9igX<H=Ok3
+IPl[;141Ld;07Oaf4;?9ZT3
+R7
+w1708910720
+8I:/ece552/project/RegisterFile.v
+FI:/ece552/project/RegisterFile.v
+!i122 370
+R18
+R10
+R11
+r1
+!s85 0
+31
+R25
+!s107 I:/ece552/project/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RegisterFile.v|
+!i113 0
+R16
+R4
+n@register@file
 vShifter
-R17
+Z26 !s110 1708921754
 !i10b 1
 !s100 9X1]X]YfTSai:kjMTZ;ei1
 IDSo02OKaJZVE5APV2PQg@2
-R8
+R7
 w1708551875
 8I:/ece552/project/Shifter.v
 FI:/ece552/project/Shifter.v
-!i122 213
+!i122 371
 L0 6 23
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
+!s108 1708921753.000000
 !s107 I:/ece552/project/Shifter.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Shifter.v|
 !i113 0
-R15
-R3
+R16
+R4
 n@shifter
 vShifter_tb
-R7
-Z19 !s110 1708907235
+R6
+R26
 !i10b 1
 !s100 Ln2UW0^E`<bm9:D`C1E8@0
-I^zcmXKo]eYC6aMZBOCm2k0
+IBnoBTbI@O[eoB]Ki@V6J41
 S1
-R8
+R7
 w1708552442
-8I:/ece552/project/Shifter_tb.sv
-FI:/ece552/project/Shifter_tb.sv
-!i122 214
+8I:\ece552\project\Shifter_tb.sv
+FI:\ece552\project\Shifter_tb.sv
+!i122 372
 L0 6 47
+R10
 R11
-R12
 r1
 !s85 0
 31
-R18
-!s107 I:/ece552/project/Shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/Shifter_tb.sv|
+Z27 !s108 1708921754.000000
+!s107 I:\ece552\project\Shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:\ece552\project\Shifter_tb.sv|
 !i113 0
 R13
-R3
+R4
 n@shifter_tb
+vsub_4bit
+R14
+!i10b 1
+!s100 74c^=;zoK^;<QMVVm5=Zb0
+IeQ35CSF4IXXi4UPALUR^D2
+R7
+w1708918981
+8I:\ece552\project\sub_4bit.v
+FI:\ece552\project\sub_4bit.v
+!i122 377
+R22
+R10
+R11
+r1
+!s85 0
+31
+!s108 1708921757.000000
+!s107 I:\ece552\project\sub_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\sub_4bit.v|
+!i113 0
+R16
+R4
+vWriteDecoder_4_16
+!s110 1708921755
+!i10b 1
+!s100 Yi^2_n?9Ji7?ST=V5W3F<1
+IbcnL23inV9z18IT;[jR]U1
+R7
+w1708910724
+8I:/ece552/project/WriteDecoder_4_16.v
+FI:/ece552/project/WriteDecoder_4_16.v
+!i122 373
+L0 6 15
+R10
+R11
+r1
+!s85 0
+31
+R27
+!s107 I:/ece552/project/WriteDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/WriteDecoder_4_16.v|
+!i113 0
+R16
+R4
+n@write@decoder_4_16
 vXOR
-R19
+Z28 !s110 1708921756
 !i10b 1
 !s100 nG0YI9>Bg]5XEKhGCRd^H1
 I^ALGYT=_aj7VN7oi>eF:F3
-R8
+R7
 w1708381287
 8I:/ece552/project/XOR.v
 FI:/ece552/project/XOR.v
-!i122 215
+!i122 374
 L0 6 7
+R10
 R11
-R12
 r1
 !s85 0
 31
-Z20 !s108 1708907235.000000
+!s108 1708921755.000000
 !s107 I:/ece552/project/XOR.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
 !i113 0
-R15
-R3
+R16
+R4
 n@x@o@r
 vXOR_tb
-R7
-!s110 1708907236
+R6
+R28
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
 I`>4]i>X8COAN]@3F1m]DH3
 S1
-R8
+R7
 w1708657436
 8I:/ece552/project/XOR_tb.sv
 FI:/ece552/project/XOR_tb.sv
-!i122 216
+!i122 375
 L0 1 33
+R10
 R11
-R12
 r1
 !s85 0
 31
-R20
+R15
 !s107 I:/ece552/project/XOR_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/XOR_tb.sv|
 !i113 0
 R13
-R3
+R4
 n@x@o@r_tb
