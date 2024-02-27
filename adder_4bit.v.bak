@@ -30,10 +30,10 @@ assign C[3] = G[2] | (P[2] & G[1]) | (P[2] & P[1] & G[0]) | (P[2] & P[1] & P[0] 
 assign Sum = P ^ C;
 
 //check if both inputs are positive
-assign ovfl_pos = ~A[3] & ~B[3] & Sum[3]; 
+assign ovfl_pos = ~A[3] & ~B[3] & sum_res[3]; 
 
 //check if both inputs are negative
-assign ovfl_neg = A[3] & B[3] & ~Sum[3]; 
+assign ovfl_neg = A[3] & B[3] & ~sum_res[3]; 
 
 //set a carry out value (will be necessary for 16 bit adder)
 assign Cout = G[3] | (P[3] & G[2]) | (P[3] & P[2] & G[1]) | (P[3] & P[2] & P[1] & G[0]) | (P[3] & P[2] & P[1] & P[0] & C[0]);

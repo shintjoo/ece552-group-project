@@ -20,6 +20,7 @@ bit neg_overflow = 0;
 	
 	  pos_overflow = 0;
 	  neg_overflow = 0;
+
       if (stm_cin) 
         sum = stm_a - stm_b; 
       else 
@@ -33,14 +34,14 @@ bit neg_overflow = 0;
 	  #5;
     if (pos_overflow) begin 
 		if (sum_mon != 32767)
-        $error("Failed at time %t: A=%h, B=%h", $time, stm_a, stm_b);
+        $error("Failed pos_overflow at time %t: A=%h, B=%h", $time, stm_a, stm_b);
 		end 
 	else if (neg_overflow) begin
 		if (sum_mon != -32768) 
-		$error("Failed at time %t: A=%h, B=%h", $time, stm_a, stm_b);
+		$error("Failed neg_overflow at time %t: A=%h, B=%h", $time, stm_a, stm_b);
 		end 
-	else if (sum_mon != sum)
-		$error("Failed at time %t: A=%h, B=%h", $time, stm_a, stm_b);
+	else if (sum_mon != sum[15:0])
+		$error("Failed sum at time %t: A=%h, B=%h", $time, stm_a, stm_b);
 	  #5;
     end
     $display("All tests passed!");
