@@ -3,10 +3,10 @@
  * Shawn Zhu
  * ECE552
  */
-module ALU (ALU_Out, Error, ALU_In1, ALU_In2, Opcode);
-input [3:0] ALU_In1, ALU_In2;
-input [1:0] Opcode;
-output reg [3:0] ALU_Out;
+module ALU (ALU_Out, Error, ALU_In1, ALU_In2, ALUOp);
+input [15:0] ALU_In1, ALU_In2;
+input [3:0] Opcode;
+output reg [15:0] ALU_Out;
 output reg Error; 	// Just to show overflow
 
 wire[3:0] addsub_res;
@@ -14,6 +14,7 @@ wire ovfl_res;
 
 //instantiate add/sub
 addsub_4bit addsub(.Sum(addsub_res), .Ovfl(ovfl_res), .A(ALU_In1), .B(ALU_In2), .sub(Opcode[0]));
+Shifter shifter(.Shift_Out(Shift_Out), .Shift_In(Shift_In), .Shift_Val(Shift_Val), .Mode(Mode));
 
 
 always @ (ALU_In1, ALU_In2, Opcode) begin
