@@ -1,4 +1,4 @@
-I:/ece552/project/addsub_4bit_sat.v {1 {vlog -work work -vopt -stats=none {I:\ece552\project\addsub_4bit_sat.v}
+I:/ece552/project/addsub_4bit_sat.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/addsub_4bit_sat.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module adder_4bit_sat
 
@@ -19,7 +19,7 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	RegisterFile
 
-} {} {}} I:/ece552/project/addsub_4bit_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\addsub_4bit_tb.sv}
+} {} {}} I:/ece552/project/addsub_4bit_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/addsub_4bit_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module addsub_4bit_tb
 
@@ -40,7 +40,7 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	Shifter
 
-} {} {}} I:/ece552/project/PADDSB_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\PADDSB_tb.sv}
+} {} {}} I:/ece552/project/PADDSB_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/PADDSB_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module PADDSB_tb
 
@@ -61,7 +61,7 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	XOR
 
-} {} {}} I:/ece552/project/adder_4bit.v {1 {vlog -work work -vopt -stats=none {I:\ece552\project\adder_4bit.v}
+} {} {}} I:/ece552/project/adder_4bit.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/adder_4bit.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module adder_4bit
 
@@ -75,19 +75,19 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	ALU
 
-} {} {}} I:/ece552/project/ReadDecoder_4_16.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/ReadDecoder_4_16.v
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module ReadDecoder_4_16
-
-Top level modules:
-	ReadDecoder_4_16
-
 } {} {}} I:/ece552/project/RED.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/RED.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module RED
 
 Top level modules:
 	RED
+
+} {} {}} I:/ece552/project/ReadDecoder_4_16.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/ReadDecoder_4_16.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module ReadDecoder_4_16
+
+Top level modules:
+	ReadDecoder_4_16
 
 } {} {}} I:/ece552/project/LW_SW_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/LW_SW_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
@@ -96,13 +96,6 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	LW_SW_Testbench
 
-} {} {}} I:/ece552/project/adder_16bit_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\adder_16bit_tb.sv}
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module adder_16bit_tb
-
-Top level modules:
-	adder_16bit_tb
-
 } {} {}} I:/ece552/project/Shifter_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/Shifter_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module Shifter_tb
@@ -110,7 +103,14 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	Shifter_tb
 
-} {} {}} I:/ece552/project/PADDSB.v {1 {vlog -work work -vopt -stats=none {I:\ece552\project\PADDSB.v}
+} {} {}} I:/ece552/project/adder_16bit_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/adder_16bit_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module adder_16bit_tb
+
+Top level modules:
+	adder_16bit_tb
+
+} {} {}} I:/ece552/project/PADDSB.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/PADDSB.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module PADDSB
 
@@ -131,19 +131,12 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	addsub_16bit
 
-} {} {}} I:/ece552/project/XOR_tb.sv {1 {vlog -work work -vopt -sv -stats=none {I:\ece552\project\XOR_tb.sv}
+} {} {}} I:/ece552/project/XOR_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/XOR_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module XOR_tb
 
 Top level modules:
 	XOR_tb
-
-} {} {}} I:/ece552/project/WriteDecoder_4_16.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/WriteDecoder_4_16.v
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module WriteDecoder_4_16
-
-Top level modules:
-	WriteDecoder_4_16
 
 } {} {}} I:/ece552/project/D-Flip-Flop.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/D-Flip-Flop.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
@@ -151,5 +144,12 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	dff
+
+} {} {}} I:/ece552/project/WriteDecoder_4_16.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/WriteDecoder_4_16.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module WriteDecoder_4_16
+
+Top level modules:
+	WriteDecoder_4_16
 
 } {} {}}
