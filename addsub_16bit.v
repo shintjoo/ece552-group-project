@@ -3,7 +3,7 @@
  * Shawn Zhu
  * ECE552
  */
-module addsub_16bit (Sum, A, B, sub);
+module addsub_16bit (Sum, A, B, sub, sat);
 input [15:0] A, B; 	//Input values
 input sub; 		//add-sub indicator
 output [15:0] Sum; 	//sum output
@@ -29,6 +29,6 @@ assign ovfl_neg = A[15] & B_comp[15] & ~sum_res[15];
 
 //deal with saturation
 assign Sum = (ovfl_pos) ? 16'h7FFF : ((ovfl_neg) ?  16'h8000 : sum_res);
-
+assign sat = ovfl_pos | ovfl_neg;
 
 endmodule

@@ -3,9 +3,9 @@ module adder_16bit_tb();
 reg signed [15:0] stm_a,stm_b; // used as stimulus for a,b
 reg stm_cin; // used as stimulus for cin
 wire signed [15:0] sum_mon; // used to monitor sum
+wire sat;
 
-
-addsub_16bit UUD(.Sum(sum_mon), .A(stm_a), .B(stm_b), .sub(stm_cin));
+addsub_16bit UUD(.Sum(sum_mon), .A(stm_a), .B(stm_b), .sub(stm_cin), .sat(sat));
 logic signed [16:0] sum = 0;
 bit pos_overflow = 0;
 bit neg_overflow = 0;
