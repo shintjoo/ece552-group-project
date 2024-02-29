@@ -80,6 +80,7 @@ Z2 o-quiet -auto_acc_if_foreign -work work +acc
 Z3 tCvgOpt 0
 n@_opt
 Z4 OL;O;2021.2;73
+R1
 T_opt1
 !s110 1709008631
 V0SRhTFQ]Rd:lc3;8jH5m:0
@@ -308,6 +309,28 @@ r1
 R12
 R3
 n@bit@cell
+vcpu
+!s110 1709168541
+!i10b 1
+!s100 ?hdfP6iZRW:Jz=:6?mVeQ0
+I>G]@jP2GX>8c^]3F]T24J0
+R7
+w1709168524
+8I:\ece552\project\cpu.v
+FI:\ece552\project\cpu.v
+!i122 521
+L0 6 51
+R8
+R9
+r1
+!s85 0
+31
+Z16 !s108 1709168541.000000
+!s107 I:\ece552\project\cpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\cpu.v|
+!i113 0
+R12
+R3
 vdff
 !s110 1709156970
 !i10b 1
@@ -324,7 +347,7 @@ R9
 r1
 !s85 0
 31
-Z16 !s108 1709156970.000000
+Z17 !s108 1709156970.000000
 !s107 I:/ece552/project/D-Flip-Flop.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/D-Flip-Flop.v|
 !i113 0
@@ -346,7 +369,7 @@ R9
 r1
 !s85 0
 31
-R16
+R17
 !s107 I:/ece552/project/FA.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/FA.v|
 !i113 0
@@ -370,15 +393,37 @@ R9
 r1
 !s85 0
 31
-Z17 !s108 1709156972.000000
+Z18 !s108 1709156972.000000
 !s107 I:/ece552/project/LW_SW_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/LW_SW_tb.sv|
 !i113 0
 R11
 R3
 n@l@w_@s@w_@testbench
+vmemory1c
+!s110 1709168542
+!i10b 1
+!s100 [AmbjjH]ldzki7GFR=`M]1
+IUGD6UDUlAGN<@UEX<VbFk0
+R7
+w1708913721
+8I:/ece552/project/memory.v
+FI:/ece552/project/memory.v
+!i122 522
+L0 31 38
+R8
+R9
+r1
+!s85 0
+31
+R16
+!s107 I:/ece552/project/memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/memory.v|
+!i113 0
+R12
+R3
 vPADDSB
-Z18 !s110 1709156973
+Z19 !s110 1709156973
 !i10b 1
 !s100 _RJP>C[O@I;GDOB;P2mHA0
 I?H<@inkgZ8[Vznf_h^Uf^1
@@ -387,13 +432,13 @@ w1709006148
 8I:/ece552/project/PADDSB.v
 FI:/ece552/project/PADDSB.v
 !i122 509
-Z19 L0 6 19
+Z20 L0 6 19
 R8
 R9
 r1
 !s85 0
 31
-R17
+R18
 !s107 I:/ece552/project/PADDSB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PADDSB.v|
 !i113 0
@@ -402,7 +447,7 @@ R3
 n@p@a@d@d@s@b
 vPADDSB_tb
 R6
-R18
+R19
 !i10b 1
 !s100 _<kNb1?daa^72`_TNo>Za0
 ICaD;BXnMXcakLJBEEJZA52
@@ -435,7 +480,7 @@ w1708304266
 8I:/ece552/project/PSA_16bit.v
 FI:/ece552/project/PSA_16bit.v
 !i122 23
-Z20 L0 6 22
+Z21 L0 6 22
 R8
 R9
 r1
@@ -464,7 +509,7 @@ R9
 r1
 !s85 0
 31
-Z21 !s108 1709156974.000000
+Z22 !s108 1709156974.000000
 !s107 I:/ece552/project/ReadDecoder_4_16.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ReadDecoder_4_16.v|
 !i113 0
@@ -472,7 +517,7 @@ R12
 R3
 n@read@decoder_4_16
 vRED
-Z22 !s110 1709156975
+Z23 !s110 1709156975
 !i10b 1
 !s100 6aGOURhc0V4D6@lFa:X8k0
 Idgfmff_<JHhchZn`Wg5EW1
@@ -487,7 +532,7 @@ R9
 r1
 !s85 0
 31
-R21
+R22
 !s107 I:/ece552/project/RED.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RED.v|
 !i113 0
@@ -496,7 +541,7 @@ R3
 n@r@e@d
 vRED_tb
 R6
-Z23 !s110 1709156980
+Z24 !s110 1709156980
 !i10b 1
 !s100 D;>MKzE:IkWS1S9ncJd8L3
 IbJT]NhoBkKQEz4LI9cF]G0
@@ -520,7 +565,7 @@ R11
 R3
 n@r@e@d_tb
 vRegister
-R22
+R23
 !i10b 1
 !s100 lFBebeJ90K?Rg59_YabO62
 I?EE8kSRHjfnd?6BOBnWRP2
@@ -552,13 +597,13 @@ w1708996320
 8I:/ece552/project/RegisterFile.v
 FI:/ece552/project/RegisterFile.v
 !i122 514
-R20
+R21
 R8
 R9
 r1
 !s85 0
 31
-Z24 !s108 1709156976.000000
+Z25 !s108 1709156976.000000
 !s107 I:/ece552/project/RegisterFile.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RegisterFile.v|
 !i113 0
@@ -566,7 +611,7 @@ R12
 R3
 n@register@file
 vShifter
-Z25 !s110 1709156977
+Z26 !s110 1709156977
 !i10b 1
 !s100 9X1]X]YfTSai:kjMTZ;ei1
 IDSo02OKaJZVE5APV2PQg@2
@@ -581,7 +626,7 @@ R9
 r1
 !s85 0
 31
-R24
+R25
 !s107 I:/ece552/project/Shifter.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Shifter.v|
 !i113 0
@@ -590,7 +635,7 @@ R3
 n@shifter
 vShifter_tb
 R6
-R25
+R26
 !i10b 1
 !s100 Ln2UW0^E`<bm9:D`C1E8@0
 I^zcmXKo]eYC6aMZBOCm2k0
@@ -623,7 +668,7 @@ w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R19
+R20
 R8
 R9
 r1
@@ -651,7 +696,7 @@ R9
 r1
 !s85 0
 31
-Z26 !s108 1709156978.000000
+Z27 !s108 1709156978.000000
 !s107 I:/ece552/project/WriteDecoder_4_16.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/WriteDecoder_4_16.v|
 !i113 0
@@ -674,7 +719,7 @@ R9
 r1
 !s85 0
 31
-R26
+R27
 !s107 I:/ece552/project/XOR.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
 !i113 0
@@ -683,7 +728,7 @@ R3
 n@x@o@r
 vXOR_tb
 R6
-R23
+R24
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
 I`>4]i>X8COAN]@3F1m]DH3
