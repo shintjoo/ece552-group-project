@@ -6,7 +6,8 @@
 module addsub_16bit (Sum, A, B, sub, sat);
 input [15:0] A, B; 	//Input values
 input sub; 		//add-sub indicator
-output [15:0] Sum; 	//sum output
+output [15:0] Sum; 	//sum output'
+output sat;
 
 
 wire [15:0] B_comp;
