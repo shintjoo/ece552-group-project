@@ -21,10 +21,14 @@ wire [2:0] Flags;
 wire [15:0] aluin2, aluout;
 wire error;
 
+assign hlt_select = (rst_n)
 
 //Fetch Stage
 //instruction memory
 memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(rst_n));
+
+Register pc(.clk(clk), .rst(rst), .D(pc_in),  .WriteReg(~hlt_select), .ReadEnable1(read_en1), .ReadEnable2(read_en2), .Bitline1(data1), .Bitline2(data2));
+
 
 //PC Calculation
 addsub_16bit increment(.Sum(pc_increment), .A(pc_in), .B(16'h0002), .sub(1'b0), .sat());
@@ -53,7 +57,7 @@ Control controlunit(
 //Opcode cccx ssss xxxx
 //Opcode dddd xxxx xxxx
 //Opcode xxxx xxxx xxxx
-RegisterFile regfile (.clk(clk), .rst(rst_n), .SrcReg1(instruction[7:4]), .SrcReg2(instruction[3:0]), .DstReg(instruction[11:8]), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
+RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(instruction[7:4]), .SrcReg2(instruction[3:0]), .DstReg(instruction[11:8]), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
 
 //execute stage
 assign aluin2 = (ALUSrc8bit == 1) ? {8'h00, instruction[7:0]}: ((ALUSrc)? {{12{instruction[3]}},instruction[3:0]} : dataout2);

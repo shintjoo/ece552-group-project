@@ -1,129 +1,24 @@
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of cpu.v failed with 6 errors.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
-# Compile of PC_control.v failed with 1 errors.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# 26 compiles, 2 failed with 7 errors.
-# Compile of cpu.v was successful.
-# Compile of PC_control.v failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
-# Compile of PC_control.v failed with 1 errors.
-# Compile of PC_control.v failed with 1 errors.
-# Compile of PC_control.v failed with 1 errors.
-# Compile of PC_control.v was successful.
-vsim work.cpu_tb
-# vsim work.cpu_tb 
-# Start time: 21:41:37 on Feb 29,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: I:/ece552/project/cpu.v(35): Module 'Control' is not defined.
-#  For instance 'controlunit' at path 'cpu_tb.DUT'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-# Error loading design
-# End time: 21:41:43 on Feb 29,2024, Elapsed time: 0:00:06
-# Errors: 1, Warnings: 10
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
-# Compile of PC_control.v was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# Compile of Control.v failed with 6 errors.
-# 27 compiles, 1 failed with 6 errors.
-# Compile of Control.v was successful.
-vsim work.cpu_tb
-# vsim work.cpu_tb 
-# Start time: 21:45:42 on Feb 29,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: I:/ece552/project/cpu.v(56): (vopt-2241) Connection width does not match width of port 'SrcReg1'. The port definition is at: I:/ece552/project/RegisterFile.v(6).
-# ** Warning: I:/ece552/project/PC_control.v(11): (vopt-2241) Connection width does not match width of port 'A'. The port definition is at: I:/ece552/project/addsub_16bit.v(6).
-# ** Warning: I:/ece552/project/cpu.v(32): (vopt-2241) Connection width does not match width of port 'C'. The port definition is at: I:/ece552/project/PC_control.v(1).
-# ** Warning: I:/ece552/project/cpu.v(32): (vopt-2241) Connection width does not match width of port 'I'. The port definition is at: I:/ece552/project/PC_control.v(1).
-# ** Warning: I:/ece552/project/cpu.v(32): (vopt-2241) Connection width does not match width of port 'F'. The port definition is at: I:/ece552/project/PC_control.v(1).
-# ** Warning: I:/ece552/project/cpu.v(32): (vopt-2241) Connection width does not match width of port 'PC_in'. The port definition is at: I:/ece552/project/PC_control.v(1).
-# ** Warning: I:/ece552/project/cpu.v(32): (vopt-2241) Connection width does not match width of port 'PC_out'. The port definition is at: I:/ece552/project/PC_control.v(1).
-# ** Warning: I:/ece552/project/cpu.v(60): (vopt-2685) [TFMPC] - Too few port connections for 'ex'.  Expected 6, found 5.
-# ** Warning: I:/ece552/project/cpu.v(60): (vopt-2718) [TFMPC] - Missing connection for port 'Flags'.
-# ** Warning: I:/ece552/project/cpu.v(27): (vopt-2958) Implicit wire 'rst' does not have any driver.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=10.
-# Loading work.cpu_tb(fast)
-# Loading work.RegisterFile(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (8) for port 'SrcReg1'. The port definition is at: I:/ece552/project/RegisterFile.v(6).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/DUT/regfile File: I:/ece552/project/cpu.v Line: 56
-# Compile of cpu.v was successful.
-# Compile of PC_control.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.cpu_tb -voptargs=+acc
-# End time: 21:49:28 on Feb 29,2024, Elapsed time: 0:03:46
-# Errors: 0, Warnings: 16
-# vsim work.cpu_tb -voptargs="+acc" 
-# Start time: 21:49:28 on Feb 29,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.BitCell(fast)
-# Loading work.dff(fast)
-run
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-run
-view -new wave
-# .main_pane.wave.interior.cs.body.pw.wf
+vsim -gui work.cpu_tb
+# vsim -gui work.cpu_tb 
+# Start time: 23:48:49 on Feb 29,2024
+# Loading work.cpu_tb
+# Loading work.cpu
+# Loading work.memory1c
+# Loading work.addsub_16bit
+# Loading work.adder_4bit
+# Loading work.PC_control
+# Loading work.Control
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.ALU
+# Loading work.Shifter
+# Loading work.RED
+# Loading work.PADDSB
+# Loading work.adder_4bit_sat
+# Loading work.Register
+# Loading work.BitCell
+# Loading work.dff
 add wave -position insertpoint  \
 sim:/cpu_tb/PC \
 sim:/cpu_tb/Inst \
@@ -141,12 +36,103 @@ sim:/cpu_tb/trace_file \
 sim:/cpu_tb/sim_log_file \
 sim:/cpu_tb/clk \
 sim:/cpu_tb/rst_n
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: skzhu  Hostname: WIN-1023  ProcessID: 11460
+#           Attempting to use alternate WLF file "./wlft2tyf99".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2tyf99
+run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run
-# ** Warning: (vsim-7) Failed to open readmem file "loadfile_all.img" in read mode.
-# No such file or directory. (errno = ENOENT)    : I:/ece552/project/memory.v(55)
-#    Time: 300 ns  Iteration: 1  Instance: /cpu_tb/DUT/imem
-# ** Warning: (vsim-7) Failed to open readmem file "loadfile_all.img" in read mode.
-# No such file or directory. (errno = ENOENT)    : I:/ece552/project/memory.v(55)
-#    Time: 300 ns  Iteration: 1  Instance: /cpu_tb/DUT/dmem
-# End time: 22:16:10 on Feb 29,2024, Elapsed time: 0:26:42
-# Errors: 0, Warnings: 3
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+run -all
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/cpu_tb/DUT/imem/ADDR_WIDTH \
+sim:/cpu_tb/DUT/imem/data_out \
+sim:/cpu_tb/DUT/imem/data_in \
+sim:/cpu_tb/DUT/imem/addr \
+sim:/cpu_tb/DUT/imem/enable \
+sim:/cpu_tb/DUT/imem/wr \
+sim:/cpu_tb/DUT/imem/clk \
+sim:/cpu_tb/DUT/imem/rst \
+sim:/cpu_tb/DUT/imem/mem \
+sim:/cpu_tb/DUT/imem/loaded
+# (vsim-4077) Logging very large object: /cpu_tb/DUT/imem/mem
+restart
+# Closing VCD file "dump.vcd"
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
+# Compile of cpu.v was successful.
+run -all
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10000100 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
