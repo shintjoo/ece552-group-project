@@ -24,7 +24,7 @@ wire error;
 
 //Fetch Stage
 //instruction memory
-memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(rst_n));
+memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(~rst_n));
 
 //PC Calculation
 addsub_16bit increment(.Sum(pc_increment), .A(pc_in), .B(16'h0002), .sub(1'b0), .sat());
@@ -53,7 +53,7 @@ Control controlunit(
 //Opcode cccx ssss xxxx
 //Opcode dddd xxxx xxxx
 //Opcode xxxx xxxx xxxx
-RegisterFile regfile (.clk(clk), .rst(rst_n), .SrcReg1(instruction[7:4]), .SrcReg2(instruction[3:0]), .DstReg(instruction[11:8]), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
+RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(instruction[7:4]), .SrcReg2(instruction[3:0]), .DstReg(instruction[11:8]), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
 
 //execute stage
 assign aluin2 = (ALUSrc8bit == 1) ? {8'h00, instruction[7:0]}: ((ALUSrc)? {{12{instruction[3]}},instruction[3:0]} : dataout2);
@@ -61,7 +61,7 @@ ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .A
 
 
 //memory stage
-memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(rst_n));
+memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(~rst_n));
 
 //assign pc_choose = (Branch && ) pc_branch : pc_increment;
 
