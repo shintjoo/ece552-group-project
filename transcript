@@ -1,3 +1,64 @@
+# Compile of PC_control_tb.sv failed with 1 errors.
+# Compile of PC_control_tb.sv was successful.
+vsim work.PC_control_tb
+# vsim work.PC_control_tb 
+# Start time: 16:38:34 on Mar 01,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 13
+vsim work.PC_control_tb -voptargs=+acc
+# End time: 16:38:56 on Mar 01,2024, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 6
+# vsim work.PC_control_tb -voptargs="+acc" 
+# Start time: 16:38:56 on Mar 01,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 13
+add wave -position insertpoint  \
+sim:/PC_control_tb/C \
+sim:/PC_control_tb/I \
+sim:/PC_control_tb/F \
+sim:/PC_control_tb/PC_in \
+sim:/PC_control_tb/PC_out
+run
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#12 File: I:/ece552/project/PC_control_tb.sv Line: 13
+run -all
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 13
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#12 File: I:/ece552/project/PC_control_tb.sv Line: 13
+# Compile of PC_control_tb.sv failed with 1 errors.
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 13
+run
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#12 File: I:/ece552/project/PC_control_tb.sv Line: 13
 # Compile of adder_4bit.v was successful.
 # Compile of adder_16bit_tb.sv was successful.
 # Compile of addsub_4bit_sat.v was successful.
@@ -6,7 +67,7 @@
 # Compile of ALU.v was successful.
 # Compile of BitCell.v was successful.
 # Compile of Control.v was successful.
-# Compile of cpu.v failed with 2 errors.
+# Compile of cpu.v was successful.
 # Compile of D-Flip-Flop.v was successful.
 # Compile of FA.v was successful.
 # Compile of LW_SW_tb.sv was successful.
@@ -25,453 +86,1906 @@
 # Compile of WriteDecoder_4_16.v was successful.
 # Compile of XOR.v was successful.
 # Compile of XOR_tb.sv was successful.
-# 27 compiles, 1 failed with 2 errors.
-# Compile of cpu.v failed with 1 errors.
-# Compile of cpu.v was successful.
-vsim work.cpu_tb -voptargs=+acc
-# vsim work.cpu_tb -voptargs="+acc" 
-# Start time: 14:42:34 on Mar 01,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-add wave -position insertpoint  \
-sim:/cpu_tb/PC \
-sim:/cpu_tb/Inst \
-sim:/cpu_tb/RegWrite \
-sim:/cpu_tb/WriteRegister \
-sim:/cpu_tb/WriteData \
-sim:/cpu_tb/MemWrite \
-sim:/cpu_tb/MemRead \
-sim:/cpu_tb/MemAddress \
-sim:/cpu_tb/MemData \
-sim:/cpu_tb/Halt \
-sim:/cpu_tb/inst_count \
-sim:/cpu_tb/cycle_count \
-sim:/cpu_tb/trace_file \
-sim:/cpu_tb/sim_log_file \
-sim:/cpu_tb/clk \
-sim:/cpu_tb/rst_n
+# Compile of PC_control_tb.sv was successful.
+# 28 compiles, 0 failed with no errors.
 restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-view -new wave
-# .main_pane.wave1.interior.cs.body.pw.wf
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/clk \
-sim:/cpu_tb/DUT/rst_n \
-sim:/cpu_tb/DUT/hlt \
-sim:/cpu_tb/DUT/pc \
-sim:/cpu_tb/DUT/RegWrite \
-sim:/cpu_tb/DUT/MemRead \
-sim:/cpu_tb/DUT/MemWrite \
-sim:/cpu_tb/DUT/Branch \
-sim:/cpu_tb/DUT/MemtoReg \
-sim:/cpu_tb/DUT/ALUSrc \
-sim:/cpu_tb/DUT/ALUOp \
-sim:/cpu_tb/DUT/pcs_select \
-sim:/cpu_tb/DUT/hlt_select \
-sim:/cpu_tb/DUT/ALUSrc8bit \
-sim:/cpu_tb/DUT/pc_in \
-sim:/cpu_tb/DUT/instruction \
-sim:/cpu_tb/DUT/mem_out \
-sim:/cpu_tb/DUT/pc_increment \
-sim:/cpu_tb/DUT/pc_branch \
-sim:/cpu_tb/DUT/datain \
-sim:/cpu_tb/DUT/dataout1 \
-sim:/cpu_tb/DUT/dataout2 \
-sim:/cpu_tb/DUT/Flags \
-sim:/cpu_tb/DUT/aluin2 \
-sim:/cpu_tb/DUT/aluout \
-sim:/cpu_tb/DUT/error
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of PC_control.v was successful.
-restart
-# Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
 # Loading work.addsub_16bit(fast)
 # Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-vsim -voptargs=+acc work.cpu_tb
-# End time: 14:52:23 on Mar 01,2024, Elapsed time: 0:09:49
-# Errors: 0, Warnings: 1
-# vsim -voptargs="+acc" work.cpu_tb 
-# Start time: 14:52:23 on Mar 01,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/ex/ALU_In1 \
-sim:/cpu_tb/DUT/ex/ALU_In2 \
-sim:/cpu_tb/DUT/ex/ALUOp \
-sim:/cpu_tb/DUT/ex/ALU_Out \
-sim:/cpu_tb/DUT/ex/Flags \
-sim:/cpu_tb/DUT/ex/Error \
-sim:/cpu_tb/DUT/ex/addsub_res \
-sim:/cpu_tb/DUT/ex/Shift_Out \
-sim:/cpu_tb/DUT/ex/RedSum \
-sim:/cpu_tb/DUT/ex/PaddSum \
-sim:/cpu_tb/DUT/ex/ovfl_res \
-sim:/cpu_tb/DUT/ex/sat
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/clk \
-sim:/cpu_tb/DUT/rst_n \
-sim:/cpu_tb/DUT/hlt \
-sim:/cpu_tb/DUT/pc \
-sim:/cpu_tb/DUT/RegWrite \
-sim:/cpu_tb/DUT/MemRead \
-sim:/cpu_tb/DUT/MemWrite \
-sim:/cpu_tb/DUT/Branch \
-sim:/cpu_tb/DUT/MemtoReg \
-sim:/cpu_tb/DUT/ALUSrc \
-sim:/cpu_tb/DUT/ALUOp \
-sim:/cpu_tb/DUT/pcs_select \
-sim:/cpu_tb/DUT/hlt_select \
-sim:/cpu_tb/DUT/ALUSrc8bit \
-sim:/cpu_tb/DUT/pc_in \
-sim:/cpu_tb/DUT/instruction \
-sim:/cpu_tb/DUT/mem_out \
-sim:/cpu_tb/DUT/pc_increment \
-sim:/cpu_tb/DUT/pc_branch \
-sim:/cpu_tb/DUT/datain \
-sim:/cpu_tb/DUT/dataout1 \
-sim:/cpu_tb/DUT/dataout2 \
-sim:/cpu_tb/DUT/Flags \
-sim:/cpu_tb/DUT/aluin2 \
-sim:/cpu_tb/DUT/aluout \
-sim:/cpu_tb/DUT/error
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-view -new wave
-# .main_pane.wave2.interior.cs.body.pw.wf
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/regfile/clk \
-sim:/cpu_tb/DUT/regfile/rst \
-sim:/cpu_tb/DUT/regfile/SrcReg1 \
-sim:/cpu_tb/DUT/regfile/SrcReg2 \
-sim:/cpu_tb/DUT/regfile/DstReg \
-sim:/cpu_tb/DUT/regfile/WriteReg \
-sim:/cpu_tb/DUT/regfile/DstData \
-sim:/cpu_tb/DUT/regfile/SrcData1 \
-sim:/cpu_tb/DUT/regfile/SrcData2 \
-sim:/cpu_tb/DUT/regfile/read_en1 \
-sim:/cpu_tb/DUT/regfile/read_en2 \
-sim:/cpu_tb/DUT/regfile/write_en \
-sim:/cpu_tb/DUT/regfile/data1 \
-sim:/cpu_tb/DUT/regfile/data2
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# ** Error: TEST FAILED
+#    Time: 5 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED
+#    Time: 15 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 45 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 55 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 70 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 75 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 90 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 95 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED
+#    Time: 100 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# Compile of PC_control_tb.sv was successful.
 restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-view -new wave
-# .main_pane.wave3.interior.cs.body.pw.wf
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/controlunit/instruction \
-sim:/cpu_tb/DUT/controlunit/RegWrite \
-sim:/cpu_tb/DUT/controlunit/MemRead \
-sim:/cpu_tb/DUT/controlunit/MemWrite \
-sim:/cpu_tb/DUT/controlunit/Branch \
-sim:/cpu_tb/DUT/controlunit/MemtoReg \
-sim:/cpu_tb/DUT/controlunit/ALUSrc \
-sim:/cpu_tb/DUT/controlunit/pcs_select \
-sim:/cpu_tb/DUT/controlunit/hlt_select \
-sim:/cpu_tb/DUT/controlunit/ALUSrc8bit \
-sim:/cpu_tb/DUT/controlunit/error
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of cpu.v was successful.
-restart
-# Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
 # Loading work.addsub_16bit(fast)
 # Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
 run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Causality operation skipped due to absence of debug database file
-view -new wave
-# .main_pane.wave4.interior.cs.body.pw.wf
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# ** Error: TEST FAILED: PC_out = 0101011001100011; pc_check = 0000000000000000
+#    Time: 5 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100110100111101; pc_check = 0101010100101100
+#    Time: 15 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0101010100101100
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 1001100111101100
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1001100111101100
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100110010011101; pc_check = 1001100111101100
+#    Time: 45 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1001100111101100
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011111010101110; pc_check = 1001100111101100
+#    Time: 55 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 1001100111101100
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001001010001001; pc_check = 0110001000000010
+#    Time: 70 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001001110101110; pc_check = 0110001000000010
+#    Time: 75 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 0110001000000010
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0110001000000010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100101111011001; pc_check = 0110001000000010
+#    Time: 90 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010000110001111; pc_check = 0110001000000010
+#    Time: 95 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001010001011100; pc_check = 0110001000000010
+#    Time: 100 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0110001000000010
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0110001000000010
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 115 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 0110001000000010
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010111100101010; pc_check = 0110001000000010
+#    Time: 130 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111001010011100; pc_check = 0110001000000010
+#    Time: 135 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010010100011; pc_check = 0110001000000010
+#    Time: 140 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 0000111010101010
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 0000111010101010
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100111100001110; pc_check = 0000111010101010
+#    Time: 165 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000001011000011; pc_check = 0000111010101010
+#    Time: 170 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 1100110101111111
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0111010100101001
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0111010100101001
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110011110000110; pc_check = 0111010100101001
+#    Time: 215 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100010001110000; pc_check = 0111010100101001
+#    Time: 220 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111100111111010; pc_check = 0111010100101001
+#    Time: 225 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0111010100101001
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 0001111000110110
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0001111000110110
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111100010100001; pc_check = 0001111000110110
+#    Time: 250 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 0001111000110110
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010010011000; pc_check = 0001111000110110
+#    Time: 260 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001011010001010; pc_check = 0001111000110110
+#    Time: 265 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 270 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110011000111000; pc_check = 0001111000110110
+#    Time: 280 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0001111000110110
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001110110111010; pc_check = 0001111000110110
+#    Time: 290 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 0001111000110110
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 0001111000110110
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011110111001001; pc_check = 0001111000110110
+#    Time: 315 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 0001111000110110
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 325 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 0001111000110110
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010001001011011; pc_check = 0110010101000111
+#    Time: 345 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 350 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 0011110101000110
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 0011110101000110
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0011110101000110
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 0011110101000110
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011110011111110; pc_check = 1011010100000111
+#    Time: 400 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1011010100000111
+#    Time: 405 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111000100111001; pc_check = 1010110001110110
+#    Time: 415 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1101001101100010; pc_check = 1010110001110110
+#    Time: 420 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1010110001110110
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001110111000001; pc_check = 1010110001110110
+#    Time: 430 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 1010110001110110
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1010110001110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1010110001110110
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010110100; pc_check = 1010110001110110
+#    Time: 450 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 1010110001110110
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111001110001111; pc_check = 1010110001110110
+#    Time: 460 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 1010110001110110
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 1010110001110110
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100010001010010; pc_check = 1010110001110110
+#    Time: 475 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1000000000011100
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 1000000000011100
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000010010100010; pc_check = 1000000000011100
+#    Time: 495 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000001101001011; pc_check = 1000000000011100
+#    Time: 500 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
 add wave -position insertpoint  \
-{sim:/cpu_tb/DUT/regfile/regs[5]/clk} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/rst} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/D} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/WriteReg} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/ReadEnable1} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/ReadEnable2} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/Bitline1} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/Bitline2}
-view -new wave
-# .main_pane.wave5.interior.cs.body.pw.wf
+sim:/PC_control_tb/pc_check \
+sim:/PC_control_tb/imm
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# ** Error: TEST FAILED: PC_out = 0101011001100011; pc_check = 0000000000000000
+#    Time: 5 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100110100111101; pc_check = 0101010100101100
+#    Time: 15 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0101010100101100
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 1001100111101100
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1001100111101100
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100110010011101; pc_check = 1001100111101100
+#    Time: 45 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1001100111101100
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011111010101110; pc_check = 1001100111101100
+#    Time: 55 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 1001100111101100
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001001010001001; pc_check = 0110001000000010
+#    Time: 70 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001001110101110; pc_check = 0110001000000010
+#    Time: 75 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 0110001000000010
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0110001000000010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100101111011001; pc_check = 0110001000000010
+#    Time: 90 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010000110001111; pc_check = 0110001000000010
+#    Time: 95 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001010001011100; pc_check = 0110001000000010
+#    Time: 100 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0110001000000010
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0110001000000010
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 115 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 0110001000000010
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010111100101010; pc_check = 0110001000000010
+#    Time: 130 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111001010011100; pc_check = 0110001000000010
+#    Time: 135 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010010100011; pc_check = 0110001000000010
+#    Time: 140 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 0000111010101010
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 0000111010101010
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100111100001110; pc_check = 0000111010101010
+#    Time: 165 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000001011000011; pc_check = 0000111010101010
+#    Time: 170 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 1100110101111111
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0111010100101001
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0111010100101001
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110011110000110; pc_check = 0111010100101001
+#    Time: 215 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100010001110000; pc_check = 0111010100101001
+#    Time: 220 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111100111111010; pc_check = 0111010100101001
+#    Time: 225 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0111010100101001
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 0001111000110110
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0001111000110110
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111100010100001; pc_check = 0001111000110110
+#    Time: 250 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 0001111000110110
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010010011000; pc_check = 0001111000110110
+#    Time: 260 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001011010001010; pc_check = 0001111000110110
+#    Time: 265 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 270 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110011000111000; pc_check = 0001111000110110
+#    Time: 280 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0001111000110110
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001110110111010; pc_check = 0001111000110110
+#    Time: 290 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 0001111000110110
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 0001111000110110
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011110111001001; pc_check = 0001111000110110
+#    Time: 315 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 0001111000110110
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 325 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 0001111000110110
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010001001011011; pc_check = 0110010101000111
+#    Time: 345 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 350 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 0011110101000110
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 0011110101000110
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0011110101000110
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 0011110101000110
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011110011111110; pc_check = 1011010100000111
+#    Time: 400 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1011010100000111
+#    Time: 405 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111000100111001; pc_check = 1010110001110110
+#    Time: 415 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1101001101100010; pc_check = 1010110001110110
+#    Time: 420 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1010110001110110
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001110111000001; pc_check = 1010110001110110
+#    Time: 430 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 1010110001110110
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1010110001110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1010110001110110
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010110100; pc_check = 1010110001110110
+#    Time: 450 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 1010110001110110
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111001110001111; pc_check = 1010110001110110
+#    Time: 460 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 1010110001110110
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 1010110001110110
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100010001010010; pc_check = 1010110001110110
+#    Time: 475 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1000000000011100
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 1000000000011100
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000010010100010; pc_check = 1000000000011100
+#    Time: 495 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000001101001011; pc_check = 1000000000011100
+#    Time: 500 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# ** Error: TEST FAILED: PC_out = 0101011001100011; pc_check = 0000000000000000
+#    Time: 5 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100110100111101; pc_check = 0101010100101100
+#    Time: 15 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0101010100101100
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 1001100111101100
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1001100111101100
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100110010011101; pc_check = 1001100111101100
+#    Time: 45 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1001100111101100
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011111010101110; pc_check = 1001100111101100
+#    Time: 55 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 1001100111101100
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001001010001001; pc_check = 0110001000000010
+#    Time: 70 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001001110101110; pc_check = 0110001000000010
+#    Time: 75 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 0110001000000010
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0110001000000010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100101111011001; pc_check = 0110001000000010
+#    Time: 90 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010000110001111; pc_check = 0110001000000010
+#    Time: 95 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001010001011100; pc_check = 0110001000000010
+#    Time: 100 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0110001000000010
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0110001000000010
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 115 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 0110001000000010
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010111100101010; pc_check = 0110001000000010
+#    Time: 130 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111001010011100; pc_check = 0110001000000010
+#    Time: 135 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010010100011; pc_check = 0110001000000010
+#    Time: 140 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 0000111010101010
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 0000111010101010
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100111100001110; pc_check = 0000111010101010
+#    Time: 165 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000001011000011; pc_check = 0000111010101010
+#    Time: 170 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 1100110101111111
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0111010100101001
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0111010100101001
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110011110000110; pc_check = 0111010100101001
+#    Time: 215 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100010001110000; pc_check = 0111010100101001
+#    Time: 220 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111100111111010; pc_check = 0111010100101001
+#    Time: 225 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0111010100101001
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 0001111000110110
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0001111000110110
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111100010100001; pc_check = 0001111000110110
+#    Time: 250 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 0001111000110110
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010010011000; pc_check = 0001111000110110
+#    Time: 260 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0001011010001010; pc_check = 0001111000110110
+#    Time: 265 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 270 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110011000111000; pc_check = 0001111000110110
+#    Time: 280 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0001111000110110
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001110110111010; pc_check = 0001111000110110
+#    Time: 290 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 0001111000110110
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 0001111000110110
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011110111001001; pc_check = 0001111000110110
+#    Time: 315 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 0001111000110110
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 325 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 0001111000110110
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010001001011011; pc_check = 0110010101000111
+#    Time: 345 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 350 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 0011110101000110
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 0011110101000110
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0011110101000110
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 0011110101000110
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0011110011111110; pc_check = 1011010100000111
+#    Time: 400 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1011010100000111
+#    Time: 405 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111000100111001; pc_check = 1010110001110110
+#    Time: 415 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1101001101100010; pc_check = 1010110001110110
+#    Time: 420 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1010110001110110
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1001110111000001; pc_check = 1010110001110110
+#    Time: 430 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 1010110001110110
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1010110001110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1010110001110110
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1000110010110100; pc_check = 1010110001110110
+#    Time: 450 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 1010110001110110
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111001110001111; pc_check = 1010110001110110
+#    Time: 460 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 1010110001110110
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 1010110001110110
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1100010001010010; pc_check = 1010110001110110
+#    Time: 475 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1000000000011100
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 1000000000011100
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000010010100010; pc_check = 1000000000011100
+#    Time: 495 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# ** Error: TEST FAILED: PC_out = 0000001101001011; pc_check = 1000000000011100
+#    Time: 500 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 29
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# ** Error: TEST FAILED: PC_out = 0101011001100011; pc_check = 0000000000000000
+#    Time: 5 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100110100111101; pc_check = 0101010100101100
+#    Time: 15 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0101010100101100
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 1001100111101100
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1001100111101100
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1100110010011101; pc_check = 1001100111101100
+#    Time: 45 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1001100111101100
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0011111010101110; pc_check = 1001100111101100
+#    Time: 55 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 1001100111101100
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0001001010001001; pc_check = 0110001000000010
+#    Time: 70 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0001001110101110; pc_check = 0110001000000010
+#    Time: 75 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 0110001000000010
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0110001000000010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100101111011001; pc_check = 0110001000000010
+#    Time: 90 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1010000110001111; pc_check = 0110001000000010
+#    Time: 95 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001010001011100; pc_check = 0110001000000010
+#    Time: 100 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0110001000000010
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0110001000000010
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 115 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 0110001000000010
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 0110001000000010
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1010111100101010; pc_check = 0110001000000010
+#    Time: 130 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1111001010011100; pc_check = 0110001000000010
+#    Time: 135 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011010010100011; pc_check = 0110001000000010
+#    Time: 140 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 0000111010101010
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 0000111010101010
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1100111100001110; pc_check = 0000111010101010
+#    Time: 165 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0000001011000011; pc_check = 0000111010101010
+#    Time: 170 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0000111010101010
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 1100110101111111
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0111010100101001
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0111010100101001
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0110011110000110; pc_check = 0111010100101001
+#    Time: 215 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1100010001110000; pc_check = 0111010100101001
+#    Time: 220 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111100111111010; pc_check = 0111010100101001
+#    Time: 225 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0111010100101001
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 0001111000110110
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0001111000110110
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111100010100001; pc_check = 0001111000110110
+#    Time: 250 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 0001111000110110
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011010010011000; pc_check = 0001111000110110
+#    Time: 260 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0001011010001010; pc_check = 0001111000110110
+#    Time: 265 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 270 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 0001111000110110
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1110011000111000; pc_check = 0001111000110110
+#    Time: 280 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0001111000110110
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001110110111010; pc_check = 0001111000110110
+#    Time: 290 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 0001111000110110
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 0001111000110110
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 0001111000110110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0011110111001001; pc_check = 0001111000110110
+#    Time: 315 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 0001111000110110
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 325 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 0001111000110110
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 0001111000110110
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010001001011011; pc_check = 0110010101000111
+#    Time: 345 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 350 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 0110010101000111
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 0011110101000110
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 0011110101000110
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0011110101000110
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 0011110101000110
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0011110011111110; pc_check = 1011010100000111
+#    Time: 400 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1011010100000111
+#    Time: 405 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111000100111001; pc_check = 1010110001110110
+#    Time: 415 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1101001101100010; pc_check = 1010110001110110
+#    Time: 420 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1010110001110110
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1001110111000001; pc_check = 1010110001110110
+#    Time: 430 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 1010110001110110
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1010110001110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1010110001110110
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1000110010110100; pc_check = 1010110001110110
+#    Time: 450 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 1010110001110110
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111001110001111; pc_check = 1010110001110110
+#    Time: 460 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 1010110001110110
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 1010110001110110
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1100010001010010; pc_check = 1010110001110110
+#    Time: 475 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1000000000011100
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 1000000000011100
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0000010010100010; pc_check = 1000000000011100
+#    Time: 495 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# ** Error: TEST FAILED: PC_out = 0000001101001011; pc_check = 1000000000011100
+#    Time: 500 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 27
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0010010011000110
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 0010100010111101
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1000011100001010
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1101011001010011
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 0110010100001010
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 1011111001110001
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0011001100111010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0011111011010000
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0111111100001100
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 1110011100111001
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 1000100001111000
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000111010101010; pc_check = 1101101101011010
+#    Time: 150 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 1011011001100101
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 1111111101000100
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0011010000001010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 1100010010111000
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 0010011001101101
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111010100101001; pc_check = 0000011101101001
+#    Time: 200 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0000010000101101
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0100010100011100
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0110000100110111
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 1111111101111000
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0010101101111001
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 1000100000110101
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 1011010100101010
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0100000100010011
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 1001101010110100
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 1001010011110010
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010010011100100
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010100110001110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 1011111101101011
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 1011000011000010
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 1001110100011000
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 1011011011100101
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 1011010000010010
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 1000111011101101
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0010001000100111
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 1001000010111001
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 0010000001000101
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1110111001000011
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 0111101100101100
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1110010110110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1111011101010101
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 0100001001111001
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 0011110110110001
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 0111100011101101
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1011110010101010
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 0110000010001011
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 26
+# TEST PASSED
+# TEST PASSED
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0010010011000110
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 0010100010111101
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1000011100001010
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1101011001010011
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 0110010100001010
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 1011111001110001
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0011001100111010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0011111011010000
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0111111100001100
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 1110011100111001
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 1000100001111000
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000111010101010; pc_check = 1101101101011010
+#    Time: 150 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 1011011001100101
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 1111111101000100
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0011010000001010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 1100010010111000
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 0010011001101101
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111010100101001; pc_check = 0000011101101001
+#    Time: 200 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0000010000101101
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0100010100011100
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0110000100110111
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 1111111101111000
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0010101101111001
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 1000100000110101
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 1011010100101010
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0100000100010011
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 1001101010110100
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 1001010011110010
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010010011100100
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010100110001110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 1011111101101011
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 1011000011000010
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 1001110100011000
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 1011011011100101
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 1011010000010010
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 1000111011101101
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0010001000100111
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 1001000010111001
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 0010000001000101
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1110111001000011
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 0111101100101100
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1110010110110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1111011101010101
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 0100001001111001
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 0011110110110001
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 0111100011101101
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1011110010101010
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 0110000010001011
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0101010100101100; pc_check = 0101001000010010
+#    Time: 10 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0010010011000110
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001001110111
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 0010100010111101
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1000011100001010
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1101011001010011
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 0110010100001010
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 1011111001110001
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0011001100111010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0011111011010000
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0111111100001100
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 1110011100111001
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 1000100001111000
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000111010101010; pc_check = 0000110101000100
+#    Time: 145 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000111010101010; pc_check = 1101101101011010
+#    Time: 150 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 1011011001100101
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 1111111101000100
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0011010000001010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 1100010010111000
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1100110101111111; pc_check = 1100101001011001
+#    Time: 185 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 0010011001101101
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111010100101001; pc_check = 0111000110010101
+#    Time: 195 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111010100101001; pc_check = 0000011101101001
+#    Time: 200 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0000010000101101
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0100010100011100
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0110000100110111
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0001111000110110; pc_check = 0001101010110110
+#    Time: 235 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 1111111101111000
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0010101101111001
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 1000100000110101
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 1011010100101010
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0100000100010011
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 1001101010110100
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 1001010011110010
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010010011100100
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010100110001110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 1011111101101011
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 1011000011000010
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 1001110100011000
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 1011011011100101
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0011110101000110; pc_check = 0011101000000100
+#    Time: 365 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 1011010000010010
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 1000111011101101
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0010001000100111
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 1001000010111001
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 0010000001000101
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010100111110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1110111001000011
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 0111101100101100
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1110010110110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1111011101010101
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 0100001001111001
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 0011110110110001
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 0111100011101101
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 0111110110010000
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1011110010101010
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 0110000010001011
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+restart
+# Compile of PC_control_tb.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
+run -all
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0010010011000110
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 0010100010111101
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1000011100001010
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1101011001010011
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 0110010100001010
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 1011111001110001
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0011001100111010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0011111011010000
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0111111100001100
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 1110011100111001
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 1000100001111000
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000111010101010; pc_check = 1101101101011010
+#    Time: 150 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 1011011001100101
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 1111111101000100
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0011010000001010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 1100010010111000
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 0010011001101101
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111010100101001; pc_check = 0000011101101001
+#    Time: 200 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0000010000101101
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0100010100011100
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0110000100110111
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 1111111101111000
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0010101101111001
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 1000100000110101
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 1011010100101010
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0100000100010011
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 1001101010110100
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 1001010011110010
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010010011100100
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010100110001110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 1011111101101011
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 1011000011000010
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 1001110100011000
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 1011011011100101
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 1011010000010010
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 1000111011101101
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0010001000100111
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 1001000010111001
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 0010000001000101
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1110111001000011
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 0111101100101100
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1110010110110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1111011101010101
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 0100001001111001
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 0011110110110001
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 0111100011101101
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1011110010101010
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 0110000010001011
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
 add wave -position insertpoint  \
-{sim:/cpu_tb/DUT/regfile/regs[5]/cells[15]/flop/q} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/cells[15]/flop/d} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/cells[15]/flop/wen} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/cells[15]/flop/clk} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/cells[15]/flop/rst} \
-{sim:/cpu_tb/DUT/regfile/regs[5]/cells[15]/flop/state}
-# Compile of ALU.v was successful.
-# Compile of cpu.v was successful.
-# Compile of RegisterFile.v was successful.
-# 3 compiles, 0 failed with no errors.
+sim:/PC_control_tb/DUT/pc_branch
 restart
-# Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
 # Loading work.addsub_16bit(fast)
 # Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
 run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of cpu.v was successful.
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0010010011000110
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011111011110; pc_check = 0111001111001011
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001011011001110; pc_check = 1001100111101100
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010101001000111; pc_check = 0010100010111101
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000011111010100; pc_check = 1000011100001010
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1101011001111001; pc_check = 1101011001010011
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110011010101000; pc_check = 0110010100001010
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000110001010; pc_check = 0110001000000010
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000011000101; pc_check = 1011111001110001
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011010111011000; pc_check = 0011001100111010
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000111100010; pc_check = 0011111011010000
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111111110101110; pc_check = 0111111100001100
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1110110100111101; pc_check = 1110011100111001
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000101000011110; pc_check = 1000100001111000
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000111010101010; pc_check = 1101101101011010
+#    Time: 150 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011100000111111; pc_check = 1011011001100101
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000000100000010; pc_check = 1111111101000100
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 0011010000001010
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0011011010100110; pc_check = 1100010010111000
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010011100000111; pc_check = 0010011001101101
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111010100101001; pc_check = 0000011101101001
+#    Time: 200 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0000011100111101; pc_check = 0000010000101101
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0100010101111000; pc_check = 0100010100011100
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0110000101101011; pc_check = 0110000100110111
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0000001100110000; pc_check = 1111111101111000
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010110100101111; pc_check = 0010101101111001
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000100011010101; pc_check = 1000100000110101
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1000110010100001; pc_check = 1011010100101010
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010010100011; pc_check = 0100000100010011
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1001111000100110; pc_check = 1001101010110100
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001010111111110; pc_check = 1001010011110010
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010010011100100
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1010011001011110; pc_check = 1010100110001110
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1100000001010101; pc_check = 1011111101101011
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100010110010010; pc_check = 1011000011000010
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001111100110010; pc_check = 1001110100011000
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110010000111011; pc_check = 0110010101000111
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010011011000; pc_check = 1011011011100101
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1000010111001000; pc_check = 1000100000011110
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1011010100111110; pc_check = 1011010000010010
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001000001001111; pc_check = 1000111011101101
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0010011000010001; pc_check = 0010001000100111
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1001001000000111; pc_check = 1001000010111001
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 1011010100000111
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011000101010001; pc_check = 0010000001000101
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0010000111110000; pc_check = 1010110001110110
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 1111000000000101; pc_check = 1110111001000011
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111101111100000; pc_check = 0111101100101100
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1110011010011000; pc_check = 1110010110110110
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1111100010010001; pc_check = 1111011101010101
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100001010010011; pc_check = 0100001001111001
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0100000101110111; pc_check = 0011110110110001
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0111101000010111; pc_check = 0111100011101101
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0111111111111111; pc_check = 1000000000011100
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 1011111101111110; pc_check = 1011110010101010
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0110000101001011; pc_check = 0110000010001011
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# Compile of PC_control_tb.sv was successful.
 restart
-# Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
+# Loading sv_std.std
+# Loading work.PC_control_tb(fast)
+# Loading work.PC_control(fast)
 # Loading work.addsub_16bit(fast)
 # Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
+#    Time: 0 ns  Iteration: 0  Instance: /PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 15
 run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of cpu.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/DUT/ALUOp'. 
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of RegisterFile.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.cpu(fast)
-# Loading work.memory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
+#    Time: 0 ns  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: I:/ece552/project/PC_control_tb.sv Line: 15
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 27de; pc_check = 24c6
+#    Time: 20 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 27de; pc_check = 73cb
+#    Time: 25 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 96ce; pc_check = 99ec
+#    Time: 30 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 2a47; pc_check = 28bd
+#    Time: 35 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 87d4; pc_check = 870a
+#    Time: 40 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = d679; pc_check = d653
+#    Time: 50 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 66a8; pc_check = 650a
+#    Time: 60 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 618a; pc_check = 6202
+#    Time: 65 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = c0c5; pc_check = be71
+#    Time: 80 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 35d8; pc_check = 333a
+#    Time: 85 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 41e2; pc_check = 3ed0
+#    Time: 105 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 7fae; pc_check = 7f0c
+#    Time: 110 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = ed3d; pc_check = e739
+#    Time: 120 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 8a1e; pc_check = 8878
+#    Time: 125 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0eaa; pc_check = db5a
+#    Time: 150 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = b83f; pc_check = b665
+#    Time: 155 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 0102; pc_check = ff44
+#    Time: 160 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 36a6; pc_check = 340a
+#    Time: 175 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 36a6; pc_check = c4b8
+#    Time: 180 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 2707; pc_check = 266d
+#    Time: 190 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 7529; pc_check = 0769
+#    Time: 200 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 073d; pc_check = 042d
+#    Time: 205 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 4578; pc_check = 451c
+#    Time: 210 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 616b; pc_check = 6137
+#    Time: 230 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 0330; pc_check = ff78
+#    Time: 240 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 2d2f; pc_check = 2b79
+#    Time: 245 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 88d5; pc_check = 8835
+#    Time: 255 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 8ca1; pc_check = b52a
+#    Time: 275 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 44a3; pc_check = 4113
+#    Time: 285 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 9e26; pc_check = 9ab4
+#    Time: 295 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 95fe; pc_check = 94f2
+#    Time: 300 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = a65e; pc_check = a4e4
+#    Time: 305 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = a65e; pc_check = a98e
+#    Time: 310 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = c055; pc_check = bf6b
+#    Time: 320 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 4592; pc_check = b0c2
+#    Time: 330 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 9f32; pc_check = 9d18
+#    Time: 335 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 643b; pc_check = 6547
+#    Time: 340 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = b4d8; pc_check = b6e5
+#    Time: 355 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 85c8; pc_check = 881e
+#    Time: 360 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = b53e; pc_check = b412
+#    Time: 370 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 904f; pc_check = 8eed
+#    Time: 375 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 2611; pc_check = 2227
+#    Time: 380 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 9207; pc_check = 90b9
+#    Time: 385 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = b151; pc_check = b507
+#    Time: 390 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = b151; pc_check = 2045
+#    Time: 395 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 21f0; pc_check = ac76
+#    Time: 410 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = f005; pc_check = ee43
+#    Time: 425 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 7be0; pc_check = 7b2c
+#    Time: 435 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = e698; pc_check = e5b6
+#    Time: 440 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = f891; pc_check = f755
+#    Time: 445 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 4293; pc_check = 4279
+#    Time: 455 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 4177; pc_check = 3db1
+#    Time: 465 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 7a17; pc_check = 78ed
+#    Time: 470 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# ** Error: TEST FAILED: PC_out = 7fff; pc_check = 801c
+#    Time: 480 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = bf7e; pc_check = bcaa
+#    Time: 485 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# ** Error: TEST FAILED: PC_out = 614b; pc_check = 608b
+#    Time: 490 ns  Scope: PC_control_tb File: I:/ece552/project/PC_control_tb.sv Line: 25
+# TEST PASSED
+# TEST PASSED
+# End time: 17:30:05 on Mar 01,2024, Elapsed time: 0:51:09
+# Errors: 57, Warnings: 2
