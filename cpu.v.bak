@@ -24,7 +24,10 @@ wire error;
 
 //Fetch Stage
 //instruction memory
-memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(~rst_n));
+memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(rst_n));
+
+Register pc(.clk(clk), .rst(rst), .D(DstData),  .WriteReg(write_en), .ReadEnable1(read_en1), .ReadEnable2(read_en2), .Bitline1(data1), .Bitline2(data2));
+
 
 //PC Calculation
 addsub_16bit increment(.Sum(pc_increment), .A(pc_in), .B(16'h0002), .sub(1'b0), .sat());
@@ -61,7 +64,7 @@ ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .A
 
 
 //memory stage
-memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(~rst_n));
+memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(rst_n));
 
 //assign pc_choose = (Branch && ) pc_branch : pc_increment;
 
