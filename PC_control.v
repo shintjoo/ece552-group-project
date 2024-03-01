@@ -11,6 +11,8 @@ reg error;
 addsub_16bit branch(.Sum(pc_branch), .A(PC_in), .B({6'h0, I[8:0], 1'b0}), .sub(1'b0), .sat());
 
 always @ (C) begin
+    //default out
+    PC_out = 16'h0000;
     case(C) 
         3'b000: begin
             PC_out = (~F[1]) ?  pc_branch : PC_in;

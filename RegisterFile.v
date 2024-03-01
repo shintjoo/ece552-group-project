@@ -23,5 +23,6 @@ Register regs[15:0](.clk(clk), .rst(rst), .D(DstData),  .WriteReg(write_en), .Re
 
 //assign SrcData1 = (DstReg == SrcReg1) ? DstData : data1;
 //assign SrcData2 = (DstReg == SrcReg2) ? DstData : data2;
-
+assign SrcData1 = data1;
+assign SrcData2 = data2;
 endmodule
