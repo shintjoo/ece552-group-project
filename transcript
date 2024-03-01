@@ -122,3 +122,29 @@ run
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
 run
+view -new wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/cpu_tb/PC \
+sim:/cpu_tb/Inst \
+sim:/cpu_tb/RegWrite \
+sim:/cpu_tb/WriteRegister \
+sim:/cpu_tb/WriteData \
+sim:/cpu_tb/MemWrite \
+sim:/cpu_tb/MemRead \
+sim:/cpu_tb/MemAddress \
+sim:/cpu_tb/MemData \
+sim:/cpu_tb/Halt \
+sim:/cpu_tb/inst_count \
+sim:/cpu_tb/cycle_count \
+sim:/cpu_tb/trace_file \
+sim:/cpu_tb/sim_log_file \
+sim:/cpu_tb/clk \
+sim:/cpu_tb/rst_n
+run
+# ** Warning: (vsim-7) Failed to open readmem file "loadfile_all.img" in read mode.
+# No such file or directory. (errno = ENOENT)    : I:/ece552/project/memory.v(55)
+#    Time: 300 ns  Iteration: 1  Instance: /cpu_tb/DUT/imem
+# ** Warning: (vsim-7) Failed to open readmem file "loadfile_all.img" in read mode.
+# No such file or directory. (errno = ENOENT)    : I:/ece552/project/memory.v(55)
+#    Time: 300 ns  Iteration: 1  Instance: /cpu_tb/DUT/dmem
