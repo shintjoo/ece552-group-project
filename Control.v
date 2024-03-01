@@ -42,31 +42,31 @@ always @ (instruction) begin
     // Decode the instruction
     casex (instruction)
     	4'b00xx: begin      // operate on 2 registers ADD 0000, SUB 0001, XOR 0010, RED 0011
-            RegWrite  = 1'b1;
+            RegWrite = 1'b1;
         end
         4'b010x: begin      // operate on one register and 4 bit imm SLL 0100, SRA 0101
-            RegWrite  = 1'b1;
-            ALUSrc 1'b1;
+            RegWrite = 1'b1;
+            ALUSrc = 1'b1;
         end
          4'b0110: begin      // operate on one register and 4 bit imm part 2 ROR 0110
-            RegWrite  = 1'b1;
-            ALUSrc 1'b1;
+            RegWrite = 1'b1;
+            ALUSrc = 1'b1;
         end
         4'b0111: begin      // operate on 2 registers part 2 PADDSB 0111
             RegWrite  = 1'b1;
         end
         4'b101x: begin      // operate on one register and 8 bit imm LLB 1010, LHB 1011
-            RegWrite  = 1'b1;
+            RegWrite = 1'b1;
             ALUSrc8bit = 1'b1;
         end
         4'b1000: begin      //lw
             RegWrite  = 1'b1;
             MemRead = 1'b1;
-            ALUSrc 1'b1;
+            ALUSrc = 1'b1;
         end
         4'b1001: begin      //sw
             MemWrite = 1'b1;
-            ALUSrc 1'b1;
+            ALUSrc = 1'b1;
         end
         4'b1100: begin      // branch B 1100
             Branch = 1'b1;
@@ -75,10 +75,10 @@ always @ (instruction) begin
             Branch = 1'b0;
         end
         4'b1110: begin     // pcstore PCS 1110
-            pcs_select 1'b1;
+            pcs_select = 1'b1;
         end
         4'b1111: begin      // halt HLT 1111
-            hlt_select 1'b1;  
+            hlt_select = 1'b1;  
         end
         default: begin
             error = 1;

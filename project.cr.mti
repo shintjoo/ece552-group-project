@@ -54,6 +54,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	BitCell
 
+} {} {}} I:/ece552/project/Control.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/Control.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module Control
+
+Top level modules:
+	Control
+
 } {} {}} I:/ece552/project/XOR.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/XOR.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module XOR
@@ -165,13 +172,6 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	WriteDecoder_4_16
-
-} {} {}} I:/ece552/project/PC_control.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/PC_control.v
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module PC_control
-
-Top level modules:
-	PC_control
 
 } {} {}} I:/ece552/project/RED_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/RED_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021

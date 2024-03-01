@@ -1,9 +1,9 @@
 module PC_control(C, I, F, PC_in, PC_out);
-input [3:0] C; //conditions from instruction
-input [9:0] I; //9 bit signed offset
-input [3:0] F; //flags from ALU
-input [16:0] PC_in; //un-incremented PC
-output reg [16:0] PC_out; //PC out
+input [2:0] C; //conditions from instruction
+input [8:0] I; //9 bit signed offset
+input [2:0] F; //flags from ALU
+input [15:0] PC_in; //un-incremented PC
+output reg [15:0] PC_out; //PC out
 
 wire [15:0] pc_branch;
 reg error;
