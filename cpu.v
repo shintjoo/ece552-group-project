@@ -21,13 +21,12 @@ wire [2:0] Flags;
 wire [15:0] aluin2, aluout;
 wire error;
 
-assign hlt_select = (rst_n)
+
+dff [15:0] pc(.q(pc_in), .d(pc_branch), .wen(~hlt_select), .clk(clk), .rst(rst_n));
 
 //Fetch Stage
 //instruction memory
 memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(rst_n));
-
-Register pc(.clk(clk), .rst(rst), .D(pc_in),  .WriteReg(~hlt_select), .ReadEnable1(read_en1), .ReadEnable2(read_en2), .Bitline1(data1), .Bitline2(data2));
 
 
 //PC Calculation

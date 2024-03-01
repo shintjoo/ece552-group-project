@@ -54,13 +54,6 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	RED_tb
 
-} {} {}} C:/Users/pokem/ece552-group-project/PC_control.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/PC_control.v
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module PC_control
-
-Top level modules:
-	PC_control
-
 } {} {}} C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module adder_4bit_sat
