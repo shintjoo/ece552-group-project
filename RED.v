@@ -26,6 +26,6 @@ adder_4bit reslsb(.Sum(sum1), .A(ac1), .B(bd1), .Cin(1'b0), .Cout(rescarry[0]));
 adder_4bit resmsb(.Sum(sum2), .A(ac2), .B(bd2), .Cin(rescarry[0]), .Cout(rescarry[1]));
 adder_4bit rescarry1(.Sum(sum3), .A({3'b0, accarry[1]}), .B({3'b0, bdcarry[1]}), .Cin(rescarry[1]), .Cout(out));
 
-assign Sum = {{7{sum3[1]}}, sum3[1:0], sum2, sum1};
+assign Sum = {{6{sum3[1]}}, sum3[1:0], sum2, sum1};
 
 endmodule

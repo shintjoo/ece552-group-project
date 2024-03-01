@@ -17,6 +17,11 @@ wire ovfl_pos, ovfl_neg; //To indicate overflow
 
 assign B_comp = (sub == 1) ? ~B : B;	//Check whether B needs to be negated or not
 
+//Generate and Propogate signals
+assign G = A & B;
+assign P = A ^ B;
+
+
 adder_4bit lsb (.Sum(sum_res[3:0]), .A(A[3:0]), .B(B_comp[3:0]), .Cin(sub), .Cout(C[0]));
 adder_4bit mb1 (.Sum(sum_res[7:4]), .A(A[7:4]), .B(B_comp[7:4]), .Cin(C[0]), .Cout(C[1]));
 adder_4bit mb2 (.Sum(sum_res[11:8]), .A(A[11:8]), .B(B_comp[11:8]), .Cin(C[1]), .Cout(C[2]));
@@ -30,6 +35,7 @@ assign ovfl_neg = A[15] & B_comp[15] & ~sum_res[15];
 
 //deal with saturation
 assign Sum = (ovfl_pos) ? 16'h7FFF : ((ovfl_neg) ?  16'h8000 : sum_res);
+
 assign sat = ovfl_pos | ovfl_neg;
 
 endmodule
