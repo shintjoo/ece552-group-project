@@ -21,7 +21,7 @@ WriteDecoder_4_16 writedec(.RegId(DstReg), .WriteReg(WriteReg), .Wordline(write_
 
 Register regs[15:0](.clk(clk), .rst(rst), .D(DstData),  .WriteReg(write_en), .ReadEnable1(read_en1), .ReadEnable2(read_en2), .Bitline1(data1), .Bitline2(data2));
 
-assign SrcData1 = (DstReg == SrcReg1) ? DstData : data1;
-assign SrcData2 = (DstReg == SrcReg2) ? DstData : data2;
+//assign SrcData1 = (DstReg == SrcReg1) ? DstData : data1;
+//assign SrcData2 = (DstReg == SrcReg2) ? DstData : data2;
 
 endmodule

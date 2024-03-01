@@ -3,11 +3,11 @@
  * Shawn Zhu
  * ECE552
  */
-module adder_4bit_sat (Sum, A, B, Cin, Cout);
+module adder_4bit_sat (Sum, A, B, Cin);
 input [3:0] A, B; 	//Input values
 output [3:0] Sum; 	//sum output
 input Cin;
-output Cout;
+
 
 
 wire [3:0] C;
@@ -39,8 +39,6 @@ assign ovfl_neg = A[3] & B[3] & ~sum_res[3];
 //deal with saturation
 assign Sum = (ovfl_pos) ? 4'b0111 : ((ovfl_neg) ?  4'b1000 : sum_res);
 
-//set a carry out value (will be necessary for 16 bit adder)
-assign Cout = G[3] | (P[3] & G[2]) | (P[3] & P[2] & G[1]) | (P[3] & P[2] & P[1] & G[0]) | (P[3] & P[2] & P[1] & P[0] & C[0]);
 
 
 endmodule
