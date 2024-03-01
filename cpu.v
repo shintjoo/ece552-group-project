@@ -9,7 +9,7 @@ output hlt;
 output [15:0] pc;
 
 //control signals
-wire RegWrite, MemRead, MemWrite, Branch, MemtoReg, RegDst, ALUSrc; //control signals
+wire RegWrite, MemRead, MemWrite, Branch, MemtoReg, ALUSrc; //control signals
 wire [3:0] ALUOp; //ALU Control signal
 wire pcs_select, hlt_select, ALUSrc8bit;
 
@@ -49,7 +49,6 @@ always @ (instruction) begin
     MemWrite = 1'b0;
     Branch = 1'b0;
     MemtoReg = 1'b0;
-    RegDst = 1'b0;
     ALUSrc = 1'b0;
     pcs_select = 1'b0;
     hlt_select = 1'b0; 
@@ -80,69 +79,21 @@ always @ (instruction) begin
             ALUSrc 1'b1;
         end
         4'b1001: begin      //sw
-            RegWrite  = 1'b1;
-            MemRead = 1'b0;
-            MemWrite = 1'b0;
-            Branch = 1'b0;
-            MemtoReg 1'b0;
-            RegDst 1'b0;
-            ALUSrc 1'b0;
-            pcs_select 1'b0;
-            hlt_select 1'b0;  
-            ALUSrc8bit = 1'b0;  
-            error = 0; 
+            MemWrite = 1'b1;
+            ALUSrc 1'b1;
         end
         4'b1100: begin      // branch B 1100
-            RegWrite  = 1'b1;
-            MemRead = 1'b0;
-            MemWrite = 1'b0;
-            Branch = 1'b0;
-            MemtoReg 1'b0;
-            RegDst 1'b0;
-            ALUSrc 1'b0;
-            pcs_select 1'b0;
-            hlt_select 1'b0;  
-            ALUSrc8bit = 1'b0;   
-            error = 0;
+            Branch = 1'b1;
         end
         4'b1101: begin      // branch register BR 1101
-            RegWrite  = 1'b1;
-            MemRead = 1'b0;
-            MemWrite = 1'b0;
             Branch = 1'b0;
-            MemtoReg 1'b0;
-            RegDst 1'b0;
-            ALUSrc 1'b0;
-            pcs_select 1'b0;
-            hlt_select 1'b0;  
-            ALUSrc8bit = 1'b0;   
-            error = 0;
         end
         4'b1110: begin     // pcstore PCS 1110
-            RegWrite  = 1'b1;
-            MemRead = 1'b0;
-            MemWrite = 1'b0;
-            Branch = 1'b0;
-            MemtoReg 1'b0;
-            RegDst 1'b0;
-            ALUSrc 1'b0;
-            pcs_select 1'b0;
-            hlt_select 1'b0;  
-            ALUSrc8bit = 1'b0;   
-            error = 0;
+            pcs_select 1'b1;
         end
-        4'b111: begin      // halt HLT 1111
-            RegWrite  = 1'b1;
-            MemRead = 1'b0;
-            MemWrite = 1'b0;
-            Branch = 1'b0;
-            MemtoReg 1'b0;
-            RegDst 1'b0;
-            ALUSrc 1'b0;
-            pcs_select 1'b0;
-            hlt_select 1'b0;  
-            ALUSrc8bit = 1'b0; 
-            error = 0;  
+        4'b1111: begin      // halt HLT 1111
+            hlt_select 1'b1;  
+  
         end
         default: begin
             error = 1;
@@ -162,7 +113,7 @@ end
 RegisterFile regfile (.clk(clk), .rst(rst), .SrcReg1(instruction[7:0]), .SrcReg2(instruction[3:0]), .DstReg(instruction[11:8]), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
 
 //execute stage
-assign aluin2 = (ALUSrc8bit == 1) ? {{8{instruction[7]}},instruction[7:0]}: ((ALUSrc)? {{12{instruction[3]}},instruction[3:0]} : dataout2);
+assign aluin2 = (ALUSrc8bit == 1) ? {8'h00, instruction[7:0]}: ((ALUSrc)? {{12{instruction[3]}},instruction[3:0]} : dataout2);
 ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .ALUOp(instruction[15:12]));
 
 
@@ -172,8 +123,8 @@ memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(Mem
 assign pc_choose = (Branch && ) pc_branch : pc_increment;
 
 //writeback stage
-assign datain = hlt(MemtoReg) ? mem_out : aluout;
+assign datain = (pcs_select) ? pc_increment : ((MemtoReg) ? mem_out : aluout);
 
-assign pc =
+assign pc = (hlt_select) ? pc_in : pc_choose;
 
 endmodule
