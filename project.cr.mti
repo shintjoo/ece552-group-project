@@ -138,6 +138,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	full_adder_1bit
 
+} {} {}} I:/ece552/project/cpu.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/cpu.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
 } {} {}} I:/ece552/project/addsub_16bit.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/addsub_16bit.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module addsub_16bit
@@ -172,6 +179,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	WriteDecoder_4_16
+
+} {} {}} I:/ece552/project/PC_control.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/PC_control.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module PC_control
+
+Top level modules:
+	PC_control
 
 } {} {}} I:/ece552/project/RED_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/RED_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021

@@ -148,3 +148,5 @@ run
 # ** Warning: (vsim-7) Failed to open readmem file "loadfile_all.img" in read mode.
 # No such file or directory. (errno = ENOENT)    : I:/ece552/project/memory.v(55)
 #    Time: 300 ns  Iteration: 1  Instance: /cpu_tb/DUT/dmem
+# End time: 22:16:10 on Feb 29,2024, Elapsed time: 0:26:42
+# Errors: 0, Warnings: 3
