@@ -364,23 +364,23 @@ R17
 R5
 n@control
 vcpu
-!s110 1709359571
+!s110 1709360118
 !i10b 1
 !s100 GckcRUBhKHI2K@oPBJ>h12
 R9
 IbLUm:cHa7HFdEQG3CnZd10
 R10
 R11
-w1709359567
+w1709360109
 8C:/Users/pokem/ece552-group-project/cpu.v
 FC:/Users/pokem/ece552-group-project/cpu.v
-!i122 605
+!i122 607
 L0 6 82
 R13
 r1
 !s85 0
 31
-!s108 1709359571.000000
+!s108 1709360118.000000
 !s107 C:/Users/pokem/ece552-group-project/cpu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/cpu.v|
 !i113 1
@@ -482,23 +482,23 @@ R15
 R5
 n@l@w_@s@w_@testbench
 vmemory1c
-R8
+!s110 1709361421
 !i10b 1
 !s100 S5NMCAKP<z5id1L>??WQK3
 R9
 IiR<nX24E`NlKhAIY_KQTN2
 R10
 R11
-Z24 w1709340314
+w1709361418
 8C:/Users/pokem/ece552-group-project/memory.v
 FC:/Users/pokem/ece552-group-project/memory.v
-!i122 585
+!i122 616
 L0 31 38
 R13
 r1
 !s85 0
 31
-R14
+!s108 1709361421.000000
 !s107 C:/Users/pokem/ece552-group-project/memory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/memory.v|
 !i113 1
@@ -516,7 +516,7 @@ R12
 8C:/Users/pokem/ece552-group-project/PADDSB.v
 FC:/Users/pokem/ece552-group-project/PADDSB.v
 !i122 586
-Z25 L0 6 19
+Z24 L0 6 19
 R13
 r1
 !s85 0
@@ -555,23 +555,23 @@ R15
 R5
 n@p@a@d@d@s@b_tb
 vPC_control
-R21
+!s110 1709362497
 !i10b 1
-!s100 2^W;9L6k>J6e`8[h=fZac2
+!s100 KDcEW[[EYJ^Xf^cT_Rcd;1
 R9
-IVmZe2h:OzMmE^hK^]g]QR2
+IFL]n@AI2:ALUo3KBKUnY:3
 R10
 R11
-w1709358626
+w1709362495
 8C:/Users/pokem/ece552-group-project/PC_control.v
 FC:/Users/pokem/ece552-group-project/PC_control.v
-!i122 588
-L0 1 52
+!i122 626
+L0 1 62
 R13
 r1
 !s85 0
 31
-R22
+!s108 1709362497.000000
 !s107 C:/Users/pokem/ece552-group-project/PC_control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/PC_control.v|
 !i113 1
@@ -588,7 +588,7 @@ I`iVkLZUngzfYHii@]Ie1C2
 R10
 S1
 R11
-R24
+w1709340314
 8C:/Users/pokem/ece552-group-project/PC_control_tb.sv
 FC:/Users/pokem/ece552-group-project/PC_control_tb.sv
 !i122 589
@@ -663,7 +663,7 @@ R12
 8C:/Users/pokem/ece552-group-project/RED.v
 FC:/Users/pokem/ece552-group-project/RED.v
 !i122 592
-Z26 L0 6 26
+Z25 L0 6 26
 R13
 r1
 !s85 0
@@ -737,7 +737,7 @@ w1709351234
 8C:/Users/pokem/ece552-group-project/RegisterFile.v
 FC:/Users/pokem/ece552-group-project/RegisterFile.v
 !i122 595
-R26
+R25
 R13
 r1
 !s85 0
@@ -809,7 +809,7 @@ w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R25
+R24
 R10
 R19
 r1

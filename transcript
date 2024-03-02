@@ -1,304 +1,6 @@
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of Control.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
-# Compile of PC_control.v was successful.
-# Compile of PC_control_tb.sv was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# 28 compiles, 0 failed with no errors.
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of Control.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
-# Compile of PC_control.v failed with 1 errors.
-# Compile of PC_control_tb.sv was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# 28 compiles, 1 failed with 1 error.
-# Compile of PC_control.v was successful.
-vsim -gui work.PC_control_tb
-# vsim -gui work.PC_control_tb 
-# Start time: 21:06:39 on Mar 01,2024
-# Loading sv_std.std
-# Loading work.PC_control_tb
-# Loading work.PC_control
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
-# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$randomize' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 15
-add wave -position insertpoint  \
-sim:/PC_control_tb/C \
-sim:/PC_control_tb/I \
-sim:/PC_control_tb/F \
-sim:/PC_control_tb/PC_in \
-sim:/PC_control_tb/PC_out \
-sim:/PC_control_tb/pc_check \
-sim:/PC_control_tb/imm
-run -all
-# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$randomize'
-#    Time: 0 ps  Iteration: 0  Process: /PC_control_tb/#INITIAL#14 File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 15
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 27de; pc_check = 24c6
-#    Time: 20 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 96ce; pc_check = 99ec
-#    Time: 30 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 2a47; pc_check = 28bd
-#    Time: 35 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 87d4; pc_check = 870a
-#    Time: 40 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = d679; pc_check = d653
-#    Time: 50 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 66a8; pc_check = 650a
-#    Time: 60 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 618a; pc_check = 6202
-#    Time: 65 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = c0c5; pc_check = be71
-#    Time: 80 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 35d8; pc_check = 333a
-#    Time: 85 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 41e2; pc_check = 3ed0
-#    Time: 105 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 7fae; pc_check = 7f0c
-#    Time: 110 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 8a1e; pc_check = 8878
-#    Time: 125 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = dcf0; pc_check = db5a
-#    Time: 150 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = b83f; pc_check = b665
-#    Time: 155 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 0102; pc_check = ff44
-#    Time: 160 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 36a6; pc_check = 340a
-#    Time: 175 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 2707; pc_check = 266d
-#    Time: 190 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 0971; pc_check = 0769
-#    Time: 200 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 073d; pc_check = 042d
-#    Time: 205 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 4578; pc_check = 451c
-#    Time: 210 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 616b; pc_check = 6137
-#    Time: 230 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 0330; pc_check = ff78
-#    Time: 240 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 2d2f; pc_check = 2b79
-#    Time: 245 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 88d5; pc_check = 8835
-#    Time: 255 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = b6f6; pc_check = b52a
-#    Time: 275 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 44a3; pc_check = 4113
-#    Time: 285 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 9e26; pc_check = 9ab4
-#    Time: 295 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 95fe; pc_check = 94f2
-#    Time: 300 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = a65e; pc_check = a4e4
-#    Time: 305 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = c055; pc_check = bf6b
-#    Time: 320 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 9f32; pc_check = 9d18
-#    Time: 335 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 643b; pc_check = 6547
-#    Time: 340 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 85c8; pc_check = 881e
-#    Time: 360 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = b53e; pc_check = b412
-#    Time: 370 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 904f; pc_check = 8eed
-#    Time: 375 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 2611; pc_check = 2227
-#    Time: 380 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 9207; pc_check = 90b9
-#    Time: 385 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = b151; pc_check = b507
-#    Time: 390 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 2299; pc_check = 2045
-#    Time: 395 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = f005; pc_check = ee43
-#    Time: 425 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 7be0; pc_check = 7b2c
-#    Time: 435 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = e698; pc_check = e5b6
-#    Time: 440 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = f891; pc_check = f755
-#    Time: 445 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 4293; pc_check = 4279
-#    Time: 455 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 4177; pc_check = 3db1
-#    Time: 465 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 7a17; pc_check = 78ed
-#    Time: 470 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# ** Error: TEST FAILED: PC_out = 7fff; pc_check = 801c
-#    Time: 480 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = bf7e; pc_check = bcaa
-#    Time: 485 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# ** Error: TEST FAILED: PC_out = 614b; pc_check = 608b
-#    Time: 490 ps  Scope: PC_control_tb File: C:/Users/pokem/ece552-group-project/PC_control_tb.sv Line: 25
-# TEST PASSED
-# TEST PASSED
-vsim -gui work.cpu_tb
-# End time: 21:08:09 on Mar 01,2024, Elapsed time: 0:01:30
-# Errors: 50, Warnings: 9
-# vsim -gui work.cpu_tb 
-# Start time: 21:08:09 on Mar 01,2024
-# Loading work.cpu_tb
-# Loading work.cpu
-# Loading work.memory1c
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
-# Loading work.PC_control
-# Loading work.Control
-# Loading work.RegisterFile
-# Loading work.ReadDecoder_4_16
-# Loading work.WriteDecoder_4_16
-# Loading work.ALU
-# Loading work.Shifter
-# Loading work.RED
-# Loading work.PADDSB
-# Loading work.adder_4bit_sat
-# Loading work.Register
-# Loading work.dff
-# Loading work.BitCell
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/PC \
-sim:/cpu_tb/Inst \
-sim:/cpu_tb/RegWrite \
-sim:/cpu_tb/WriteRegister \
-sim:/cpu_tb/WriteData \
-sim:/cpu_tb/MemWrite \
-sim:/cpu_tb/MemRead \
-sim:/cpu_tb/MemAddress \
-sim:/cpu_tb/MemData \
-sim:/cpu_tb/Halt \
-sim:/cpu_tb/inst_count \
-sim:/cpu_tb/cycle_count \
-sim:/cpu_tb/trace_file \
-sim:/cpu_tb/sim_log_file \
-sim:/cpu_tb/clk \
-sim:/cpu_tb/rst_n
-restart
-# Closing VCD file "dump.vcd"
-run -all
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of ALU.v was successful.
-# Compile of cpu.v was successful.
-# Compile of PC_control.v was successful.
-# Compile of RegisterFile.v was successful.
-# 4 compiles, 0 failed with no errors.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu
-# Loading work.PC_control
-# Loading work.RegisterFile
-# Loading work.ALU
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/DUT/ex/N_flag File: C:/Users/pokem/ece552-group-project/ALU.v Line: 19
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/DUT/ex/Z_flag File: C:/Users/pokem/ece552-group-project/ALU.v Line: 20
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/DUT/ex/V_flag File: C:/Users/pokem/ece552-group-project/ALU.v Line: 21
-# Compile of ALU.v was successful.
 vsim -gui work.cpu_tb
 # vsim -gui work.cpu_tb 
-# Start time: 21:08:09 on Mar 01,2024
+# Start time: 00:40:41 on Mar 02,2024
 # Loading work.cpu_tb
 # Loading work.cpu
 # Loading work.memory1c
@@ -318,42 +20,12 @@ vsim -gui work.cpu_tb
 # Loading work.Register
 # Loading work.BitCell
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
-# Compile of PC_control.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.PC_control
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of PC_control.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.PC_control
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1300 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
 view -new wave
 # -new not supported on PE
 add wave -position insertpoint  \
@@ -381,49 +53,31 @@ sim:/cpu_tb/DUT/dataout2 \
 sim:/cpu_tb/DUT/Flags \
 sim:/cpu_tb/DUT/aluin2 \
 sim:/cpu_tb/DUT/aluout \
-sim:/cpu_tb/DUT/error
+sim:/cpu_tb/DUT/error \
+sim:/cpu_tb/DUT/Opcode \
+sim:/cpu_tb/DUT/rs \
+sim:/cpu_tb/DUT/rd \
+sim:/cpu_tb/DUT/imm \
+sim:/cpu_tb/DUT/imm8bit \
+sim:/cpu_tb/DUT/imm9bit \
+sim:/cpu_tb/DUT/ccc
 restart
 # Closing VCD file "dump.vcd"
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/pccontrol/C \
-sim:/cpu_tb/DUT/pccontrol/I \
-sim:/cpu_tb/DUT/pccontrol/F \
-sim:/cpu_tb/DUT/pccontrol/PC_in \
-sim:/cpu_tb/DUT/pccontrol/PC_out \
-sim:/cpu_tb/DUT/pccontrol/pc_branch \
-sim:/cpu_tb/DUT/pccontrol/error
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/pccontrol/C \
-sim:/cpu_tb/DUT/pccontrol/I \
-sim:/cpu_tb/DUT/pccontrol/F \
-sim:/cpu_tb/DUT/pccontrol/PC_in \
-sim:/cpu_tb/DUT/pccontrol/PC_out \
-sim:/cpu_tb/DUT/pccontrol/pc_branch \
-sim:/cpu_tb/DUT/pccontrol/error
-restart
-# Closing VCD file "dump.vcd"
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of cpu.v was successful.
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1300 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
 # Compile of PC_control.v failed with 1 errors.
-# 2 compiles, 1 failed with 1 error.
-# Compile of PC_control.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu
+# Compile of PC_control.v failed with 1 errors.
+# Compile of PC_control.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.PC_control
 run -all
 # GetModuleFileName: The specified module could not be found.
@@ -431,171 +85,30 @@ run -all
 # 
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
-# Compile of PC_control.v failed with 9 errors.
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of Control.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
 # Compile of PC_control.v was successful.
-# Compile of PC_control_tb.sv was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# 28 compiles, 0 failed with no errors.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu_tb
-# Loading work.cpu
-# Loading work.memory1c
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
 # Loading work.PC_control
-# Loading work.Control
-# Loading work.RegisterFile
-# Loading work.ReadDecoder_4_16
-# Loading work.WriteDecoder_4_16
-# Loading work.ALU
-# Loading work.dff
-# Loading work.Shifter
-# Loading work.RED
-# Loading work.PADDSB
-# Loading work.adder_4bit_sat
-# Loading work.Register
-# Loading work.BitCell
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of Control.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
 # Compile of PC_control.v was successful.
-# Compile of PC_control_tb.sv was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# 28 compiles, 0 failed with no errors.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu_tb
-# Loading work.cpu
-# Loading work.memory1c
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
 # Loading work.PC_control
-# Loading work.Control
-# Loading work.RegisterFile
-# Loading work.ReadDecoder_4_16
-# Loading work.WriteDecoder_4_16
-# Loading work.ALU
-# Loading work.dff
-# Loading work.Shifter
-# Loading work.RED
-# Loading work.PADDSB
-# Loading work.adder_4bit_sat
-# Loading work.Register
-# Loading work.BitCell
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/pccontrol/C \
-sim:/cpu_tb/DUT/pccontrol/I \
-sim:/cpu_tb/DUT/pccontrol/F \
-sim:/cpu_tb/DUT/pccontrol/branch \
-sim:/cpu_tb/DUT/pccontrol/PC_in \
-sim:/cpu_tb/DUT/pccontrol/PC_out \
-sim:/cpu_tb/DUT/pccontrol/pc_branch \
-sim:/cpu_tb/DUT/pccontrol/pc_choose \
-sim:/cpu_tb/DUT/pccontrol/error
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/controlunit/instruction \
-sim:/cpu_tb/DUT/controlunit/RegWrite \
-sim:/cpu_tb/DUT/controlunit/MemRead \
-sim:/cpu_tb/DUT/controlunit/MemWrite \
-sim:/cpu_tb/DUT/controlunit/Branch \
-sim:/cpu_tb/DUT/controlunit/MemtoReg \
-sim:/cpu_tb/DUT/controlunit/ALUSrc \
-sim:/cpu_tb/DUT/controlunit/pcs_select \
-sim:/cpu_tb/DUT/controlunit/hlt_select \
-sim:/cpu_tb/DUT/controlunit/ALUSrc8bit \
-sim:/cpu_tb/DUT/controlunit/error
-restart
-# Closing VCD file "dump.vcd"
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of cpu.v was successful.
-restart
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/pccontrol/C \
-sim:/cpu_tb/DUT/pccontrol/I \
-sim:/cpu_tb/DUT/pccontrol/F \
-sim:/cpu_tb/DUT/pccontrol/branch \
-sim:/cpu_tb/DUT/pccontrol/PC_in \
-sim:/cpu_tb/DUT/pccontrol/PC_out \
-sim:/cpu_tb/DUT/pccontrol/pc_branch \
-sim:/cpu_tb/DUT/pccontrol/pc_choose \
-sim:/cpu_tb/DUT/pccontrol/error
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -609,22 +122,60 @@ run -all
 view -new wave
 # -new not supported on PE
 add wave -position insertpoint  \
-sim:/cpu_tb/PC \
-sim:/cpu_tb/Inst \
-sim:/cpu_tb/RegWrite \
-sim:/cpu_tb/WriteRegister \
-sim:/cpu_tb/WriteData \
-sim:/cpu_tb/MemWrite \
-sim:/cpu_tb/MemRead \
-sim:/cpu_tb/MemAddress \
-sim:/cpu_tb/MemData \
-sim:/cpu_tb/Halt \
-sim:/cpu_tb/inst_count \
-sim:/cpu_tb/cycle_count \
-sim:/cpu_tb/trace_file \
-sim:/cpu_tb/sim_log_file \
-sim:/cpu_tb/clk \
-sim:/cpu_tb/rst_n
+sim:/cpu_tb/DUT/pccontrol/C \
+sim:/cpu_tb/DUT/pccontrol/I \
+sim:/cpu_tb/DUT/pccontrol/F \
+sim:/cpu_tb/DUT/pccontrol/branch \
+sim:/cpu_tb/DUT/pccontrol/PC_in \
+sim:/cpu_tb/DUT/pccontrol/PC_out \
+sim:/cpu_tb/DUT/pccontrol/pc_branch \
+sim:/cpu_tb/DUT/pccontrol/branch_imm \
+sim:/cpu_tb/DUT/pccontrol/pc_choose \
+sim:/cpu_tb/DUT/pccontrol/error
+restart
+# Closing VCD file "dump.vcd"
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of PC_control.v failed with 1 errors.
+# Compile of PC_control.v failed with 1 errors.
+# Compile of PC_control.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PC_control
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of PC_control.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PC_control
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
 view -new wave
 # -new not supported on PE
 add wave -position insertpoint  \
@@ -652,69 +203,51 @@ sim:/cpu_tb/DUT/dataout2 \
 sim:/cpu_tb/DUT/Flags \
 sim:/cpu_tb/DUT/aluin2 \
 sim:/cpu_tb/DUT/aluout \
-sim:/cpu_tb/DUT/error
+sim:/cpu_tb/DUT/error \
+sim:/cpu_tb/DUT/Opcode \
+sim:/cpu_tb/DUT/rs \
+sim:/cpu_tb/DUT/rd \
+sim:/cpu_tb/DUT/imm \
+sim:/cpu_tb/DUT/imm8bit \
+sim:/cpu_tb/DUT/imm9bit \
+sim:/cpu_tb/DUT/ccc
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
 view -new wave
 # -new not supported on PE
 add wave -position insertpoint  \
-sim:/cpu_tb/DUT/pccontrol/C \
-sim:/cpu_tb/DUT/pccontrol/I \
-sim:/cpu_tb/DUT/pccontrol/F \
-sim:/cpu_tb/DUT/pccontrol/branch \
-sim:/cpu_tb/DUT/pccontrol/PC_in \
-sim:/cpu_tb/DUT/pccontrol/PC_out \
-sim:/cpu_tb/DUT/pccontrol/pc_branch \
-sim:/cpu_tb/DUT/pccontrol/pc_choose \
-sim:/cpu_tb/DUT/pccontrol/error
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of Control.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of FA.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
+sim:/cpu_tb/DUT/regfile/clk \
+sim:/cpu_tb/DUT/regfile/rst \
+sim:/cpu_tb/DUT/regfile/SrcReg1 \
+sim:/cpu_tb/DUT/regfile/SrcReg2 \
+sim:/cpu_tb/DUT/regfile/DstReg \
+sim:/cpu_tb/DUT/regfile/WriteReg \
+sim:/cpu_tb/DUT/regfile/DstData \
+sim:/cpu_tb/DUT/regfile/SrcData1 \
+sim:/cpu_tb/DUT/regfile/SrcData2 \
+sim:/cpu_tb/DUT/regfile/read_en1 \
+sim:/cpu_tb/DUT/regfile/read_en2 \
+sim:/cpu_tb/DUT/regfile/write_en \
+sim:/cpu_tb/DUT/regfile/data1 \
+sim:/cpu_tb/DUT/regfile/data2
+restart
+# Closing VCD file "dump.vcd"
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
 # Compile of PC_control.v was successful.
-# Compile of PC_control_tb.sv was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# Compile of XOR.v was successful.
-# Compile of XOR_tb.sv was successful.
-# 28 compiles, 0 failed with no errors.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu_tb
-# Loading work.cpu
-# Loading work.memory1c
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
 # Loading work.PC_control
-# Loading work.Control
-# Loading work.RegisterFile
-# Loading work.ReadDecoder_4_16
-# Loading work.WriteDecoder_4_16
-# Loading work.ALU
-# Loading work.dff
-# Loading work.Shifter
-# Loading work.RED
-# Loading work.PADDSB
-# Loading work.adder_4bit_sat
-# Loading work.Register
-# Loading work.BitCell
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -725,47 +258,11 @@ run -all
 #    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
 # 1
 # Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/ex/clk \
-sim:/cpu_tb/DUT/ex/rst \
-sim:/cpu_tb/DUT/ex/ALU_In1 \
-sim:/cpu_tb/DUT/ex/ALU_In2 \
-sim:/cpu_tb/DUT/ex/ALUOp \
-sim:/cpu_tb/DUT/ex/ALU_Out \
-sim:/cpu_tb/DUT/ex/Flags \
-sim:/cpu_tb/DUT/ex/Error \
-sim:/cpu_tb/DUT/ex/addsub_res \
-sim:/cpu_tb/DUT/ex/Shift_Out \
-sim:/cpu_tb/DUT/ex/RedSum \
-sim:/cpu_tb/DUT/ex/PaddSum \
-sim:/cpu_tb/DUT/ex/ovfl_res \
-sim:/cpu_tb/DUT/ex/N_en \
-sim:/cpu_tb/DUT/ex/Z_en \
-sim:/cpu_tb/DUT/ex/V_en \
-sim:/cpu_tb/DUT/ex/N \
-sim:/cpu_tb/DUT/ex/Z \
-sim:/cpu_tb/DUT/ex/V \
-sim:/cpu_tb/DUT/ex/sat
-restart
-# Closing VCD file "dump.vcd"
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of ALU.v was successful.
+# Compile of PC_control.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ALU
-# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/DUT/ex/sat'. 
+# Loading work.PC_control
 run -all
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -773,83 +270,6 @@ run -all
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
 # ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of ALU.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ALU
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of ALU.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ALU
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of ALU.v failed with 8 errors.
-# Compile of ALU.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.ALU
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/cpu_tb/DUT/ex/UUD/A \
-sim:/cpu_tb/DUT/ex/UUD/B \
-sim:/cpu_tb/DUT/ex/UUD/sub \
-sim:/cpu_tb/DUT/ex/UUD/Sum \
-sim:/cpu_tb/DUT/ex/UUD/sat \
-sim:/cpu_tb/DUT/ex/UUD/B_comp \
-sim:/cpu_tb/DUT/ex/UUD/C \
-sim:/cpu_tb/DUT/ex/UUD/sum_res \
-sim:/cpu_tb/DUT/ex/UUD/ovfl_pos \
-sim:/cpu_tb/DUT/ex/UUD/ovfl_neg \
-sim:/cpu_tb/DUT/ex/UUD/G \
-sim:/cpu_tb/DUT/ex/UUD/P
-# Compile of cpu.v failed with 1 errors.
-# Compile of cpu.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1500 ps  Iteration: 1  Instance: /cpu_tb
+#    Time: 1300 ps  Iteration: 1  Instance: /cpu_tb
 # 1
 # Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
