@@ -136,3 +136,5 @@ run -all
 #    Time: 10000100 ps  Iteration: 1  Instance: /cpu_tb
 # 1
 # Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
+# End time: 18:50:41 on Mar 01,2024, Elapsed time: 19:01:52
+# Errors: 0, Warnings: 2
