@@ -19,13 +19,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	addsub_16bit
 
-} {} {}} C:/Users/pokem/ece552-group-project/memory.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/memory.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module memory1c
-
-Top level modules:
-	memory1c
-
 } {} {}} C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module WriteDecoder_4_16
@@ -46,13 +39,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	RED_tb
-
-} {} {}} C:/Users/pokem/ece552-group-project/PC_control.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/PC_control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module PC_control
-
-Top level modules:
-	PC_control
 
 } {} {}} C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -82,13 +68,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	Shifter
 
-} {} {}} C:/Users/pokem/ece552-group-project/RegisterFile.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/RegisterFile.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module RegisterFile
-
-Top level modules:
-	RegisterFile
-
 } {} {}} C:/Users/pokem/ece552-group-project/PADDSB_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/PADDSB_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module PADDSB_tb
@@ -109,13 +88,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Control
-
-} {} {}} C:/Users/pokem/ece552-group-project/ALU.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/ALU.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ALU
-
-Top level modules:
-	ALU
 
 } {} {}} C:/Users/pokem/ece552-group-project/adder_4bit.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/adder_4bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

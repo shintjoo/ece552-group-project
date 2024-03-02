@@ -10,7 +10,6 @@ output [15:0] pc;
 
 //control signals
 wire RegWrite, MemRead, MemWrite, Branch, MemtoReg, ALUSrc; //control signals
-wire [3:0] ALUOp; //ALU Control signal
 wire pcs_select, hlt_select, ALUSrc8bit;
 
 //intermediate signals
@@ -22,9 +21,12 @@ wire [15:0] aluin2, aluout;
 wire error;
 
 
+dff pc_reg [15:0](.q(pc_in), .d(pc_branch), .wen(~hlt_select), .clk(clk), .rst(~rst_n));
+
 //Fetch Stage
 //instruction memory
-memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(rst_n));
+memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(~rst_n));
+
 
 //PC Calculation
 addsub_16bit increment(.Sum(pc_increment), .A(pc_in), .B(16'h0002), .sub(1'b0), .sat());
@@ -33,7 +35,7 @@ PC_control pccontrol(.C(instruction[11:9]), .I(instruction[8:0]), .F(Flags), .PC
 
 //Control signals
 Control controlunit(
-    .instruction(instruction[3:0]), 
+    .instruction(instruction[15:12]), 
     .RegWrite(RegWrite),       
     .MemRead(MemRead),
     .MemWrite(MemWrite),
@@ -61,7 +63,7 @@ ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .A
 
 
 //memory stage
-memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(rst_n));
+memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(~rst_n));
 
 //assign pc_choose = (Branch && ) pc_branch : pc_increment;
 
@@ -69,5 +71,7 @@ memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(Mem
 assign datain = (pcs_select) ? pc_increment : ((MemtoReg) ? mem_out : aluout);
 
 assign pc = (hlt_select) ? pc_in : pc_branch;
+
+assign hlt = hlt_select;
 
 endmodule

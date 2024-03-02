@@ -47,7 +47,7 @@ always @ (ALU_In1, ALU_In2, ALUOp) begin
 		4'b100x: begin ALU_Out = addsub_res; //SUM SUB LW SW
 			Error = 0;
 			end
-		4'b101x: begin ALU_Out = (ALUOp[0]) ? {ALU_In1[15:8], ALU_In2[7:0]} : {ALU_In2[15:8], ALU_In1[7:0]}; //LLB LHB
+		4'b101x: begin ALU_Out = (ALUOp[0]) ? ((ALU_In1 & 16'hFF00) | ALU_In2[7:0]) : ((ALU_In1 & 16'h00FF) | (ALU_In2[7:0]<<8)); //LLB LHB
 			Error = 0;
 			end
 		4'b11xx: begin ALU_Out = ALU_In1; //Branch and PCS and HLT
