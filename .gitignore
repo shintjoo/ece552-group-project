@@ -1,0 +1,6 @@
+*.bak
+*.vcd
+*.mti
+*.mpf
+*.log
+*.trace
