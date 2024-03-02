@@ -4,7 +4,7 @@ input [8:0] I; //9 bit signed offset
 input [2:0] F; //flags from ALU
 input branch; //control signal for branch
 input [15:0] PC_in; //un-incremented PC
-output reg [15:0] PC_out; //PC out
+output [15:0] PC_out; //PC out
 
 wire [15:0] pc_branch;
 reg [15:0] pc_choose, branch_imm;

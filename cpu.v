@@ -27,7 +27,7 @@ wire [8:0] imm9bit;
 wire [2:0] ccc;
 
 
-dff pc_reg [15:0](.q(pc_in), .d(pc_branch), .wen(~hlt_select), .clk(clk), .rst(~rst_n));
+dff pc_reg [15:0](.q(pc_in), .d(pc_branch), .wen(~hlt_select && clk), .clk(clk), .rst(~rst_n));
 
 //Fetch Stage
 //instruction memory
@@ -80,11 +80,7 @@ memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(Mem
 //writeback stage
 assign datain = (pcs_select) ? pc_increment : ((MemtoReg) ? mem_out : aluout);
 
-
-
-
 assign pc = (hlt_select) ? pc_in : pc_branch;
-
 
 assign hlt = hlt_select;
 
