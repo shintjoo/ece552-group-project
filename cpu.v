@@ -80,7 +80,11 @@ memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(Mem
 //writeback stage
 assign datain = (pcs_select) ? pc_increment : ((MemtoReg) ? mem_out : aluout);
 
+
+
+
 assign pc = (hlt_select) ? pc_in : pc_branch;
+
 
 assign hlt = hlt_select;
 

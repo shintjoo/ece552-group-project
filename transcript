@@ -462,3 +462,25 @@ run -all
 #    Time: 1300 ps  Iteration: 1  Instance: /cpu_tb
 # 1
 # Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of addsub_16bit.v was successful.
+# Compile of cpu.v was successful.
+# Compile of PC_control.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu
+# Loading work.addsub_16bit
+# Loading work.PC_control
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# hmm....more than 100000 cycles of simulation...error?
+# 
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
+#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
