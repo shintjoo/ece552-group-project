@@ -103,6 +103,7 @@ Z4 o-quiet -auto_acc_if_foreign -work work +acc
 Z5 tCvgOpt 0
 n@_opt
 Z6 OL;O;2021.2;73
+R1
 T_opt1
 !s110 1709332718
 V^9;0ONNo^ODClSec;E=U92
@@ -126,88 +127,91 @@ n@_opt2
 R6
 R1
 vadder_16bit_tb
-Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1709333386
+Z7 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z8 !s110 1709358635
 !i10b 1
 !s100 h=0P<UZLY4LiZCkV1nc9h0
-ImLeH<5IPZK5]j2<f9GPdN1
+Z9 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZD0G`@QTL40BVWJA2IV2n0
+Z10 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z8 dI:/ece552/project
-w1709168601
-8I:/ece552/project/adder_16bit_tb.sv
-FI:/ece552/project/adder_16bit_tb.sv
-!i122 416
+Z11 dC:/Users/pokem/ece552-group-project
+Z12 w1709268909
+8C:/Users/pokem/ece552-group-project/adder_16bit_tb.sv
+FC:/Users/pokem/ece552-group-project/adder_16bit_tb.sv
+!i122 574
 L0 1 50
-Z9 VDg1SIo80bB@j0V0VzS_@n1
-Z10 OL;L;2021.2;73
+Z13 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z11 !s108 1709333385.000000
-!s107 I:/ece552/project/adder_16bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_16bit_tb.sv|
-!i113 0
-Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s108 1709358635.000000
+!s107 C:/Users/pokem/ece552-group-project/adder_16bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/adder_16bit_tb.sv|
+!i113 1
+Z15 o-work work -sv
 R5
 vadder_4bit
-!s110 1709333385
+R8
 !i10b 1
 !s100 RkBiJMa3FFPc]KjnP5gVb3
-I7?R3_h3nk>Jf?nToSB@DT0
-R8
-w1709004479
-8I:/ece552/project/adder_4bit.v
-FI:/ece552/project/adder_4bit.v
-!i122 415
-L0 6 37
 R9
+Iz0MYJSOnDOWfkK@70e2nQ2
 R10
+R11
+Z16 w1709089190
+8C:/Users/pokem/ece552-group-project/adder_4bit.v
+FC:/Users/pokem/ece552-group-project/adder_4bit.v
+!i122 573
+L0 6 37
+R13
 r1
 !s85 0
 31
-R11
-!s107 I:/ece552/project/adder_4bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/adder_4bit.v|
-!i113 0
-Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R14
+!s107 C:/Users/pokem/ece552-group-project/adder_4bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/adder_4bit.v|
+!i113 1
+Z17 o-work work
 R5
 vadder_4bit_sat
-Z14 !s110 1709333387
+R8
 !i10b 1
 !s100 N8AXTX3X44]XZfO<BabN[2
-I>]49J^Yl<nDgdfX_^ocB>0
-R8
-w1709245073
-8I:/ece552/project/addsub_4bit_sat.v
-FI:/ece552/project/addsub_4bit_sat.v
-!i122 417
-L0 6 39
 R9
+IMeQQmbX:MVKFe2L7`z?F12
 R10
+R11
+R12
+8C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v
+FC:/Users/pokem/ece552-group-project/addsub_4bit_sat.v
+!i122 575
+L0 6 39
+R13
 r1
 !s85 0
 31
-!s108 1709333386.000000
-!s107 I:/ece552/project/addsub_4bit_sat.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_4bit_sat.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/addsub_4bit_sat.v|
+!i113 1
+R17
 R5
 vadder_4bit_tb
-R7
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
 !s110 1708914808
 !i10b 1
 !s100 H<Q9algEFER3[_5S1IWhj1
 I5lVJAW7iP[=MRaJm[U8j92
 S1
-R8
+Z18 dI:/ece552/project
 w1708656049
 8I:/ece552/project/adder_4bit_tb.sv
 FI:/ece552/project/adder_4bit_tb.sv
 !i122 236
 L0 1 49
-R9
 R10
+Z19 OL;L;2021.2;73
 r1
 !s85 0
 31
@@ -215,43 +219,44 @@ r1
 !s107 I:/ece552/project/adder_4bit_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_4bit_tb.sv|
 !i113 0
-R12
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
 vaddsub_16bit
-!s110 1709333388
+R8
 !i10b 1
 !s100 n6_[j78EIQ^N?mV>keBN82
-IMMk4TXhn6_bO<?O;i[=gU1
-R8
-w1709245571
-8I:/ece552/project/addsub_16bit.v
-FI:/ece552/project/addsub_16bit.v
-!i122 419
-L0 6 36
 R9
+IZKYKKe0Khz2<ZmG@6gSQ?0
 R10
+R11
+R12
+8C:/Users/pokem/ece552-group-project/addsub_16bit.v
+FC:/Users/pokem/ece552-group-project/addsub_16bit.v
+!i122 577
+L0 6 36
+R13
 r1
 !s85 0
 31
-Z15 !s108 1709333387.000000
-!s107 I:/ece552/project/addsub_16bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_16bit.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/addsub_16bit.v|
+!i113 1
+R17
 R5
 vaddsub_4bit
 !s110 1708914809
 !i10b 1
 !s100 2doabOaRzINcV6H]>0:On1
 Ialj^SPIYP>jWecG^UDiFj1
-R8
+R18
 w1708914776
 8I:\ece552\project\addsub_4bit.v
 FI:\ece552\project\addsub_4bit.v
 !i122 238
 L0 6 43
-R9
 R10
+R19
 r1
 !s85 0
 31
@@ -259,330 +264,344 @@ r1
 !s107 I:\ece552\project\addsub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\addsub_4bit.v|
 !i113 0
-R13
+Z20 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
 vaddsub_4bit_tb
 R7
-R14
+R8
 !i10b 1
 !s100 OoeAk4[dhbWLeR8<;A@zk3
-IKRE82nCMEi0W^OSjMdHc13
-S1
-R8
-w1709004363
-8I:/ece552/project/addsub_4bit_tb.sv
-FI:/ece552/project/addsub_4bit_tb.sv
-!i122 418
-L0 1 60
 R9
+I94ag3QB>b?42g>MPzkbA33
 R10
+S1
+R11
+w1709348593
+8C:/Users/pokem/ece552-group-project/addsub_4bit_tb.sv
+FC:/Users/pokem/ece552-group-project/addsub_4bit_tb.sv
+!i122 576
+L0 1 60
+R13
 r1
 !s85 0
 31
+R14
+!s107 C:/Users/pokem/ece552-group-project/addsub_4bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/addsub_4bit_tb.sv|
+!i113 1
 R15
-!s107 I:/ece552/project/addsub_4bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/addsub_4bit_tb.sv|
-!i113 0
-R12
 R5
 vALU
-Z16 !s110 1709333389
+!s110 1709359008
 !i10b 1
-!s100 30>;Gl6GIedD]:[Ic01h:3
-IZkb_ke]n8Sn2meLh3znOh3
-R8
-w1709327789
-8I:/ece552/project/ALU.v
-FI:/ece552/project/ALU.v
-!i122 420
-L0 6 57
+!s100 VGZhD4IYKC8o2Wj:Z5zT21
 R9
+I2cCL7zPZ<2EbKOZz><n<Y0
 R10
+R11
+w1709359003
+8C:/Users/pokem/ece552-group-project/ALU.v
+FC:/Users/pokem/ece552-group-project/ALU.v
+!i122 604
+L0 6 77
+R13
 r1
 !s85 0
 31
-!s108 1709333388.000000
-!s107 I:/ece552/project/ALU.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ALU.v|
-!i113 0
-R13
+!s108 1709359008.000000
+!s107 C:/Users/pokem/ece552-group-project/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/ALU.v|
+!i113 1
+R17
 R5
 n@a@l@u
 vBitCell
-R16
+R8
 !i10b 1
 !s100 VEEal[P1NTi@<hW=0mgnc3
-I8QGJLM;8W4hF>=m?o0AMH2
-R8
-w1708994731
-8I:/ece552/project/BitCell.v
-FI:/ece552/project/BitCell.v
-!i122 421
-L0 6 18
 R9
+IbHc^kECcGCV?Y<hYDek<`2
 R10
+R11
+R16
+8C:/Users/pokem/ece552-group-project/BitCell.v
+FC:/Users/pokem/ece552-group-project/BitCell.v
+!i122 579
+L0 6 18
+R13
 r1
 !s85 0
 31
-Z17 !s108 1709333389.000000
-!s107 I:/ece552/project/BitCell.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/BitCell.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/BitCell.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/BitCell.v|
+!i113 1
+R17
 R5
 n@bit@cell
 vControl
-Z18 !s110 1709333390
+R8
 !i10b 1
 !s100 FCQ:2Y:IgQo4K:iaKR9R62
-I3=M:a0]JShPNc2>E_9hWk1
-R8
-w1709264727
-8I:/ece552/project/Control.v
-FI:/ece552/project/Control.v
-!i122 422
-L0 1 89
 R9
+IR1A2ol9<HQU^eAm[Y4`U[1
 R10
+R11
+R12
+8C:/Users/pokem/ece552-group-project/Control.v
+FC:/Users/pokem/ece552-group-project/Control.v
+!i122 580
+L0 1 89
+R13
 r1
 !s85 0
 31
+R14
+!s107 C:/Users/pokem/ece552-group-project/Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/Control.v|
+!i113 1
 R17
-!s107 I:/ece552/project/Control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Control.v|
-!i113 0
-R13
 R5
 n@control
 vcpu
-R18
+!s110 1709359571
 !i10b 1
-!s100 eV:L1TK:eCzVEYAehaMH72
-IPTUbbh?34>5iJIV<V<n=d1
-R8
-w1709329495
-8I:/ece552/project/cpu.v
-FI:/ece552/project/cpu.v
-!i122 423
-L0 6 72
+!s100 GckcRUBhKHI2K@oPBJ>h12
 R9
+IbLUm:cHa7HFdEQG3CnZd10
 R10
+R11
+w1709359567
+8C:/Users/pokem/ece552-group-project/cpu.v
+FC:/Users/pokem/ece552-group-project/cpu.v
+!i122 605
+L0 6 82
+R13
 r1
 !s85 0
 31
-!s108 1709333390.000000
-!s107 I:/ece552/project/cpu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/cpu.v|
-!i113 0
-R13
+!s108 1709359571.000000
+!s107 C:/Users/pokem/ece552-group-project/cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/cpu.v|
+!i113 1
+R17
 R5
 vcpu_tb
-!s110 1709333396
+Z21 !s110 1709358636
 !i10b 1
 !s100 Ii<`2TQ;5ifLW?l0F^kIA1
-I]dfC>=WkVeheETd4@YK[K0
-R8
-w1709240668
-8I:/ece552/project/project-phase1-testbench.v
-FI:/ece552/project/project-phase1-testbench.v
-!i122 431
-L0 1 186
 R9
+I8<[;QD4=^k^[gBVkIMzOW1
 R10
+R11
+R12
+8C:/Users/pokem/ece552-group-project/project-phase1-testbench.v
+FC:/Users/pokem/ece552-group-project/project-phase1-testbench.v
+!i122 590
+L0 1 186
+R13
 r1
 !s85 0
 31
-!s108 1709333395.000000
-!s107 I:/ece552/project/project-phase1-testbench.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/project-phase1-testbench.v|
-!i113 0
-R13
+Z22 !s108 1709358636.000000
+!s107 C:/Users/pokem/ece552-group-project/project-phase1-testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/project-phase1-testbench.v|
+!i113 1
+R17
 R5
 vdff
-!s110 1709333391
+R8
 !i10b 1
 !s100 Z9V@F2c50oH6kZfdURZd60
-I<7MAnkMn4;`:i7Qfo^]Kd0
-R8
-w1708651211
-8I:/ece552/project/D-Flip-Flop.v
-FI:/ece552/project/D-Flip-Flop.v
-!i122 424
-L0 3 17
 R9
+I8inceZc_8G4Rjiji_kXC90
 R10
+R11
+R16
+8C:/Users/pokem/ece552-group-project/D-Flip-Flop.v
+FC:/Users/pokem/ece552-group-project/D-Flip-Flop.v
+!i122 582
+L0 3 17
+R13
 r1
 !s85 0
 31
-Z19 !s108 1709333391.000000
-!s107 I:/ece552/project/D-Flip-Flop.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/D-Flip-Flop.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/D-Flip-Flop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/D-Flip-Flop.v|
+!i113 1
+R17
 R5
 vfull_adder_1bit
-Z20 !s110 1709333392
+R8
 !i10b 1
 !s100 WN4M^lz?8kX_P@GVTobbO1
-IDekGXkig_7703i=6IJ:lZ3
-R8
-w1708376543
-8I:/ece552/project/FA.v
-FI:/ece552/project/FA.v
-!i122 425
-L0 6 8
 R9
+Ij>UR?B70]:V2bTOXE>SEO1
 R10
+R11
+Z23 w1708795175
+8C:/Users/pokem/ece552-group-project/FA.v
+FC:/Users/pokem/ece552-group-project/FA.v
+!i122 583
+L0 6 8
+R13
 r1
 !s85 0
 31
-R19
-!s107 I:/ece552/project/FA.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/FA.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/FA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/FA.v|
+!i113 1
+R17
 R5
 vLW_SW_Testbench
 R7
-R20
+R8
 !i10b 1
 !s100 B>4a]McG5de2]`[VgK[4o1
-I7Xd6Gl4fnRD9^g^NAVmiH3
-S1
-R8
-w1708922972
-8I:/ece552/project/LW_SW_tb.sv
-FI:/ece552/project/LW_SW_tb.sv
-!i122 426
-L0 1 70
 R9
+IP48ecgh3gD_5kZD7OBlBE2
 R10
+S1
+R11
+R16
+8C:/Users/pokem/ece552-group-project/LW_SW_tb.sv
+FC:/Users/pokem/ece552-group-project/LW_SW_tb.sv
+!i122 584
+L0 1 70
+R13
 r1
 !s85 0
 31
-Z21 !s108 1709333392.000000
-!s107 I:/ece552/project/LW_SW_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/LW_SW_tb.sv|
-!i113 0
-R12
+R14
+!s107 C:/Users/pokem/ece552-group-project/LW_SW_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/LW_SW_tb.sv|
+!i113 1
+R15
 R5
 n@l@w_@s@w_@testbench
 vmemory1c
-!s110 1709333393
+R8
 !i10b 1
 !s100 S5NMCAKP<z5id1L>??WQK3
-II;c:ieL]OzZfoN_H`<MTD1
-R8
-w1709324493
-8I:/ece552/project/memory.v
-FI:/ece552/project/memory.v
-!i122 427
-L0 31 38
 R9
+IiR<nX24E`NlKhAIY_KQTN2
 R10
+R11
+Z24 w1709340314
+8C:/Users/pokem/ece552-group-project/memory.v
+FC:/Users/pokem/ece552-group-project/memory.v
+!i122 585
+L0 31 38
+R13
 r1
 !s85 0
 31
-R21
-!s107 I:/ece552/project/memory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/memory.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/memory.v|
+!i113 1
+R17
 R5
 vPADDSB
-Z22 !s110 1709333394
+R8
 !i10b 1
 !s100 d^R`hFV>PV3foF@Ii46IO1
-IYNkcBgXdQIPK`;:XIc1<n0
-R8
-w1709245452
-8I:/ece552/project/PADDSB.v
-FI:/ece552/project/PADDSB.v
-!i122 428
-Z23 L0 6 19
 R9
+I:Bg?:f9ShD0YlBM[=VKB_0
 R10
+R11
+R12
+8C:/Users/pokem/ece552-group-project/PADDSB.v
+FC:/Users/pokem/ece552-group-project/PADDSB.v
+!i122 586
+Z25 L0 6 19
+R13
 r1
 !s85 0
 31
-!s108 1709333393.000000
-!s107 I:/ece552/project/PADDSB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PADDSB.v|
-!i113 0
-R13
+R14
+!s107 C:/Users/pokem/ece552-group-project/PADDSB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/PADDSB.v|
+!i113 1
+R17
 R5
 n@p@a@d@d@s@b
 vPADDSB_tb
 R7
-R22
+R21
 !i10b 1
 !s100 _<kNb1?daa^72`_TNo>Za0
-ICaD;BXnMXcakLJBEEJZA52
-S1
-R8
-w1709245115
-8I:/ece552/project/PADDSB_tb.sv
-FI:/ece552/project/PADDSB_tb.sv
-!i122 429
-L0 6 133
 R9
+I]^YEMIN_AzJ[do>GJ=miP3
 R10
+S1
+R11
+R16
+8C:/Users/pokem/ece552-group-project/PADDSB_tb.sv
+FC:/Users/pokem/ece552-group-project/PADDSB_tb.sv
+!i122 587
+L0 6 133
+R13
 r1
 !s85 0
 31
-Z24 !s108 1709333394.000000
-!s107 I:/ece552/project/PADDSB_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/PADDSB_tb.sv|
-!i113 0
-R12
+R14
+!s107 C:/Users/pokem/ece552-group-project/PADDSB_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/PADDSB_tb.sv|
+!i113 1
+R15
 R5
 n@p@a@d@d@s@b_tb
 vPC_control
-!s110 1709333395
+R21
 !i10b 1
-!s100 1LSW`YQaI?CgmZ0Le@kCC1
-Ic^F9XSdVCFL`Hc?PI?26z2
-R8
-w1709326001
-8I:/ece552/project/PC_control.v
-FI:/ece552/project/PC_control.v
-!i122 430
-L0 1 47
+!s100 2^W;9L6k>J6e`8[h=fZac2
 R9
+IVmZe2h:OzMmE^hK^]g]QR2
 R10
+R11
+w1709358626
+8C:/Users/pokem/ece552-group-project/PC_control.v
+FC:/Users/pokem/ece552-group-project/PC_control.v
+!i122 588
+L0 1 52
+R13
 r1
 !s85 0
 31
-R24
-!s107 I:/ece552/project/PC_control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PC_control.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/PC_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/PC_control.v|
+!i113 1
+R17
 R5
 n@p@c_control
 vPC_control_tb
 R7
-!s110 1709334265
+R21
 !i10b 1
 !s100 02B^Xf:Q2g^@jm41?H;4o3
-I<KWk_<^7:Ql_8VH7Vh;`40
-S1
-R8
-w1709334242
-8I:/ece552/project/PC_control_tb.sv
-FI:/ece552/project/PC_control_tb.sv
-!i122 450
-L0 1 34
 R9
+I`iVkLZUngzfYHii@]Ie1C2
 R10
+S1
+R11
+R24
+8C:/Users/pokem/ece552-group-project/PC_control_tb.sv
+FC:/Users/pokem/ece552-group-project/PC_control_tb.sv
+!i122 589
+L0 1 34
+R13
 r1
 !s85 0
 31
-!s108 1709334264.000000
-!s107 I:/ece552/project/PC_control_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/PC_control_tb.sv|
-!i113 0
-R12
+R22
+!s107 C:/Users/pokem/ece552-group-project/PC_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/PC_control_tb.sv|
+!i113 1
+R15
 R5
 n@p@c_control_tb
 vPSA_16bit
@@ -590,14 +609,14 @@ vPSA_16bit
 !i10b 1
 !s100 Bd;chfH1AB?VaRbnRODFo0
 Iz1@bHg0D[[5dYJD_;Q<hm1
-R8
+R18
 w1708304266
 8I:/ece552/project/PSA_16bit.v
 FI:/ece552/project/PSA_16bit.v
 !i122 23
 L0 6 22
-R9
 R10
+R19
 r1
 !s85 0
 31
@@ -605,172 +624,179 @@ r1
 !s107 I:/ece552/project/PSA_16bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PSA_16bit.v|
 !i113 0
-R13
+R20
 R5
 n@p@s@a_16bit
 vReadDecoder_4_16
-Z25 !s110 1709333397
+R21
 !i10b 1
 !s100 @46Ka==R9<A0L_:Ak3V?83
-IRV>e0LGH<M5MB_AVY8dW01
-R8
-w1708910730
-8I:/ece552/project/ReadDecoder_4_16.v
-FI:/ece552/project/ReadDecoder_4_16.v
-!i122 432
-L0 6 13
 R9
+IjR9I]R::UOH1NgnMa8i<c1
 R10
+R11
+R16
+8C:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v
+FC:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v
+!i122 591
+L0 6 13
+R13
 r1
 !s85 0
 31
-!s108 1709333396.000000
-!s107 I:/ece552/project/ReadDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ReadDecoder_4_16.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v|
+!i113 1
+R17
 R5
 n@read@decoder_4_16
 vRED
-R25
+R21
 !i10b 1
 !s100 ZeHWfeeZI7XjIjK`J6WWd2
-IFoRLi6o7UkXHz^D5XI?J83
-R8
-w1709246970
-8I:/ece552/project/RED.v
-FI:/ece552/project/RED.v
-!i122 433
-L0 6 26
 R9
+I]b8aGD@[2eU<jO8hTIi1;0
 R10
+R11
+R12
+8C:/Users/pokem/ece552-group-project/RED.v
+FC:/Users/pokem/ece552-group-project/RED.v
+!i122 592
+Z26 L0 6 26
+R13
 r1
 !s85 0
 31
-Z26 !s108 1709333397.000000
-!s107 I:/ece552/project/RED.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RED.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/RED.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/RED.v|
+!i113 1
+R17
 R5
 n@r@e@d
 vRED_tb
 R7
-!s110 1709333398
+R21
 !i10b 1
 !s100 D;>MKzE:IkWS1S9ncJd8L3
-IbJT]NhoBkKQEz4LI9cF]G0
-S1
-R8
-w1709156956
-8I:/ece552/project/RED_tb.sv
-FI:/ece552/project/RED_tb.sv
-!i122 434
-L0 6 32
 R9
+IOl>43^dYnbO7Y68MmGm5R3
 R10
+S1
+R11
+R12
+8C:/Users/pokem/ece552-group-project/RED_tb.sv
+FC:/Users/pokem/ece552-group-project/RED_tb.sv
+!i122 593
+L0 6 32
+R13
 r1
 !s85 0
 31
-R26
-!s107 I:/ece552/project/RED_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/RED_tb.sv|
-!i113 0
-R12
+R22
+!s107 C:/Users/pokem/ece552-group-project/RED_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/RED_tb.sv|
+!i113 1
+R15
 R5
 n@r@e@d_tb
 vRegister
-Z27 !s110 1709333399
+R21
 !i10b 1
 !s100 lFBebeJ90K?Rg59_YabO62
-I?EE8kSRHjfnd?6BOBnWRP2
-R8
-w1708910722
-8I:/ece552/project/Register.v
-FI:/ece552/project/Register.v
-!i122 435
-L0 6 10
 R9
+I^0S5V>>M@EkJRk]NGHSJZ1
 R10
+R11
+R16
+8C:/Users/pokem/ece552-group-project/Register.v
+FC:/Users/pokem/ece552-group-project/Register.v
+!i122 594
+L0 6 10
+R13
 r1
 !s85 0
 31
-!s108 1709333398.000000
-!s107 I:/ece552/project/Register.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Register.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/Register.v|
+!i113 1
+R17
 R5
 n@register
 vRegisterFile
-R27
+R21
 !i10b 1
-!s100 RXmY<VZAbH@0@g@W_aT0L0
-IV:]H^LYid1dGc:78A2EPJ1
-R8
-w1709329872
-8I:/ece552/project/RegisterFile.v
-FI:/ece552/project/RegisterFile.v
-!i122 436
-Z28 L0 6 23
+!s100 SafJhBhEdO_6VWz]RgK;L1
 R9
+IkU0gB=[_BBFI8]00TOPcf1
 R10
+R11
+w1709351234
+8C:/Users/pokem/ece552-group-project/RegisterFile.v
+FC:/Users/pokem/ece552-group-project/RegisterFile.v
+!i122 595
+R26
+R13
 r1
 !s85 0
 31
-!s108 1709333399.000000
-!s107 I:/ece552/project/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RegisterFile.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/RegisterFile.v|
+!i113 1
+R17
 R5
 n@register@file
 vShifter
-!s110 1709333400
+R21
 !i10b 1
 !s100 9X1]X]YfTSai:kjMTZ;ei1
-IDSo02OKaJZVE5APV2PQg@2
-R8
-w1708551875
-8I:/ece552/project/Shifter.v
-FI:/ece552/project/Shifter.v
-!i122 437
-R28
 R9
+I43Kgbn18Ah`Da;Ced5=zO1
 R10
+R11
+R23
+8C:/Users/pokem/ece552-group-project/Shifter.v
+FC:/Users/pokem/ece552-group-project/Shifter.v
+!i122 596
+L0 6 23
+R13
 r1
 !s85 0
 31
-Z29 !s108 1709333400.000000
-!s107 I:/ece552/project/Shifter.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Shifter.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/Shifter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/Shifter.v|
+!i113 1
+R17
 R5
 n@shifter
 vShifter_tb
 R7
-!s110 1709333401
+R21
 !i10b 1
 !s100 Ln2UW0^E`<bm9:D`C1E8@0
-I^zcmXKo]eYC6aMZBOCm2k0
-S1
-R8
-w1708552442
-8I:/ece552/project/Shifter_tb.sv
-FI:/ece552/project/Shifter_tb.sv
-!i122 438
-L0 6 47
 R9
+I08oM4N@m>^:74?c_PW2W81
 R10
+S1
+R11
+R23
+8C:/Users/pokem/ece552-group-project/Shifter_tb.sv
+FC:/Users/pokem/ece552-group-project/Shifter_tb.sv
+!i122 597
+L0 6 47
+R13
 r1
 !s85 0
 31
-R29
-!s107 I:/ece552/project/Shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/Shifter_tb.sv|
-!i113 0
-R12
+R22
+!s107 C:/Users/pokem/ece552-group-project/Shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/Shifter_tb.sv|
+!i113 1
+R15
 R5
 n@shifter_tb
 vsub_4bit
@@ -778,14 +804,14 @@ vsub_4bit
 !i10b 1
 !s100 74c^=;zoK^;<QMVVm5=Zb0
 IeQ35CSF4IXXi4UPALUR^D2
-R8
+R18
 w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R23
-R9
+R25
 R10
+R19
 r1
 !s85 0
 31
@@ -793,76 +819,79 @@ r1
 !s107 I:\ece552\project\sub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\sub_4bit.v|
 !i113 0
-R13
+R20
 R5
 vWriteDecoder_4_16
-!s110 1709333402
+R21
 !i10b 1
 !s100 Yi^2_n?9Ji7?ST=V5W3F<1
-IbcnL23inV9z18IT;[jR]U1
-R8
-w1708994660
-8I:/ece552/project/WriteDecoder_4_16.v
-FI:/ece552/project/WriteDecoder_4_16.v
-!i122 439
-L0 6 15
 R9
+I91QIYN4:i9@Ujdiozi7ok0
 R10
+R11
+R16
+8C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v
+FC:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v
+!i122 598
+L0 6 15
+R13
 r1
 !s85 0
 31
-!s108 1709333401.000000
-!s107 I:/ece552/project/WriteDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/WriteDecoder_4_16.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v|
+!i113 1
+R17
 R5
 n@write@decoder_4_16
 vXOR
-Z30 !s110 1709333403
+R21
 !i10b 1
 !s100 nG0YI9>Bg]5XEKhGCRd^H1
-I^ALGYT=_aj7VN7oi>eF:F3
-R8
-w1708381287
-8I:/ece552/project/XOR.v
-FI:/ece552/project/XOR.v
-!i122 440
-L0 6 7
 R9
+I1nTlz90Edd8<ln6Sh@ajj2
 R10
+R11
+R23
+8C:/Users/pokem/ece552-group-project/XOR.v
+FC:/Users/pokem/ece552-group-project/XOR.v
+!i122 599
+L0 6 7
+R13
 r1
 !s85 0
 31
-!s108 1709333402.000000
-!s107 I:/ece552/project/XOR.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
-!i113 0
-R13
+R22
+!s107 C:/Users/pokem/ece552-group-project/XOR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/XOR.v|
+!i113 1
+R17
 R5
 n@x@o@r
 vXOR_tb
 R7
-R30
+R21
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
-I`>4]i>X8COAN]@3F1m]DH3
-S1
-R8
-w1708657436
-8I:/ece552/project/XOR_tb.sv
-FI:/ece552/project/XOR_tb.sv
-!i122 441
-L0 1 33
 R9
+ICUa@QB;VQ@@Z0@=:ejYFT2
 R10
+S1
+R11
+R23
+8C:/Users/pokem/ece552-group-project/XOR_tb.sv
+FC:/Users/pokem/ece552-group-project/XOR_tb.sv
+!i122 600
+L0 1 33
+R13
 r1
 !s85 0
 31
-!s108 1709333403.000000
-!s107 I:/ece552/project/XOR_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/XOR_tb.sv|
-!i113 0
-R12
+R22
+!s107 C:/Users/pokem/ece552-group-project/XOR_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/pokem/ece552-group-project/XOR_tb.sv|
+!i113 1
+R15
 R5
 n@x@o@r_tb

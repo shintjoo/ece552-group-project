@@ -14,11 +14,17 @@ wire pcs_select, hlt_select, ALUSrc8bit;
 
 //intermediate signals
 wire [15:0] pc_in, instruction, mem_out;
-wire [15:0] pc_increment, pc_branch; //, pc_choose;
+wire [15:0] pc_increment, pc_branch;
 wire [15:0] datain, dataout1, dataout2;
 wire [2:0] Flags;
 wire [15:0] aluin2, aluout;
 wire error;
+
+//instruction signals
+wire [3:0] Opcode, rs, rd, imm;
+wire [7:0] imm8bit;
+wire [8:0] imm9bit;
+wire [2:0] ccc;
 
 
 dff pc_reg [15:0](.q(pc_in), .d(pc_branch), .wen(~hlt_select), .clk(clk), .rst(~rst_n));
@@ -26,12 +32,17 @@ dff pc_reg [15:0](.q(pc_in), .d(pc_branch), .wen(~hlt_select), .clk(clk), .rst(~
 //Fetch Stage
 //instruction memory
 memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(~rst_n));
-
+assign Opcode = instruction[15:12];
+assign rs = instruction[7:4];
+assign rd = instruction[11:8];
+assign imm = instruction[3:0];
+assign imm8bit = instruction[7:0];
+assign imm9bit = instruction[8:0];
+assign ccc = instruction[11:9];
 
 //PC Calculation
 addsub_16bit increment(.Sum(pc_increment), .A(pc_in), .B(16'h0002), .sub(1'b0), .sat());
-//addsub_16bit branch(.Sum(pc_branch), .A(pc_increment), .B({6'h0, instruction[8:0], 1'b0}), .sub(1'b0), .sat());
-PC_control pccontrol(.C(instruction[11:9]), .I(instruction[8:0]), .F(Flags), .PC_in(pc_increment), .PC_out(pc_branch));
+PC_control pccontrol(.C(ccc), .I(imm9bit), .F(Flags), .branch(Branch), .PC_in(pc_increment), .PC_out(pc_branch));
 
 //Control signals
 Control controlunit(
@@ -55,17 +66,16 @@ Control controlunit(
 //Opcode cccx ssss xxxx
 //Opcode dddd xxxx xxxx
 //Opcode xxxx xxxx xxxx
-RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(instruction[7:4]), .SrcReg2(instruction[3:0]), .DstReg(instruction[11:8]), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
+RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(rs), .SrcReg2(imm), .DstReg(rd), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
 
 //execute stage
-assign aluin2 = (ALUSrc8bit == 1) ? {8'h00, instruction[7:0]}: ((ALUSrc)? {{12{instruction[3]}},instruction[3:0]} : dataout2);
-ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .ALUOp(instruction[15:12]), .Flags(Flags));
+assign aluin2 = (ALUSrc8bit == 1) ? ({8'h00, imm8bit}) : ((ALUSrc) ? {{12{imm[3]}},imm} : dataout2);
+ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .ALUOp(Opcode), .Flags(Flags), .clk(clk), .rst(~rst_n));
 
 
 //memory stage
 memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(~rst_n));
 
-//assign pc_choose = (Branch && ) pc_branch : pc_increment;
 
 //writeback stage
 assign datain = (pcs_select) ? pc_increment : ((MemtoReg) ? mem_out : aluout);

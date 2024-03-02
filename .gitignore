@@ -4,3 +4,7 @@
 *.mpf
 *.log
 *.trace
+*.qdb
+*.qtl
+*.qpg
+*.wlf
