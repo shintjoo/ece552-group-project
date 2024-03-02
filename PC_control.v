@@ -14,7 +14,7 @@ addsub_16bit branch_add(.Sum(pc_branch), .A(PC_in), .B(branch_imm), .sub(1'b0), 
 
 assign PC_out = pc_choose;
 
-always @ (C, I, F, PC_in) begin
+always @ (*) begin
     //default out
     branch_imm = 16'h0000;
     pc_choose = 16'h0000;
@@ -23,7 +23,6 @@ always @ (C, I, F, PC_in) begin
         3'b000: begin
             branch_imm = 16'h0000 | (I << 1);
             pc_choose = (~F[1] && branch) ?  pc_branch : PC_in ;
-            //pc_choose = (branch) ?  PC_in : PC_in ;
         end
         3'b001: begin
             branch_imm = 16'h0000 | (I << 1);

@@ -26,7 +26,7 @@ reg error;
 // branch register BR 1101
 // pcstore PCS 1110
 // halt HLT 1111
-always @ (instruction) begin
+always @ (*) begin
     // Default values
     RegWrite  = 1'b0;
     MemRead = 1'b0;

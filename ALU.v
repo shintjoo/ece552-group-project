@@ -29,7 +29,7 @@ PADDSB padd(.Sum(PaddSum), .A(ALU_In1), .B(ALU_In2));
 
 assign ALU_Out = ALU_res;
 
-always @ (ALU_In1, ALU_In2, ALUOp) begin
+always @ (*) begin
 	//default signals
 	N = 1'b0;
 	Z = 1'b0;
