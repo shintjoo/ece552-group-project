@@ -3,7 +3,7 @@ input [2:0] C; //conditions from instruction
 input [8:0] I; //9 bit signed offset
 input [2:0] F; //flags from ALU
 input branch; //control signal for branch
-input [15:0] PC_in; //un-incremented PC
+input [15:0] PC_in; //incremented PC
 output [15:0] PC_out; //PC out
 
 wire [15:0] pc_branch;

@@ -10,7 +10,7 @@ output [15:0] pc;
 
 //control signals
 wire RegWrite, MemRead, MemWrite, Branch, MemtoReg, ALUSrc; //control signals
-wire pcs_select, hlt_select, ALUSrc8bit;
+wire pcs_select, hlt_select, ALUSrc8bit, LoadByte;
 
 //intermediate signals
 wire [15:0] pc_in, instruction, mem_out;
@@ -19,6 +19,7 @@ wire [15:0] datain, dataout1, dataout2;
 wire [2:0] Flags;
 wire [15:0] aluin2, aluout;
 wire error;
+wire [3:0] reg1;
 
 //instruction signals
 wire [3:0] Opcode, rs, rd, imm;
@@ -31,7 +32,7 @@ dff pc_reg [15:0](.q(pc_in), .d(pc_branch), .wen(~hlt_select && clk), .clk(clk),
 
 //Fetch Stage
 //instruction memory
-memory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(~rst_n));
+imemory1c imem(.data_out(instruction), .data_in(16'b0), .addr(pc_in), .enable(1'b1), .wr(1'b0), .clk(clk), .rst(~rst_n));
 assign Opcode = instruction[15:12];
 assign rs = instruction[7:4];
 assign rd = instruction[11:8];
@@ -46,7 +47,7 @@ PC_control pccontrol(.C(ccc), .I(imm9bit), .F(Flags), .branch(Branch), .PC_in(pc
 
 //Control signals
 Control controlunit(
-    .instruction(instruction[15:12]), 
+    .instruction(Opcode), 
     .RegWrite(RegWrite),       
     .MemRead(MemRead),
     .MemWrite(MemWrite),
@@ -55,7 +56,8 @@ Control controlunit(
     .ALUSrc(ALUSrc),
     .pcs_select(pcs_select),
     .hlt_select(hlt_select),
-    .ALUSrc8bit(ALUSrc8bit)
+    .ALUSrc8bit(ALUSrc8bit),
+    .LoadByte(LoadByte)
 );
 
 //possibilities for opcode
@@ -66,7 +68,8 @@ Control controlunit(
 //Opcode cccx ssss xxxx
 //Opcode dddd xxxx xxxx
 //Opcode xxxx xxxx xxxx
-RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(rs), .SrcReg2(imm), .DstReg(rd), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
+assign reg1 = (LoadByte) ? rd : rs;
+RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(reg1), .SrcReg2(imm), .DstReg(rd), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
 
 //execute stage
 assign aluin2 = (ALUSrc8bit == 1) ? ({8'h00, imm8bit}) : ((ALUSrc) ? {{12{imm[3]}},imm} : dataout2);
@@ -74,7 +77,7 @@ ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .A
 
 
 //memory stage
-memory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(~rst_n));
+dmemory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(MemRead), .wr(MemWrite), .clk(clk), .rst(~rst_n));
 
 
 //writeback stage

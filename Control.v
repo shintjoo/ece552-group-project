@@ -8,7 +8,8 @@ module Control(
     output reg ALUSrc,
     output reg pcs_select,
     output reg hlt_select,
-    output reg ALUSrc8bit
+    output reg ALUSrc8bit,
+    output reg LoadByte
 );
 
 reg error;
@@ -37,6 +38,7 @@ always @ (*) begin
     pcs_select = 1'b0;
     hlt_select = 1'b0;
     ALUSrc8bit = 1'b0;
+    LoadByte = 1'b0;
     error = 1'b0;
 
     // Decode the instruction
@@ -58,6 +60,7 @@ always @ (*) begin
         4'b101x: begin      // operate on one register and 8 bit imm LLB 1010, LHB 1011
             RegWrite = 1'b1;
             ALUSrc8bit = 1'b1;
+            LoadByte = 1'b1;
         end
         4'b1000: begin      //lw
             RegWrite  = 1'b1;
@@ -65,6 +68,7 @@ always @ (*) begin
             ALUSrc = 1'b1;
         end
         4'b1001: begin      //sw
+            MemRead = 1'b1;
             MemWrite = 1'b1;
             ALUSrc = 1'b1;
         end
