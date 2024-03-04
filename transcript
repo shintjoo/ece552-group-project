@@ -152,3 +152,80 @@ run -all
 #    Time: 2100 ps  Iteration: 1  Instance: /cpu_tb
 # 1
 # Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of ALU.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ALU
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 2100 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of ALU.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ALU
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 2100 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of ALU.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ALU
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 2100 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of imemory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.imemory1c
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1300 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# Compile of imemory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.imemory1c
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.trace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
+#    Time: 1400 ps  Iteration: 1  Instance: /cpu_tb
+# 1
+# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
+# End time: 19:38:17 on Mar 03,2024, Elapsed time: 1:47:16
+# Errors: 0, Warnings: 1

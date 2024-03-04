@@ -32,9 +32,12 @@ assign ALU_Out = ALU_res;
 
 always @ (*) begin
 	//default signals
-	N_en = 1'b1;
-	Z_en = 1'b1;
-	V_en = 1'b1;
+	N = 1'b0;
+	Z = 1'b0;
+	V = 1'b0;
+	N_en = 1'b0;
+	Z_en = 1'b0;
+	V_en = 1'b0;
 	sub = 1'b0;
 	Error = 0;
 	casex (ALUOp)
@@ -63,6 +66,7 @@ always @ (*) begin
 		4'b0010: begin //XOR
 		 	ALU_res = ALU_In1 ^ ALU_In2;
 			Z = ~(|ALU_Out);
+			Z_en = 1'b1;
 			end
 		4'b010x: begin  //SLL and SRA
 			ALU_res = Shift_Out;
