@@ -131,6 +131,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	adder_4bit
 
+} {} {}} C:/Users/pokem/ece552-group-project/dmemory.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/dmemory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dmemory1c
+
+Top level modules:
+	dmemory1c
+
 } {} {}} C:/Users/pokem/ece552-group-project/RegisterFile.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/RegisterFile.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module RegisterFile
@@ -159,12 +166,12 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	adder_16bit_tb
 
-} {} {}} C:/Users/pokem/ece552-group-project/ALU.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/ALU.v
+} {} {}} C:/Users/pokem/ece552-group-project/imemory.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/imemory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ALU
+-- Compiling module imemory1c
 
 Top level modules:
-	ALU
+	imemory1c
 
 } {} {}} C:/Users/pokem/ece552-group-project/PC_control_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/PC_control_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -200,6 +207,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	Shifter
+
+} {} {}} C:/Users/pokem/ece552-group-project/cpu.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/cpu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cpu
+
+Top level modules:
+	cpu
 
 } {} {}} I:/ece552/project/BitCell.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/BitCell.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021

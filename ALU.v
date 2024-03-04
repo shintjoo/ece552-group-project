@@ -32,9 +32,6 @@ assign ALU_Out = ALU_res;
 
 always @ (*) begin
 	//default signals
-	N = 1'b0;
-	Z = 1'b0;
-	V = 1'b0;
 	N_en = 1'b1;
 	Z_en = 1'b1;
 	V_en = 1'b1;

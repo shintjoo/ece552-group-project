@@ -10,7 +10,7 @@ output [15:0] pc;
 
 //control signals
 wire RegWrite, MemRead, MemWrite, Branch, MemtoReg, ALUSrc; //control signals
-wire pcs_select, hlt_select, ALUSrc8bit, LoadByte;
+wire pcs_select, hlt_select, ALUSrc8bit, LoadByte, BranchReg;
 
 //intermediate signals
 wire [15:0] pc_in, instruction, mem_out;
@@ -43,7 +43,7 @@ assign ccc = instruction[11:9];
 
 //PC Calculation
 addsub_16bit increment(.Sum(pc_increment), .A(pc_in), .B(16'h0002), .sub(1'b0), .sat());
-PC_control pccontrol(.C(ccc), .I(imm9bit), .F(Flags), .branch(Branch), .PC_in(pc_increment), .PC_out(pc_branch));
+PC_control pccontrol(.C(ccc), .I(imm9bit), .F(Flags), .branch(Branch), .branch_reg(BranchReg), .PC_in(pc_increment), .regAddr(dataout1), .PC_out(pc_branch));
 
 //Control signals
 Control controlunit(
@@ -52,6 +52,7 @@ Control controlunit(
     .MemRead(MemRead),
     .MemWrite(MemWrite),
     .Branch(Branch),
+    .BranchReg(BranchReg),
     .MemtoReg(MemtoReg),
     .ALUSrc(ALUSrc),
     .pcs_select(pcs_select),

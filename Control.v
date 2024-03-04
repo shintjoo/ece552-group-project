@@ -4,6 +4,7 @@ module Control(
     output reg MemRead,
     output reg MemWrite,
     output reg Branch,
+    output reg BranchReg,
     output reg MemtoReg,
     output reg ALUSrc,
     output reg pcs_select,
@@ -33,6 +34,7 @@ always @ (*) begin
     MemRead = 1'b0;
     MemWrite = 1'b0;
     Branch = 1'b0;
+    BranchReg = 1'b0;
     MemtoReg = 1'b0;
     ALUSrc = 1'b0;
     pcs_select = 1'b0;
@@ -76,9 +78,10 @@ always @ (*) begin
             Branch = 1'b1;
         end
         4'b1101: begin      // branch register BR 1101
-            Branch = 1'b0;
+            BranchReg = 1'b1;
         end
         4'b1110: begin     // pcstore PCS 1110
+            RegWrite  = 1'b0;
             pcs_select = 1'b1;
         end
         4'b1111: begin      // halt HLT 1111
