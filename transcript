@@ -1,128 +1,76 @@
-# Compile of imemory.v was successful.
-vsim -gui work.cpu_tb
-# vsim -gui work.cpu_tb 
-# Start time: 19:39:05 on Mar 03,2024
-# Loading work.cpu_tb
-# Loading work.cpu
-# Loading work.imemory1c
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
-# Loading work.PC_control
-# Loading work.Control
-# Loading work.RegisterFile
-# Loading work.ReadDecoder_4_16
-# Loading work.WriteDecoder_4_16
-# Loading work.ALU
-# Loading work.dff
-# Loading work.Shifter
-# Loading work.RED
-# Loading work.PADDSB
-# Loading work.adder_4bit_sat
-# Loading work.dmemory1c
-# Loading work.Register
-# Loading work.BitCell
+vsim work.cpu_tb -voptargs=+acc
+# vsim work.cpu_tb -voptargs="+acc" 
+# Start time: 13:29:46 on Mar 04,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.cpu_tb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.dff(fast__1)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
 view -new wave
-# -new not supported on PE
+# .main_pane.wave.interior.cs.body.pw.wf
 add wave -position insertpoint  \
-sim:/cpu_tb/PC \
-sim:/cpu_tb/Inst \
-sim:/cpu_tb/RegWrite \
-sim:/cpu_tb/WriteRegister \
-sim:/cpu_tb/WriteData \
-sim:/cpu_tb/MemWrite \
-sim:/cpu_tb/MemRead \
-sim:/cpu_tb/MemAddress \
-sim:/cpu_tb/MemData \
-sim:/cpu_tb/Halt \
-sim:/cpu_tb/inst_count \
-sim:/cpu_tb/cycle_count \
-sim:/cpu_tb/trace_file \
-sim:/cpu_tb/sim_log_file \
-sim:/cpu_tb/clk \
-sim:/cpu_tb/rst_n
+sim:/cpu_tb/DUT/clk \
+sim:/cpu_tb/DUT/rst_n \
+sim:/cpu_tb/DUT/hlt \
+sim:/cpu_tb/DUT/pc \
+sim:/cpu_tb/DUT/RegWrite \
+sim:/cpu_tb/DUT/MemRead \
+sim:/cpu_tb/DUT/MemWrite \
+sim:/cpu_tb/DUT/Branch \
+sim:/cpu_tb/DUT/MemtoReg \
+sim:/cpu_tb/DUT/ALUSrc \
+sim:/cpu_tb/DUT/pcs_select \
+sim:/cpu_tb/DUT/hlt_select \
+sim:/cpu_tb/DUT/ALUSrc8bit \
+sim:/cpu_tb/DUT/LoadByte \
+sim:/cpu_tb/DUT/BranchReg \
+sim:/cpu_tb/DUT/pc_in \
+sim:/cpu_tb/DUT/instruction \
+sim:/cpu_tb/DUT/mem_out \
+sim:/cpu_tb/DUT/pc_increment \
+sim:/cpu_tb/DUT/pc_branch \
+sim:/cpu_tb/DUT/datain \
+sim:/cpu_tb/DUT/dataout1 \
+sim:/cpu_tb/DUT/dataout2 \
+sim:/cpu_tb/DUT/Flags \
+sim:/cpu_tb/DUT/aluin2 \
+sim:/cpu_tb/DUT/aluout \
+sim:/cpu_tb/DUT/error \
+sim:/cpu_tb/DUT/reg1 \
+sim:/cpu_tb/DUT/Opcode \
+sim:/cpu_tb/DUT/rs \
+sim:/cpu_tb/DUT/rd \
+sim:/cpu_tb/DUT/imm \
+sim:/cpu_tb/DUT/imm8bit \
+sim:/cpu_tb/DUT/imm9bit \
+sim:/cpu_tb/DUT/ccc
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: pokem  Hostname: PC-SHAWN  ProcessID: 111232
-#           Attempting to use alternate WLF file "./wlftks4da8".
+#           Attempting to use alternate WLF file "./wlftch35r6".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftks4da8
-restart
+#           Using alternate file: ./wlftch35r6
 run -all
 # Hello world...simulation starting
 # See verilogsim.log and verilogsim.trace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(71)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_tb
+# ** Note: $finish    : I:/ece552/project/project-phase1-testbench.v(126)
+#    Time: 2100 ns  Iteration: 1  Instance: /cpu_tb
 # 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 71
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# Compile of imemory.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.imemory1c
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1300 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of imemory.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.imemory1c
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 1400 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of imemory.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.imemory1c
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 2100 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# Compile of dmemory.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.dmemory1c
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.log and verilogsim.trace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase1-testbench.v(126)
-#    Time: 2100 ps  Iteration: 1  Instance: /cpu_tb
-# 1
-# Break in Module cpu_tb at C:/Users/pokem/ece552-group-project/project-phase1-testbench.v line 126
-# End time: 19:45:02 on Mar 03,2024, Elapsed time: 0:05:57
-# Errors: 0, Warnings: 1
+# Break in Module cpu_tb at I:/ece552/project/project-phase1-testbench.v line 126
+# End time: 13:39:44 on Mar 04,2024, Elapsed time: 0:09:58
+# Errors: 0, Warnings: 3
