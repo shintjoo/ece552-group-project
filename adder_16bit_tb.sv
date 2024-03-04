@@ -1,3 +1,8 @@
+/*
+ * adder_16bit_tb.sv
+ * Shawn Zhu
+ * ECE552
+ */
 module adder_16bit_tb();
 
 reg signed [15:0] stm_a,stm_b; // used as stimulus for a,b

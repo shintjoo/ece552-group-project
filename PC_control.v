@@ -1,3 +1,8 @@
+/*
+ * PC_Control.v
+ * Shawn Zhu
+ * ECE552
+ */
 module PC_control(C, I, F, branch, branch_reg, PC_in, regAddr, PC_out);
 input [2:0] C; //conditions from instruction
 input [8:0] I; //9 bit signed offset

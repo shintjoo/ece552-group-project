@@ -1,3 +1,8 @@
+/*
+ * Control.v
+ * Shawn Zhu
+ * ECE552
+ */
 module Control(
     input [3:0] instruction,
     output reg RegWrite,
