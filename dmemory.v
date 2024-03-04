@@ -52,7 +52,7 @@ module dmemory1c (data_out, data_in, addr, enable, wr, clk, rst);
       if (rst) begin
          //load loadfile_all.img
          if (!loaded) begin
-	         $readmemh("zero.hex", mem);
+	         $readmemh("zero.img", mem);
             loaded = 1;
          end
           

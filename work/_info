@@ -456,23 +456,23 @@ R24
 R17
 R5
 vdmemory1c
-R23
+!s110 1709516640
 !i10b 1
-!s100 4`XH:=cFNFVY[2cl1<FW02
+!s100 HKCW?4YUCBBXm<;A19;V32
 R9
-IPC=@]TMLEBS3U7bKOLKAX2
+IzNdJ;e4>R@0nI>TBD]lho0
 R10
 R11
-Z25 w1709509797
+w1709516636
 8C:/Users/pokem/ece552-group-project/dmemory.v
 FC:/Users/pokem/ece552-group-project/dmemory.v
-!i122 757
-Z26 L0 31 38
+!i122 787
+Z25 L0 31 38
 R13
 r1
 !s85 0
 31
-R24
+!s108 1709516640.000000
 !s107 C:/Users/pokem/ece552-group-project/dmemory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/dmemory.v|
 !i113 1
@@ -486,7 +486,7 @@ R9
 Ij>UR?B70]:V2bTOXE>SEO1
 R10
 R11
-Z27 w1708795175
+Z26 w1708795175
 8C:/Users/pokem/ece552-group-project/FA.v
 FC:/Users/pokem/ece552-group-project/FA.v
 !i122 758
@@ -502,23 +502,23 @@ R24
 R17
 R5
 vimemory1c
-!s110 1709516272
+!s110 1709516542
 !i10b 1
-!s100 dSKMeg295QUHmNzlZ;4Q31
+!s100 WOdC;0OWccneoB0:Gh>a81
 R9
-I1YB>=hPDAcY8lEY5QMD:L1
+Igg]e`VKcV=zRg_;Z552L>1
 R10
 R11
-w1709516270
+w1709516539
 8C:/Users/pokem/ece552-group-project/imemory.v
 FC:/Users/pokem/ece552-group-project/imemory.v
-!i122 782
-R26
+!i122 786
+R25
 R13
 r1
 !s85 0
 31
-!s108 1709516272.000000
+!s108 1709516541.000000
 !s107 C:/Users/pokem/ece552-group-project/imemory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pokem/ece552-group-project/imemory.v|
 !i113 1
@@ -560,7 +560,7 @@ w1709421403
 8I:/ece552/project/memory.v
 FI:/ece552/project/memory.v
 !i122 739
-R26
+R25
 R10
 R20
 r1
@@ -584,7 +584,7 @@ R12
 8C:/Users/pokem/ece552-group-project/PADDSB.v
 FC:/Users/pokem/ece552-group-project/PADDSB.v
 !i122 761
-Z28 L0 6 19
+Z27 L0 6 19
 R13
 r1
 !s85 0
@@ -703,7 +703,7 @@ R9
 ICkPIeoHH1IE@f:gcL<hAm0
 R10
 R11
-R25
+Z28 w1709509797
 8C:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v
 FC:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v
 !i122 766
@@ -825,7 +825,7 @@ R9
 I43Kgbn18Ah`Da;Ced5=zO1
 R10
 R11
-R27
+R26
 8C:/Users/pokem/ece552-group-project/Shifter.v
 FC:/Users/pokem/ece552-group-project/Shifter.v
 !i122 771
@@ -851,7 +851,7 @@ I08oM4N@m>^:74?c_PW2W81
 R10
 S1
 R11
-R27
+R26
 8C:/Users/pokem/ece552-group-project/Shifter_tb.sv
 FC:/Users/pokem/ece552-group-project/Shifter_tb.sv
 !i122 772
@@ -877,7 +877,7 @@ w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R28
+R27
 R10
 R20
 r1
@@ -897,7 +897,7 @@ R9
 Ioh8nimcj`F22S;8FcJTEh1
 R10
 R11
-R25
+R28
 8C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v
 FC:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v
 !i122 773
