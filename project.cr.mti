@@ -12,13 +12,6 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	addsub_4bit_tb
 
-} {} {}} C:/Users/pokem/ece552-group-project/XOR_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/XOR_tb.sv
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module XOR_tb
-
-Top level modules:
-	XOR_tb
-
 } {} {}} C:/Users/pokem/ece552-group-project/memory.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/memory.v
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module memory1c
@@ -26,26 +19,19 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	memory1c
 
+} {} {}} C:/Users/pokem/ece552-group-project/XOR_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/XOR_tb.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module XOR_tb
+
+Top level modules:
+	XOR_tb
+
 } {} {}} C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/WriteDecoder_4_16.v
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module WriteDecoder_4_16
 
 Top level modules:
 	WriteDecoder_4_16
-
-} {} {}} C:/Users/pokem/ece552-group-project/PC_control.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/PC_control.v
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module PC_control
-
-Top level modules:
-	PC_control
-
-} {} {}} I:/ece552/project/ALU.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/ALU.v
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module ALU
-
-Top level modules:
-	ALU
 
 } {} {}} I:/ece552/project/project-phase1-testbench.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/project-phase1-testbench.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
@@ -68,13 +54,6 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	cpu_tb
 
-} {} {}} I:/ece552/project/WriteDecoder_4_16.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/WriteDecoder_4_16.v
-Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
--- Compiling module WriteDecoder_4_16
-
-Top level modules:
-	WriteDecoder_4_16
-
 } {} {}} I:/ece552/project/D-Flip-Flop.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/D-Flip-Flop.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module dff
@@ -82,12 +61,26 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	dff
 
+} {} {}} I:/ece552/project/WriteDecoder_4_16.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/WriteDecoder_4_16.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module WriteDecoder_4_16
+
+Top level modules:
+	WriteDecoder_4_16
+
 } {} {}} C:/Users/pokem/ece552-group-project/Shifter_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/Shifter_tb.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module Shifter_tb
 
 Top level modules:
 	Shifter_tb
+
+} {} {}} I:/ece552/project/RegisterFile.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/RegisterFile.v
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
 
 } {} {}} I:/ece552/project/XOR.v {1 {vlog -work work -vopt -stats=none I:/ece552/project/XOR.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
@@ -285,6 +278,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	PADDSB_tb
 
+} {} {}} I:/ece552/project/PC_control_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/PC_control_tb.sv
+Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module PC_control_tb
+
+Top level modules:
+	PC_control_tb
+
 } {} {}} C:/Users/pokem/ece552-group-project/Register.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/Register.v
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module Register
@@ -348,19 +348,19 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	adder_4bit
 
-} {} {}} C:/Users/pokem/ece552-group-project/RED.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/RED.v
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module RED
-
-Top level modules:
-	RED
-
 } {} {}} C:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/ReadDecoder_4_16.v
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module ReadDecoder_4_16
 
 Top level modules:
 	ReadDecoder_4_16
+
+} {} {}} C:/Users/pokem/ece552-group-project/RED.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/RED.v
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module RED
+
+Top level modules:
+	RED
 
 } {} {}} I:/ece552/project/RED_tb.sv {1 {vlog -work work -vopt -sv -stats=none I:/ece552/project/RED_tb.sv
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
