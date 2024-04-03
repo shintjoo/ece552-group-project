@@ -19,7 +19,7 @@ wire [15:0] datain, dataout1, dataout2;
 wire [2:0] Flags;
 wire [15:0] aluin2, aluout;
 wire error;
-wire [3:0] reg1;
+wire [3:0] reg1, reg2;
 
 //instruction signals
 wire [3:0] Opcode, rs, rd, imm;
@@ -70,10 +70,11 @@ Control controlunit(
 //Opcode dddd xxxx xxxx
 //Opcode xxxx xxxx xxxx
 assign reg1 = (LoadByte) ? rd : rs;
-RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(reg1), .SrcReg2(imm), .DstReg(rd), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
+assign reg2 = (MemRead || MemWrite) ? rd : imm;
+RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(reg1), .SrcReg2(reg2), .DstReg(rd), .WriteReg(RegWrite), .DstData(datain), .SrcData1(dataout1), .SrcData2(dataout2));
 
 //execute stage
-assign aluin2 = (ALUSrc8bit == 1) ? ({8'h00, imm8bit}) : ((ALUSrc) ? {{12{imm[3]}},imm} : dataout2);
+assign aluin2 = (ALUSrc8bit == 1) ? ({8'h00, imm8bit}) : ((ALUSrc) ? {{11{imm[3]}}, imm, 1'b0} : dataout2);
 ALU ex(.ALU_Out(aluout), .Error(error), .ALU_In1(dataout1), .ALU_In2(aluin2), .ALUOp(Opcode), .Flags(Flags), .clk(clk), .rst(~rst_n));
 
 
@@ -84,7 +85,7 @@ dmemory1c dmem(.data_out(mem_out), .data_in(dataout2), .addr(aluout), .enable(Me
 //writeback stage
 assign datain = (pcs_select) ? pc_increment : ((MemtoReg) ? mem_out : aluout);
 
-assign pc = (hlt_select) ? pc_in : pc_branch;
+assign pc = pc_in;
 
 assign hlt = hlt_select;
 

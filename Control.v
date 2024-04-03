@@ -73,6 +73,7 @@ always @ (*) begin
             RegWrite  = 1'b1;
             MemRead = 1'b1;
             ALUSrc = 1'b1;
+            MemtoReg = 1'b1;
         end
         4'b1001: begin      //sw
             MemRead = 1'b1;
@@ -86,7 +87,7 @@ always @ (*) begin
             BranchReg = 1'b1;
         end
         4'b1110: begin     // pcstore PCS 1110
-            RegWrite  = 1'b0;
+            RegWrite  = 1'b1;
             pcs_select = 1'b1;
         end
         4'b1111: begin      // halt HLT 1111
