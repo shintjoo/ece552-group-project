@@ -5,6 +5,9 @@
  */
 module Control(
     input [3:0] instruction,
+    //input both the incremented pc and the branch calculated
+    input [15:0] ID_pc_increment,
+    input [15:0] ID_pc_branch,
     output reg RegWrite,
     output reg MemRead,
     output reg MemWrite,
@@ -15,7 +18,10 @@ module Control(
     output reg pcs_select,
     output reg hlt_select,
     output reg ALUSrc8bit,
-    output reg LoadByte
+    output reg LoadByte,
+    output reg Flush
+    //input both the incremented pc 
+    //input the branch calculated
 );
 
 reg error;
@@ -46,6 +52,7 @@ always @ (*) begin
     hlt_select = 1'b0;
     ALUSrc8bit = 1'b0;
     LoadByte = 1'b0;
+    Flush = 1'b0;
     error = 1'b0;
 
     // Decode the instruction
@@ -85,6 +92,10 @@ always @ (*) begin
         end
         4'b1101: begin      // branch register BR 1101
             BranchReg = 1'b1;
+
+            //compare the branches if they aren't the same, set the flush to 1.
+            Flush = (ID_pc_increment == ID_pc_branch) ? 1'b1`: 1'b0;
+            
         end
         4'b1110: begin     // pcstore PCS 1110
             RegWrite  = 1'b1;

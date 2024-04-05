@@ -1,17 +1,11 @@
-module ForwardingUnit(C, I, F, branch, branch_reg, PC_in, regAddr, PC_out);
-input [15:0] control; //conditions from instruction
-input [3:0] ID/EX.RT; //9 bit signed offset
-input MEM.mem;
-input PC;
+module ForwardingUnit(EX_rs, EX_rd, MEM_destReg, WB_destReg, MEM_MemRead, WB_RegWrite, ALUFwd1, ALUFwd2);
+input [3:0] EX_rs, EX_rd, MEM_destReg, WB_destReg;
+input MEM_MemRead, WB_RegWrite;
 
-output [15:0] IF/ID.DFF; //Goes into the IF/ID
-output [15:0] NOP; //Goes into the IF/ID
-output stall;
+output [1:0] ALUFwd1, ALUFwd2;
 
-//Load to use stalls.
 
-//Branch
+assign ALUFwd1 = ((MEM_destReg != EX_rs) & (WB_destReg != EX_rs)) ? 2'b10 : ((WB_destReg == EX_rs) & MEM_MemRead) ? 2'b01 : 2'b00;
 
-//Register Bypassing.
 
 endmodule
