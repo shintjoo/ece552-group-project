@@ -65,7 +65,7 @@ assign imm8bit = instruction[7:0];
 assign imm9bit = instruction[8:0];
 assign ccc = instruction[11:9];
 
-
+//TODO: Need to have IF.Flush!
 //Control signals
 Control controlunit(
     .instruction(Opcode), 
