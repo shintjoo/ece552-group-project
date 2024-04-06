@@ -1,8 +1,41 @@
 m255
 K4
 z2
-!s12c _opt1
 Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s12c _opt1
+R0
 R0
 R0
 R0
@@ -124,125 +157,120 @@ R0
 cModel Technology
 Z1 dC:/intelFPGA_lite/22.1std
 T_opt
-!s110 1709580380
-VFhTQ7]J]iWH6SY^anmZKm3
-Z2 04 6 4 work cpu_tb fast 0
-=3-089204da91d7-65e6205a-29a-133c
-Z3 !s124 OEM10U587 
-Z4 o-quiet -auto_acc_if_foreign -work work +acc
-Z5 tCvgOpt 0
+!s110 1712425400
+V3HkWJA0[A_EQ5ae7XJ^:X1
+Z2 04 7 4 work cpu_ptb fast 0
+=1-089204da7b42-661189b7-160-2a5c
+!s124 OEM10U771 
+o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
 n@_opt
-Z6 OL;O;2021.2;73
+Z4 OL;O;2021.2;73
 R1
 T_opt1
-!s110 1712175140
-V8SXQ[XC_L:iT0WloO=TBj3
+!s110 1712440209
+VOV?9Gm2RQ>Sh:L`WGMh1V3
 R2
-=1-000ae431a4f1-660db823-50991-181f06
-R0
-!s12b OEM100
-!s124 OEM100
-R4
-R5
+=9-089204da7b42-6611c38f-2e6-3850
+!s124 OEM10U775 
+Z5 o-quiet -auto_acc_if_foreign -work work +acc
+R3
 n@_opt1
-OE;O;2023.2_1;77
+R4
 T_opt2
 !s110 1709423413
 Vj=L6ZY`RaiAn[D3K[@M7I0
-R2
+04 6 4 work cpu_tb fast 0
 =7-089204da9a3f-65e3bb33-3c8-12a0
-R3
-R4
+!s124 OEM10U587 
 R5
+R3
 n@_opt2
-R6
+R4
 R1
 vadder_16bit_tb
-2/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv
-Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z8 !s110 1712175108
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1712436308
 !i10b 1
 !s100 k<I1A7>AW2JzkQf0jI?mz0
-IY594>I7P7c;=PKPikX^cZ2
+IS=cUW=509B_>7ZdTSO7zd2
 S1
-Z9 d/filespace/s/skzhu/ece552/project
-Z10 w1712174020
-8/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv
-F/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv
-!i122 937
+Z8 dI:/ece552/project
+Z9 w1712174020
+8I:/ece552/project/adder_16bit_tb.sv
+FI:/ece552/project/adder_16bit_tb.sv
+!i122 1022
 L0 6 50
-Z11 VDg1SIo80bB@j0V0VzS_@n1
-Z12 OE;L;2023.2_1;77
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z13 !s108 1712175108.000000
-!s107 /filespace/s/skzhu/ece552/project/adder_16bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv|
+!s108 1712436308.000000
+!s107 I:/ece552/project/adder_16bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_16bit_tb.sv|
 !i113 0
-Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R5
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
 vadder_4bit
-2/filespace/s/skzhu/ece552/project/adder_4bit.v
-R8
+R7
 !i10b 1
 !s100 RkBiJMa3FFPc]KjnP5gVb3
-I7anEh2RhUA^zc2V0D?R:j3
+I7?R3_h3nk>Jf?nToSB@DT0
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/adder_4bit.v
-F/filespace/s/skzhu/ece552/project/adder_4bit.v
-!i122 936
+8I:/ece552/project/adder_4bit.v
+FI:/ece552/project/adder_4bit.v
+!i122 1021
 L0 6 37
+R10
 R11
-R12
 r1
 !s85 0
 31
-!s108 1712175107.000000
-!s107 /filespace/s/skzhu/ece552/project/adder_4bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/adder_4bit.v|
+!s108 1712436307.000000
+!s107 I:/ece552/project/adder_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/adder_4bit.v|
 !i113 0
-Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R5
+Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
 vadder_4bit_sat
-2/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v
-R8
+!s110 1712436309
 !i10b 1
 !s100 N8AXTX3X44]XZfO<BabN[2
-ILnGYeL1K9`K2L`ZKk:RA83
+I>]49J^Yl<nDgdfX_^ocB>0
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v
-F/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v
-!i122 938
+8I:/ece552/project/addsub_4bit_sat.v
+FI:/ece552/project/addsub_4bit_sat.v
+!i122 1023
 L0 6 39
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
-!s107 /filespace/s/skzhu/ece552/project/addsub_4bit_sat.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v|
+Z14 !s108 1712436309.000000
+!s107 I:/ece552/project/addsub_4bit_sat.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_4bit_sat.v|
 !i113 0
-R15
-R5
+R13
+R3
 vadder_4bit_tb
-R7
+R6
 !s110 1708914808
 !i10b 1
 !s100 H<Q9algEFER3[_5S1IWhj1
 I5lVJAW7iP[=MRaJm[U8j92
 S1
-Z16 dI:/ece552/project
+R8
 w1708656049
 8I:/ece552/project/adder_4bit_tb.sv
 FI:/ece552/project/adder_4bit_tb.sv
 !i122 236
 L0 1 49
+R10
 R11
-Z17 OL;L;2021.2;73
 r1
 !s85 0
 31
@@ -250,44 +278,43 @@ r1
 !s107 I:/ece552/project/adder_4bit_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_4bit_tb.sv|
 !i113 0
-R14
-R5
+R12
+R3
 vaddsub_16bit
-2/filespace/s/skzhu/ece552/project/addsub_16bit.v
-Z18 !s110 1712175109
+!s110 1712436311
 !i10b 1
 !s100 k8GX`ES4J4g^LBK>CGJoD0
-I4ef1_cELFSaf63TVP=^Pf1
+ID:9[imL]11iHZl^BX6bHZ2
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/addsub_16bit.v
-F/filespace/s/skzhu/ece552/project/addsub_16bit.v
-!i122 940
+8I:/ece552/project/addsub_16bit.v
+FI:/ece552/project/addsub_16bit.v
+!i122 1025
 L0 6 31
+R10
 R11
-R12
 r1
 !s85 0
 31
-Z19 !s108 1712175109.000000
-!s107 /filespace/s/skzhu/ece552/project/addsub_16bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/addsub_16bit.v|
+!s108 1712436310.000000
+!s107 I:/ece552/project/addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_16bit.v|
 !i113 0
-R15
-R5
+R13
+R3
 vaddsub_4bit
 !s110 1708914809
 !i10b 1
 !s100 2doabOaRzINcV6H]>0:On1
 Ialj^SPIYP>jWecG^UDiFj1
-R16
+R8
 w1708914776
 8I:\ece552\project\addsub_4bit.v
 FI:\ece552\project\addsub_4bit.v
 !i122 238
 L0 6 43
+R10
 R11
-R17
 r1
 !s85 0
 31
@@ -295,282 +322,338 @@ r1
 !s107 I:\ece552\project\addsub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\addsub_4bit.v|
 !i113 0
-R15
-R5
+R13
+R3
 vaddsub_4bit_tb
-2/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv
-R7
-R18
+R6
+!s110 1712436310
 !i10b 1
 !s100 Qbg3g4l_ACeQIoi=MXggH0
-IX56UF[U;j?2D4XcBGPFcl2
+IP2Q<i<Z1]ZIh1A^?GGGS51
 S1
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv
-F/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv
-!i122 939
+8I:/ece552/project/addsub_4bit_tb.sv
+FI:/ece552/project/addsub_4bit_tb.sv
+!i122 1024
 L0 6 60
+R10
 R11
-R12
 r1
 !s85 0
 31
-R13
-!s107 /filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv|
-!i113 0
 R14
-R5
+!s107 I:/ece552/project/addsub_4bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/addsub_4bit_tb.sv|
+!i113 0
+R12
+R3
 vALU
-2/filespace/s/skzhu/ece552/project/ALU.v
-R18
+Z15 !s110 1712436312
 !i10b 1
 !s100 kkOO8?o52LHf=KOn6?ma02
-IlWNV5EdU0UC<3XUPeRgYL2
+ISkEa9`alXjH9beo:TefK41
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/ALU.v
-F/filespace/s/skzhu/ece552/project/ALU.v
-!i122 941
+8I:/ece552/project/ALU.v
+FI:/ece552/project/ALU.v
+!i122 1026
 L0 6 96
+R10
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/ALU.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/ALU.v|
+!s108 1712436311.000000
+!s107 I:/ece552/project/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ALU.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@a@l@u
 vBitCell
-2/filespace/s/skzhu/ece552/project/BitCell.v
-R18
+R15
 !i10b 1
 !s100 VEEal[P1NTi@<hW=0mgnc3
-IfLJ^2UAU0<edUcZ=?3zAk0
+I8QGJLM;8W4hF>=m?o0AMH2
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/BitCell.v
-F/filespace/s/skzhu/ece552/project/BitCell.v
-!i122 942
+8I:/ece552/project/BitCell.v
+FI:/ece552/project/BitCell.v
+!i122 1027
 L0 6 18
+R10
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/BitCell.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/BitCell.v|
+!s108 1712436312.000000
+!s107 I:/ece552/project/BitCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/BitCell.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@bit@cell
 vControl
-2/filespace/s/skzhu/ece552/project/Control.v
-R18
+!s110 1712437191
 !i10b 1
-!s100 e?5oW9ACg4AS>VBi_<E<n0
-I>12Z]ROlj^;`O[bzcZZBT2
-R9
-Z20 w1712174025
-8/filespace/s/skzhu/ece552/project/Control.v
-F/filespace/s/skzhu/ece552/project/Control.v
-!i122 943
-L0 6 97
+!s100 fiJWSSNhBo=iUb3:QCA@n3
+IKI`0643X];SLOA`L]e2_81
+R8
+w1712437181
+8I:/ece552/project/Control.v
+FI:/ece552/project/Control.v
+!i122 1052
+L0 6 108
+R10
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/Control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/Control.v|
+!s108 1712437191.000000
+!s107 I:/ece552/project/Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Control.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@control
 vcpu
-2/filespace/s/skzhu/ece552/project/cpu.v
-R18
+!s110 1712439259
 !i10b 1
-!s100 K`]XhZzdC6=D:B>B>UTN:2
-ITKCeakI7C=WQ5R0>WJ6[V2
-R9
-R20
-8/filespace/s/skzhu/ece552/project/cpu.v
-F/filespace/s/skzhu/ece552/project/cpu.v
-!i122 944
-L0 6 87
+!s100 :6Ma3;kL=n?TSS=l;8zFg0
+I=A_RHU[om7IiQW0j:oPi81
+R8
+w1712439254
+8I:/ece552/project/cpu.v
+FI:/ece552/project/cpu.v
+!i122 1057
+L0 6 195
+R10
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/cpu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/cpu.v|
+!s108 1712439259.000000
+!s107 I:/ece552/project/cpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/cpu.v|
 !i113 0
-R15
-R5
+R13
+R3
+vcpu_ptb
+Z16 !s110 1712436322
+!i10b 1
+!s100 RonAR>^NHOFXIFc:?7o7K1
+IkH<I[bYYS]ilROU>@LVCN0
+R8
+w1712425253
+8I:/ece552/project/project-phase2-testbench.v
+FI:/ece552/project/project-phase2-testbench.v
+!i122 1042
+L0 1 173
+R10
+R11
+r1
+!s85 0
+31
+!s108 1712436322.000000
+!s107 I:/ece552/project/project-phase2-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/project-phase2-testbench.v|
+!i113 0
+R13
+R3
 vcpu_tb
-2/filespace/s/skzhu/ece552/project/project-phase1-testbench.v
-Z21 !s110 1712175110
+R16
 !i10b 1
 !s100 =H9^Pi;GCMlTJ>j9hzzIT1
-IXbQXVb4ZJec;U`TAB6Jek2
-R9
-R20
-8/filespace/s/skzhu/ece552/project/project-phase1-testbench.v
-F/filespace/s/skzhu/ece552/project/project-phase1-testbench.v
-!i122 954
+IbNT99zKfgz?M?nSS?QGg01
+R8
+w1712174025
+8I:/ece552/project/project-phase1-testbench.v
+FI:/ece552/project/project-phase1-testbench.v
+!i122 1041
 L0 1 186
+R10
 R11
-R12
 r1
 !s85 0
 31
-Z22 !s108 1712175110.000000
-!s107 /filespace/s/skzhu/ece552/project/project-phase1-testbench.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/project-phase1-testbench.v|
+Z17 !s108 1712436321.000000
+!s107 I:/ece552/project/project-phase1-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/project-phase1-testbench.v|
 !i113 0
-R15
-R5
+R13
+R3
 vdff
-2/filespace/s/skzhu/ece552/project/D-Flip-Flop.v
-R18
+!s110 1712436314
 !i10b 1
 !s100 Z9V@F2c50oH6kZfdURZd60
-II=UIQIXTAo6EjW:KE6^IA3
-R9
+I<7MAnkMn4;`:i7Qfo^]Kd0
+R8
 w1708651211
-8/filespace/s/skzhu/ece552/project/D-Flip-Flop.v
-F/filespace/s/skzhu/ece552/project/D-Flip-Flop.v
-!i122 945
+8I:/ece552/project/D-Flip-Flop.v
+FI:/ece552/project/D-Flip-Flop.v
+!i122 1030
 L0 3 17
+R10
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/D-Flip-Flop.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/D-Flip-Flop.v|
+Z18 !s108 1712436314.000000
+!s107 I:/ece552/project/D-Flip-Flop.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/D-Flip-Flop.v|
 !i113 0
-R15
-R5
+R13
+R3
 vdmemory1c
-2/filespace/s/skzhu/ece552/project/dmemory.v
-R18
+!s110 1712436315
 !i10b 1
 !s100 HKCW?4YUCBBXm<;A19;V32
-I=mAOb0PHbZU8D;:mGgWBf3
+I=O3iOKbgPEnNhON@OVOZb1
+R8
 R9
+8I:/ece552/project/dmemory.v
+FI:/ece552/project/dmemory.v
+!i122 1031
+Z19 L0 31 38
 R10
-8/filespace/s/skzhu/ece552/project/dmemory.v
-F/filespace/s/skzhu/ece552/project/dmemory.v
-!i122 946
-Z23 L0 31 38
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/dmemory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/dmemory.v|
-!i113 0
-R15
-R5
-vfull_adder_1bit
-2/filespace/s/skzhu/ece552/project/FA.v
 R18
+!s107 I:/ece552/project/dmemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/dmemory.v|
+!i113 0
+R13
+R3
+vForwardingUnit
+Z20 !s110 1712436316
+!i10b 1
+!s100 D4`F>^VIGoZe<<BF?h<O?3
+I:o`PN1jXgbO5P3mZaQo`m2
+R8
+w1712430429
+8I:/ece552/project/ForwardingUnit.v
+FI:/ece552/project/ForwardingUnit.v
+!i122 1033
+L0 1 26
+R10
+R11
+r1
+!s85 0
+31
+Z21 !s108 1712436316.000000
+!s107 I:/ece552/project/ForwardingUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ForwardingUnit.v|
+!i113 0
+R13
+R3
+n@forwarding@unit
+vfull_adder_1bit
+R20
 !i10b 1
 !s100 WN4M^lz?8kX_P@GVTobbO1
-I1AL^d7QFj6K^iI1oD1Wf@0
+IDekGXkig_7703i=6IJ:lZ3
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/FA.v
-F/filespace/s/skzhu/ece552/project/FA.v
-!i122 947
+8I:/ece552/project/FA.v
+FI:/ece552/project/FA.v
+!i122 1032
 L0 6 8
-R11
-R12
-r1
-!s85 0
-31
-R19
-!s107 /filespace/s/skzhu/ece552/project/FA.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/FA.v|
-!i113 0
-R15
-R5
-vimemory1c
-2/filespace/s/skzhu/ece552/project/imemory.v
-R18
-!i10b 1
-!s100 WOdC;0OWccneoB0:Gh>a81
-I2I=@9J8QB0Id::=@lbXK90
-R9
 R10
-8/filespace/s/skzhu/ece552/project/imemory.v
-F/filespace/s/skzhu/ece552/project/imemory.v
-!i122 948
-R23
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/imemory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/imemory.v|
+!s108 1712436315.000000
+!s107 I:/ece552/project/FA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/FA.v|
 !i113 0
-R15
-R5
+R13
+R3
+vhazard
+!s110 1712436317
+!i10b 1
+!s100 13BWbii;KGXkaZkk;KzEN1
+IoQB_zECK;3J7a0SlH381=0
+R8
+w1712434121
+8I:/ece552/project/hazard.v
+FI:/ece552/project/hazard.v
+!i122 1034
+L0 1 15
+R10
+R11
+r1
+!s85 0
+31
+R21
+!s107 I:/ece552/project/hazard.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/hazard.v|
+!i113 0
+R13
+R3
+vimemory1c
+!s110 1712440203
+!i10b 1
+!s100 WT]?Xl`h9PYIO[Lll6Naf1
+IUCd``YoP_IKiZGJiABd1H3
+R8
+w1712440197
+8I:/ece552/project/imemory.v
+FI:/ece552/project/imemory.v
+!i122 1058
+R19
+R10
+R11
+r1
+!s85 0
+31
+!s108 1712440203.000000
+!s107 I:/ece552/project/imemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/imemory.v|
+!i113 0
+R13
+R3
 vLW_SW_Testbench
-2/filespace/s/skzhu/ece552/project/LW_SW_tb.sv
-R7
-R18
+R6
+!s110 1712436318
 !i10b 1
 !s100 B>4a]McG5de2]`[VgK[4o1
-IEf;?8gJeWNH]]4L:KdWiA0
+I7Xd6Gl4fnRD9^g^NAVmiH3
 S1
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/LW_SW_tb.sv
-F/filespace/s/skzhu/ece552/project/LW_SW_tb.sv
-!i122 949
+8I:/ece552/project/LW_SW_tb.sv
+FI:/ece552/project/LW_SW_tb.sv
+!i122 1036
 L0 1 70
+R10
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/LW_SW_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/LW_SW_tb.sv|
+!s108 1712436318.000000
+!s107 I:/ece552/project/LW_SW_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/LW_SW_tb.sv|
 !i113 0
-R14
-R5
+R12
+R3
 n@l@w_@s@w_@testbench
 vmemory1c
 !s110 1709421408
 !i10b 1
 !s100 mP`1<P`g8jdYJmW@VIe8K2
 IiGQ`h<en9]X;GDOU;Q^FP3
-R16
+R8
 w1709421403
 8I:/ece552/project/memory.v
 FI:/ece552/project/memory.v
 !i122 739
-R23
+R19
+R10
 R11
-R17
 r1
 !s85 0
 31
@@ -578,121 +661,117 @@ r1
 !s107 I:/ece552/project/memory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/memory.v|
 !i113 0
-R15
-R5
+R13
+R3
 vPADDSB
-2/filespace/s/skzhu/ece552/project/PADDSB.v
-R21
+!s110 1712436319
 !i10b 1
 !s100 d^R`hFV>PV3foF@Ii46IO1
-IOXKTj1[TbX^U3H87TWM1Z3
+IYNkcBgXdQIPK`;:XIc1<n0
+R8
 R9
+8I:/ece552/project/PADDSB.v
+FI:/ece552/project/PADDSB.v
+!i122 1037
+Z22 L0 6 19
 R10
-8/filespace/s/skzhu/ece552/project/PADDSB.v
-F/filespace/s/skzhu/ece552/project/PADDSB.v
-!i122 950
-Z24 L0 6 19
 R11
-R12
 r1
 !s85 0
 31
-R19
-!s107 /filespace/s/skzhu/ece552/project/PADDSB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/PADDSB.v|
+Z23 !s108 1712436319.000000
+!s107 I:/ece552/project/PADDSB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PADDSB.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@p@a@d@d@s@b
 vPADDSB_tb
-2/filespace/s/skzhu/ece552/project/PADDSB_tb.sv
-R7
-R21
+R6
+Z24 !s110 1712436320
 !i10b 1
 !s100 _<kNb1?daa^72`_TNo>Za0
-IjdgUK98IbeEAW:iXHhid]1
+ICaD;BXnMXcakLJBEEJZA52
 S1
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/PADDSB_tb.sv
-F/filespace/s/skzhu/ece552/project/PADDSB_tb.sv
-!i122 951
+8I:/ece552/project/PADDSB_tb.sv
+FI:/ece552/project/PADDSB_tb.sv
+!i122 1038
 L0 6 133
+R10
 R11
-R12
 r1
 !s85 0
 31
-R22
-!s107 /filespace/s/skzhu/ece552/project/PADDSB_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/PADDSB_tb.sv|
+R23
+!s107 I:/ece552/project/PADDSB_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/PADDSB_tb.sv|
 !i113 0
-R14
-R5
+R12
+R3
 n@p@a@d@d@s@b_tb
 vPC_control
-2/filespace/s/skzhu/ece552/project/PC_control.v
-R21
+R24
 !i10b 1
-!s100 fFgP9fo>>7CH[IK=KjQHZ2
-IB=CF4FfJ5c@Dn5A^X@<?m0
-R9
+!s100 10aUHH]R7[CcUUCFL2iXf1
+IkfA>[YZAJ_E2gYhfJ7BnM2
+R8
+w1712427279
+8I:/ece552/project/PC_control.v
+FI:/ece552/project/PC_control.v
+!i122 1039
+L0 6 64
 R10
-8/filespace/s/skzhu/ece552/project/PC_control.v
-F/filespace/s/skzhu/ece552/project/PC_control.v
-!i122 952
-L0 6 63
 R11
-R12
 r1
 !s85 0
 31
-R22
-!s107 /filespace/s/skzhu/ece552/project/PC_control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/PC_control.v|
+!s108 1712436320.000000
+!s107 I:/ece552/project/PC_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PC_control.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@p@c_control
 vPC_control_tb
-2/filespace/s/skzhu/ece552/project/PC_control_tb.sv
-R7
-R21
+R6
+!s110 1712436321
 !i10b 1
 !s100 02B^Xf:Q2g^@jm41?H;4o3
-I<cjbJ3^ZOCnL<PNg^P4QA3
+I<KWk_<^7:Ql_8VH7Vh;`40
 S1
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/PC_control_tb.sv
-F/filespace/s/skzhu/ece552/project/PC_control_tb.sv
-!i122 953
+8I:/ece552/project/PC_control_tb.sv
+FI:/ece552/project/PC_control_tb.sv
+!i122 1040
 L0 1 34
+R10
 R11
-R12
 r1
 !s85 0
 31
-R22
-!s107 /filespace/s/skzhu/ece552/project/PC_control_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/PC_control_tb.sv|
+R17
+!s107 I:/ece552/project/PC_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/PC_control_tb.sv|
 !i113 0
-R14
-R5
+R12
+R3
 n@p@c_control_tb
 vPSA_16bit
 !s110 1708376979
 !i10b 1
 !s100 Bd;chfH1AB?VaRbnRODFo0
 Iz1@bHg0D[[5dYJD_;Q<hm1
-R16
+R8
 w1708304266
 8I:/ece552/project/PSA_16bit.v
 FI:/ece552/project/PSA_16bit.v
 !i122 23
 L0 6 22
+R10
 R11
-R17
 r1
 !s85 0
 31
@@ -700,194 +779,187 @@ r1
 !s107 I:/ece552/project/PSA_16bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PSA_16bit.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@p@s@a_16bit
 vReadDecoder_4_16
-2/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v
-R21
+!s110 1712436323
 !i10b 1
 !s100 @aK]6jLEZChcU;GEe9m:d3
-IJV3kaj[JXek[jz;nAn1fo3
+I`TGIXM]amJ285ReojHZ;<3
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v
-F/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v
-!i122 955
+8I:/ece552/project/ReadDecoder_4_16.v
+FI:/ece552/project/ReadDecoder_4_16.v
+!i122 1043
 L0 6 13
+R10
 R11
-R12
 r1
 !s85 0
 31
-R22
-!s107 /filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v|
+Z25 !s108 1712436323.000000
+!s107 I:/ece552/project/ReadDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ReadDecoder_4_16.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@read@decoder_4_16
 vRED
-2/filespace/s/skzhu/ece552/project/RED.v
-R21
+!s110 1712436324
 !i10b 1
 !s100 ZeHWfeeZI7XjIjK`J6WWd2
-Ib^4Vn3K`F]RR;W?j4<h641
+IFoRLi6o7UkXHz^D5XI?J83
+R8
 R9
+8I:/ece552/project/RED.v
+FI:/ece552/project/RED.v
+!i122 1044
+L0 6 26
 R10
-8/filespace/s/skzhu/ece552/project/RED.v
-F/filespace/s/skzhu/ece552/project/RED.v
-!i122 956
-Z25 L0 6 26
 R11
-R12
 r1
 !s85 0
 31
-R22
-!s107 /filespace/s/skzhu/ece552/project/RED.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/RED.v|
+R25
+!s107 I:/ece552/project/RED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RED.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@r@e@d
 vRED_tb
-2/filespace/s/skzhu/ece552/project/RED_tb.sv
-R7
-R21
+R6
+Z26 !s110 1712436325
 !i10b 1
 !s100 D;>MKzE:IkWS1S9ncJd8L3
-I7EiL1F;L@Oj2[dSkfFm840
+IbJT]NhoBkKQEz4LI9cF]G0
 S1
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/RED_tb.sv
-F/filespace/s/skzhu/ece552/project/RED_tb.sv
-!i122 957
+8I:/ece552/project/RED_tb.sv
+FI:/ece552/project/RED_tb.sv
+!i122 1045
 L0 6 32
+R10
 R11
-R12
 r1
 !s85 0
 31
-R22
-!s107 /filespace/s/skzhu/ece552/project/RED_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/RED_tb.sv|
+!s108 1712436324.000000
+!s107 I:/ece552/project/RED_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/RED_tb.sv|
 !i113 0
-R14
-R5
+R12
+R3
 n@r@e@d_tb
 vRegister
-2/filespace/s/skzhu/ece552/project/Register.v
-R21
-!i10b 1
-!s100 lFBebeJ90K?Rg59_YabO62
-IiVd_n??J5OWRd?iTVGT>B2
-R9
-R10
-8/filespace/s/skzhu/ece552/project/Register.v
-F/filespace/s/skzhu/ece552/project/Register.v
-!i122 958
-L0 6 10
-R11
-R12
-r1
-!s85 0
-31
-R22
-!s107 /filespace/s/skzhu/ece552/project/Register.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/Register.v|
-!i113 0
-R15
-R5
-n@register
-vRegisterFile
-2/filespace/s/skzhu/ece552/project/RegisterFile.v
-R21
-!i10b 1
-!s100 SafJhBhEdO_6VWz]RgK;L1
-IzR7jk]5LcEMRHK[3VaAdV1
-R9
-R10
-8/filespace/s/skzhu/ece552/project/RegisterFile.v
-F/filespace/s/skzhu/ece552/project/RegisterFile.v
-!i122 959
-R25
-R11
-R12
-r1
-!s85 0
-31
-R22
-!s107 /filespace/s/skzhu/ece552/project/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/RegisterFile.v|
-!i113 0
-R15
-R5
-n@register@file
-vShifter
-2/filespace/s/skzhu/ece552/project/Shifter.v
-Z26 !s110 1712175111
-!i10b 1
-!s100 9X1]X]YfTSai:kjMTZ;ei1
-IUkOmhCZfnaY<Zea4405cV1
-R9
-R10
-8/filespace/s/skzhu/ece552/project/Shifter.v
-F/filespace/s/skzhu/ece552/project/Shifter.v
-!i122 960
-L0 6 23
-R11
-R12
-r1
-!s85 0
-31
-R22
-!s107 /filespace/s/skzhu/ece552/project/Shifter.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/Shifter.v|
-!i113 0
-R15
-R5
-n@shifter
-vShifter_tb
-2/filespace/s/skzhu/ece552/project/Shifter_tb.sv
-R7
 R26
 !i10b 1
-!s100 Ln2UW0^E`<bm9:D`C1E8@0
-IOXkV=fF63a9DdERGSUbV;0
-S1
+!s100 lFBebeJ90K?Rg59_YabO62
+I?EE8kSRHjfnd?6BOBnWRP2
+R8
 R9
+8I:/ece552/project/Register.v
+FI:/ece552/project/Register.v
+!i122 1046
+L0 6 10
 R10
-8/filespace/s/skzhu/ece552/project/Shifter_tb.sv
-F/filespace/s/skzhu/ece552/project/Shifter_tb.sv
-!i122 961
-L0 6 47
 R11
-R12
 r1
 !s85 0
 31
-Z27 !s108 1712175111.000000
-!s107 /filespace/s/skzhu/ece552/project/Shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/Shifter_tb.sv|
+Z27 !s108 1712436325.000000
+!s107 I:/ece552/project/Register.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Register.v|
 !i113 0
-R14
-R5
+R13
+R3
+n@register
+vRegisterFile
+!s110 1712436326
+!i10b 1
+!s100 8:Fz`<dDM]g10T?3ZYm>82
+IEgeQgXK3m<UnfK_k]5_l]2
+R8
+w1712427664
+8I:/ece552/project/RegisterFile.v
+FI:/ece552/project/RegisterFile.v
+!i122 1047
+L0 6 27
+R10
+R11
+r1
+!s85 0
+31
+R27
+!s107 I:/ece552/project/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RegisterFile.v|
+!i113 0
+R13
+R3
+n@register@file
+vShifter
+!s110 1712436327
+!i10b 1
+!s100 9X1]X]YfTSai:kjMTZ;ei1
+IDSo02OKaJZVE5APV2PQg@2
+R8
+R9
+8I:/ece552/project/Shifter.v
+FI:/ece552/project/Shifter.v
+!i122 1048
+L0 6 23
+R10
+R11
+r1
+!s85 0
+31
+!s108 1712436326.000000
+!s107 I:/ece552/project/Shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Shifter.v|
+!i113 0
+R13
+R3
+n@shifter
+vShifter_tb
+R6
+Z28 !s110 1712436328
+!i10b 1
+!s100 Ln2UW0^E`<bm9:D`C1E8@0
+I^zcmXKo]eYC6aMZBOCm2k0
+S1
+R8
+R9
+8I:/ece552/project/Shifter_tb.sv
+FI:/ece552/project/Shifter_tb.sv
+!i122 1049
+L0 6 47
+R10
+R11
+r1
+!s85 0
+31
+!s108 1712436327.000000
+!s107 I:/ece552/project/Shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/Shifter_tb.sv|
+!i113 0
+R12
+R3
 n@shifter_tb
 vsub_4bit
 !s110 1708921757
 !i10b 1
 !s100 74c^=;zoK^;<QMVVm5=Zb0
 IeQ35CSF4IXXi4UPALUR^D2
-R16
+R8
 w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R24
+R22
+R10
 R11
-R17
 r1
 !s85 0
 31
@@ -895,45 +967,44 @@ r1
 !s107 I:\ece552\project\sub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\sub_4bit.v|
 !i113 0
-R15
-R5
+R13
+R3
 vWriteDecoder_4_16
-2/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v
-R26
+R28
 !i10b 1
 !s100 6D<R`A;MnXf9di@i?;gnD3
-I5jn=``ZjVERIi5R35Uzzz2
+Io1hzMI>N2SME@KBjB7BXD0
+R8
 R9
-R10
-8/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v
-F/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v
-!i122 962
+8I:/ece552/project/WriteDecoder_4_16.v
+FI:/ece552/project/WriteDecoder_4_16.v
+!i122 1050
 L0 6 15
+R10
 R11
-R12
 r1
 !s85 0
 31
-R27
-!s107 /filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v|
+!s108 1712436328.000000
+!s107 I:/ece552/project/WriteDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/WriteDecoder_4_16.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@write@decoder_4_16
 vXOR
-Z28 !s110 1709413836
+Z29 !s110 1709413836
 !i10b 1
 !s100 nG0YI9>Bg]5XEKhGCRd^H1
 I^ALGYT=_aj7VN7oi>eF:F3
-R16
+R8
 w1708381287
 8I:/ece552/project/XOR.v
 FI:/ece552/project/XOR.v
 !i122 691
 L0 6 7
+R10
 R11
-R17
 r1
 !s85 0
 31
@@ -941,24 +1012,24 @@ r1
 !s107 I:/ece552/project/XOR.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
 !i113 0
-R15
-R5
+R13
+R3
 n@x@o@r
 vXOR_tb
-R7
-R28
+R6
+R29
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
 I`>4]i>X8COAN]@3F1m]DH3
 S1
-R16
+R8
 w1708657436
 8I:/ece552/project/XOR_tb.sv
 FI:/ece552/project/XOR_tb.sv
 !i122 692
 L0 1 33
+R10
 R11
-R17
 r1
 !s85 0
 31
@@ -966,6 +1037,6 @@ r1
 !s107 I:/ece552/project/XOR_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/XOR_tb.sv|
 !i113 0
-R14
-R5
+R12
+R3
 n@x@o@r_tb

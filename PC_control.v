@@ -13,6 +13,7 @@ input [15:0] PC_in; //incremented PC
 input [15:0] regAddr; //register address to jump to
 output [15:0] PC_out; //PC out
 
+
 wire [15:0] pc_branch;
 reg [15:0] pc_choose, branch_imm;
 reg error;

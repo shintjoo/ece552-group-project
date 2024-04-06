@@ -94,7 +94,7 @@ always @ (*) begin
             BranchReg = 1'b1;
 
             //compare the branches if they aren't the same, set the flush to 1.
-            Flush = (ID_pc_increment == ID_pc_branch) ? 1'b1`: 1'b0;
+            Flush = (ID_pc_increment == ID_pc_branch) ? 1'b1 : 1'b0;
             
         end
         4'b1110: begin     // pcstore PCS 1110
