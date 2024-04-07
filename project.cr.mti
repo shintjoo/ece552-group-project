@@ -40,6 +40,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	XOR_tb
 
+} {} {}} C:/Users/pokem/ece552-group-project/hazard.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/hazard.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hazard
+
+Top level modules:
+	hazard
+
 } {} {}} /filespace/s/skzhu/ece552/project/imemory.v {1 {vlog -work work -vopt -stats=none /filespace/s/skzhu/ece552/project/imemory.v
 QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
 -- Compiling module imemory1c
@@ -159,6 +166,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 Top level modules:
 	RegisterFile
 
+} {} {}} C:/Users/pokem/ece552-group-project/ForwardingUnit.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/ForwardingUnit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ForwardingUnit
+
+Top level modules:
+	ForwardingUnit
+
 } {} {}} C:/Users/pokem/ece552-group-project/RED_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/RED_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module RED_tb
@@ -228,13 +242,6 @@ QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
 
 Top level modules:
 	addsub_16bit
-
-} {} {}} C:/Users/pokem/ece552-group-project/imemory.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/imemory.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module imemory1c
-
-Top level modules:
-	imemory1c
 
 } {} {}} C:/Users/pokem/ece552-group-project/ALU.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/ALU.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -312,6 +319,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	Shifter
+
+} {} {}} C:/Users/pokem/ece552-group-project/cpu.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/cpu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cpu
+
+Top level modules:
+	cpu
 
 } {} {}} /filespace/s/skzhu/ece552/project/Control.v {1 {vlog -work work -vopt -stats=none /filespace/s/skzhu/ece552/project/Control.v
 QuestaSim vlog 2023.2_1 Compiler 2023.05 May 12 2023
@@ -405,6 +419,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	addsub_16bit
+
+} {} {}} C:/Users/pokem/ece552-group-project/project-phase2-testbench.v {1 {vlog -work work -stats=none C:/Users/pokem/ece552-group-project/project-phase2-testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module cpu_ptb
+
+Top level modules:
+	cpu_ptb
 
 } {} {}} C:/Users/pokem/ece552-group-project/adder_16bit_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/pokem/ece552-group-project/adder_16bit_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

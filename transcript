@@ -1,31 +1,60 @@
-vsim work.cpu_ptb -voptargs=+acc
-# vsim work.cpu_ptb -voptargs="+acc" 
-# Start time: 16:09:22 on Apr 06,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# Compile of adder_4bit.v was successful.
+# Compile of adder_16bit_tb.sv was successful.
+# Compile of addsub_4bit_sat.v was successful.
+# Compile of addsub_4bit_tb.sv was successful.
+# Compile of addsub_16bit.v was successful.
+# Compile of ALU.v was successful.
+# Compile of BitCell.v was successful.
+# Compile of Control.v was successful.
+# Compile of cpu.v was successful.
+# Compile of D-Flip-Flop.v was successful.
+# Compile of dmemory.v was successful.
+# Compile of FA.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of hazard.v was successful.
+# Compile of imemory.v was successful.
+# Compile of LW_SW_tb.sv was successful.
+# Compile of PADDSB.v was successful.
+# Compile of PADDSB_tb.sv was successful.
+# Compile of PC_control.v was successful.
+# Compile of PC_control_tb.sv was successful.
+# Compile of project-phase1-testbench.v was successful.
+# Compile of project-phase2-testbench.v was successful.
+# Compile of ReadDecoder_4_16.v was successful.
+# Compile of RED.v was successful.
+# Compile of RED_tb.sv was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of Shifter.v was successful.
+# Compile of Shifter_tb.sv was successful.
+# Compile of WriteDecoder_4_16.v was successful.
+# 30 compiles, 0 failed with no errors.
+vsim -gui work.cpu_ptb
+# vsim -gui work.cpu_ptb 
+# Start time: 20:07:40 on Apr 06,2024
+# Loading work.cpu_ptb
+# Loading work.cpu
+# Loading work.imemory1c
+# Loading work.addsub_16bit
+# Loading work.adder_4bit
+# Loading work.PC_control
+# Loading work.hazard
+# Loading work.Control
+# Loading work.RegisterFile
+# Loading work.ReadDecoder_4_16
+# Loading work.WriteDecoder_4_16
+# Loading work.dff
+# Loading work.ALU
+# Loading work.Shifter
+# Loading work.RED
+# Loading work.PADDSB
+# Loading work.adder_4bit_sat
+# Loading work.ForwardingUnit
+# Loading work.dmemory1c
+# Loading work.Register
+# Loading work.BitCell
 view -new wave
-# .main_pane.wave.interior.cs.body.pw.wf
+# -new not supported on PE
 add wave -position insertpoint  \
 sim:/cpu_ptb/DUT/clk \
 sim:/cpu_ptb/DUT/rst_n \
@@ -71,6 +100,7 @@ sim:/cpu_ptb/DUT/MemRead_NOP \
 sim:/cpu_ptb/DUT/MemWrite_NOP \
 sim:/cpu_ptb/DUT/ALUSrc_NOP \
 sim:/cpu_ptb/DUT/ALUSrc8bit_NOP \
+sim:/cpu_ptb/DUT/hlt_select_NOP \
 sim:/cpu_ptb/DUT/ID_dataout1_NOP \
 sim:/cpu_ptb/DUT/ID_dataout2_NOP \
 sim:/cpu_ptb/DUT/sextimm_NOP \
@@ -92,6 +122,7 @@ sim:/cpu_ptb/DUT/EX_MemWrite \
 sim:/cpu_ptb/DUT/EX_pcs_select \
 sim:/cpu_ptb/DUT/EX_MemtoReg \
 sim:/cpu_ptb/DUT/EX_RegWrite \
+sim:/cpu_ptb/DUT/EX_hlt_select \
 sim:/cpu_ptb/DUT/Flags \
 sim:/cpu_ptb/DUT/aluin2 \
 sim:/cpu_ptb/DUT/EX_aluout \
@@ -110,6 +141,7 @@ sim:/cpu_ptb/DUT/MEM_MemWrite \
 sim:/cpu_ptb/DUT/MEM_pcs_select \
 sim:/cpu_ptb/DUT/MEM_MemtoReg \
 sim:/cpu_ptb/DUT/MEM_RegWrite \
+sim:/cpu_ptb/DUT/MEM_hlt_select \
 sim:/cpu_ptb/DUT/MEMFwd \
 sim:/cpu_ptb/DUT/WB_mem_out \
 sim:/cpu_ptb/DUT/WB_aluout \
@@ -117,316 +149,93 @@ sim:/cpu_ptb/DUT/WB_destReg \
 sim:/cpu_ptb/DUT/WB_pcs_select \
 sim:/cpu_ptb/DUT/WB_MemtoReg \
 sim:/cpu_ptb/DUT/WB_RegWrite \
+sim:/cpu_ptb/DUT/WB_hlt_select \
 sim:/cpu_ptb/DUT/error \
 sim:/cpu_ptb/DUT/Flush
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: pokem  Hostname: PC-SHAWN  ProcessID: 111232
-#           Attempting to use alternate WLF file "./wlft4m1jbq".
+#           Attempting to use alternate WLF file "./wlft7d0j1q".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft4m1jbq
+#           Using alternate file: ./wlft7d0j1q
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run -all
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 1805 ns  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
 # Compile of cpu.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# Loading work.cpu
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# Break key hit
-# Simulation stop requested.
-# Compile of cpu.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 2105 ns  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
-view -new wave
-# .main_pane.wave1.interior.cs.body.pw.wf
-add wave -position insertpoint  \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/clk} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/rst} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/D} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/WriteReg} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/ReadEnable1} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/ReadEnable2} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/Bitline1} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/Bitline2}
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 2105 ns  Iteration: 0  Instance: /cpu_ptb
-# 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
 add wave -position insertpoint sim:/cpu_ptb/DUT/regfile/*
+restart
+# Closing VCD file "dump.vcd"
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
 # Compile of cpu.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# Loading work.cpu
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 2105 ns  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
-# Compile of cpu.v was successful.
+# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
+# Compile of project-phase2-testbench.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# Loading work.cpu_ptb
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# Break key hit
-# Simulation stop requested.
-# Compile of cpu.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 2105 ns  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
-view -new wave
-# .main_pane.wave2.interior.cs.body.pw.wf
-add wave -position insertpoint  \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/clk} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/rst} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/D} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/WriteEnable} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/ReadEnable1} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/ReadEnable2} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/Bitline1} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/Bitline2} \
-{sim:/cpu_ptb/DUT/regfile/regs[5]/cells[2]/Q}
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 2105 ns  Iteration: 0  Instance: /cpu_ptb
-# 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
-view -new wave
-# .main_pane.wave3.interior.cs.body.pw.wf
-add wave -position insertpoint  \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/clk} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/rst} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/D} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/WriteReg} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/ReadEnable1} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/ReadEnable2} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/Bitline1} \
-{sim:/cpu_ptb/DUT/regfile/regs[4]/Bitline2}
+# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
 # Compile of imemory.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.imemory1c(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.dff(fast__1)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.dmemory1c(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast)
-# Loading work.BitCell(fast)
+# Loading work.imemory1c
 run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : I:/ece552/project/project-phase2-testbench.v(123)
-#    Time: 1705 ns  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2105 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123

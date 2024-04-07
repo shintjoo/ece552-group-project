@@ -109,23 +109,23 @@ Control controlunit(
 assign reg1 = (LoadByte) ? ID_rd : ID_rs;
 assign reg2 = (MemRead || MemWrite) ? ID_rd : ID_rt;
 RegisterFile regfile (.clk(clk), .rst(~rst_n), .SrcReg1(reg1), .SrcReg2(reg2), .DstReg(WB_destReg), .WriteReg(WB_RegWrite), .DstData(ID_reg_datain), .SrcData1(ID_dataout1), .SrcData2(ID_dataout2));
-assign sextimm = (ALUSrc8bit) ? ({8'h00, imm8bit}) : {{11{ID_rt[3]}}, ID_rt, 1'b0};
+assign sextimm = (ALUSrc8bit) ? ({8'h00, imm8bit}) : (MemRead || MemWrite) ? ({{11{ID_rt[3]}}, ID_rt, 1'b0}) : {{12{1'b0}}, ID_rt};
 
-assign RegWrite_NOP = (Stall) ? 16'h0000 : RegWrite;
-assign MemtoReg_NOP = (Stall) ? 16'h0000 : MemtoReg;
-assign pcs_select_NOP = (Stall) ? 16'h0000 : pcs_select;
-assign MemRead_NOP = (Stall) ? 16'h0000 : MemRead;
-assign MemWrite_NOP = (Stall) ? 16'h0000 : MemWrite;
-assign ALUSrc_NOP = (Stall) ? 16'h0000 : ALUSrc;
-assign ALUSrc8bit_NOP = (Stall) ? 16'h0000 : ALUSrc8bit;
+assign RegWrite_NOP = (Stall) ? 1'b0 : RegWrite;
+assign MemtoReg_NOP = (Stall) ? 1'b0 : MemtoReg;
+assign pcs_select_NOP = (Stall) ? 1'b0 : pcs_select;
+assign MemRead_NOP = (Stall) ? 1'b0 : MemRead;
+assign MemWrite_NOP = (Stall) ? 1'b0 : MemWrite;
+assign ALUSrc_NOP = (Stall) ? 1'b0 : ALUSrc;
+assign ALUSrc8bit_NOP = (Stall) ? 1'b0 : ALUSrc8bit;
 assign ID_dataout1_NOP = (Stall) ? 16'h0000 : ID_dataout1;
 assign ID_dataout2_NOP = (Stall) ? 16'h0000 : ID_dataout2;
 assign sextimm_NOP = (Stall) ? 16'h0000 : sextimm;
-assign ID_rs_NOP = (Stall) ? 16'h0000 : ID_rs;
-assign ID_rt_NOP = (Stall) ? 16'h0000 : ID_rt;
-assign ID_rd_NOP = (Stall) ? 16'h0000 : ID_rd;
-assign Opcode_NOP = (Stall) ? 16'h0000 : Opcode;
-assign hlt_select_NOP = (Stall) ? 16'h0000 : hlt_select;
+assign ID_rs_NOP = (Stall) ? 4'b0000 : ID_rs;
+assign ID_rt_NOP = (Stall) ? 4'b0000 : ID_rt;
+assign ID_rd_NOP = (Stall) ? 4'b0000 : ID_rd;
+assign Opcode_NOP = (Stall) ? 4'b0000 : Opcode;
+assign hlt_select_NOP = (Stall) ? 1'b0 : hlt_select;
 
 //ID/EX Registers
 dff IDEX_WB_RegWrite (.q(EX_RegWrite), .d(RegWrite_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
@@ -172,7 +172,7 @@ dff EXMEM_WB_pcs_select (.q(MEM_pcs_select), .d(EX_pcs_select), .wen(~MEM_hlt_se
 dff EXMEM_M_MemRead (.q(MEM_MemRead), .d(EX_MemRead), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 dff EXMEM_M_MemWrite (.q(MEM_MemWrite), .d(EX_MemWrite), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 dff EXMEM_ALUOut [15:0](.q(MEM_aluout), .d(EX_aluout), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_MemData [15:0](.q(MEM_dmem_in), .d(EX_dataout2), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n)); //dataout2 will need to go through a mux
+dff EXMEM_MemData [15:0](.q(MEM_dmem_in), .d(ALUFwdIn2), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n)); //dataout2 will need to go through a mux
 dff EXMEM_DestReg [3:0](.q(MEM_destReg), .d(destReg), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 dff EXMEM_hlt_select (.q(MEM_hlt_select), .d(EX_hlt_select), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 
