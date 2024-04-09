@@ -10,7 +10,7 @@ output [15:0] pc;
 
 //control signals
 wire RegWrite, MemRead, MemWrite, Branch, MemtoReg, ALUSrc; //control signals
-wire pcs_select, hlt_select, ALUSrc8bit, LoadByte, BranchReg;
+wire pcs_select, hlt_select, ALUSrc8bit, LoadByte, BranchReg, Flush;
 
 
 //intermediate signals
@@ -35,26 +35,26 @@ wire [15:0] EX_dataout1, EX_dataout2, EX_sextimm;
 wire [3:0] EX_rs, EX_rd, EX_rt, EX_ALUop;
 wire EX_ALUSrc, EX_ALUSrc8bit, EX_MemRead, EX_MemWrite, EX_pcs_select, EX_MemtoReg, EX_RegWrite, EX_hlt_select; //control signals
 wire [2:0] Flags;
-wire [15:0] aluin2, EX_aluout, ALUFwdIn1, ALUFwdIn2;
+wire [15:0] aluin2, EX_aluout, ALUFwdIn1, ALUFwdIn2, ALUFwdReg, EX_pc_increment;
 wire [3:0] destReg;
 wire [1:0] ALUFwd1, ALUFwd2;
 
 //Memory
 wire [15:0] MEM_aluout, MEM_dmem_in;
 wire [3:0] MEM_destReg;
-wire [15:0] MEM_mem_out, MEMFwdIn;
+wire [15:0] MEM_mem_out, MEMFwdIn, MEM_pc_increment;
 wire MEM_MemRead, MEM_MemWrite, MEM_pcs_select, MEM_MemtoReg, MEM_RegWrite, MEM_hlt_select; //control signals
 wire MEMFwd;
 
 //Writeback
-wire [15:0] WB_mem_out, WB_aluout;
+wire [15:0] WB_mem_out, WB_aluout, WB_pc_increment;
 wire [3:0] WB_destReg;
 wire WB_pcs_select, WB_MemtoReg, WB_RegWrite, WB_hlt_select; //control signals
 
 wire error;
 
 //Fetch Stage
-assign IF_pc_choose = (Branch || BranchReg) ? ID_pc_branch : IF_pc_increment;
+assign IF_pc_choose = ((Branch || BranchReg) & Flush) ? ID_pc_branch : IF_pc_increment;
 dff pc_reg [15:0](.q(IF_pc_out), .d(IF_pc_choose), .wen((~hlt_select & ~Stall) & clk), .clk(clk), .rst(~rst_n)); //double check hlt_select and Flush
 imemory1c imem(.data_out(IF_instruction), .data_in(16'b0), .addr(IF_pc_out), .enable(~Stall & ~hlt_select), .wr(1'b0), .clk(clk), .rst(~rst_n));
 addsub_16bit increment(.Sum(IF_pc_increment), .A(IF_pc_out), .B(16'h0002), .sub(1'b0), .sat());
@@ -64,10 +64,10 @@ dff IFID_Instruction [15:0](.q(ID_instruction), .d(IF_instruction), .wen(~hlt_se
 dff IFID_PCIncrement [15:0](.q(ID_pc_increment), .d(IF_pc_increment), .wen(~hlt_select & ~Stall), .clk(clk), .rst((~rst_n) || Flush));
 
 
-//Decode Stage
+//Decode Stage // I changed MEM_DesReg to be desReg.
 PC_control pccontrol(.C(ccc), .I(imm9bit), .F(Flags), .branch(Branch), .branch_reg(BranchReg), .PC_in(ID_pc_increment), .regAddr(ID_dataout1), .PC_out(ID_pc_branch)); //PC Calculation
-hazard hazard_unit(.ID_rs(ID_rs), .ID_rt(ID_rt), .WB_destReg(WB_destReg), .MEM_destReg(MEM_destReg), .Branch(Branch), .BranchReg(BranchReg), .EX_MemRead(EX_MemRead), .MemWrite(MemWrite), .Stall(Stall));
-
+hazard hazard_unit(.ID_rs(reg1), .ID_rt(reg2), .MEM_destReg(MEM_destReg), .destReg(destReg), .Branch(Branch), .BranchReg(BranchReg), .EX_MemRead(EX_MemRead), .MemWrite(MemWrite), .Stall(Stall));
+ 
 assign ID_instruction_or_nop = ID_instruction; //(Stall) ? 16'h0000 :
 assign Opcode = ID_instruction_or_nop[15:12];
 assign ID_rs = ID_instruction_or_nop[7:4];
@@ -143,6 +143,7 @@ dff IDEX_RegisterRT [3:0](.q(EX_rt), .d(ID_rt_NOP), .wen(~EX_hlt_select), .clk(c
 dff IDEX_RegisterRD [3:0](.q(EX_rd), .d(ID_rd_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
 dff IDEX_ALUop [3:0](.q(EX_ALUop), .d(Opcode_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
 dff IDEX_hlt_select (.q(EX_hlt_select), .d(hlt_select_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
+dff IDEX_pc_increment [15:0](.q(EX_pc_increment), .d(ID_pc_increment), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
 
 //Execute Stage
 assign aluin2 = (EX_ALUSrc || EX_ALUSrc8bit) ? EX_sextimm : EX_dataout2;
@@ -150,6 +151,7 @@ assign ALUFwdIn1 = (ALUFwd1[1]) ? MEM_aluout : ((ALUFwd1[0]) ? ID_reg_datain : E
 assign ALUFwdIn2 = (ALUFwd2[1]) ? MEM_aluout : ((ALUFwd2[0]) ? ID_reg_datain : aluin2);
 ALU ex(.ALU_Out(EX_aluout), .Error(error), .ALU_In1(ALUFwdIn1), .ALU_In2(ALUFwdIn2), .ALUOp(EX_ALUop), .Flags(Flags), .clk(clk), .rst(~rst_n));
 assign destReg = EX_rd;
+assign ALUFwdReg = (ALUFwd2[1]) ? MEM_aluout : ((ALUFwd2[0]) ? ID_reg_datain : EX_dataout2);
 ForwardingUnit fwd_unit(
     .EX_rd(EX_rd),
     .EX_rs(EX_rs), 
@@ -172,14 +174,15 @@ dff EXMEM_WB_pcs_select (.q(MEM_pcs_select), .d(EX_pcs_select), .wen(~MEM_hlt_se
 dff EXMEM_M_MemRead (.q(MEM_MemRead), .d(EX_MemRead), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 dff EXMEM_M_MemWrite (.q(MEM_MemWrite), .d(EX_MemWrite), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 dff EXMEM_ALUOut [15:0](.q(MEM_aluout), .d(EX_aluout), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_MemData [15:0](.q(MEM_dmem_in), .d(ALUFwdIn2), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n)); //dataout2 will need to go through a mux
+dff EXMEM_MemData [15:0](.q(MEM_dmem_in), .d(ALUFwdReg), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n)); //dataout2 will need to go through a mux
 dff EXMEM_DestReg [3:0](.q(MEM_destReg), .d(destReg), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 dff EXMEM_hlt_select (.q(MEM_hlt_select), .d(EX_hlt_select), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
+dff EXMEM_pc_increment [15:0](.q(MEM_pc_increment), .d(EX_pc_increment), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
 
 
 //Memory Stage
 assign MEMFwdIn = (MEMFwd) ? ID_reg_datain : MEM_dmem_in;
-dmemory1c dmem(.data_out(MEM_mem_out), .data_in(MEMFwdIn), .addr(MEM_aluout), .enable(MEM_MemRead), .wr(MEM_MemWrite), .clk(clk), .rst(~rst_n));
+dmemory1c dmem(.data_out(MEM_mem_out), .data_in(MEMFwdIn), .addr(MEM_aluout), .enable(1'b1), .wr(MEM_MemWrite), .clk(clk), .rst(~rst_n));
 
 //MEM/WB Registers
 dff MEMWB_WB_RegWrite (.q(WB_RegWrite), .d(MEM_RegWrite), .wen(~WB_hlt_select), .clk(clk), .rst(~rst_n));
@@ -189,9 +192,10 @@ dff MEMWB_MemOut [15:0](.q(WB_mem_out), .d(MEM_mem_out), .wen(~WB_hlt_select), .
 dff MEMWB_ALUOut [15:0](.q(WB_aluout), .d(MEM_aluout), .wen(~WB_hlt_select), .clk(clk), .rst(~rst_n));
 dff MEMWB_DestReg [3:0](.q(WB_destReg), .d(MEM_destReg), .wen(~WB_hlt_select), .clk(clk), .rst(~rst_n));
 dff MEMWB_hlt_select (.q(WB_hlt_select), .d(MEM_hlt_select), .wen(~WB_hlt_select), .clk(clk), .rst(~rst_n));
+dff MEMWB_pc_increment [15:0](.q(WB_pc_increment), .d(MEM_pc_increment), .wen(~WB_hlt_select), .clk(clk), .rst(~rst_n));
 
 //Writeback Stage
-assign ID_reg_datain = (WB_pcs_select) ? ID_pc_increment : ((WB_MemtoReg) ? WB_mem_out : WB_aluout); //PC_increment doesn't exist here
+assign ID_reg_datain = (WB_pcs_select) ? WB_pc_increment : ((WB_MemtoReg) ? WB_mem_out : WB_aluout); //PC_increment doesn't exist here
 
 assign pc = IF_pc_out;
 

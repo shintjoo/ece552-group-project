@@ -29,32 +29,179 @@
 # Compile of Shifter_tb.sv was successful.
 # Compile of WriteDecoder_4_16.v was successful.
 # 30 compiles, 0 failed with no errors.
-vsim -gui work.cpu_ptb
-# vsim -gui work.cpu_ptb 
-# Start time: 20:07:40 on Apr 06,2024
-# Loading work.cpu_ptb
-# Loading work.cpu
-# Loading work.imemory1c
-# Loading work.addsub_16bit
-# Loading work.adder_4bit
-# Loading work.PC_control
-# Loading work.hazard
-# Loading work.Control
-# Loading work.RegisterFile
-# Loading work.ReadDecoder_4_16
-# Loading work.WriteDecoder_4_16
-# Loading work.dff
-# Loading work.ALU
-# Loading work.Shifter
-# Loading work.RED
-# Loading work.PADDSB
-# Loading work.adder_4bit_sat
-# Loading work.ForwardingUnit
-# Loading work.dmemory1c
-# Loading work.Register
-# Loading work.BitCell
+vsim work.cpu_ptb -voptargs=+acc
+# vsim work.cpu_ptb 
+# Start time: 14:52:51 on Apr 08,2024
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:52:54 on Apr 08,2024, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 5
+sim help
+# bad option "help": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+sim -novopt
+# bad option "-novopt": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+vsim -work.cpu_ptb
+# ** UI-Msg: (vish-3296) Unknown option '-work.cpu_ptb'.
+# Use the -help option for complete vsim usage.
+# Error loading design
+vsim work.cpu_ptb
+# vsim work.cpu_ptb 
+# Start time: 14:54:27 on Apr 08,2024
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:54:30 on Apr 08,2024, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 1
+vsim -help
+# Questa  Intel Starter FPGA Edition-64 vsim 2021.2 Simulator 2021.04 Apr 14 2021
+#     The vsim tool provides HDL simulation based on the compiled and optimized
+#     design and it provides various post-simulation analysis capabilities. In
+#     simulation mode it expects to be provided with the optimization output for
+#     the root of the design, or it will automatically produce such an
+#     optimization from the root of the design.
+#     
+#     Try the following to get help on specific options or categories: 
+# 
+#     vsim -help all            : List all categories and options
+#     vsim -help category       : List all categories
+#     vsim -help <option>       : Help on an option
+#     vsim -help <command-line> : Help on all options in a command-line
+#     vsim -help <category>     : List all options in a category
+# 
+#     Category:       The list of categories in vsim tool.
+# 
+#     General         List most common general options
+#     Coverage        List options for Coverage
+#     Cpp             List options supporting SystemC module
+#     Debug           List options for debug, and assertion
+#     GLS             List options for Gate Level Simulation
+#     Language        List all options supported by hardware language Verilog/VHDL
+#     Library         List options for design, work library
+#     License         List options helping for license issues
+#     Messages        List all warn, error, note, fatal messages options
+#     MultiCore       List options supporting for Multicore (MC2)
+#     PA              List most common options supporting for Power Aware
+#     Pdu             List options for Preoptimized Design Unit.
+#     Report          List options for reporting log file, statistics, capstats
+#     Solver          List options supporting for Solver
+#     Visualizer      List options supporting for visualizer
+# Coverage
+# invalid command name "Coverage"
+vsim -Coverage
+# ** UI-Msg: (vish-3296) Unknown option '-Coverage'.
+# Use the -help option for complete vsim usage.
+# Error loading design
+vsim Coverage
+# vsim Coverage 
+# Start time: 14:55:04 on Apr 08,2024
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:55:07 on Apr 08,2024, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 1
+vsim work.cpu_ptb -voptargs=+acc
+# vsim work.cpu_ptb 
+# Start time: 14:58:06 on Apr 08,2024
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:58:09 on Apr 08,2024, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 1
+vsim work.cpu_ptb -vopt
+# vsim work.cpu_ptb -vopt 
+# Start time: 14:58:23 on Apr 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.cpu_ptb(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2605 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+# Compile of hazard.v was successful.
+# Compile of imemory.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_ptb(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+vsim -vopt work.cpu_ptb -voptargs=+acc
+# End time: 15:07:52 on Apr 08,2024, Elapsed time: 0:09:29
+# Errors: 0, Warnings: 1
+# vsim -vopt work.cpu_ptb -voptargs="+acc" 
+# Start time: 15:07:52 on Apr 08,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1905 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+# Compile of imemory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2705 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
 view -new wave
-# -new not supported on PE
+# .main_pane.wave.interior.cs.body.pw.wf
 add wave -position insertpoint  \
 sim:/cpu_ptb/DUT/clk \
 sim:/cpu_ptb/DUT/rst_n \
@@ -71,6 +218,7 @@ sim:/cpu_ptb/DUT/hlt_select \
 sim:/cpu_ptb/DUT/ALUSrc8bit \
 sim:/cpu_ptb/DUT/LoadByte \
 sim:/cpu_ptb/DUT/BranchReg \
+sim:/cpu_ptb/DUT/Flush \
 sim:/cpu_ptb/DUT/IF_pc_out \
 sim:/cpu_ptb/DUT/IF_instruction \
 sim:/cpu_ptb/DUT/IF_pc_increment \
@@ -128,6 +276,8 @@ sim:/cpu_ptb/DUT/aluin2 \
 sim:/cpu_ptb/DUT/EX_aluout \
 sim:/cpu_ptb/DUT/ALUFwdIn1 \
 sim:/cpu_ptb/DUT/ALUFwdIn2 \
+sim:/cpu_ptb/DUT/ALUFwdReg \
+sim:/cpu_ptb/DUT/EX_pc_increment \
 sim:/cpu_ptb/DUT/destReg \
 sim:/cpu_ptb/DUT/ALUFwd1 \
 sim:/cpu_ptb/DUT/ALUFwd2 \
@@ -136,6 +286,7 @@ sim:/cpu_ptb/DUT/MEM_dmem_in \
 sim:/cpu_ptb/DUT/MEM_destReg \
 sim:/cpu_ptb/DUT/MEM_mem_out \
 sim:/cpu_ptb/DUT/MEMFwdIn \
+sim:/cpu_ptb/DUT/MEM_pc_increment \
 sim:/cpu_ptb/DUT/MEM_MemRead \
 sim:/cpu_ptb/DUT/MEM_MemWrite \
 sim:/cpu_ptb/DUT/MEM_pcs_select \
@@ -145,97 +296,288 @@ sim:/cpu_ptb/DUT/MEM_hlt_select \
 sim:/cpu_ptb/DUT/MEMFwd \
 sim:/cpu_ptb/DUT/WB_mem_out \
 sim:/cpu_ptb/DUT/WB_aluout \
+sim:/cpu_ptb/DUT/WB_pc_increment \
 sim:/cpu_ptb/DUT/WB_destReg \
 sim:/cpu_ptb/DUT/WB_pcs_select \
 sim:/cpu_ptb/DUT/WB_MemtoReg \
 sim:/cpu_ptb/DUT/WB_RegWrite \
 sim:/cpu_ptb/DUT/WB_hlt_select \
-sim:/cpu_ptb/DUT/error \
-sim:/cpu_ptb/DUT/Flush
+sim:/cpu_ptb/DUT/error
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: pokem  Hostname: PC-SHAWN  ProcessID: 111232
-#           Attempting to use alternate WLF file "./wlft7d0j1q".
+#           Attempting to use alternate WLF file "./wlftev71hm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7d0j1q
+#           Using alternate file: ./wlftev71hm
+run -all
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 2800 ps  Iteration: 1  Instance: /cpu_ptb
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 2800 ps  Iteration: 1  Instance: /cpu_ptb
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 2800 ps  Iteration: 1  Instance: /cpu_ptb
+# ** Warning: No matching channel descriptor '4' found.  Ignoring the write into the invalid channel.
+#    Time: 2800 ps  Iteration: 1  Instance: /cpu_ptb
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
 restart
+# Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
 run -all
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
-#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2705 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf I:/Desktop/ECE552/Project_Phase2/ece552-group-project/wave.do
+do I:/Desktop/ECE552/Project_Phase2/ece552-group-project/wave.do
 # Compile of cpu.v was successful.
+# Compile of hazard.v failed with 1 errors.
+# Compile of imemory.v was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of hazard.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
-#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2005 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
-add wave -position insertpoint sim:/cpu_ptb/DUT/regfile/*
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+view -new wave
+# .main_pane.wave1.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/cpu_ptb/DUT/hazard_unit/ID_rs \
+sim:/cpu_ptb/DUT/hazard_unit/ID_rt \
+sim:/cpu_ptb/DUT/hazard_unit/MEM_destReg \
+sim:/cpu_ptb/DUT/hazard_unit/destReg \
+sim:/cpu_ptb/DUT/hazard_unit/EX_MemRead \
+sim:/cpu_ptb/DUT/hazard_unit/MEM_MemRead \
+sim:/cpu_ptb/DUT/hazard_unit/MemWrite \
+sim:/cpu_ptb/DUT/hazard_unit/Branch \
+sim:/cpu_ptb/DUT/hazard_unit/BranchReg \
+sim:/cpu_ptb/DUT/hazard_unit/Stall \
+sim:/cpu_ptb/DUT/hazard_unit/stall1 \
+sim:/cpu_ptb/DUT/hazard_unit/stall2 \
+sim:/cpu_ptb/DUT/hazard_unit/stall3 \
+sim:/cpu_ptb/DUT/hazard_unit/stall4
 restart
 # Closing VCD file "dump.vcd"
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
-#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2005 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
 # Compile of cpu.v was successful.
+# Compile of hazard.v was successful.
+# 2 compiles, 0 failed with no errors.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_ptb/DUT/hazard_unit/MEM_MemRead'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_ptb/DUT/hazard_unit/stall4'. 
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
-#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1905 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
-# Compile of project-phase2-testbench.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.cpu_ptb
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
-#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
-# 1
-# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
 # Compile of imemory.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.imemory1c
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# ** Note: $finish    : C:/Users/pokem/ece552-group-project/project-phase2-testbench.v(123)
-#    Time: 2105 ps  Iteration: 0  Instance: /cpu_ptb
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at C:/Users/pokem/ece552-group-project/project-phase2-testbench.v line 123
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 1705 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
+# Compile of imemory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.imemory1c(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.dff(fast__1)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.dmemory1c(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast)
+# Loading work.BitCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v(123)
+#    Time: 2705 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v line 123
