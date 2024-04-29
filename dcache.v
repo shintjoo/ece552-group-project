@@ -1,4 +1,4 @@
-module dcache(clk, rst, MetaDataIn, MetaWrite, BlockEnable, MetaDataOut, DataIn, DataWrite);
+module dcache(clk, rst, MetaDataIn, MetaWrite, BlockEnable, MetaDataOut, DataIn, DataWrite, WordEnable, DataOut);
     input clk, rst;
     input [7:0] MetaDataIn;
     input MetaWrite;
