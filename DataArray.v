@@ -3,8 +3,9 @@
 //BlockEnable and WordEnable are one-hot
 //WriteEnable is one on writes and zero on reads
 
-module DataArray(input clk, input rst, input [15:0] DataIn, input Write, input [127:0] BlockEnable, input [7:0] WordEnable, output [15:0] DataOut);
-	Block blk[127:0]( .clk(clk), .rst(rst), .Din(DataIn), .WriteEnable(Write), .Enable(BlockEnable), .WordEnable(WordEnable), .Dout(DataOut));
+module DataArray(input clk, input rst, input [15:0] DataIn, input Write1, input Write2, input [63:0] BlockEnable, input [7:0] WordEnable, output [15:0] DataOut1, output [15:0] DataOut2);
+	Block way1[63:0](.clk(clk), .rst(rst), .Din(DataIn), .WriteEnable(Write1), .Enable(BlockEnable), .WordEnable(WordEnable), .Dout(DataOut1));
+	Block way2[63:0](.clk(clk), .rst(rst), .Din(DataIn), .WriteEnable(Write2), .Enable(BlockEnable), .WordEnable(WordEnable), .Dout(DataOut2));
 endmodule
 
 //64 byte (8 word) cache block

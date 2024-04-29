@@ -1,17 +1,17 @@
-module dcache(clk, rst, MetaDataIn, MetaWrite, BlockEnable, MetaDataOut, DataIn, DataWrite, WordEnable, DataOut);
+module dcache(clk, rst, MetaDataIn, MetaWrite1, MetaWrite2, BlockEnable, MetaDataOut1, MetaDataOut2, DataIn,  DataWrite1, DataWrite2, WordEnable, DataOut1, DataOut2);
     input clk, rst;
     input [7:0] MetaDataIn;
-    input MetaWrite;
+    input MetaWrite1, MetaWrite2;
     input [127:0] BlockEnable;
-    output [7:0] MetaDataOut;
+    output [7:0] MetaDataOut1, MetaDataOut2;
     input [15:0] DataIn;
-    input DataWrite;
+    input DataWrite1, DataWrite2;
     input [7:0] WordEnable;
-    output [15:0] DataOut;
+    output [15:0] DataOut1, DataOut2;
 
 
-    MetaDataArray(.clk(clk), .rst(rst), .DataIn(MetaDataIn), .Write(MetaWrite), .BlockEnable(BlockEnable), .DataOut(MetaDataOut));
+    MetaDataArray meta(.clk(clk), .rst(rst), .DataIn(MetaDataIn), .Write1(MetaWrite1), .Write2(MetaWrite2), .BlockEnable(BlockEnable), .DataOut1(MetaDataOut1), .DataOut2(MetaDataOut2));
 
-    DataArray(.clk(clk), .rst(rst), .DataIn(DataIn), .Write(DataWrite), .BlockEnable(BlockEnable), .WordEnable(WordEnable), .DataOut(DataOut));
+    DataArray data(.clk(clk), .rst(rst), .DataIn(DataIn), .Write1(DataWrite1), .Write2(DataWrite2), .BlockEnable(BlockEnable), .WordEnable(WordEnable), .DataOut1(DataOut1), .DataOut2(DataOut2));
 
 endmodule
