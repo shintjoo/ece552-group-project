@@ -1,3 +1,8 @@
+/*
+ * adder_4bit_tb.sv
+ * Shawn Zhu
+ * ECE552
+ */
 module addsub_4bit_tb();
 
 reg signed [3:0] stm_a,stm_b; // used as stimulus for a,b

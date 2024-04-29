@@ -1,14 +1,27 @@
+/*
+ * Control.v
+ * Shawn Zhu
+ * ECE552
+ */
 module Control(
     input [3:0] instruction,
+    //input both the incremented pc and the branch calculated
+    input [15:0] ID_pc_increment,
+    input [15:0] ID_pc_branch,
     output reg RegWrite,
     output reg MemRead,
     output reg MemWrite,
     output reg Branch,
+    output reg BranchReg,
     output reg MemtoReg,
     output reg ALUSrc,
     output reg pcs_select,
     output reg hlt_select,
-    output reg ALUSrc8bit
+    output reg ALUSrc8bit,
+    output reg LoadByte,
+    output reg Flush
+    //input both the incremented pc 
+    //input the branch calculated
 );
 
 reg error;
@@ -26,17 +39,20 @@ reg error;
 // branch register BR 1101
 // pcstore PCS 1110
 // halt HLT 1111
-always @ (instruction) begin
+always @ (*) begin
     // Default values
     RegWrite  = 1'b0;
     MemRead = 1'b0;
     MemWrite = 1'b0;
     Branch = 1'b0;
+    BranchReg = 1'b0;
     MemtoReg = 1'b0;
     ALUSrc = 1'b0;
     pcs_select = 1'b0;
     hlt_select = 1'b0;
     ALUSrc8bit = 1'b0;
+    LoadByte = 1'b0;
+    Flush = 1'b0;
     error = 1'b0;
 
     // Decode the instruction
@@ -58,11 +74,13 @@ always @ (instruction) begin
         4'b101x: begin      // operate on one register and 8 bit imm LLB 1010, LHB 1011
             RegWrite = 1'b1;
             ALUSrc8bit = 1'b1;
+            LoadByte = 1'b1;
         end
         4'b1000: begin      //lw
             RegWrite  = 1'b1;
             MemRead = 1'b1;
             ALUSrc = 1'b1;
+            MemtoReg = 1'b1;
         end
         4'b1001: begin      //sw
             MemWrite = 1'b1;
@@ -70,11 +88,19 @@ always @ (instruction) begin
         end
         4'b1100: begin      // branch B 1100
             Branch = 1'b1;
+
+            //compare the branches if they aren't the same, set the flush to 1.
+            Flush = (ID_pc_increment != ID_pc_branch) ? 1'b1 : 1'b0;
         end
         4'b1101: begin      // branch register BR 1101
-            Branch = 1'b0;
+            BranchReg = 1'b1;
+
+            //compare the branches if they aren't the same, set the flush to 1.
+            Flush = (ID_pc_increment != ID_pc_branch) ? 1'b1 : 1'b0;
+            
         end
         4'b1110: begin     // pcstore PCS 1110
+            RegWrite  = 1'b1;
             pcs_select = 1'b1;
         end
         4'b1111: begin      // halt HLT 1111

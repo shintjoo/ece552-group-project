@@ -1,0 +1,10 @@
+*.bak
+*.vcd
+*.mti
+*.mpf
+*.log
+*.trace
+*.qdb
+*.qtl
+*.qpg
+*.wlf
