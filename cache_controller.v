@@ -109,11 +109,12 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     //check for hits
     assign instHit1 = (I_tag == I_MetaDataOut1[7:2]) & I_MetaDataOut1[0];
     assign instHit2 = (I_tag == I_MetaDataOut2[7:2]) & I_MetaDataOut2[0];
-    assign instMiss = ~instHit1 & ~instHit2 & (memRead | memWrite);
+    assign instMiss = ~instHit1 & ~instHit2;
 
     //instruction cache input signals
-    assign I_MetaDataIn1 = instHit1 ? {I_tag, 1'b0, 1'b1} : instHit2 ? {I_MetaDataOut1[7:2], 1'b1, I_MetaDataOut2[0]} : I_MetaDataOut1; //if hit then update tag and set LRU = 0, else if hit on the other line update LRU = 1, else keep the same
-    assign I_MetaDataIn2 = instHit2 ? {I_tag, 1'b0, 1'b1} : instHit1 ? {I_MetaDataOut1[7:2], 1'b1, I_MetaDataOut2[0]} : I_MetaDataOut2;
+    assign I_MetaDataIn1 = instHit1 ? {I_tag, 1'b0, 1'b1} : instHit2 ? {I_MetaDataOut1[7:2], 1'b1, I_MetaDataOut1[0]} : I_MetaDataOut1; //if hit then update tag and set LRU = 0, else if hit on the other line update LRU = 1, else keep the same
+    assign I_MetaDataIn2 = instHit2 ? {I_tag, 1'b0, 1'b1} : instHit1 ? {I_MetaDataOut2[7:2], 1'b1, I_MetaDataOut2[0]} : I_MetaDataOut2;
+    assign I_DataIn = mainMemOut;
 
     assign I_MetaWrite1 = I_FSMMetaEn & instMiss;
     assign I_MetaWrite2 = I_FSMMetaEn & instMiss;
