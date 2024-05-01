@@ -2,12 +2,15 @@ module cache_fill_FSM(clk, rst_n, miss_detected, miss_address, fsm_busy, write_d
 input clk, rst_n;
 input miss_detected;            // active high when tag match logic detects a miss
 input [15:0] miss_address;      // address that missed the cache
+input [15:0] memory_data;       // data returned by memory (after  delay)
+input memory_data_valid;        // active high indicates valid data returning on memory bus
+
 output fsm_busy;                // asserted while FSM is busy handling the miss (can be used as pipeline stall signal)
 output write_data_array;        // write enable to cache data array to signal when filling with memory_data
 output write_tag_array;         // write enable to cache tag array to signal when all words are filled in to data array
 output [15:0] memory_address;   // address to read from memory
-input [15:0] memory_data;       // data returned by memory (after  delay)
-input memory_data_valid;        // active high indicates valid data returning on memory bus
+
+
 
 wire state, next_state;
 wire [3:0] count, next_count, inc_count, addr, next_addr, inc_addr;
@@ -31,11 +34,11 @@ dff count_ff[3:0](.q(count), .d(next_count), .wen(memory_data_valid), .clk(clk),
 adder_4bit inc_mem_adder(.Sum(inc_addr), .A(addr), .B(4'h2), .Cin(1'b0), .Cout());
 assign next_addr = (state) ? inc_addr : 4'h0;
 dff addr_ff[3:0](.q(addr), .d(next_addr), .wen(state), .clk(clk), .rst(~rst_n | (~state & next_state)));
-adder_16bit out_mem_adder(.Sum(memory_address), .A(addr), .B({miss_address[15:4],4'h0}), .Cin(1'b0), .Cout());
+addsub_16bit out_mem_adder(.Sum(memory_address), .A({{12{1'b0}},addr}), .B({miss_address[15:4],4'h0}), .sub(1'b0), .sat());
 
 // outputs
-assign fsm_busy = ((~state & miss_detected) | (state)) ? 1'b1 : 1'b0;
-assign write_data_array = (memory_data_valid & next_state) ? 1'b1 : 1'b0;
-assign write_tag_array = ((count == 4'h8) & state) ? 1'b1 : 1'b0;
+assign fsm_busy = ((~state & miss_detected) | (state));
+assign write_data_array = (memory_data_valid & next_state);
+assign write_tag_array = ((count == 4'h8) & state);
 
 endmodule

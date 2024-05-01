@@ -16,6 +16,7 @@ wire pcs_select, hlt_select, ALUSrc8bit, LoadByte, BranchReg, Flush;
 //intermediate signals
 //Fetch
 wire [15:0] IF_pc_out, IF_instruction, IF_pc_increment, IF_pc_choose;
+wire IFStall;
 
 //Decode
 wire [15:0] ID_instruction, ID_instruction_or_nop, ID_pc_increment, ID_pc_branch, ID_reg_datain, ID_dataout1, ID_dataout2;
@@ -45,6 +46,7 @@ wire [3:0] MEM_destReg;
 wire [15:0] MEM_mem_out, MEMFwdIn, MEM_pc_increment;
 wire MEM_MemRead, MEM_MemWrite, MEM_pcs_select, MEM_MemtoReg, MEM_RegWrite, MEM_hlt_select; //control signals
 wire MEMFwd;
+wire MEMStall;
 
 //Writeback
 wire [15:0] WB_mem_out, WB_aluout, WB_pc_increment;
@@ -53,15 +55,31 @@ wire WB_pcs_select, WB_MemtoReg, WB_RegWrite, WB_hlt_select; //control signals
 
 wire error;
 
+//Cache 
+cache_controller cache(
+    .clk(clk), 
+    .rst(~rst_n), 
+    .memRead(MEM_MemRead), 
+    .memWrite(MEM_MemWrite), 
+    .ins_addr(IF_pc_out), 
+    .mem_addr(MEM_aluout), 
+    .memDataIn(MEMFwdIn), 
+    .instDataIn(16'h0000), 
+    .memDataOut(MEM_mem_out), 
+    .instDataOut(IF_instruction), 
+    .IFStall(IFStall), 
+    .MEMStall(MEMStall)
+);
+
 //Fetch Stage
 assign IF_pc_choose = ((Branch || BranchReg) & Flush) ? ID_pc_branch : IF_pc_increment;
-dff pc_reg [15:0](.q(IF_pc_out), .d(IF_pc_choose), .wen((~hlt_select & ~Stall) & clk), .clk(clk), .rst(~rst_n)); //double check hlt_select and Flush
-imemory1c imem(.data_out(IF_instruction), .data_in(16'b0), .addr(IF_pc_out), .enable(~Stall & ~hlt_select), .wr(1'b0), .clk(clk), .rst(~rst_n));
+dff pc_reg [15:0](.q(IF_pc_out), .d(IF_pc_choose), .wen(((~hlt_select & ~Stall) & clk) | IFStall | MEMStall), .clk(clk), .rst(~rst_n)); //double check hlt_select and Flush
+//imemory1c imem(.data_out(IF_instruction), .data_in(16'b0), .addr(IF_pc_out), .enable(~Stall & ~hlt_select), .wr(1'b0), .clk(clk), .rst(~rst_n));
 addsub_16bit increment(.Sum(IF_pc_increment), .A(IF_pc_out), .B(16'h0002), .sub(1'b0), .sat());
 
 //IF/ID Registers
-dff IFID_Instruction [15:0](.q(ID_instruction), .d(IF_instruction), .wen(~hlt_select & ~Stall), .clk(clk), .rst((~rst_n) || Flush));
-dff IFID_PCIncrement [15:0](.q(ID_pc_increment), .d(IF_pc_increment), .wen(~hlt_select & ~Stall), .clk(clk), .rst((~rst_n) || Flush));
+dff IFID_Instruction [15:0](.q(ID_instruction), .d(IF_instruction), .wen((~hlt_select & ~Stall) | IFStall | MEMStall), .clk(clk), .rst((~rst_n) || Flush));
+dff IFID_PCIncrement [15:0](.q(ID_pc_increment), .d(IF_pc_increment), .wen((~hlt_select & ~Stall) | IFStall | MEMStall), .clk(clk), .rst((~rst_n) || Flush));
 
 
 //Decode Stage // I changed MEM_DesReg to be desReg.
@@ -182,7 +200,7 @@ dff EXMEM_pc_increment [15:0](.q(MEM_pc_increment), .d(EX_pc_increment), .wen(~M
 
 //Memory Stage
 assign MEMFwdIn = (MEMFwd) ? ID_reg_datain : MEM_dmem_in;
-dmemory1c dmem(.data_out(MEM_mem_out), .data_in(MEMFwdIn), .addr(MEM_aluout), .enable(1'b1), .wr(MEM_MemWrite), .clk(clk), .rst(~rst_n));
+//dmemory1c dmem(.data_out(MEM_mem_out), .data_in(MEMFwdIn), .addr(MEM_aluout), .enable(1'b1), .wr(MEM_MemWrite), .clk(clk), .rst(~rst_n));
 
 //MEM/WB Registers
 dff MEMWB_WB_RegWrite (.q(WB_RegWrite), .d(MEM_RegWrite), .wen(~WB_hlt_select), .clk(clk), .rst(~rst_n));

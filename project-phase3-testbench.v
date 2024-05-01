@@ -172,43 +172,43 @@ module cpu_ptb();
    // Is processor halted (1 bit signal)
    
 
-   assign Inst = DUT.p0.instr;
+   assign Inst = DUT.IF_pc_out;
    //Instruction fetched in the current cycle
    
-   assign RegWrite = DUT.p0.regWrite;
+   assign RegWrite = DUT.WB_RegWrite;
    // Is register file being written to in this cycle, one bit signal (1 means yes, 0 means no)
   
-   assign WriteRegister = DUT.p0.DstwithJmout;
+   assign WriteRegister = DUT.WB_destReg;
    // If above is true, this should hold the name of the register being written to. (4 bit signal)
    
-   assign WriteData = DUT.p0.wData;
+   assign WriteData = DUT.ID_reg_datain;
    // If above is true, this should hold the Data being written to the register. (16 bits)
    
-   assign MemRead =  (DUT.p0.memRxout & ~DUT.p0.notdonem);
+   assign MemRead =  DUT.MEM_MemRead;
    // Is memory being read from, in this cycle. one bit signal (1 means yes, 0 means no)
    
-   assign MemWrite = (DUT.p0.memWxout & ~DUT.p0.notdonem);
+   assign MemWrite = DUT.MEM_MemWrite;
    // Is memory being written to, in this cycle (1 bit signal)
    
-   assign MemAddress = DUT.p0.data1out;
+   assign MemAddress = DUT.MEM_aluout;
    // If there's a memory access this cycle, this should hold the address to access memory with (for both reads and writes to memory, 16 bits)
    
-   assign MemDataIn = DUT.p0.data2out;
+   assign MemDataIn = DUT.MEMFwdIn;
    // If there's a memory write in this cycle, this is the Data being written to memory (16 bits)
    
-   assign MemDataOut = DUT.p0.readData;
+   assign MemDataOut = DUT.MEM_mem_out;
    // If there's a memory read in this cycle, this is the data being read out of memory (16 bits)
 
-   assign ICacheReq = DUT.p0.icr;
+   assign ICacheReq = ~DUT.hlt;
    // Signal indicating a valid instruction read request to cache
    
-   assign ICacheHit = DUT.p0.ich;
+   assign ICacheHit = ~DUT.cache.instMiss;
    // Signal indicating a valid instruction cache hit
 
-   assign DCacheReq = DUT.p0.dcr;
+   assign DCacheReq = DUT.cache.memRead | DUT.cache.memWrite;
    // Signal indicating a valid instruction data read or write request to cache
    
-   assign DCacheHit = DUT.p0.dch;
+   assign DCacheHit = ~DUT.cache.dataMiss;
    // Signal indicating a valid data cache hit
 
 

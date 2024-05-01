@@ -67,6 +67,12 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s12c _opt1
 R0
 R0
@@ -232,73 +238,74 @@ R4
 R5
 n@_opt3
 R6
+R1
 vadder_16bit_tb
 Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z8 !s110 1712605904
+Z8 !s110 1714523356
 !i10b 1
 !s100 k<I1A7>AW2JzkQf0jI?mz0
-IbL;BaPSR<FFg8gcUUgBHi2
+IPf2`;f^emjZSlPS2K8eBC3
 S1
-Z9 dI:/Desktop/ECE552/Project_Phase2/ece552-group-project
-Z10 w1712174483
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_16bit_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_16bit_tb.sv
-!i122 1243
+Z9 dI:/ece552/project
+Z10 w1712174020
+8I:/ece552/project/adder_16bit_tb.sv
+FI:/ece552/project/adder_16bit_tb.sv
+!i122 1331
 L0 6 50
 Z11 VDg1SIo80bB@j0V0VzS_@n1
 Z12 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1712605904.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_16bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_16bit_tb.sv|
+Z13 !s108 1714523355.000000
+!s107 I:/ece552/project/adder_16bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_16bit_tb.sv|
 !i113 0
-Z13 o-work work -sv
+Z14 o-work work -sv
 R5
 vadder_4bit
-R8
+!s110 1714523355
 !i10b 1
 !s100 RkBiJMa3FFPc]KjnP5gVb3
-ICE243Oh@fag>2e62a2c6N0
+IXAA[YJ>9kh7ZVZ[jCzF_f3
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_4bit.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_4bit.v
-!i122 1242
+8I:/ece552/project/adder_4bit.v
+FI:/ece552/project/adder_4bit.v
+!i122 1330
 L0 6 37
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712605903.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_4bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/adder_4bit.v|
+R13
+!s107 I:/ece552/project/adder_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/adder_4bit.v|
 !i113 0
-Z14 o-work work
+Z15 o-work work
 R5
 vadder_4bit_sat
-!s110 1712605905
+R8
 !i10b 1
 !s100 N8AXTX3X44]XZfO<BabN[2
-I:]IFJh=eB5AF`oCZ57UP92
+I1jWW@hK`E5d@440hJ9PQS1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_sat.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_sat.v
-!i122 1244
+8I:/ece552/project/addsub_4bit_sat.v
+FI:/ece552/project/addsub_4bit_sat.v
+!i122 1332
 L0 6 39
 R11
 R12
 r1
 !s85 0
 31
-Z15 !s108 1712605905.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_sat.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_sat.v|
+!s108 1714523356.000000
+!s107 I:/ece552/project/addsub_4bit_sat.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_4bit_sat.v|
 !i113 0
-R14
+R15
 R5
 vadder_4bit_tb
 R7
@@ -307,7 +314,7 @@ R7
 !s100 H<Q9algEFER3[_5S1IWhj1
 I5lVJAW7iP[=MRaJm[U8j92
 S1
-Z16 dI:/ece552/project
+R9
 w1708656049
 8I:/ece552/project/adder_4bit_tb.sv
 FI:/ece552/project/adder_4bit_tb.sv
@@ -322,36 +329,36 @@ r1
 !s107 I:/ece552/project/adder_4bit_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_4bit_tb.sv|
 !i113 0
-Z17 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z16 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
 vaddsub_16bit
-Z18 !s110 1712605906
+Z17 !s110 1714523358
 !i10b 1
 !s100 k8GX`ES4J4g^LBK>CGJoD0
-I7FYV;[=VTeMzMHc0Ha[kG2
+ICIoA92DG=^c:d_:0eK0A<2
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_16bit.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_16bit.v
-!i122 1246
+8I:/ece552/project/addsub_16bit.v
+FI:/ece552/project/addsub_16bit.v
+!i122 1334
 L0 6 31
 R11
 R12
 r1
 !s85 0
 31
-Z19 !s108 1712605906.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_16bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_16bit.v|
+Z18 !s108 1714523357.000000
+!s107 I:/ece552/project/addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/addsub_16bit.v|
 !i113 0
-R14
+R15
 R5
 vaddsub_4bit
 !s110 1708914809
 !i10b 1
 !s100 2doabOaRzINcV6H]>0:On1
 Ialj^SPIYP>jWecG^UDiFj1
-R16
+R9
 w1708914776
 8I:\ece552\project\addsub_4bit.v
 FI:\ece552\project\addsub_4bit.v
@@ -366,336 +373,586 @@ r1
 !s107 I:\ece552\project\addsub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\addsub_4bit.v|
 !i113 0
-Z20 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z19 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
 vaddsub_4bit_tb
 R7
-R18
+!s110 1714523357
 !i10b 1
 !s100 Qbg3g4l_ACeQIoi=MXggH0
-IT:Yi:g0P6Re71R=AYWPJ;2
+I7:R>C:<7WS_Po4W=;IPg70
 S1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_tb.sv
-!i122 1245
+8I:/ece552/project/addsub_4bit_tb.sv
+FI:/ece552/project/addsub_4bit_tb.sv
+!i122 1333
 L0 6 60
 R11
 R12
 r1
 !s85 0
 31
-R15
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/addsub_4bit_tb.sv|
+R18
+!s107 I:/ece552/project/addsub_4bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/addsub_4bit_tb.sv|
 !i113 0
-R13
+R14
 R5
 vALU
-Z21 !s110 1712605907
+R17
 !i10b 1
 !s100 kkOO8?o52LHf=KOn6?ma02
-IMk7XY]PmX7h`:>[BQn]7R0
+IPjK`d<Vk:J`5n?a`<@QL92
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ALU.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/ALU.v
-!i122 1247
+8I:/ece552/project/ALU.v
+FI:/ece552/project/ALU.v
+!i122 1335
 L0 6 96
 R11
 R12
 r1
 !s85 0
 31
-R19
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ALU.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ALU.v|
+Z20 !s108 1714523358.000000
+!s107 I:/ece552/project/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ALU.v|
 !i113 0
-R14
+R15
 R5
 n@a@l@u
 vBitCell
-R21
+Z21 !s110 1714523359
 !i10b 1
 !s100 VEEal[P1NTi@<hW=0mgnc3
-InL5G`J;gKKh7XG;0B5mg03
+I=@0IMH5jo<^iCP[3`nA>g1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/BitCell.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/BitCell.v
-!i122 1248
+8I:/ece552/project/BitCell.v
+FI:/ece552/project/BitCell.v
+!i122 1336
 L0 6 18
 R11
 R12
 r1
 !s85 0
 31
-Z22 !s108 1712605907.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/BitCell.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/BitCell.v|
+R20
+!s107 I:/ece552/project/BitCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/BitCell.v|
 !i113 0
-R14
+R15
 R5
 n@bit@cell
+vBlock
+Z22 !s110 1714523362
+!i10b 1
+!s100 fHh5S5o2jBa1]5h6[LX3F3
+I8H;V6nYUkP:ekUUHM7Q^:2
+R9
+Z23 w1714430980
+Z24 8I:/ece552/project/DataArray.v
+Z25 FI:/ece552/project/DataArray.v
+!i122 1342
+L0 12 5
+R11
+R12
+r1
+!s85 0
+31
+Z26 !s108 1714523362.000000
+Z27 !s107 I:/ece552/project/DataArray.v|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/DataArray.v|
+!i113 0
+R15
+R5
+n@block
+vblockEnable
+R21
+!i10b 1
+!s100 902Y7ZXDB9m3NPFz[[TN42
+IH_5zB[6g2c7OAY60;nL:71
+R9
+w1714521101
+8I:/ece552/project/blockEnable.v
+FI:/ece552/project/blockEnable.v
+!i122 1337
+L0 1 11
+R11
+R12
+r1
+!s85 0
+31
+!s108 1714523359.000000
+!s107 I:/ece552/project/blockEnable.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/blockEnable.v|
+!i113 0
+R15
+R5
+nblock@enable
+vcache_controller
+!s110 1714523360
+!i10b 1
+!s100 c5T_GBgOEnzo5:j_2>G_L3
+IfCF?mF6cf]`H3i`Q4EKhl1
+R9
+w1714522157
+8I:/ece552/project/cache_controller.v
+FI:/ece552/project/cache_controller.v
+!i122 1338
+L0 1 145
+R11
+R12
+r1
+!s85 0
+31
+Z29 !s108 1714523360.000000
+!s107 I:/ece552/project/cache_controller.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/cache_controller.v|
+!i113 0
+R15
+R5
+vcache_fill_FSM
+Z30 !s110 1714523361
+!i10b 1
+!s100 JheG3^J7P_m?AbIno6L=]3
+IW?IT<VM4R3^8m5:2z3L4U0
+R9
+w1714522205
+8I:/ece552/project/cache_fill_FSM.v
+FI:/ece552/project/cache_fill_FSM.v
+!i122 1339
+L0 1 44
+R11
+R12
+r1
+!s85 0
+31
+R29
+!s107 I:/ece552/project/cache_fill_FSM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/cache_fill_FSM.v|
+!i113 0
+R15
+R5
+ncache_fill_@f@s@m
 vControl
-!s110 1712605908
+R30
 !i10b 1
 !s100 WK8k7i9Bm3`=fgJIjaDgN2
-IDRJ0WO>R[XeQ=5U>UEl>a1
+Ikfh=Rb1[G?HaIZWN@b^6i0
 R9
-w1712544939
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Control.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/Control.v
-!i122 1249
+Z31 w1712957570
+8I:/ece552/project/Control.v
+FI:/ece552/project/Control.v
+!i122 1340
 L0 6 110
 R11
 R12
 r1
 !s85 0
 31
-R22
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Control.v|
+Z32 !s108 1714523361.000000
+!s107 I:/ece552/project/Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Control.v|
 !i113 0
-R14
+R15
 R5
 n@control
 vcpu
-Z23 !s110 1712609273
+R22
 !i10b 1
-!s100 ch`c6=DSOK4`0^Fd@Q3KY1
-I0Xe526Oa4E]7KoZ`bDTF_1
+!s100 5LEJ;5c2D4hQaf0`X0Qzz1
+IUV1`Aj2Oi>[@^2?[O_cO>0
 R9
-w1712609265
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/cpu.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/cpu.v
-!i122 1278
-L0 6 199
+w1714520661
+8I:/ece552/project/cpu.v
+FI:/ece552/project/cpu.v
+!i122 1341
+L0 6 217
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712609272.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/cpu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/cpu.v|
+R32
+!s107 I:/ece552/project/cpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/cpu.v|
 !i113 0
-R14
+R15
 R5
 vcpu_ptb
-Z24 !s110 1712605918
+!s110 1714523374
 !i10b 1
-!s100 ZNbJec:F>8AWEUYj2mB`=2
-ILj?QfJhhJHB1>I@^K3f?11
+!s100 zi:?izUoP5LFjTocKMzgP1
+IlRH6BO4EmeEmzdV^PVh]02
 R9
-Z25 w1712534626
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v
-!i122 1263
-L0 1 173
+w1714521832
+8I:/ece552/project/project-phase3-testbench.v
+FI:/ece552/project/project-phase3-testbench.v
+!i122 1360
+L0 1 218
 R11
 R12
 r1
 !s85 0
 31
-Z26 !s108 1712605918.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase2-testbench.v|
+!s108 1714523373.000000
+!s107 I:/ece552/project/project-phase3-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/project-phase3-testbench.v|
 !i113 0
-R14
+R15
 R5
 vcpu_tb
-R24
+Z33 !s110 1714523372
 !i10b 1
 !s100 =H9^Pi;GCMlTJ>j9hzzIT1
-I]eVbckRE49TAZV4XDI3[M0
+IC4V]0CRUz7CjU:BD2c<Ee3
 R9
-w1712174489
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase1-testbench.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase1-testbench.v
-!i122 1262
+w1712174025
+8I:/ece552/project/project-phase1-testbench.v
+FI:/ece552/project/project-phase1-testbench.v
+!i122 1358
 L0 1 186
 R11
 R12
 r1
 !s85 0
 31
-Z27 !s108 1712605917.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase1-testbench.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/project-phase1-testbench.v|
+!s108 1714523372.000000
+!s107 I:/ece552/project/project-phase1-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/project-phase1-testbench.v|
 !i113 0
-R14
+R15
 R5
+vDataArray
+R22
+!i10b 1
+!s100 A@^AW]0TmRoSVVMmT79a80
+IOI9ECld1JE_3oFIhmA<_?0
+R9
+R23
+R24
+R25
+!i122 1342
+Z34 L0 6 4
+R11
+R12
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 0
+R15
+R5
+n@data@array
+vdcache
+!s110 1714523363
+!i10b 1
+!s100 hmG>YGa0GFN[m;f_DjWFZ3
+IdAW9E=gA`OFa407_EUK?f3
+R9
+w1714523198
+8I:/ece552/project/dcache.v
+FI:/ece552/project/dcache.v
+!i122 1343
+Z35 L0 1 17
+R11
+R12
+r1
+!s85 0
+31
+Z36 !s108 1714523363.000000
+!s107 I:/ece552/project/dcache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/dcache.v|
+!i113 0
+R15
+R5
+vDCell
+R22
+!i10b 1
+!s100 Yl?BU__KS`EJWRzj9ilz70
+I:I1V@i_SF>80J9U4]WdCi2
+R9
+R23
+R24
+R25
+!i122 1342
+L0 25 5
+R11
+R12
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 0
+R15
+R5
+n@d@cell
 vdff
-!s110 1712605909
+Z37 !s110 1714523364
 !i10b 1
 !s100 Z9V@F2c50oH6kZfdURZd60
-IkgV;kAbUA4J>P]Wzf7d5N3
+IJeBQd13g`hAMColkMQb7H1
 R9
-R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/D-Flip-Flop.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/D-Flip-Flop.v
-!i122 1251
+w1708651211
+8I:/ece552/project/D-Flip-Flop.v
+FI:/ece552/project/D-Flip-Flop.v
+!i122 1344
 L0 3 17
 R11
 R12
 r1
 !s85 0
 31
-Z28 !s108 1712605909.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/D-Flip-Flop.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/D-Flip-Flop.v|
+R36
+!s107 I:/ece552/project/D-Flip-Flop.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/D-Flip-Flop.v|
 !i113 0
-R14
+R15
 R5
 vdmemory1c
-!s110 1712605910
+R37
 !i10b 1
 !s100 HKCW?4YUCBBXm<;A19;V32
-I4DW<3Vg6WQikUnIX1U^o90
+Ij8enodPkLGL2HYfMHX]==0
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/dmemory.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/dmemory.v
-!i122 1252
-Z29 L0 31 38
+8I:/ece552/project/dmemory.v
+FI:/ece552/project/dmemory.v
+!i122 1345
+Z38 L0 31 38
 R11
 R12
 r1
 !s85 0
 31
-R28
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/dmemory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/dmemory.v|
+Z39 !s108 1714523364.000000
+!s107 I:/ece552/project/dmemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/dmemory.v|
 !i113 0
-R14
+R15
 R5
+vDWord
+R22
+!i10b 1
+!s100 k10XSaM_0VBZS^<2n?Nej3
+IYH<G^@<HV0CCC;abBc`UC0
+R9
+R23
+R24
+R25
+!i122 1342
+L0 20 3
+R11
+R12
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 0
+R15
+R5
+n@d@word
 vForwardingUnit
-Z30 !s110 1712605911
+Z40 !s110 1714523365
 !i10b 1
 !s100 bU=W1_kEE[UC67a?lGM;52
-IYoN]a?eVIS8I3BVGD?PM13
+IGbz:P@PL6?AUUgZRS]VJ]2
 R9
-w1712537437
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ForwardingUnit.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/ForwardingUnit.v
-!i122 1254
+R31
+8I:/ece552/project/ForwardingUnit.v
+FI:/ece552/project/ForwardingUnit.v
+!i122 1347
 L0 1 26
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712605911.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ForwardingUnit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ForwardingUnit.v|
+!s108 1714523365.000000
+!s107 I:/ece552/project/ForwardingUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ForwardingUnit.v|
 !i113 0
-R14
+R15
 R5
 n@forwarding@unit
 vfull_adder_1bit
-R30
+R40
 !i10b 1
 !s100 WN4M^lz?8kX_P@GVTobbO1
-I@S:4Q8<CCi[5YBk5WAH2@2
+IeoeAznW8=naXAhaDET]0=2
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/FA.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/FA.v
-!i122 1253
+8I:/ece552/project/FA.v
+FI:/ece552/project/FA.v
+!i122 1346
 L0 6 8
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712605910.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/FA.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/FA.v|
+R39
+!s107 I:/ece552/project/FA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/FA.v|
 !i113 0
-R14
+R15
 R5
 vhazard
-R23
+!s110 1714523366
 !i10b 1
 !s100 nL41SIFh@OzUn]fI6MgGf2
-I[I5SoXfPHbj<Ini^=Le;o1
+IzUgIR7>DD3ldOl_UVjJ`R3
 R9
-w1712609234
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/hazard.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/hazard.v
-!i122 1279
+R31
+8I:/ece552/project/hazard.v
+FI:/ece552/project/hazard.v
+!i122 1348
 L0 1 15
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712609273.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/hazard.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/hazard.v|
+Z41 !s108 1714523366.000000
+!s107 I:/ece552/project/hazard.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/hazard.v|
 !i113 0
-R14
+R15
 R5
-vimemory1c
-!s110 1712609625
+vicache
+Z42 !s110 1714523367
 !i10b 1
-!s100 WOdC;0OWccneoB0:Gh>a81
-Ien_KEhn^mXDh^>XH]jg1i0
+!s100 j=TnZ@[jcBf0bKnQ;X[4E0
+IHM?_UBV@WQo^c5RB3;Hoj3
 R9
-w1712609572
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/imemory.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/imemory.v
-!i122 1281
-R29
+w1714522240
+8I:/ece552/project/icache.v
+FI:/ece552/project/icache.v
+!i122 1349
+R35
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712609625.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/imemory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/imemory.v|
+R41
+!s107 I:/ece552/project/icache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/icache.v|
 !i113 0
-R14
+R15
+R5
+vimemory1c
+R42
+!i10b 1
+!s100 WOdC;0OWccneoB0:Gh>a81
+I>l:=KQMh8O`9^[VG`Jf:51
+R9
+R31
+8I:/ece552/project/imemory.v
+FI:/ece552/project/imemory.v
+!i122 1350
+R38
+R11
+R12
+r1
+!s85 0
+31
+Z43 !s108 1714523367.000000
+!s107 I:/ece552/project/imemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/imemory.v|
+!i113 0
+R15
 R5
 vLW_SW_Testbench
 R7
-!s110 1712605913
+!s110 1714523368
 !i10b 1
 !s100 B>4a]McG5de2]`[VgK[4o1
-IIc2>lW9<Hn<o`G;1il55@3
+I2jfg3FeAL9T;NYUaK7VQz0
 S1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/LW_SW_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/LW_SW_tb.sv
-!i122 1257
+8I:/ece552/project/LW_SW_tb.sv
+FI:/ece552/project/LW_SW_tb.sv
+!i122 1351
 L0 1 70
 R11
 R12
 r1
 !s85 0
 31
-Z31 !s108 1712605913.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/LW_SW_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/LW_SW_tb.sv|
+R43
+!s107 I:/ece552/project/LW_SW_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/LW_SW_tb.sv|
 !i113 0
-R13
+R14
 R5
 n@l@w_@s@w_@testbench
+vMBlock
+Z44 !s110 1714523369
+!i10b 1
+!s100 a:^Hg2jX[YlX8;Q]L=16K3
+I5S7<9EVfQmWEW2T`0a0DV3
+R9
+Z45 w1714509461
+Z46 8I:/ece552/project/MetaDataArray.v
+Z47 FI:/ece552/project/MetaDataArray.v
+!i122 1352
+L0 11 3
+R11
+R12
+r1
+!s85 0
+31
+Z48 !s108 1714523368.000000
+Z49 !s107 I:/ece552/project/MetaDataArray.v|
+Z50 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/MetaDataArray.v|
+!i113 0
+R15
+R5
+n@m@block
+vMCell
+R44
+!i10b 1
+!s100 M7UBVDVOMMSVd3O8BC_c=1
+I@?<T]P]B8l;PCLlT?HDYU2
+R9
+R45
+R46
+R47
+!i122 1352
+L0 15 5
+R11
+R12
+r1
+!s85 0
+31
+R48
+R49
+R50
+!i113 0
+R15
+R5
+n@m@cell
 vmemory1c
 !s110 1709421408
 !i10b 1
 !s100 mP`1<P`g8jdYJmW@VIe8K2
 IiGQ`h<en9]X;GDOU;Q^FP3
-R16
+R9
 w1709421403
 8I:/ece552/project/memory.v
 FI:/ece552/project/memory.v
 !i122 739
-R29
+R38
 R11
 R12
 r1
@@ -705,102 +962,147 @@ r1
 !s107 I:/ece552/project/memory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/memory.v|
 !i113 0
-R20
+R19
 R5
-vPADDSB
-!s110 1712605914
+vmemory4c
+R44
 !i10b 1
-!s100 d^R`hFV>PV3foF@Ii46IO1
-I5kRZNakV1bSKFBN=<4efa2
+!s100 f19WZTZb0<MaI5`=1D9n00
+I4^O2HC]:LjgHogOaKnnNh1
 R9
-R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB.v
-!i122 1258
-Z32 L0 6 19
+w1714520917
+8I:/ece552/project/multicycle_memory.v
+FI:/ece552/project/multicycle_memory.v
+!i122 1353
+L0 24 69
 R11
 R12
 r1
 !s85 0
 31
-R31
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB.v|
+!s108 1714523369.000000
+!s107 I:/ece552/project/multicycle_memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/multicycle_memory.v|
 !i113 0
-R14
+R15
+R5
+vMetaDataArray
+R44
+!i10b 1
+!s100 V_O`<GYZ]NNGJ47`bNLn83
+ITf00AI7O]L7_09N?5>=l?0
+R9
+R45
+R46
+R47
+!i122 1352
+R34
+R11
+R12
+r1
+!s85 0
+31
+R48
+R49
+R50
+!i113 0
+R15
+R5
+n@meta@data@array
+vPADDSB
+!s110 1714523370
+!i10b 1
+!s100 d^R`hFV>PV3foF@Ii46IO1
+IHZ=DY4d7jLbA4i<3RWFBb1
+R9
+R10
+8I:/ece552/project/PADDSB.v
+FI:/ece552/project/PADDSB.v
+!i122 1354
+Z51 L0 6 19
+R11
+R12
+r1
+!s85 0
+31
+Z52 !s108 1714523370.000000
+!s107 I:/ece552/project/PADDSB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PADDSB.v|
+!i113 0
+R15
 R5
 n@p@a@d@d@s@b
 vPADDSB_tb
 R7
-Z33 !s110 1712605915
+Z53 !s110 1714523371
 !i10b 1
 !s100 _<kNb1?daa^72`_TNo>Za0
-I]BS?JfjJNE7YzS`5>oA6j3
+I=I?SYB=7PeU`f<b_iCzE11
 S1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB_tb.sv
-!i122 1259
+8I:/ece552/project/PADDSB_tb.sv
+FI:/ece552/project/PADDSB_tb.sv
+!i122 1355
 L0 6 133
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712605914.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PADDSB_tb.sv|
+R52
+!s107 I:/ece552/project/PADDSB_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/PADDSB_tb.sv|
 !i113 0
-R13
+R14
 R5
 n@p@a@d@d@s@b_tb
 vPC_control
-R33
+R53
 !i10b 1
 !s100 10aUHH]R7[CcUUCFL2iXf1
-IGe2Y45OXTJS9:kla2eV[H1
+IR0O^3AlV=9EaASlzdMoXP0
 R9
-R25
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control.v
-!i122 1260
+w1712427279
+8I:/ece552/project/PC_control.v
+FI:/ece552/project/PC_control.v
+!i122 1356
 L0 6 64
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712605915.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control.v|
+Z54 !s108 1714523371.000000
+!s107 I:/ece552/project/PC_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PC_control.v|
 !i113 0
-R14
+R15
 R5
 n@p@c_control
 vPC_control_tb
 R7
-!s110 1712605917
+R33
 !i10b 1
 !s100 02B^Xf:Q2g^@jm41?H;4o3
-I;fJE;lz9?e8N9FN42k3?g0
+Ibd83AXn09?[oH9;lGI3Fa1
 S1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control_tb.sv
-!i122 1261
+8I:/ece552/project/PC_control_tb.sv
+FI:/ece552/project/PC_control_tb.sv
+!i122 1357
 L0 1 34
 R11
 R12
 r1
 !s85 0
 31
-R27
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/PC_control_tb.sv|
+R54
+!s107 I:/ece552/project/PC_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/PC_control_tb.sv|
 !i113 0
-R13
+R14
 R5
 n@p@c_control_tb
 vPSA_16bit
@@ -808,7 +1110,7 @@ vPSA_16bit
 !i10b 1
 !s100 Bd;chfH1AB?VaRbnRODFo0
 Iz1@bHg0D[[5dYJD_;Q<hm1
-R16
+R9
 w1708304266
 8I:/ece552/project/PSA_16bit.v
 FI:/ece552/project/PSA_16bit.v
@@ -823,172 +1125,172 @@ r1
 !s107 I:/ece552/project/PSA_16bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PSA_16bit.v|
 !i113 0
-R20
+R19
 R5
 n@p@s@a_16bit
 vReadDecoder_4_16
-Z34 !s110 1712605919
+Z55 !s110 1714523375
 !i10b 1
 !s100 @aK]6jLEZChcU;GEe9m:d3
-InO83M5GD@gf2TZgYLG_I?3
+Ig88CXDz]C783gTIACVRW`0
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ReadDecoder_4_16.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/ReadDecoder_4_16.v
-!i122 1264
+8I:/ece552/project/ReadDecoder_4_16.v
+FI:/ece552/project/ReadDecoder_4_16.v
+!i122 1361
 L0 6 13
 R11
 R12
 r1
 !s85 0
 31
-R26
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ReadDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/ReadDecoder_4_16.v|
+!s108 1714523374.000000
+!s107 I:/ece552/project/ReadDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/ReadDecoder_4_16.v|
 !i113 0
-R14
+R15
 R5
 n@read@decoder_4_16
 vRED
-R34
+R55
 !i10b 1
 !s100 ZeHWfeeZI7XjIjK`J6WWd2
-Il_[1kFaSCH]7k6;IWO[F[2
+If;o_Ia7nRFbJmE9mBH9RT1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED.v
-!i122 1265
+8I:/ece552/project/RED.v
+FI:/ece552/project/RED.v
+!i122 1362
 L0 6 26
 R11
 R12
 r1
 !s85 0
 31
-Z35 !s108 1712605919.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED.v|
+Z56 !s108 1714523375.000000
+!s107 I:/ece552/project/RED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RED.v|
 !i113 0
-R14
+R15
 R5
 n@r@e@d
 vRED_tb
 R7
-Z36 !s110 1712605920
+Z57 !s110 1714523376
 !i10b 1
 !s100 D;>MKzE:IkWS1S9ncJd8L3
-IFEY8>lL8PVU2l]dL_:g>82
+IeCEVk^n]Acfj^M1_NGYGo1
 S1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED_tb.sv
-!i122 1266
+8I:/ece552/project/RED_tb.sv
+FI:/ece552/project/RED_tb.sv
+!i122 1363
 L0 6 32
 R11
 R12
 r1
 !s85 0
 31
-R35
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RED_tb.sv|
+R56
+!s107 I:/ece552/project/RED_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/RED_tb.sv|
 !i113 0
-R13
+R14
 R5
 n@r@e@d_tb
 vRegister
-R36
+R57
 !i10b 1
 !s100 lFBebeJ90K?Rg59_YabO62
-I7:d[;k3?B@U5X[S2hA@XJ0
+IHMnLV<MXFhM77X_ndW_X51
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Register.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/Register.v
-!i122 1267
+8I:/ece552/project/Register.v
+FI:/ece552/project/Register.v
+!i122 1364
 L0 6 10
 R11
 R12
 r1
 !s85 0
 31
-!s108 1712605920.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Register.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Register.v|
+!s108 1714523376.000000
+!s107 I:/ece552/project/Register.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Register.v|
 !i113 0
-R14
+R15
 R5
 n@register
 vRegisterFile
-!s110 1712605921
+!s110 1714523377
 !i10b 1
 !s100 8:Fz`<dDM]g10T?3ZYm>82
-I=Dk5@iGA<5QAE?XigPIh>0
+IUFK>l6fZoAF?CP]67QGH_3
 R9
-R25
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RegisterFile.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/RegisterFile.v
-!i122 1268
+w1712427664
+8I:/ece552/project/RegisterFile.v
+FI:/ece552/project/RegisterFile.v
+!i122 1365
 L0 6 27
 R11
 R12
 r1
 !s85 0
 31
-Z37 !s108 1712605921.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/RegisterFile.v|
+Z58 !s108 1714523377.000000
+!s107 I:/ece552/project/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/RegisterFile.v|
 !i113 0
-R14
+R15
 R5
 n@register@file
 vShifter
-Z38 !s110 1712605922
+Z59 !s110 1714523378
 !i10b 1
 !s100 9X1]X]YfTSai:kjMTZ;ei1
-I_Y?6FdZ:Q3IO<2UgoIhe]1
+IW>PSo]QzLdnzUeBdQR0=S2
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter.v
-!i122 1269
+8I:/ece552/project/Shifter.v
+FI:/ece552/project/Shifter.v
+!i122 1366
 L0 6 23
 R11
 R12
 r1
 !s85 0
 31
-R37
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter.v|
+R58
+!s107 I:/ece552/project/Shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/Shifter.v|
 !i113 0
-R14
+R15
 R5
 n@shifter
 vShifter_tb
 R7
-R38
+R59
 !i10b 1
 !s100 Ln2UW0^E`<bm9:D`C1E8@0
-IIfdg^`OfTURccoBcB;mEE2
+I@KYP[z[16NhQhWHjWOhoR3
 S1
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter_tb.sv
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter_tb.sv
-!i122 1270
+8I:/ece552/project/Shifter_tb.sv
+FI:/ece552/project/Shifter_tb.sv
+!i122 1367
 L0 6 47
 R11
 R12
 r1
 !s85 0
 31
-Z39 !s108 1712605922.000000
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/Shifter_tb.sv|
+!s108 1714523378.000000
+!s107 I:/ece552/project/Shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/Shifter_tb.sv|
 !i113 0
-R13
+R14
 R5
 n@shifter_tb
 vsub_4bit
@@ -996,12 +1298,12 @@ vsub_4bit
 !i10b 1
 !s100 74c^=;zoK^;<QMVVm5=Zb0
 IeQ35CSF4IXXi4UPALUR^D2
-R16
+R9
 w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R32
+R51
 R11
 R12
 r1
@@ -1011,37 +1313,60 @@ r1
 !s107 I:\ece552\project\sub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\sub_4bit.v|
 !i113 0
-R20
+R19
 R5
+vwordEnable
+!s110 1714523379
+!i10b 1
+!s100 6`jmE^kO;<YkR[B9NTi4d1
+I[j;oNWkHPl[naUH9QCGFc2
+R9
+w1714522988
+8I:/ece552/project/wordEnable.v
+FI:/ece552/project/wordEnable.v
+!i122 1368
+L0 1 9
+R11
+R12
+r1
+!s85 0
+31
+Z60 !s108 1714523379.000000
+!s107 I:/ece552/project/wordEnable.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/wordEnable.v|
+!i113 0
+R15
+R5
+nword@enable
 vWriteDecoder_4_16
-!s110 1712605923
+!s110 1714523380
 !i10b 1
 !s100 6D<R`A;MnXf9di@i?;gnD3
-I=LW[3BTBfJ`6l@:edZ9QX3
+IzbCW2D99<9d>Od_[T?c@50
 R9
 R10
-8I:/Desktop/ECE552/Project_Phase2/ece552-group-project/WriteDecoder_4_16.v
-FI:/Desktop/ECE552/Project_Phase2/ece552-group-project/WriteDecoder_4_16.v
-!i122 1271
+8I:/ece552/project/WriteDecoder_4_16.v
+FI:/ece552/project/WriteDecoder_4_16.v
+!i122 1369
 L0 6 15
 R11
 R12
 r1
 !s85 0
 31
-R39
-!s107 I:/Desktop/ECE552/Project_Phase2/ece552-group-project/WriteDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/Desktop/ECE552/Project_Phase2/ece552-group-project/WriteDecoder_4_16.v|
+R60
+!s107 I:/ece552/project/WriteDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/WriteDecoder_4_16.v|
 !i113 0
-R14
+R15
 R5
 n@write@decoder_4_16
 vXOR
-Z40 !s110 1709413836
+Z61 !s110 1709413836
 !i10b 1
 !s100 nG0YI9>Bg]5XEKhGCRd^H1
 I^ALGYT=_aj7VN7oi>eF:F3
-R16
+R9
 w1708381287
 8I:/ece552/project/XOR.v
 FI:/ece552/project/XOR.v
@@ -1056,17 +1381,17 @@ r1
 !s107 I:/ece552/project/XOR.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
 !i113 0
-R20
+R19
 R5
 n@x@o@r
 vXOR_tb
 R7
-R40
+R61
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
 I`>4]i>X8COAN]@3F1m]DH3
 S1
-R16
+R9
 w1708657436
 8I:/ece552/project/XOR_tb.sv
 FI:/ece552/project/XOR_tb.sv
@@ -1081,6 +1406,6 @@ r1
 !s107 I:/ece552/project/XOR_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/XOR_tb.sv|
 !i113 0
-R17
+R16
 R5
 n@x@o@r_tb
