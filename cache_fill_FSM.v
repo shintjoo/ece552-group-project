@@ -1,4 +1,4 @@
-module cache_fill_FSM(clk, rst_n, miss_detected, miss_address, fsm_busy, write_data_array, write_tag_array,memory_address, memory_data, memory_data_valid);
+module cache_fill_FSM(clk, rst_n, miss_detected, miss_address, fsm_busy, write_data_array, write_tag_array,memory_address, memory_data, memory_data_valid, wrd_en);
 input clk, rst_n;
 input miss_detected;            // active high when tag match logic detects a miss
 input [15:0] miss_address;      // address that missed the cache
@@ -9,7 +9,7 @@ output fsm_busy;                // asserted while FSM is busy handling the miss 
 output write_data_array;        // write enable to cache data array to signal when filling with memory_data
 output write_tag_array;         // write enable to cache tag array to signal when all words are filled in to data array
 output [15:0] memory_address;   // address to read from memory
-
+output [7:0] wrd_en;
 
 
 wire state, next_state;
@@ -22,7 +22,7 @@ dff state_flop(.q(state), .d(next_state), .wen(1'b1), .clk(clk), .rst(~rst_n));
 
 // Set next state
 // state should go to wait state when a miss is detected
-// state should stay in wait until whole block is returned 
+// state should stay in wait until whole block is returned  
 assign next_state = ((~state & miss_detected) | (state & (count != 4'h8))) ? 1'b1 : 1'b0; 
 
 // load all 8 chunks
@@ -36,8 +36,10 @@ assign next_addr = (state) ? inc_addr : 4'h0;
 dff addr_ff[3:0](.q(addr), .d(next_addr), .wen(state), .clk(clk), .rst(~rst_n | (~state & next_state)));
 addsub_16bit out_mem_adder(.Sum(memory_address), .A({{12{1'b0}},addr}), .B({miss_address[15:4],4'h0}), .sub(1'b0), .sat());
 
+//Inc word enable
+wordEnable instWordEn(.b_offset(count[2:0]), .wordEn(wrd_en));
 // outputs
-assign fsm_busy = ((~state & miss_detected) | (state));
+assign fsm_busy = state;
 assign write_data_array = (memory_data_valid & next_state);
 assign write_tag_array = ((count == 4'h8) & state);
 

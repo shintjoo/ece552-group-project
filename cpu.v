@@ -73,13 +73,13 @@ cache_controller cache(
 
 //Fetch Stage
 assign IF_pc_choose = ((Branch || BranchReg) & Flush) ? ID_pc_branch : IF_pc_increment;
-dff pc_reg [15:0](.q(IF_pc_out), .d(IF_pc_choose), .wen(((~hlt_select & ~Stall) & clk) | IFStall | MEMStall), .clk(clk), .rst(~rst_n)); //double check hlt_select and Flush
+dff pc_reg [15:0](.q(IF_pc_out), .d(IF_pc_choose), .wen(((~hlt_select & ~Stall) & clk) & ~IFStall & ~MEMStall), .clk(clk), .rst(~rst_n)); //double check hlt_select and Flush
 //imemory1c imem(.data_out(IF_instruction), .data_in(16'b0), .addr(IF_pc_out), .enable(~Stall & ~hlt_select), .wr(1'b0), .clk(clk), .rst(~rst_n));
 addsub_16bit increment(.Sum(IF_pc_increment), .A(IF_pc_out), .B(16'h0002), .sub(1'b0), .sat());
 
 //IF/ID Registers
-dff IFID_Instruction [15:0](.q(ID_instruction), .d(IF_instruction), .wen((~hlt_select & ~Stall) | IFStall | MEMStall), .clk(clk), .rst((~rst_n) || Flush));
-dff IFID_PCIncrement [15:0](.q(ID_pc_increment), .d(IF_pc_increment), .wen((~hlt_select & ~Stall) | IFStall | MEMStall), .clk(clk), .rst((~rst_n) || Flush));
+dff IFID_Instruction [15:0](.q(ID_instruction), .d(IF_instruction), .wen((~hlt_select & ~Stall) & ~IFStall & ~MEMStall), .clk(clk), .rst((~rst_n) || Flush));
+dff IFID_PCIncrement [15:0](.q(ID_pc_increment), .d(IF_pc_increment), .wen((~hlt_select & ~Stall) & ~IFStall & ~MEMStall), .clk(clk), .rst((~rst_n) || Flush));
 
 
 //Decode Stage // I changed MEM_DesReg to be desReg.

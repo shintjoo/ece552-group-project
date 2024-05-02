@@ -13,12 +13,13 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     wire [7:0] D_MetaDataOut1, D_MetaDataOut2;
     wire [15:0] D_DataIn;
     wire D_DataWrite1, D_DataWrite2, D_FSMMetaEn;
-    wire [7:0] D_WordEnable;
+    wire [7:0] D_inst_wrd_en, D_WordEnable;
     wire [15:0] D_DataOut1, D_DataOut2;
 
     wire [5:0] D_index;
     wire [2:0] D_offset;
     wire [7:0] D_tag;
+    wire [7:0] D_FSM_wrd_en;
 
     wire dataHit1, dataHit2, dataMiss;
 
@@ -33,12 +34,13 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     wire [7:0] I_MetaDataOut1, I_MetaDataOut2;
     wire [15:0] I_DataIn;
     wire I_DataWrite1, I_DataWrite2;
-    wire [7:0] I_WordEnable;
+    wire [7:0] I_inst_wrd_en, I_WordEnable;
     wire [15:0] I_DataOut1, I_DataOut2;
 
     wire [5:0] I_index;
     wire [2:0] I_offset;
     wire [7:0] I_tag;
+    wire [7:0] I_FSM_wrd_en;
 
     wire instHit1, instHit2, instMiss;
 
@@ -54,16 +56,16 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
      * Data cache
      *
      **/
-    assign D_offset = mem_addr[2:0];
-    assign D_index = mem_addr[8:3];
-    assign D_tag = mem_addr[15:9];
+    assign D_offset = mem_addr[3:1];
+    assign D_index = mem_addr[9:4];
+    assign D_tag = mem_addr[15:10];
 
 
     //Find set
     blockEnable dataBlockEn(.set_index(D_index), .blockEn(D_BlockEnable));
 
     //Find block offset
-    wordEnable dataWordEn(.b_offset(D_offset), .wordEn(D_WordEnable));
+    wordEnable dataWordEn(.b_offset(D_offset), .wordEn(D_inst_wrd_en));
 
     //check for hits
     assign dataHit1 = (D_tag == D_MetaDataOut1[7:2]) & D_MetaDataOut1[0];
@@ -71,14 +73,17 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     assign dataMiss = ~dataHit1 & ~dataHit2 & (memRead | memWrite);
 
     //data cache input signals
-    assign D_MetaDataIn1 = dataHit1 ? {D_tag, 1'b0, 1'b1} : dataHit2 ? {D_MetaDataOut1[7:2], 1'b1, D_MetaDataOut1[0]} : D_MetaDataOut1; // {tag, LRU, valid}
-    assign D_MetaDataIn2 = dataHit2 ? {D_tag, 1'b0, 1'b1} : dataHit1 ? {D_MetaDataOut2[7:2], 1'b1, D_MetaDataOut2[0]} : D_MetaDataOut2;
+    assign D_MetaDataIn1 =  ~dataMiss ? {D_MetaDataOut1[7:2], ~dataHit1, D_MetaDataOut1[0]} : (~D_MetaDataOut1[1]) ? {D_tag, 1'b0, 1'b1} : D_MetaDataOut1; // {tag, LRU, valid}
+    assign D_MetaDataIn2 =  ~dataMiss ? {D_MetaDataOut2[7:2], ~dataHit2, D_MetaDataOut2[0]} :  (D_MetaDataOut1[1]) ? {D_tag, 1'b0, 1'b1} : D_MetaDataOut2;
     assign D_DataIn = dataMiss ? mainMemOut : memDataIn; //check if there was cache miss. Yes: Data in from memory, no: update with input value dataIn
 
-    assign D_MetaWrite1 = D_FSMMetaEn & dataMiss; //enable write to LRU
-    assign D_MetaWrite2 = D_FSMMetaEn & dataMiss;
+    assign D_MetaWrite1 = D_FSMMetaEn; //enable write to LRU
+    assign D_MetaWrite2 = D_FSMMetaEn;
     
-    assign D_DataWrite1 = (D_FSMDataEn & D_MetaDataOut1[1] & dataMiss) | (memWrite & dataHit1); //update the data array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
+     //Choose word enable
+    assign D_WordEnable = (dataMiss) ? D_FSM_wrd_en : D_inst_wrd_en;
+
+    assign D_DataWrite1 = (D_FSMDataEn & ~D_MetaDataOut2[1] & dataMiss) | (memWrite & dataHit1); //update the data array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
     assign D_DataWrite2 = (D_FSMDataEn & D_MetaDataOut2[1] & dataMiss) | (memWrite & dataHit2);
 
 
@@ -87,7 +92,7 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
                     .DataWrite1(D_DataWrite1), .DataWrite2(D_DataWrite2), .WordEnable(D_WordEnable), .DataOut1(D_DataOut1), .DataOut2(D_DataOut2));
 
     cache_fill_FSM dataCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(dataMiss), .miss_address(mem_addr), .fsm_busy(D_fsm_busy), 
-                    .write_data_array(D_FSMDataEn), .write_tag_array(D_FSMMetaEn), .memory_address(D_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid));
+                    .write_data_array(D_FSMDataEn), .write_tag_array(D_FSMMetaEn), .memory_address(D_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid), .wrd_en(D_FSM_wrd_en));
 
     assign MEMStall = D_fsm_busy;
     assign memDataOut = dataMiss ? (16'h0000) : (dataHit1 ? D_DataOut1 : D_DataOut2);
@@ -96,15 +101,15 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
      * Instruction cache
      *
      **/
-    assign I_offset = ins_addr[2:0];
-    assign I_index = ins_addr[8:3];
-    assign I_tag = ins_addr[15:9];
+    assign I_offset = ins_addr[3:1];
+    assign I_index = ins_addr[9:4];
+    assign I_tag = ins_addr[15:10];
 
     //Find set
     blockEnable instBlockEn(.set_index(I_index), .blockEn(I_BlockEnable));
 
     //Find block offset
-    wordEnable instWordEn(.b_offset(I_offset), .wordEn(I_WordEnable));
+    wordEnable instWordEn(.b_offset(I_offset), .wordEn(I_inst_wrd_en));
 
     //check for hits
     assign instHit1 = (I_tag == I_MetaDataOut1[7:2]) & I_MetaDataOut1[0];
@@ -112,14 +117,20 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     assign instMiss = ~instHit1 & ~instHit2;
 
     //instruction cache input signals
-    assign I_MetaDataIn1 = instHit1 ? {I_tag, 1'b0, 1'b1} : instHit2 ? {I_MetaDataOut1[7:2], 1'b1, I_MetaDataOut1[0]} : I_MetaDataOut1; //if hit then update tag and set LRU = 0, else if hit on the other line update LRU = 1, else keep the same
-    assign I_MetaDataIn2 = instHit2 ? {I_tag, 1'b0, 1'b1} : instHit1 ? {I_MetaDataOut2[7:2], 1'b1, I_MetaDataOut2[0]} : I_MetaDataOut2;
+    //assign I_MetaDataIn1 = instHit1 ? {I_MetaDataOut1[7:2], 1'b0, I_MetaDataOut1[0]} : instHit2 ? {I_MetaDataOut1[7:2], 1'b1, I_MetaDataOut1[0]} : {I_tag, 1'b0, 1'b1}; //if hit then update tag and set LRU = 0, else if hit on the other line update LRU = 1, else keep the same
+    assign I_MetaDataIn1 = ~instMiss ? {I_MetaDataOut1[7:2], ~instHit1, I_MetaDataOut1[0]} : (~I_MetaDataOut1[1]) ? {I_tag, 1'b0, 1'b1} : I_MetaDataOut1;
+    //assign I_MetaDataIn2 = instHit2 ? {I_tag, 1'b0, 1'b1} : instHit1 ? {I_MetaDataOut2[7:2], 1'b1, I_MetaDataOut2[0]} : I_MetaDataOut2;
+    assign I_MetaDataIn2 = ~instMiss ? {I_MetaDataOut2[7:2], ~instHit2, I_MetaDataOut2[0]} :  (I_MetaDataOut1[1]) ? {I_tag, 1'b0, 1'b1} : I_MetaDataOut2;
     assign I_DataIn = mainMemOut;
 
-    assign I_MetaWrite1 = I_FSMMetaEn & instMiss;
-    assign I_MetaWrite2 = I_FSMMetaEn & instMiss;
+    assign I_MetaWrite1 = I_FSMMetaEn ; //& instMiss
+    assign I_MetaWrite2 = I_FSMMetaEn;
 
-    assign I_DataWrite1 = (I_FSMDataEn & I_MetaDataOut1[1] & instMiss) | (memWrite & instHit1); //update the inst array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
+    //Choose word enable
+    assign I_WordEnable = (instMiss) ? I_FSM_wrd_en : I_inst_wrd_en;
+    
+    // i think that instHit needs to be removed.
+    assign I_DataWrite1 = (I_FSMDataEn & ~I_MetaDataOut2[1] & instMiss) | (memWrite & instHit1); //update the inst array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
     assign I_DataWrite2 = (I_FSMDataEn & I_MetaDataOut2[1] & instMiss) | (memWrite & instHit2);
 
 
@@ -127,8 +138,8 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
                     .BlockEnable(I_BlockEnable), .MetaDataOut1(I_MetaDataOut1), .MetaDataOut2(I_MetaDataOut2), .DataIn(I_DataIn), 
                     .DataWrite1(I_DataWrite1), .DataWrite2(I_DataWrite2), .WordEnable(I_WordEnable), .DataOut1(I_DataOut1), .DataOut2(I_DataOut2));
 
-    cache_fill_FSM instCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(instMiss), .miss_address(mem_addr), .fsm_busy(I_fsm_busy), 
-                    .write_data_array(I_FSMDataEn), .write_tag_array(I_FSMMetaEn), .memory_address(I_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid));
+    cache_fill_FSM instCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(instMiss), .miss_address(ins_addr), .fsm_busy(I_fsm_busy), 
+                    .write_data_array(I_FSMDataEn), .write_tag_array(I_FSMMetaEn), .memory_address(I_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid), .wrd_en(I_FSM_wrd_en));
 
     assign IFStall = I_fsm_busy;
     assign instDataOut = instMiss ? (16'h0000) : (instHit1 ? I_DataOut1 : I_DataOut2);
