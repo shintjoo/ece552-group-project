@@ -13,14 +13,19 @@ output reg Error; 	// Just to show default
 
 wire[15:0] addsub_res, Shift_Out, RedSum, PaddSum;
 wire ovfl_res;
+wire Flag_N, Flag_Z, Flag_V;
 
 reg N_en, Z_en, V_en, N, Z, V;
 reg sub;
 reg [15:0] ALU_res;
 
-dff N_flag(.q(Flags[0]), .d(N), .wen(N_en), .clk(clk), .rst(rst));
-dff Z_flag(.q(Flags[1]), .d(Z), .wen(Z_en), .clk(clk), .rst(rst));
-dff V_flag(.q(Flags[2]), .d(V), .wen(V_en), .clk(clk), .rst(rst));
+dff N_flag(.q(Flag_N), .d(N), .wen(N_en), .clk(clk), .rst(rst));
+dff Z_flag(.q(Flag_Z), .d(Z), .wen(Z_en), .clk(clk), .rst(rst));
+dff V_flag(.q(Flag_V), .d(V), .wen(V_en), .clk(clk), .rst(rst));
+
+assign Flags[0] = N_en ? N : Flag_N;
+assign Flags[1] = Z_en ? Z : Flag_Z;
+assign Flags[2] = V_en ? V : Flag_V;
 
 //instantiate add/sub
 addsub_16bit UUD(.Sum(addsub_res), .A(ALU_In1), .B(ALU_In2), .sub(sub), .sat(ovfl_res));

@@ -15,10 +15,100 @@
 # Loading project project
 # reading modelsim.ini
 # Loading project project
+# Compile of adder_4bit.v was successful.
+# Compile of adder_16bit_tb.sv was successful.
+# Compile of addsub_4bit_sat.v was successful.
+# Compile of addsub_4bit_tb.sv was successful.
+# Compile of addsub_16bit.v was successful.
+# Compile of ALU.v was successful.
+# Compile of BitCell.v was successful.
+# Compile of blockEnable.v was successful.
+# Compile of cache_controller.v was successful.
+# Compile of cache_fill_FSM.v was successful.
+# Compile of Control.v was successful.
+# Compile of cpu.v was successful.
+# Compile of D-Flip-Flop.v was successful.
+# Compile of DataArray.v was successful.
+# Compile of dcache.v was successful.
+# Compile of dmemory.v was successful.
+# Compile of FA.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of hazard.v was successful.
+# Compile of icache.v was successful.
+# Compile of imemory.v was successful.
+# Compile of LW_SW_tb.sv was successful.
+# Compile of MetaDataArray.v was successful.
+# Compile of multicycle_memory.v was successful.
+# Compile of PADDSB.v was successful.
+# Compile of PADDSB_tb.sv was successful.
+# Compile of PC_control.v was successful.
+# Compile of PC_control_tb.sv was successful.
+# Compile of project-phase1-testbench.v was successful.
+# Compile of project-phase2-testbench.v was successful.
+# Compile of project-phase3-testbench.v was successful.
+# Compile of ReadDecoder_4_16.v was successful.
+# Compile of RED.v was successful.
+# Compile of RED_tb.sv was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of Shifter.v was successful.
+# Compile of Shifter_tb.sv was successful.
+# Compile of wordEnable.v was successful.
+# Compile of WriteDecoder_4_16.v was successful.
+# 40 compiles, 0 failed with no errors.
+# Compile of ALU.v failed with 2 errors.
+# Compile of ALU.v was successful.
 vsim work.cpu_ptb -voptargs=+acc
 # vsim work.cpu_ptb -voptargs="+acc" 
-# Start time: 14:36:25 on May 01,2024
+# Start time: 10:33:08 on May 03,2024
+# ** Warning: (vsim-56) Problem with optimized design dependency file "/filespace/s/skzhu/ece552/project/work/@_opt4/_deps" - file is inconsistent with version property.
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ptb/DUT/ex/N_flag File: /filespace/s/skzhu/ece552/project/ALU.v Line: 22
+# Error loading design
+# End time: 10:33:10 on May 03,2024, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 9
+# Compile of ALU.v was successful.
+vsim work.cpu_ptb -voptargs=+acc
+# vsim work.cpu_ptb -voptargs="+acc" 
+# Start time: 10:33:38 on May 03,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.cpu_ptb(fast)
@@ -55,6 +145,129 @@ vsim work.cpu_ptb -voptargs=+acc
 # Loading work.DWord(fast)
 # Loading work.BitCell(fast)
 # Loading work.DCell(fast)
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ptb/DUT/ex/N_flag File: /filespace/s/skzhu/ece552/project/ALU.v Line: 22
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ptb/DUT/ex/Z_flag File: /filespace/s/skzhu/ece552/project/ALU.v Line: 23
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q'.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ptb/DUT/ex/V_flag File: /filespace/s/skzhu/ece552/project/ALU.v Line: 24
+# Error loading design
+# End time: 10:33:39 on May 03,2024, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 3
+# Compile of ALU.v was successful.
+vsim work.cpu_ptb -voptargs=+acc
+# vsim work.cpu_ptb -voptargs="+acc" 
+# Start time: 10:34:14 on May 03,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+view -new wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/cpu_ptb/PC \
+sim:/cpu_ptb/Inst \
+sim:/cpu_ptb/RegWrite \
+sim:/cpu_ptb/WriteRegister \
+sim:/cpu_ptb/WriteData \
+sim:/cpu_ptb/MemWrite \
+sim:/cpu_ptb/MemRead \
+sim:/cpu_ptb/MemAddress \
+sim:/cpu_ptb/MemDataIn \
+sim:/cpu_ptb/MemDataOut \
+sim:/cpu_ptb/DCacheHit \
+sim:/cpu_ptb/ICacheHit \
+sim:/cpu_ptb/DCacheReq \
+sim:/cpu_ptb/ICacheReq \
+sim:/cpu_ptb/Halt \
+sim:/cpu_ptb/inst_count \
+sim:/cpu_ptb/cycle_count \
+sim:/cpu_ptb/trace_file \
+sim:/cpu_ptb/sim_log_file \
+sim:/cpu_ptb/DCacheHit_count \
+sim:/cpu_ptb/ICacheHit_count \
+sim:/cpu_ptb/DCacheReq_count \
+sim:/cpu_ptb/ICacheReq_count \
+sim:/cpu_ptb/clk \
+sim:/cpu_ptb/rst_n
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt4
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
 view -new wave
 # .main_pane.wave.interior.cs.body.pw.wf
 add wave -position insertpoint  \
@@ -160,65 +373,10 @@ sim:/cpu_ptb/DUT/WB_MemtoReg \
 sim:/cpu_ptb/DUT/WB_RegWrite \
 sim:/cpu_ptb/DUT/WB_hlt_select \
 sim:/cpu_ptb/DUT/error
-# Error opening /filespace/s/skzhu/ece552/project/I:/ece552/project/cpu.v
-# Path name '/filespace/s/skzhu/ece552/project/I:/ece552/project/cpu.v' doesn't exist.
-run -all
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : I:/ece552/project/project-phase3-testbench.v(88)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
-# 1
-# Break in Module cpu_ptb at I:/ece552/project/project-phase3-testbench.v line 88
-# Error opening /filespace/s/skzhu/ece552/project/I:/ece552/project/project-phase3-testbench.v
-# Path name '/filespace/s/skzhu/ece552/project/I:/ece552/project/project-phase3-testbench.v' doesn't exist.
-# Compile of adder_4bit.v was successful.
-# Compile of adder_16bit_tb.sv was successful.
-# Compile of addsub_4bit_sat.v was successful.
-# Compile of addsub_4bit_tb.sv was successful.
-# Compile of addsub_16bit.v was successful.
-# Compile of ALU.v was successful.
-# Compile of BitCell.v was successful.
-# Compile of blockEnable.v was successful.
-# Compile of cache_controller.v was successful.
-# Compile of cache_fill_FSM.v was successful.
-# Compile of Control.v was successful.
-# Compile of cpu.v was successful.
-# Compile of D-Flip-Flop.v was successful.
-# Compile of DataArray.v was successful.
-# Compile of dcache.v was successful.
-# Compile of dmemory.v was successful.
-# Compile of FA.v was successful.
-# Compile of ForwardingUnit.v was successful.
-# Compile of hazard.v was successful.
-# Compile of icache.v was successful.
-# Compile of imemory.v was successful.
-# Compile of LW_SW_tb.sv was successful.
-# Compile of MetaDataArray.v was successful.
-# Compile of multicycle_memory.v was successful.
-# Compile of PADDSB.v was successful.
-# Compile of PADDSB_tb.sv was successful.
-# Compile of PC_control.v was successful.
-# Compile of PC_control_tb.sv was successful.
-# Compile of project-phase1-testbench.v was successful.
-# Compile of project-phase2-testbench.v was successful.
-# Compile of project-phase3-testbench.v was successful.
-# Compile of ReadDecoder_4_16.v was successful.
-# Compile of RED.v was successful.
-# Compile of RED_tb.sv was successful.
-# Compile of Register.v was successful.
-# Compile of RegisterFile.v was successful.
-# Compile of Shifter.v was successful.
-# Compile of Shifter_tb.sv was successful.
-# Compile of wordEnable.v was successful.
-# Compile of WriteDecoder_4_16.v was successful.
-# 40 compiles, 0 failed with no errors.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-8009) Loading existing optimized design _opt4
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.cpu_ptb(fast)
 # Loading work.cpu(fast)
@@ -257,15 +415,82 @@ restart
 run -all
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(88)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 88
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
 view -new wave
 # .main_pane.wave1.interior.cs.body.pw.wf
-add wave -position insertpoint sim:/cpu_ptb/DUT/cache/*
+add wave -position insertpoint  \
+sim:/cpu_ptb/DUT/cache/clk \
+sim:/cpu_ptb/DUT/cache/rst \
+sim:/cpu_ptb/DUT/cache/memRead \
+sim:/cpu_ptb/DUT/cache/memWrite \
+sim:/cpu_ptb/DUT/cache/mem_addr \
+sim:/cpu_ptb/DUT/cache/ins_addr \
+sim:/cpu_ptb/DUT/cache/memDataIn \
+sim:/cpu_ptb/DUT/cache/instDataIn \
+sim:/cpu_ptb/DUT/cache/memDataOut \
+sim:/cpu_ptb/DUT/cache/instDataOut \
+sim:/cpu_ptb/DUT/cache/IFStall \
+sim:/cpu_ptb/DUT/cache/MEMStall \
+sim:/cpu_ptb/DUT/cache/D_MetaDataIn1 \
+sim:/cpu_ptb/DUT/cache/D_MetaDataIn2 \
+sim:/cpu_ptb/DUT/cache/D_MetaWrite1 \
+sim:/cpu_ptb/DUT/cache/D_MetaWrite2 \
+sim:/cpu_ptb/DUT/cache/D_BlockEnable \
+sim:/cpu_ptb/DUT/cache/D_MetaDataOut1 \
+sim:/cpu_ptb/DUT/cache/D_MetaDataOut2 \
+sim:/cpu_ptb/DUT/cache/D_DataIn \
+sim:/cpu_ptb/DUT/cache/D_DataWrite1 \
+sim:/cpu_ptb/DUT/cache/D_DataWrite2 \
+sim:/cpu_ptb/DUT/cache/D_FSMMetaEn \
+sim:/cpu_ptb/DUT/cache/D_inst_wrd_en \
+sim:/cpu_ptb/DUT/cache/D_WordEnable \
+sim:/cpu_ptb/DUT/cache/D_DataOut1 \
+sim:/cpu_ptb/DUT/cache/D_DataOut2 \
+sim:/cpu_ptb/DUT/cache/D_index \
+sim:/cpu_ptb/DUT/cache/D_offset \
+sim:/cpu_ptb/DUT/cache/D_tag \
+sim:/cpu_ptb/DUT/cache/D_FSM_wrd_en \
+sim:/cpu_ptb/DUT/cache/dataHit1 \
+sim:/cpu_ptb/DUT/cache/dataHit2 \
+sim:/cpu_ptb/DUT/cache/dataMiss \
+sim:/cpu_ptb/DUT/cache/D_fsm_busy \
+sim:/cpu_ptb/DUT/cache/D_FSMDataEn \
+sim:/cpu_ptb/DUT/cache/D_memToRead \
+sim:/cpu_ptb/DUT/cache/D_stall \
+sim:/cpu_ptb/DUT/cache/I_MetaDataIn1 \
+sim:/cpu_ptb/DUT/cache/I_MetaDataIn2 \
+sim:/cpu_ptb/DUT/cache/I_MetaWrite1 \
+sim:/cpu_ptb/DUT/cache/I_MetaWrite2 \
+sim:/cpu_ptb/DUT/cache/I_BlockEnable \
+sim:/cpu_ptb/DUT/cache/I_MetaDataOut1 \
+sim:/cpu_ptb/DUT/cache/I_MetaDataOut2 \
+sim:/cpu_ptb/DUT/cache/I_DataIn \
+sim:/cpu_ptb/DUT/cache/I_DataWrite1 \
+sim:/cpu_ptb/DUT/cache/I_DataWrite2 \
+sim:/cpu_ptb/DUT/cache/I_inst_wrd_en \
+sim:/cpu_ptb/DUT/cache/I_WordEnable \
+sim:/cpu_ptb/DUT/cache/I_DataOut1 \
+sim:/cpu_ptb/DUT/cache/I_DataOut2 \
+sim:/cpu_ptb/DUT/cache/I_index \
+sim:/cpu_ptb/DUT/cache/I_offset \
+sim:/cpu_ptb/DUT/cache/I_tag \
+sim:/cpu_ptb/DUT/cache/I_FSM_wrd_en \
+sim:/cpu_ptb/DUT/cache/instHit1 \
+sim:/cpu_ptb/DUT/cache/instHit2 \
+sim:/cpu_ptb/DUT/cache/instMiss \
+sim:/cpu_ptb/DUT/cache/I_fsm_busy \
+sim:/cpu_ptb/DUT/cache/I_FSMMetaEn \
+sim:/cpu_ptb/DUT/cache/I_FSMDataEn \
+sim:/cpu_ptb/DUT/cache/I_memToRead \
+sim:/cpu_ptb/DUT/cache/I_stall \
+sim:/cpu_ptb/DUT/cache/mainMemOut \
+sim:/cpu_ptb/DUT/cache/mainMemAddr \
+sim:/cpu_ptb/DUT/cache/mainMemEnable \
+sim:/cpu_ptb/DUT/cache/mainMemWR \
+sim:/cpu_ptb/DUT/cache/mainMemValid
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -308,65 +533,25 @@ restart
 run -all
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(88)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 88
-# Compile of cache_controller.v was successful.
-restart
-# Closing VCD file "dump.vcd"
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.cpu_ptb(fast)
-# Loading work.cpu(fast)
-# Loading work.cache_controller(fast)
-# Loading work.blockEnable(fast)
-# Loading work.wordEnable(fast)
-# Loading work.dcache(fast)
-# Loading work.MetaDataArray(fast)
-# Loading work.DataArray(fast)
-# Loading work.cache_fill_FSM(fast)
-# Loading work.dff(fast)
-# Loading work.adder_4bit(fast)
-# Loading work.addsub_16bit(fast)
-# Loading work.icache(fast)
-# Loading work.memory4c(fast)
-# Loading work.PC_control(fast)
-# Loading work.hazard(fast)
-# Loading work.Control(fast)
-# Loading work.RegisterFile(fast)
-# Loading work.ReadDecoder_4_16(fast)
-# Loading work.WriteDecoder_4_16(fast)
-# Loading work.ALU(fast)
-# Loading work.Shifter(fast)
-# Loading work.RED(fast)
-# Loading work.PADDSB(fast)
-# Loading work.adder_4bit_sat(fast)
-# Loading work.ForwardingUnit(fast)
-# Loading work.MBlock(fast)
-# Loading work.Block(fast)
-# Loading work.Register(fast)
-# Loading work.dff(fast__1)
-# Loading work.MCell(fast)
-# Loading work.DWord(fast)
-# Loading work.BitCell(fast)
-# Loading work.DCell(fast)
-run -all
-# Hello world...simulation starting
-# See verilogsim.plog and verilogsim.ptrace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(88)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
-# 1
-# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 88
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
 view -new wave
 # .main_pane.wave2.interior.cs.body.pw.wf
-add wave -position insertpoint sim:/cpu_ptb/DUT/cache/instCacheFSM/*
+add wave -position insertpoint  \
+sim:/cpu_ptb/DUT/pccontrol/C \
+sim:/cpu_ptb/DUT/pccontrol/I \
+sim:/cpu_ptb/DUT/pccontrol/F \
+sim:/cpu_ptb/DUT/pccontrol/branch \
+sim:/cpu_ptb/DUT/pccontrol/branch_reg \
+sim:/cpu_ptb/DUT/pccontrol/PC_in \
+sim:/cpu_ptb/DUT/pccontrol/regAddr \
+sim:/cpu_ptb/DUT/pccontrol/PC_out \
+sim:/cpu_ptb/DUT/pccontrol/pc_branch \
+sim:/cpu_ptb/DUT/pccontrol/pc_choose \
+sim:/cpu_ptb/DUT/pccontrol/branch_imm \
+sim:/cpu_ptb/DUT/pccontrol/error
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -409,12 +594,122 @@ restart
 run -all
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(88)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 88
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+# Compile of PC_control.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 5505 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+view -new wave
+# .main_pane.wave3.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/A \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/B \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/sub \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/Sum \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/sat \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/B_comp \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/C \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/sum_res \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/ovfl_pos \
+sim:/cpu_ptb/DUT/pccontrol/branch_add/ovfl_neg
+# Causality operation skipped due to absence of debug database file
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -457,13 +752,897 @@ restart
 run -all
 # Hello world...simulation starting
 # See verilogsim.plog and verilogsim.ptrace for output
-# hmm....more than 100000 cycles of simulation...error?
-# 
-# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(88)
-#    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
 # 1
-# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 88
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 5505 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cache_fill_FSM.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
 # Compile of cache_controller.v was successful.
+# Compile of cache_fill_FSM.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of cache_fill_FSM.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cache_fill_FSM.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 25205 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 25205 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of ForwardingUnit.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of MetaDataArray.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 25205 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v failed with 1 errors.
+# Compile of ForwardingUnit.v failed with 1 errors.
+# 2 compiles, 2 failed with 2 errors.
+# Compile of cpu.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 25205 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+view -new wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/cpu_ptb/DUT/clk \
+sim:/cpu_ptb/DUT/rst_n \
+sim:/cpu_ptb/DUT/hlt \
+sim:/cpu_ptb/DUT/pc \
+sim:/cpu_ptb/DUT/RegWrite \
+sim:/cpu_ptb/DUT/MemRead \
+sim:/cpu_ptb/DUT/MemWrite \
+sim:/cpu_ptb/DUT/Branch \
+sim:/cpu_ptb/DUT/MemtoReg \
+sim:/cpu_ptb/DUT/ALUSrc \
+sim:/cpu_ptb/DUT/pcs_select \
+sim:/cpu_ptb/DUT/hlt_select \
+sim:/cpu_ptb/DUT/ALUSrc8bit \
+sim:/cpu_ptb/DUT/LoadByte \
+sim:/cpu_ptb/DUT/BranchReg \
+sim:/cpu_ptb/DUT/Flush \
+sim:/cpu_ptb/DUT/IF_pc_out \
+sim:/cpu_ptb/DUT/IF_instruction \
+sim:/cpu_ptb/DUT/IF_pc_increment \
+sim:/cpu_ptb/DUT/IF_pc_choose \
+sim:/cpu_ptb/DUT/IFStall \
+sim:/cpu_ptb/DUT/ID_instruction \
+sim:/cpu_ptb/DUT/ID_instruction_or_nop \
+sim:/cpu_ptb/DUT/ID_pc_increment \
+sim:/cpu_ptb/DUT/ID_pc_branch \
+sim:/cpu_ptb/DUT/ID_reg_datain \
+sim:/cpu_ptb/DUT/ID_dataout1 \
+sim:/cpu_ptb/DUT/ID_dataout2 \
+sim:/cpu_ptb/DUT/Opcode \
+sim:/cpu_ptb/DUT/ID_rs \
+sim:/cpu_ptb/DUT/ID_rd \
+sim:/cpu_ptb/DUT/ID_rt \
+sim:/cpu_ptb/DUT/imm8bit \
+sim:/cpu_ptb/DUT/imm9bit \
+sim:/cpu_ptb/DUT/sextimm \
+sim:/cpu_ptb/DUT/ccc \
+sim:/cpu_ptb/DUT/reg1 \
+sim:/cpu_ptb/DUT/reg2 \
+sim:/cpu_ptb/DUT/Stall \
+sim:/cpu_ptb/DUT/RegWrite_NOP \
+sim:/cpu_ptb/DUT/MemtoReg_NOP \
+sim:/cpu_ptb/DUT/pcs_select_NOP \
+sim:/cpu_ptb/DUT/MemRead_NOP \
+sim:/cpu_ptb/DUT/MemWrite_NOP \
+sim:/cpu_ptb/DUT/ALUSrc_NOP \
+sim:/cpu_ptb/DUT/ALUSrc8bit_NOP \
+sim:/cpu_ptb/DUT/hlt_select_NOP \
+sim:/cpu_ptb/DUT/ID_dataout1_NOP \
+sim:/cpu_ptb/DUT/ID_dataout2_NOP \
+sim:/cpu_ptb/DUT/sextimm_NOP \
+sim:/cpu_ptb/DUT/ID_rs_NOP \
+sim:/cpu_ptb/DUT/ID_rt_NOP \
+sim:/cpu_ptb/DUT/ID_rd_NOP \
+sim:/cpu_ptb/DUT/Opcode_NOP \
+sim:/cpu_ptb/DUT/EX_dataout1 \
+sim:/cpu_ptb/DUT/EX_dataout2 \
+sim:/cpu_ptb/DUT/EX_sextimm \
+sim:/cpu_ptb/DUT/EX_rs \
+sim:/cpu_ptb/DUT/EX_rd \
+sim:/cpu_ptb/DUT/EX_rt \
+sim:/cpu_ptb/DUT/EX_ALUop \
+sim:/cpu_ptb/DUT/EX_ALUSrc \
+sim:/cpu_ptb/DUT/EX_ALUSrc8bit \
+sim:/cpu_ptb/DUT/EX_MemRead \
+sim:/cpu_ptb/DUT/EX_MemWrite \
+sim:/cpu_ptb/DUT/EX_pcs_select \
+sim:/cpu_ptb/DUT/EX_MemtoReg \
+sim:/cpu_ptb/DUT/EX_RegWrite \
+sim:/cpu_ptb/DUT/EX_hlt_select \
+sim:/cpu_ptb/DUT/Flags \
+sim:/cpu_ptb/DUT/aluin2 \
+sim:/cpu_ptb/DUT/EX_aluout \
+sim:/cpu_ptb/DUT/ALUFwdIn1 \
+sim:/cpu_ptb/DUT/ALUFwdIn2 \
+sim:/cpu_ptb/DUT/ALUFwdReg \
+sim:/cpu_ptb/DUT/EX_pc_increment \
+sim:/cpu_ptb/DUT/destReg \
+sim:/cpu_ptb/DUT/ALUFwd1 \
+sim:/cpu_ptb/DUT/ALUFwd2 \
+sim:/cpu_ptb/DUT/Mem2Ex \
+sim:/cpu_ptb/DUT/MEM_aluout \
+sim:/cpu_ptb/DUT/MEM_dmem_in \
+sim:/cpu_ptb/DUT/MEM_destReg \
+sim:/cpu_ptb/DUT/MEM_mem_out \
+sim:/cpu_ptb/DUT/MEMFwdIn \
+sim:/cpu_ptb/DUT/MEM_pc_increment \
+sim:/cpu_ptb/DUT/MEM_MemRead \
+sim:/cpu_ptb/DUT/MEM_MemWrite \
+sim:/cpu_ptb/DUT/MEM_pcs_select \
+sim:/cpu_ptb/DUT/MEM_MemtoReg \
+sim:/cpu_ptb/DUT/MEM_RegWrite \
+sim:/cpu_ptb/DUT/MEM_hlt_select \
+sim:/cpu_ptb/DUT/MEMFwd \
+sim:/cpu_ptb/DUT/MEMStall \
+sim:/cpu_ptb/DUT/WB_mem_out \
+sim:/cpu_ptb/DUT/WB_aluout \
+sim:/cpu_ptb/DUT/WB_pc_increment \
+sim:/cpu_ptb/DUT/WB_destReg \
+sim:/cpu_ptb/DUT/WB_pcs_select \
+sim:/cpu_ptb/DUT/WB_MemtoReg \
+sim:/cpu_ptb/DUT/WB_RegWrite \
+sim:/cpu_ptb/DUT/WB_hlt_select \
+sim:/cpu_ptb/DUT/error
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt4
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+view -new wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint sim:/cpu_ptb/DUT/*
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 23805 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of cpu.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 31405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of MetaDataArray.v was successful.
 restart
 # Closing VCD file "dump.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -513,8 +1692,243 @@ run -all
 #    Time: 10 us  Iteration: 1  Instance: /cpu_ptb
 # 1
 # Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 88
-# Causality operation skipped due to absence of debug database file
-# Break key hit
-# Break key hit
-# End time: 15:37:08 on May 01,2024, Elapsed time: 1:00:43
-# Errors: 0, Warnings: 2
+# Compile of MetaDataArray.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 31405 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 4505 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 6105 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 4505 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157
+# Compile of multicycle_memory.v was successful.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_ptb(fast)
+# Loading work.cpu(fast)
+# Loading work.cache_controller(fast)
+# Loading work.blockEnable(fast)
+# Loading work.wordEnable(fast)
+# Loading work.dcache(fast)
+# Loading work.MetaDataArray(fast)
+# Loading work.DataArray(fast)
+# Loading work.cache_fill_FSM(fast)
+# Loading work.dff(fast)
+# Loading work.adder_4bit(fast)
+# Loading work.addsub_16bit(fast)
+# Loading work.icache(fast)
+# Loading work.memory4c(fast)
+# Loading work.PC_control(fast)
+# Loading work.hazard(fast)
+# Loading work.Control(fast)
+# Loading work.RegisterFile(fast)
+# Loading work.ReadDecoder_4_16(fast)
+# Loading work.WriteDecoder_4_16(fast)
+# Loading work.ALU(fast)
+# Loading work.Shifter(fast)
+# Loading work.RED(fast)
+# Loading work.PADDSB(fast)
+# Loading work.adder_4bit_sat(fast)
+# Loading work.ForwardingUnit(fast)
+# Loading work.MBlock(fast)
+# Loading work.Block(fast)
+# Loading work.Register(fast)
+# Loading work.dff(fast__1)
+# Loading work.MCell(fast)
+# Loading work.DWord(fast)
+# Loading work.BitCell(fast)
+# Loading work.DCell(fast)
+run -all
+# Hello world...simulation starting
+# See verilogsim.plog and verilogsim.ptrace for output
+# ** Note: $finish    : /filespace/s/skzhu/ece552/project/project-phase3-testbench.v(157)
+#    Time: 4605 ps  Iteration: 0  Instance: /cpu_ptb
+# 1
+# Break in Module cpu_ptb at /filespace/s/skzhu/ece552/project/project-phase3-testbench.v line 157

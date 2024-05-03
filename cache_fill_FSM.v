@@ -13,7 +13,7 @@ output [7:0] wrd_en;
 output stall;
 
 wire state, next_state;
-wire [3:0] count, next_count, inc_count, addr, next_addr, inc_addr;
+wire [3:0] count, next_count, inc_count, addr, next_addr, inc_addr, cnt4, nxt_cnt4, inc_cnt4;
 
 // State
 // Idle: state = 0
@@ -28,7 +28,13 @@ assign next_state = ((~state & miss_detected) | (state & (count != 4'h8))) ? 1'b
 // load all 8 chunks
 adder_4bit chunk_adder(.Sum(inc_count), .A(count), .B(4'h1), .Cin(1'b0), .Cout());
 assign next_count = (state) ? inc_count : 4'h0;     // we should only be counting if the we are in the WAIT state
-dff count_ff[3:0](.q(count), .d(next_count), .wen(memory_data_valid), .clk(clk), .rst(~rst_n | (next_count == 4'h9)));
+dff count_ff[3:0](.q(count), .d(next_count), .wen(memory_data_valid & (cnt4 == 4'h3)), .clk(clk), .rst(~rst_n | (next_count == 4'h9)));
+
+// wait for 4 cycles before loading from memory
+adder_4bit cnt4_adder(.Sum(inc_cnt4), .A(cnt4), .B(4'h1), .Cin(1'b0), .Cout());
+assign nxt_cnt4 = (state) ? ((cnt4 == 4'h3) ? cnt4 : inc_cnt4) : 4'h0;
+dff count_4[3:0](.q(cnt4), .d(nxt_cnt4), .wen(miss_detected & ~(nxt_cnt4 == 4'h4)), .clk(clk), .rst(~rst_n | ~miss_detected));
+
 
 // load from memory
 adder_4bit inc_mem_adder(.Sum(inc_addr), .A(addr), .B(4'h2), .Cin(1'b0), .Cout());
@@ -41,7 +47,7 @@ wordEnable instWordEn(.b_offset(count[2:0]), .wordEn(wrd_en));
 // outputs
 assign fsm_busy = state;
 assign stall = state | (~state & next_state);
-assign write_data_array = (memory_data_valid & next_state);
+assign write_data_array = (memory_data_valid & next_state & (cnt4 == 4'h3));
 assign write_tag_array = ((count == 4'h8) & state);
 
 endmodule

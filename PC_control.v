@@ -56,7 +56,7 @@ always @ (*) begin
             branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = (F[2]) ?  ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)) : PC_in;
         end
-        3'b111: begin
+        3'b111: begin  
             branch_imm = {{7{I[8]}}, I << 1};
             pc_choose =  (branch) ?  pc_branch : regAddr;
         end

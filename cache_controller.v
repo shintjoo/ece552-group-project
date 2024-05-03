@@ -126,13 +126,12 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     assign I_MetaDataIn2 = ~instMiss ? {I_MetaDataOut2[7:2], ~instHit2, I_MetaDataOut2[0]} :  (I_MetaDataOut1[1]) ? {I_tag, 1'b0, 1'b1} : I_MetaDataOut2;
     assign I_DataIn = mainMemOut;
 
-    assign I_MetaWrite1 = I_FSMMetaEn ; //& instMiss
+    assign I_MetaWrite1 = I_FSMMetaEn;
     assign I_MetaWrite2 = I_FSMMetaEn;
 
     //Choose word enable
     assign I_WordEnable = (instMiss) ? I_FSM_wrd_en : I_inst_wrd_en;
     
-    // i think that instHit needs to be removed.
     assign I_DataWrite1 = (I_FSMDataEn & ~I_MetaDataOut2[1] & instMiss); //update the inst array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
     assign I_DataWrite2 = (I_FSMDataEn & I_MetaDataOut2[1] & instMiss);
 

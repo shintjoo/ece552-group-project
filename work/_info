@@ -47,6 +47,58 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 R1
 R1
 R1
@@ -286,10 +338,10 @@ n@_opt3
 R7
 R2
 T_opt4
-!s110 1714714054
-V>>R3DJ6d@5@OlA9RY>4iY2
+!s110 1714772675
+V946gUdUoWRe3^6XO[9Nka0
 R3
-=7-000ae431a4f1-663475c6-1f0e-3e043d
+=30-000ae431a4f1-66355ac3-3b9f5-2069bb
 R1
 !s12b OEM100
 !s124 OEM100
@@ -298,64 +350,64 @@ R6
 n@_opt4
 OE;O;2023.2_1;77
 vadder_16bit_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv
+2/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv
 Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z9 !s110 1714691946
+Z9 !s110 1714749713
 !i10b 1
 !s100 k<I1A7>AW2JzkQf0jI?mz0
-I=hc9k9G03KffU9De:K_Tf2
+IVCiZW5Wn9kgi7Oco6=RE40
 S1
-Z10 d/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project
-Z11 w1714598183
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv
-!i122 1525
+Z10 d/filespace/s/skzhu/ece552/project
+Z11 w1712174020
+8/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv
+F/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv
+!i122 1589
 L0 6 50
 Z12 VDg1SIo80bB@j0V0VzS_@n1
 Z13 OE;L;2023.2_1;77
 r1
 !s85 0
 31
-Z14 !s108 1714691946.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv|
+Z14 !s108 1714749713.000000
+!s107 /filespace/s/skzhu/ece552/project/adder_16bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/adder_16bit_tb.sv|
 !i113 0
 Z15 o-work work -sv
 R6
 vadder_4bit
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v
+2/filespace/s/skzhu/ece552/project/adder_4bit.v
 R9
 !i10b 1
 !s100 RkBiJMa3FFPc]KjnP5gVb3
-IeZib4TOaCUSdI4id5zJHE0
+I0^b@fi[aanNoeMA]jokgR1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v
-!i122 1524
+8/filespace/s/skzhu/ece552/project/adder_4bit.v
+F/filespace/s/skzhu/ece552/project/adder_4bit.v
+!i122 1588
 L0 6 37
 R12
 R13
 r1
 !s85 0
 31
-R14
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v|
+!s108 1714749712.000000
+!s107 /filespace/s/skzhu/ece552/project/adder_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/adder_4bit.v|
 !i113 0
 Z16 o-work work
 R6
 vadder_4bit_sat
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v
+2/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v
 R9
 !i10b 1
 !s100 N8AXTX3X44]XZfO<BabN[2
-I3YLZ7o4YR30fZFV1[`g@[1
+IGkgG;nF]Ak4HWlZShY;LX0
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v
-!i122 1526
+8/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v
+F/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v
+!i122 1590
 L0 6 39
 R12
 R13
@@ -363,8 +415,8 @@ r1
 !s85 0
 31
 R14
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v|
+!s107 /filespace/s/skzhu/ece552/project/addsub_4bit_sat.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/addsub_4bit_sat.v|
 !i113 0
 R16
 R6
@@ -393,25 +445,25 @@ r1
 Z19 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 vaddsub_16bit
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v
-!s110 1714712652
+2/filespace/s/skzhu/ece552/project/addsub_16bit.v
+R9
 !i10b 1
 !s100 k8GX`ES4J4g^LBK>CGJoD0
-IDl4KkUZKzJR_a^UFLNfI]0
+I[][?CK@L0Yza]l7FHhhGk3
 R10
-w1714712602
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v
-!i122 1582
+R11
+8/filespace/s/skzhu/ece552/project/addsub_16bit.v
+F/filespace/s/skzhu/ece552/project/addsub_16bit.v
+!i122 1592
 L0 6 31
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714712652.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v|
+R14
+!s107 /filespace/s/skzhu/ece552/project/addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/addsub_16bit.v|
 !i113 0
 R16
 R6
@@ -438,18 +490,18 @@ r1
 Z20 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 vaddsub_4bit_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv
+2/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv
 R8
-Z21 !s110 1714691947
+R9
 !i10b 1
 !s100 Qbg3g4l_ACeQIoi=MXggH0
-I=jmPLRM0=ZE1=k`BS[nGj0
+IKd>=1eg]U[PZWmmc<]h>z1
 S1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv
-!i122 1527
+8/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv
+F/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv
+!i122 1591
 L0 6 60
 R12
 R13
@@ -457,265 +509,265 @@ r1
 !s85 0
 31
 R14
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv|
+!s107 /filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/addsub_4bit_tb.sv|
 !i113 0
 R15
 R6
 vALU
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v
-R21
+2/filespace/s/skzhu/ece552/project/ALU.v
+!s110 1714750450
 !i10b 1
-!s100 kkOO8?o52LHf=KOn6?ma02
-I^kQbZJ64NZFnm:g1C7Noh3
+!s100 Hb0o@DWBl3584_BYki_XA0
+I0LnGk8olFWQ]W:^bKV^fZ2
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v
-!i122 1529
-L0 6 96
+w1714750447
+8/filespace/s/skzhu/ece552/project/ALU.v
+F/filespace/s/skzhu/ece552/project/ALU.v
+!i122 1630
+L0 6 101
 R12
 R13
 r1
 !s85 0
 31
-Z22 !s108 1714691947.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v|
+!s108 1714750450.000000
+!s107 /filespace/s/skzhu/ece552/project/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/ALU.v|
 !i113 0
 R16
 R6
 n@a@l@u
 vBitCell
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v
-R21
+2/filespace/s/skzhu/ece552/project/BitCell.v
+R9
 !i10b 1
 !s100 VEEal[P1NTi@<hW=0mgnc3
-Iz@9`jFYNOi]>U1DSDcAn02
+I>EE^K[0UQRkdW9fSFi7zh0
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v
-!i122 1530
+8/filespace/s/skzhu/ece552/project/BitCell.v
+F/filespace/s/skzhu/ece552/project/BitCell.v
+!i122 1594
 L0 6 18
 R12
 R13
 r1
 !s85 0
 31
-R22
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v|
+R14
+!s107 /filespace/s/skzhu/ece552/project/BitCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/BitCell.v|
 !i113 0
 R16
 R6
 n@bit@cell
 vBlock
-Z23 2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v
-R21
+Z21 2/filespace/s/skzhu/ece552/project/DataArray.v
+Z22 !s110 1714749714
 !i10b 1
 !s100 fHh5S5o2jBa1]5h6[LX3F3
-IISn1AB^Nm5>a?M[?bR8=O3
+I?W;LDcUd7?g1K5ik]aI:;1
 R10
-Z24 w1714602755
-Z25 8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v
-Z26 F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v
-!i122 1537
+Z23 w1714430980
+Z24 8/filespace/s/skzhu/ece552/project/DataArray.v
+Z25 F/filespace/s/skzhu/ece552/project/DataArray.v
+!i122 1601
 L0 12 5
 R12
 R13
 r1
 !s85 0
 31
-R22
-Z27 !s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v|
-Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v|
+Z26 !s108 1714749714.000000
+Z27 !s107 /filespace/s/skzhu/ece552/project/DataArray.v|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/DataArray.v|
 !i113 0
 R16
 R6
 n@block
 vblockEnable
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v
-R21
+2/filespace/s/skzhu/ece552/project/blockEnable.v
+R9
 !i10b 1
 !s100 902Y7ZXDB9m3NPFz[[TN42
-ILEPQ=Zg>I6UFmPUk7^mB`0
+Inb@j=IjmDzHV<diJCjV=@2
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v
-!i122 1531
+w1714521101
+8/filespace/s/skzhu/ece552/project/blockEnable.v
+F/filespace/s/skzhu/ece552/project/blockEnable.v
+!i122 1595
 L0 1 11
 R12
 R13
 r1
 !s85 0
 31
-R22
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v|
+R14
+!s107 /filespace/s/skzhu/ece552/project/blockEnable.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/blockEnable.v|
 !i113 0
 R16
 R6
 nblock@enable
 vcache_controller
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v
-!s110 1714709372
+2/filespace/s/skzhu/ece552/project/cache_controller.v
+!s110 1714757468
 !i10b 1
-!s100 lK>:>dV]THg38;d0j89mZ2
-I?1dgh@oBE4Z32cZohV6lb1
+!s100 Z>IT`Uk;a91=;oaYKOQ^S0
+Ik;k6YGSQnk>G0XEU9Abf`0
 R10
-w1714708384
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v
-!i122 1579
-L0 1 161
+w1714755576
+8/filespace/s/skzhu/ece552/project/cache_controller.v
+F/filespace/s/skzhu/ece552/project/cache_controller.v
+!i122 1637
+L0 1 160
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714709372.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v|
+!s108 1714757468.000000
+!s107 /filespace/s/skzhu/ece552/project/cache_controller.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/cache_controller.v|
 !i113 0
 R16
 R6
 vcache_fill_FSM
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v
-!s110 1714700362
+2/filespace/s/skzhu/ece552/project/cache_fill_FSM.v
+!s110 1714757876
 !i10b 1
-!s100 R55YlDlg?M58UNK`bWIKP3
-Ifz]jG58BeY8`VEgcIO>5N1
+!s100 oCbNXh^jHef7KF5klb01^0
+IjN]LA`JUHlWVG4cP^UcAn0
 R10
-w1714697766
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v
-!i122 1572
-L0 1 47
+w1714757870
+8/filespace/s/skzhu/ece552/project/cache_fill_FSM.v
+F/filespace/s/skzhu/ece552/project/cache_fill_FSM.v
+!i122 1639
+L0 1 53
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714700362.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v|
+!s108 1714757875.000000
+!s107 /filespace/s/skzhu/ece552/project/cache_fill_FSM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/cache_fill_FSM.v|
 !i113 0
 R16
 R6
 ncache_fill_@f@s@m
 vControl
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v
-R21
+2/filespace/s/skzhu/ece552/project/Control.v
+R9
 !i10b 1
 !s100 WK8k7i9Bm3`=fgJIjaDgN2
-I3Mb:<PCfcclQnSJBYA^Vh3
+I=K45Ojz6he2:mJOEBS=^21
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v
-!i122 1534
+Z29 w1712957570
+8/filespace/s/skzhu/ece552/project/Control.v
+F/filespace/s/skzhu/ece552/project/Control.v
+!i122 1598
 L0 6 110
 R12
 R13
 r1
 !s85 0
 31
-R22
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v|
+R14
+!s107 /filespace/s/skzhu/ece552/project/Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/Control.v|
 !i113 0
 R16
 R6
 n@control
 vcpu
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v
-!s110 1714713778
+2/filespace/s/skzhu/ece552/project/cpu.v
+!s110 1714765274
 !i10b 1
-!s100 Q<5SP=IgC@;Ge0z^87o0g1
-IDX0kGLZ72DLDB]TI_jOHB1
+!s100 O@RP]<97lYh6HazDa9TSm0
+I05n]B]<?<jHK>]m>g47A?0
 R10
-w1714713763
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v
-!i122 1584
-L0 6 218
+w1714765268
+8/filespace/s/skzhu/ece552/project/cpu.v
+F/filespace/s/skzhu/ece552/project/cpu.v
+!i122 1652
+L0 6 221
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714713778.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v|
+!s108 1714765274.000000
+!s107 /filespace/s/skzhu/ece552/project/cpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/cpu.v|
 !i113 0
 R16
 R6
 vcpu_ptb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v
-Z29 !s110 1714691949
+2/filespace/s/skzhu/ece552/project/project-phase3-testbench.v
+Z30 !s110 1714749715
 !i10b 1
 !s100 zi:?izUoP5LFjTocKMzgP1
-I^b2>a;R2@h3[LaYFifI:W0
+Ie;A5Z8dQmLUS22le3];Y`2
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v
-!i122 1554
+w1714521832
+8/filespace/s/skzhu/ece552/project/project-phase3-testbench.v
+F/filespace/s/skzhu/ece552/project/project-phase3-testbench.v
+!i122 1618
 L0 1 218
 R12
 R13
 r1
 !s85 0
 31
-Z30 !s108 1714691949.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v|
+Z31 !s108 1714749715.000000
+!s107 /filespace/s/skzhu/ece552/project/project-phase3-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/project-phase3-testbench.v|
 !i113 0
 R16
 R6
 vcpu_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v
-R29
+2/filespace/s/skzhu/ece552/project/project-phase1-testbench.v
+R30
 !i10b 1
 !s100 =H9^Pi;GCMlTJ>j9hzzIT1
-IOn[QB7CI@e>>dPX_cz4>Z3
+I=I>BE@62OZUOUFYYC9ALG1
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v
-!i122 1552
+w1712174025
+8/filespace/s/skzhu/ece552/project/project-phase1-testbench.v
+F/filespace/s/skzhu/ece552/project/project-phase1-testbench.v
+!i122 1616
 L0 1 186
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/project-phase1-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/project-phase1-testbench.v|
 !i113 0
 R16
 R6
 vDataArray
-R23
 R21
+R22
 !i10b 1
 !s100 A@^AW]0TmRoSVVMmT79a80
-ImYAz[8kdHU6nCXRUY2i]>1
+I6hMaaIL@Zcn:J8XOk0DMd0
 R10
+R23
 R24
 R25
-R26
-!i122 1537
-Z31 L0 6 4
+!i122 1601
+Z32 L0 6 4
 R12
 R13
 r1
 !s85 0
 31
-R22
+R26
 R27
 R28
 !i113 0
@@ -723,46 +775,46 @@ R16
 R6
 n@data@array
 vdcache
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v
-Z32 !s110 1714691948
+2/filespace/s/skzhu/ece552/project/dcache.v
+R22
 !i10b 1
 !s100 hmG>YGa0GFN[m;f_DjWFZ3
-IU`RZ]kOdL>IADASFljBeF1
+I@iiS<R=0<XJ4bNW2bD?GS0
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v
-!i122 1538
+w1714523198
+8/filespace/s/skzhu/ece552/project/dcache.v
+F/filespace/s/skzhu/ece552/project/dcache.v
+!i122 1602
 Z33 L0 1 17
 R12
 R13
 r1
 !s85 0
 31
-R22
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/dcache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/dcache.v|
 !i113 0
 R16
 R6
 vDCell
-R23
 R21
+R22
 !i10b 1
 !s100 Yl?BU__KS`EJWRzj9ilz70
-IDo`FT^aaJmaC_PPJ:NJLj0
+I?;FoV22RNGe95MAN37dFh0
 R10
+R23
 R24
 R25
-R26
-!i122 1537
+!i122 1601
 L0 25 5
 R12
 R13
 r1
 !s85 0
 31
-R22
+R26
 R27
 R28
 !i113 0
@@ -770,69 +822,69 @@ R16
 R6
 n@d@cell
 vdff
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v
-R21
+2/filespace/s/skzhu/ece552/project/D-Flip-Flop.v
+R22
 !i10b 1
 !s100 Z9V@F2c50oH6kZfdURZd60
-I=`kXHbggDMi0?N[ZCORe31
+IjeC^2fSKTW]29I3CW;X@U0
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v
-!i122 1536
+w1708651211
+8/filespace/s/skzhu/ece552/project/D-Flip-Flop.v
+F/filespace/s/skzhu/ece552/project/D-Flip-Flop.v
+!i122 1600
 L0 3 17
 R12
 R13
 r1
 !s85 0
 31
-R22
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v|
+R14
+!s107 /filespace/s/skzhu/ece552/project/D-Flip-Flop.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/D-Flip-Flop.v|
 !i113 0
 R16
 R6
 vdmemory1c
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v
-R32
+2/filespace/s/skzhu/ece552/project/dmemory.v
+R22
 !i10b 1
 !s100 HKCW?4YUCBBXm<;A19;V32
-I1IHSDFKkEM=T>AC2RkTNI0
+Ia9z>_M=jLahIRNk8F6NF33
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v
-!i122 1539
+8/filespace/s/skzhu/ece552/project/dmemory.v
+F/filespace/s/skzhu/ece552/project/dmemory.v
+!i122 1603
 Z34 L0 31 38
 R12
 R13
 r1
 !s85 0
 31
-Z35 !s108 1714691948.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/dmemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/dmemory.v|
 !i113 0
 R16
 R6
 vDWord
-R23
 R21
+R22
 !i10b 1
 !s100 k10XSaM_0VBZS^<2n?Nej3
-IoL[d?US4Yf1H4=2f<]7dU1
+Ien[NIQO<DI9W@F_Dl=:^M1
 R10
+R23
 R24
 R25
-R26
-!i122 1537
+!i122 1601
 L0 20 3
 R12
 R13
 r1
 !s85 0
 31
-R22
+R26
 R27
 R28
 !i113 0
@@ -840,191 +892,191 @@ R16
 R6
 n@d@word
 vForwardingUnit
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v
-!s110 1714714047
+2/filespace/s/skzhu/ece552/project/ForwardingUnit.v
+!s110 1714763957
 !i10b 1
-!s100 eJ^1OWcCHFlzHBGXU3[oV0
-IbQ`M>?n@l5Cg0QP4[@`]L0
+!s100 PSc0KJ@^^cj8W=M_mUAmC1
+I=d=CbW6bkMU_m2EI]VRQ53
 R10
-w1714714033
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v
-!i122 1587
+w1714763947
+8/filespace/s/skzhu/ece552/project/ForwardingUnit.v
+F/filespace/s/skzhu/ece552/project/ForwardingUnit.v
+!i122 1647
 L0 1 26
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714714047.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v|
+!s108 1714763957.000000
+!s107 /filespace/s/skzhu/ece552/project/ForwardingUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/ForwardingUnit.v|
 !i113 0
 R16
 R6
 n@forwarding@unit
 vfull_adder_1bit
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v
-R32
+2/filespace/s/skzhu/ece552/project/FA.v
+R22
 !i10b 1
 !s100 WN4M^lz?8kX_P@GVTobbO1
-I^:MGcGaDh0f=]KQ;gcnWI2
+IfUf:m^G4KPBZM1fa05Mgh3
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v
-!i122 1540
+8/filespace/s/skzhu/ece552/project/FA.v
+F/filespace/s/skzhu/ece552/project/FA.v
+!i122 1604
 L0 6 8
 R12
 R13
 r1
 !s85 0
 31
-R35
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/FA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/FA.v|
 !i113 0
 R16
 R6
 vhazard
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v
-R32
+2/filespace/s/skzhu/ece552/project/hazard.v
+R22
 !i10b 1
 !s100 nL41SIFh@OzUn]fI6MgGf2
-I:Z?`5CBc?[mIlC;0XCo972
+IEVoWRcIRX>nKAhLbVl5hE1
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v
-!i122 1542
+R29
+8/filespace/s/skzhu/ece552/project/hazard.v
+F/filespace/s/skzhu/ece552/project/hazard.v
+!i122 1606
 L0 1 15
 R12
 R13
 r1
 !s85 0
 31
-R35
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/hazard.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/hazard.v|
 !i113 0
 R16
 R6
 vicache
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v
-R32
+2/filespace/s/skzhu/ece552/project/icache.v
+R22
 !i10b 1
 !s100 j=TnZ@[jcBf0bKnQ;X[4E0
-IMUcSD?YjYM`Q1l36L_DQf3
+I[=@cX_oNJA3jjmXf[YRL31
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v
-!i122 1543
+w1714522240
+8/filespace/s/skzhu/ece552/project/icache.v
+F/filespace/s/skzhu/ece552/project/icache.v
+!i122 1607
 R33
 R12
 R13
 r1
 !s85 0
 31
-R35
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/icache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/icache.v|
 !i113 0
 R16
 R6
 vimemory1c
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v
-R32
+2/filespace/s/skzhu/ece552/project/imemory.v
+R22
 !i10b 1
 !s100 WOdC;0OWccneoB0:Gh>a81
-IeWhRQ22>b[WI88KRioA;F2
+I<J@QZDGl=jdPHjG3`iQUS1
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v
-!i122 1544
+R29
+8/filespace/s/skzhu/ece552/project/imemory.v
+F/filespace/s/skzhu/ece552/project/imemory.v
+!i122 1608
 R34
 R12
 R13
 r1
 !s85 0
 31
-R35
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/imemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/imemory.v|
 !i113 0
 R16
 R6
 vLW_SW_Testbench
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv
+2/filespace/s/skzhu/ece552/project/LW_SW_tb.sv
 R8
-R32
+R22
 !i10b 1
 !s100 B>4a]McG5de2]`[VgK[4o1
-InSNR5<>^EGE2liz60YfEH2
+If^^e?2A;V;m54b^@0>:ZK0
 S1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv
-!i122 1545
+8/filespace/s/skzhu/ece552/project/LW_SW_tb.sv
+F/filespace/s/skzhu/ece552/project/LW_SW_tb.sv
+!i122 1609
 L0 1 70
 R12
 R13
 r1
 !s85 0
 31
-R35
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv|
+R26
+!s107 /filespace/s/skzhu/ece552/project/LW_SW_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/LW_SW_tb.sv|
 !i113 0
 R15
 R6
 n@l@w_@s@w_@testbench
 vMBlock
-Z36 2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v
-R32
+Z35 2/filespace/s/skzhu/ece552/project/MetaDataArray.v
+Z36 !s110 1714770651
 !i10b 1
 !s100 a:^Hg2jX[YlX8;Q]L=16K3
-IgNO1MmUd4?7X=X0_CPzXF2
+IM?1IY1VZP2iP8<_hEQkiR3
 R10
-Z37 w1714602752
-Z38 8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v
-Z39 F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v
-!i122 1546
+Z37 w1714769242
+Z38 8/filespace/s/skzhu/ece552/project/MetaDataArray.v
+Z39 F/filespace/s/skzhu/ece552/project/MetaDataArray.v
+!i122 1654
 L0 11 3
 R12
 R13
 r1
 !s85 0
 31
-R35
-Z40 !s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v|
-Z41 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v|
+Z40 !s108 1714770651.000000
+Z41 !s107 /filespace/s/skzhu/ece552/project/MetaDataArray.v|
+Z42 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/MetaDataArray.v|
 !i113 0
 R16
 R6
 n@m@block
 vMCell
+R35
 R36
-R32
 !i10b 1
 !s100 odikg9[aH?o]JF8ZK?T772
-ITR4S8FUTPa=TjPOPg??jj1
+I[k^Qd?3z:U^^HTij_XK[g3
 R10
 R37
 R38
 R39
-!i122 1546
+!i122 1654
 L0 15 5
 R12
 R13
 r1
 !s85 0
 31
-R35
 R40
 R41
+R42
 !i113 0
 R16
 R6
@@ -1052,148 +1104,148 @@ r1
 R20
 R6
 vmemory4c
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v
-!s110 1714709447
+2/filespace/s/skzhu/ece552/project/multicycle_memory.v
+!s110 1714772672
 !i10b 1
-!s100 lVkiP9ZV<Y1SL^Ee7LJGd2
-Ilif4>hlW3VB?n4N[B912L2
+!s100 ^RL;HefVA`kfolEjA837^2
+IC:aJoALz_a9GIY8EK^6B;1
 R10
-w1714709430
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v
-!i122 1581
+w1714772660
+8/filespace/s/skzhu/ece552/project/multicycle_memory.v
+F/filespace/s/skzhu/ece552/project/multicycle_memory.v
+!i122 1658
 L0 24 69
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714709447.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v|
+!s108 1714772672.000000
+!s107 /filespace/s/skzhu/ece552/project/multicycle_memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/multicycle_memory.v|
 !i113 0
 R16
 R6
 vMetaDataArray
+R35
 R36
-R32
 !i10b 1
 !s100 V_O`<GYZ]NNGJ47`bNLn83
-I[[>nmiobDHGm?A4]]5W5R2
+I9D9l:Yc`egb=Q>RAMmBiV2
 R10
 R37
 R38
 R39
-!i122 1546
-R31
+!i122 1654
+R32
 R12
 R13
 r1
 !s85 0
 31
-R35
 R40
 R41
+R42
 !i113 0
 R16
 R6
 n@meta@data@array
 vPADDSB
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v
-R29
+2/filespace/s/skzhu/ece552/project/PADDSB.v
+R22
 !i10b 1
 !s100 d^R`hFV>PV3foF@Ii46IO1
-ID98<PD^ZJhYMWKzUVd_4F2
+I`Rc>Ej5JCY7EaeM=;ZW<<0
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v
-!i122 1548
-Z42 L0 6 19
+8/filespace/s/skzhu/ece552/project/PADDSB.v
+F/filespace/s/skzhu/ece552/project/PADDSB.v
+!i122 1612
+Z43 L0 6 19
 R12
 R13
 r1
 !s85 0
 31
-R35
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v|
+R26
+!s107 /filespace/s/skzhu/ece552/project/PADDSB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/PADDSB.v|
 !i113 0
 R16
 R6
 n@p@a@d@d@s@b
 vPADDSB_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv
+2/filespace/s/skzhu/ece552/project/PADDSB_tb.sv
 R8
-R29
+R22
 !i10b 1
 !s100 _<kNb1?daa^72`_TNo>Za0
-I<Yf[k`:RkO7f^^JXP4?zm1
+I]dG?G>?9iX?ObQ4@6Y03I3
 S1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv
-!i122 1549
+8/filespace/s/skzhu/ece552/project/PADDSB_tb.sv
+F/filespace/s/skzhu/ece552/project/PADDSB_tb.sv
+!i122 1613
 L0 6 133
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv|
+R26
+!s107 /filespace/s/skzhu/ece552/project/PADDSB_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/PADDSB_tb.sv|
 !i113 0
 R15
 R6
 n@p@a@d@d@s@b_tb
 vPC_control
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v
-!s110 1714713779
+2/filespace/s/skzhu/ece552/project/PC_control.v
+!s110 1714752850
 !i10b 1
 !s100 U:;VI=n`E=jNS:AlWJHlg2
-IUdG4H>a?S_8CiC8QhF83N2
+I44A:1czW]>aSzFk;flQdM3
 R10
-w1714712717
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v
-!i122 1586
+w1714752647
+8/filespace/s/skzhu/ece552/project/PC_control.v
+F/filespace/s/skzhu/ece552/project/PC_control.v
+!i122 1632
 L0 6 64
 R12
 R13
 r1
 !s85 0
 31
-!s108 1714713779.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v|
+!s108 1714752850.000000
+!s107 /filespace/s/skzhu/ece552/project/PC_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/PC_control.v|
 !i113 0
 R16
 R6
 n@p@c_control
 vPC_control_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv
+2/filespace/s/skzhu/ece552/project/PC_control_tb.sv
 R8
-R29
+R22
 !i10b 1
 !s100 02B^Xf:Q2g^@jm41?H;4o3
-I`e6AVd3_HNfb09Fd2fMDz1
+ImA9<hJ50Ph[HF:`cOg5a[0
 S1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv
-!i122 1551
+8/filespace/s/skzhu/ece552/project/PC_control_tb.sv
+F/filespace/s/skzhu/ece552/project/PC_control_tb.sv
+!i122 1615
 L0 1 34
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv|
+R26
+!s107 /filespace/s/skzhu/ece552/project/PC_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/PC_control_tb.sv|
 !i113 0
 R15
 R6
@@ -1222,173 +1274,173 @@ R20
 R6
 n@p@s@a_16bit
 vReadDecoder_4_16
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v
-R29
+2/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v
+R30
 !i10b 1
 !s100 @aK]6jLEZChcU;GEe9m:d3
-IQ1gaG`Md=Hbi:Zi^Y<eA82
+IF[NkQBjWMh60JfF`Ej5N20
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v
-!i122 1555
+8/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v
+F/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v
+!i122 1619
 L0 6 13
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/ReadDecoder_4_16.v|
 !i113 0
 R16
 R6
 n@read@decoder_4_16
 vRED
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v
-R29
+2/filespace/s/skzhu/ece552/project/RED.v
+R30
 !i10b 1
 !s100 ZeHWfeeZI7XjIjK`J6WWd2
-IUhLW1[hTiUN^e3aXgK1a?2
+IzL_@eG2;zc4OX;1?A_gL_2
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v
-!i122 1556
+8/filespace/s/skzhu/ece552/project/RED.v
+F/filespace/s/skzhu/ece552/project/RED.v
+!i122 1620
 L0 6 26
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/RED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/RED.v|
 !i113 0
 R16
 R6
 n@r@e@d
 vRED_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv
+2/filespace/s/skzhu/ece552/project/RED_tb.sv
 R8
-R29
+R30
 !i10b 1
 !s100 D;>MKzE:IkWS1S9ncJd8L3
-Ib0NQR1^UmWjEnJ@4@`DfE2
+I?OXlRYHIWJXSSAC;FfkE83
 S1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv
-!i122 1557
+8/filespace/s/skzhu/ece552/project/RED_tb.sv
+F/filespace/s/skzhu/ece552/project/RED_tb.sv
+!i122 1621
 L0 6 32
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv|
+R31
+!s107 /filespace/s/skzhu/ece552/project/RED_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/RED_tb.sv|
 !i113 0
 R15
 R6
 n@r@e@d_tb
 vRegister
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v
-Z43 !s110 1714691950
+2/filespace/s/skzhu/ece552/project/Register.v
+R30
 !i10b 1
 !s100 lFBebeJ90K?Rg59_YabO62
-ImA=8hAocSTa]Q5KoR8e=b0
+IXlaWUVjQKD;3mi;P^Eo0@2
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v
-!i122 1558
+8/filespace/s/skzhu/ece552/project/Register.v
+F/filespace/s/skzhu/ece552/project/Register.v
+!i122 1622
 L0 6 10
 R12
 R13
 r1
 !s85 0
 31
-R30
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/Register.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/Register.v|
 !i113 0
 R16
 R6
 n@register
 vRegisterFile
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v
-R43
+2/filespace/s/skzhu/ece552/project/RegisterFile.v
+R30
 !i10b 1
 !s100 8:Fz`<dDM]g10T?3ZYm>82
-Iio4zX7]PVE61Qejo4IfA<0
+IUE8o7;aD7BK]kz1c?P<_D3
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v
-!i122 1559
+w1712427664
+8/filespace/s/skzhu/ece552/project/RegisterFile.v
+F/filespace/s/skzhu/ece552/project/RegisterFile.v
+!i122 1623
 L0 6 27
 R12
 R13
 r1
 !s85 0
 31
-Z44 !s108 1714691950.000000
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/RegisterFile.v|
 !i113 0
 R16
 R6
 n@register@file
 vShifter
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v
-R43
+2/filespace/s/skzhu/ece552/project/Shifter.v
+R30
 !i10b 1
 !s100 9X1]X]YfTSai:kjMTZ;ei1
-IbCP0nIoGHUmXPCenP>WkR2
+In76HS4P<[7ZHnA]WBJ2Ml0
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v
-!i122 1560
+8/filespace/s/skzhu/ece552/project/Shifter.v
+F/filespace/s/skzhu/ece552/project/Shifter.v
+!i122 1624
 L0 6 23
 R12
 R13
 r1
 !s85 0
 31
-R44
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/Shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/Shifter.v|
 !i113 0
 R16
 R6
 n@shifter
 vShifter_tb
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv
+2/filespace/s/skzhu/ece552/project/Shifter_tb.sv
 R8
-R43
+R30
 !i10b 1
 !s100 Ln2UW0^E`<bm9:D`C1E8@0
-IOED5V0hg_HPBX`?1>U6cm1
+ID8hH>@o3:a=IkP1c`EEh?1
 S1
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv
-!i122 1561
+8/filespace/s/skzhu/ece552/project/Shifter_tb.sv
+F/filespace/s/skzhu/ece552/project/Shifter_tb.sv
+!i122 1625
 L0 6 47
 R12
 R13
 r1
 !s85 0
 31
-R44
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv|
+R31
+!s107 /filespace/s/skzhu/ece552/project/Shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/s/skzhu/ece552/project/Shifter_tb.sv|
 !i113 0
 R15
 R6
@@ -1403,7 +1455,7 @@ w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R42
+R43
 R12
 R18
 r1
@@ -1416,55 +1468,55 @@ r1
 R20
 R6
 vwordEnable
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v
-R43
+2/filespace/s/skzhu/ece552/project/wordEnable.v
+R30
 !i10b 1
 !s100 6`jmE^kO;<YkR[B9NTi4d1
-IWZnfX=cViao<5R:fYA;iA3
+IZz;oJ0[dzP`709m0[cK7[1
 R10
-R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v
-!i122 1562
+w1714522988
+8/filespace/s/skzhu/ece552/project/wordEnable.v
+F/filespace/s/skzhu/ece552/project/wordEnable.v
+!i122 1626
 L0 1 9
 R12
 R13
 r1
 !s85 0
 31
-R44
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/wordEnable.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/wordEnable.v|
 !i113 0
 R16
 R6
 nword@enable
 vWriteDecoder_4_16
-2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v
-R43
+2/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v
+R30
 !i10b 1
 !s100 6D<R`A;MnXf9di@i?;gnD3
-IW`KnBU?BT_MYB2cT]g7?d2
+IP3bfP`M5;hgz5=ZF:[M]i0
 R10
 R11
-8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v
-F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v
-!i122 1563
+8/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v
+F/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v
+!i122 1627
 L0 6 15
 R12
 R13
 r1
 !s85 0
 31
-R44
-!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v|
+R31
+!s107 /filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/s/skzhu/ece552/project/WriteDecoder_4_16.v|
 !i113 0
 R16
 R6
 n@write@decoder_4_16
 vXOR
-Z45 !s110 1709413836
+Z44 !s110 1709413836
 !i10b 1
 !s100 nG0YI9>Bg]5XEKhGCRd^H1
 I^ALGYT=_aj7VN7oi>eF:F3
@@ -1488,7 +1540,7 @@ R6
 n@x@o@r
 vXOR_tb
 R8
-R45
+R44
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
 I`>4]i>X8COAN]@3F1m]DH3

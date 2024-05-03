@@ -12,8 +12,8 @@ assign ALU_EX_EX1 = ((MEM_RegWrite & (MEM_destReg != 4'b0000) & ((EX_rs == MEM_d
 assign ALU_EX_EX2 = ((MEM_RegWrite & (MEM_destReg != 4'b0000) & ((EX_rt == MEM_destReg) & ~MEM_MemWrite)) & (~EX_ALUSrc8bit)) ? 1'b1 : 1'b0;
 
 //MEM-EX
-assign ALU_MEM_EX1 = (WB_RegWrite & (WB_destReg != 4'b0000) & (EX_rs == WB_destReg) & !ALU_EX_EX1) ? 1'b1 : 1'b0;
-assign ALU_MEM_EX2 = ((WB_RegWrite & (WB_destReg != 4'b0000) & (EX_rt == WB_destReg) & !ALU_EX_EX2) & (~EX_ALUSrc8bit)) ? 1'b1 : 1'b0;
+assign ALU_MEM_EX1 = (WB_RegWrite & (WB_destReg != 4'b0000) & (EX_rs == WB_destReg) & ~ALU_EX_EX1) ? 1'b1 : 1'b0;
+assign ALU_MEM_EX2 = ((WB_RegWrite & (WB_destReg != 4'b0000) & (EX_rt == WB_destReg) & ~ALU_EX_EX2) & (~EX_ALUSrc8bit)) ? 1'b1 : 1'b0;
 
 //MEM-MEM
 assign ALU_MEM_MEM = (WB_RegWrite & (WB_destReg != 4'b0000) & (MEM_destReg == WB_destReg)) ? 1'b1 : 1'b0;
