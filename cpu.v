@@ -146,22 +146,22 @@ assign Opcode_NOP = (Stall) ? 4'b0000 : Opcode;
 assign hlt_select_NOP = (Stall) ? 1'b0 : hlt_select;
 
 //ID/EX Registers
-dff IDEX_WB_RegWrite (.q(EX_RegWrite), .d(RegWrite_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_WB_MemtoReg (.q(EX_MemtoReg), .d(MemtoReg_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_WB_pcs_select (.q(EX_pcs_select), .d(pcs_select_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_M_MemRead (.q(EX_MemRead), .d(MemRead_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_M_MemWrite (.q(EX_MemWrite), .d(MemWrite_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_EX_ALUSrc (.q(EX_ALUSrc), .d(ALUSrc_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_EX_ALUSrc8bit (.q(EX_ALUSrc8bit), .d(ALUSrc8bit_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_DataOut1 [15:0](.q(EX_dataout1), .d(ID_dataout1_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_DataOut2 [15:0](.q(EX_dataout2), .d(ID_dataout2_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_SEXTimm [15:0](.q(EX_sextimm), .d(sextimm_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_RegisterRS [3:0](.q(EX_rs), .d(ID_rs_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_RegisterRT [3:0](.q(EX_rt), .d(ID_rt_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_RegisterRD [3:0](.q(EX_rd), .d(ID_rd_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_ALUop [3:0](.q(EX_ALUop), .d(Opcode_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_hlt_select (.q(EX_hlt_select), .d(hlt_select_NOP), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
-dff IDEX_pc_increment [15:0](.q(EX_pc_increment), .d(ID_pc_increment), .wen(~EX_hlt_select), .clk(clk), .rst(~rst_n));
+dff IDEX_WB_RegWrite (.q(EX_RegWrite), .d(RegWrite_NOP), .wen(~EX_hlt_select  & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_WB_MemtoReg (.q(EX_MemtoReg), .d(MemtoReg_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_WB_pcs_select (.q(EX_pcs_select), .d(pcs_select_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_M_MemRead (.q(EX_MemRead), .d(MemRead_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_M_MemWrite (.q(EX_MemWrite), .d(MemWrite_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_EX_ALUSrc (.q(EX_ALUSrc), .d(ALUSrc_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_EX_ALUSrc8bit (.q(EX_ALUSrc8bit), .d(ALUSrc8bit_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_DataOut1 [15:0](.q(EX_dataout1), .d(ID_dataout1_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_DataOut2 [15:0](.q(EX_dataout2), .d(ID_dataout2_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_SEXTimm [15:0](.q(EX_sextimm), .d(sextimm_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_RegisterRS [3:0](.q(EX_rs), .d(ID_rs_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_RegisterRT [3:0](.q(EX_rt), .d(ID_rt_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_RegisterRD [3:0](.q(EX_rd), .d(ID_rd_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_ALUop [3:0](.q(EX_ALUop), .d(Opcode_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_hlt_select (.q(EX_hlt_select), .d(hlt_select_NOP), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff IDEX_pc_increment [15:0](.q(EX_pc_increment), .d(ID_pc_increment), .wen(~EX_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
 
 //Execute Stage
 assign aluin2 = (EX_ALUSrc || EX_ALUSrc8bit) ? EX_sextimm : EX_dataout2;
@@ -177,6 +177,7 @@ ForwardingUnit fwd_unit(
     .MEM_destReg(MEM_destReg), 
     .WB_destReg(WB_destReg), 
     .MEM_MemRead(MEM_MemRead), 
+    .MEM_MemWrite(MEM_MemWrite),
     .MEM_RegWrite(MEM_RegWrite), 
     .WB_RegWrite(WB_RegWrite),
     .EX_ALUSrc8bit(EX_ALUSrc8bit),
@@ -186,16 +187,16 @@ ForwardingUnit fwd_unit(
     );
 
 //EX/MEM Registers
-dff EXMEM_WB_RegWrite (.q(MEM_RegWrite), .d(EX_RegWrite), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_WB_MemtoReg (.q(MEM_MemtoReg), .d(EX_MemtoReg), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_WB_pcs_select (.q(MEM_pcs_select), .d(EX_pcs_select), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_M_MemRead (.q(MEM_MemRead), .d(EX_MemRead), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_M_MemWrite (.q(MEM_MemWrite), .d(EX_MemWrite), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_ALUOut [15:0](.q(MEM_aluout), .d(EX_aluout), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_MemData [15:0](.q(MEM_dmem_in), .d(ALUFwdReg), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n)); //dataout2 will need to go through a mux
-dff EXMEM_DestReg [3:0](.q(MEM_destReg), .d(destReg), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_hlt_select (.q(MEM_hlt_select), .d(EX_hlt_select), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
-dff EXMEM_pc_increment [15:0](.q(MEM_pc_increment), .d(EX_pc_increment), .wen(~MEM_hlt_select), .clk(clk), .rst(~rst_n));
+dff EXMEM_WB_RegWrite (.q(MEM_RegWrite), .d(EX_RegWrite), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_WB_MemtoReg (.q(MEM_MemtoReg), .d(EX_MemtoReg), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_WB_pcs_select (.q(MEM_pcs_select), .d(EX_pcs_select), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_M_MemRead (.q(MEM_MemRead), .d(EX_MemRead), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_M_MemWrite (.q(MEM_MemWrite), .d(EX_MemWrite), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_ALUOut [15:0](.q(MEM_aluout), .d(EX_aluout), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_MemData [15:0](.q(MEM_dmem_in), .d(ALUFwdReg), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n)); //dataout2 will need to go through a mux
+dff EXMEM_DestReg [3:0](.q(MEM_destReg), .d(destReg), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_hlt_select (.q(MEM_hlt_select), .d(EX_hlt_select), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
+dff EXMEM_pc_increment [15:0](.q(MEM_pc_increment), .d(EX_pc_increment), .wen(~MEM_hlt_select & ~MEMStall), .clk(clk), .rst(~rst_n));
 
 
 //Memory Stage

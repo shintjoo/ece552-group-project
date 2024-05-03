@@ -9,6 +9,44 @@ R0
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 R1
 R1
 R1
@@ -248,10 +286,10 @@ n@_opt3
 R7
 R2
 T_opt4
-!s110 1714594018
-VA?7F[4VAT7k7_LQa>PFi93
+!s110 1714714054
+V>>R3DJ6d@5@OlA9RY>4iY2
 R3
-=7-000ae431a4f1-6632a0e2-b289f-24e45f
+=7-000ae431a4f1-663475c6-1f0e-3e043d
 R1
 !s12b OEM100
 !s124 OEM100
@@ -259,93 +297,92 @@ R5
 R6
 n@_opt4
 OE;O;2023.2_1;77
-R2
 vadder_16bit_tb
-Z8 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z9 !s110 1714615633
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z9 !s110 1714691946
 !i10b 1
 !s100 k<I1A7>AW2JzkQf0jI?mz0
-Z10 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ILR6Joh2OGhYZVg]=905zX1
-Z11 VDg1SIo80bB@j0V0VzS_@n1
+I=hc9k9G03KffU9De:K_Tf2
 S1
-Z12 dA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project
-Z13 w1714598183
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_16bit_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_16bit_tb.sv
-!i122 1477
+Z10 d/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project
+Z11 w1714598183
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv
+!i122 1525
 L0 6 50
-Z14 OV;L;2020.1;71
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OE;L;2023.2_1;77
 r1
 !s85 0
 31
-Z15 !s108 1714615633.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_16bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_16bit_tb.sv|
-!i113 1
-Z16 o-work work -sv
+Z14 !s108 1714691946.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_16bit_tb.sv|
+!i113 0
+Z15 o-work work -sv
 R6
 vadder_4bit
-!s110 1714615632
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v
+R9
 !i10b 1
 !s100 RkBiJMa3FFPc]KjnP5gVb3
+IeZib4TOaCUSdI4id5zJHE0
 R10
-Id]iYz7[YEP2?`6^A090=83
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v
+!i122 1524
+L0 6 37
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_4bit.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_4bit.v
-!i122 1476
-L0 6 37
-R14
 r1
 !s85 0
 31
-!s108 1714615632.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_4bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/adder_4bit.v|
-!i113 1
-Z17 o-work work
+R14
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/adder_4bit.v|
+!i113 0
+Z16 o-work work
 R6
 vadder_4bit_sat
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v
 R9
 !i10b 1
 !s100 N8AXTX3X44]XZfO<BabN[2
+I3YLZ7o4YR30fZFV1[`g@[1
 R10
-I^7EZa7@oW7ODD6;?BJTCS0
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v
+!i122 1526
+L0 6 39
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_sat.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_sat.v
-!i122 1478
-L0 6 39
-R14
 r1
 !s85 0
 31
-R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_sat.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_sat.v|
-!i113 1
-R17
+R14
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_sat.v|
+!i113 0
+R16
 R6
 vadder_4bit_tb
-Z18 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R8
 !s110 1708914808
 !i10b 1
 !s100 H<Q9algEFER3[_5S1IWhj1
 I5lVJAW7iP[=MRaJm[U8j92
 S1
-Z19 dI:/ece552/project
+Z17 dI:/ece552/project
 w1708656049
 8I:/ece552/project/adder_4bit_tb.sv
 FI:/ece552/project/adder_4bit_tb.sv
 !i122 236
 L0 1 49
-R11
-Z20 OL;L;2021.2;73
+R12
+Z18 OL;L;2021.2;73
 r1
 !s85 0
 31
@@ -353,44 +390,44 @@ r1
 !s107 I:/ece552/project/adder_4bit_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/adder_4bit_tb.sv|
 !i113 0
-Z21 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z19 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 vaddsub_16bit
-R9
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v
+!s110 1714712652
 !i10b 1
 !s100 k8GX`ES4J4g^LBK>CGJoD0
+IDl4KkUZKzJR_a^UFLNfI]0
 R10
-I=UKSQXAbMGf273c2T<MFd3
-R11
+w1714712602
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v
+!i122 1582
+L0 6 31
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_16bit.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_16bit.v
-!i122 1480
-L0 6 31
-R14
 r1
 !s85 0
 31
-R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_16bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_16bit.v|
-!i113 1
-R17
+!s108 1714712652.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_16bit.v|
+!i113 0
+R16
 R6
 vaddsub_4bit
 !s110 1708914809
 !i10b 1
 !s100 2doabOaRzINcV6H]>0:On1
 Ialj^SPIYP>jWecG^UDiFj1
-R19
+R17
 w1708914776
 8I:\ece552\project\addsub_4bit.v
 FI:\ece552\project\addsub_4bit.v
 !i122 238
 L0 6 43
-R11
-R20
+R12
+R18
 r1
 !s85 0
 31
@@ -398,598 +435,598 @@ r1
 !s107 I:\ece552\project\addsub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\addsub_4bit.v|
 !i113 0
-Z22 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 vaddsub_4bit_tb
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv
 R8
-R9
+Z21 !s110 1714691947
 !i10b 1
 !s100 Qbg3g4l_ACeQIoi=MXggH0
-R10
-IaH[`2hPBQ[CJ=>d<de:Kn0
-R11
+I=jmPLRM0=ZE1=k`BS[nGj0
 S1
+R10
+R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv
+!i122 1527
+L0 6 60
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_tb.sv
-!i122 1479
-L0 6 60
-R14
 r1
 !s85 0
 31
+R14
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/addsub_4bit_tb.sv|
+!i113 0
 R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/addsub_4bit_tb.sv|
-!i113 1
-R16
 R6
 vALU
-R9
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v
+R21
 !i10b 1
 !s100 kkOO8?o52LHf=KOn6?ma02
+I^kQbZJ64NZFnm:g1C7Noh3
 R10
-IWchH_IKG_MU_S[AM;lKT[3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v
+!i122 1529
+L0 6 96
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ALU.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ALU.v
-!i122 1481
-L0 6 96
-R14
 r1
 !s85 0
 31
-R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ALU.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ALU.v|
-!i113 1
-R17
+Z22 !s108 1714691947.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ALU.v|
+!i113 0
+R16
 R6
 n@a@l@u
 vBitCell
-R9
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v
+R21
 !i10b 1
 !s100 VEEal[P1NTi@<hW=0mgnc3
+Iz@9`jFYNOi]>U1DSDcAn02
 R10
-ISkJIDoRb7=P94=`U`I2g@0
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v
+!i122 1530
+L0 6 18
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/BitCell.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/BitCell.v
-!i122 1482
-L0 6 18
-R14
 r1
 !s85 0
 31
-R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/BitCell.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/BitCell.v|
-!i113 1
-R17
+R22
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/BitCell.v|
+!i113 0
+R16
 R6
 n@bit@cell
 vBlock
-Z23 !s110 1714615634
+Z23 2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v
+R21
 !i10b 1
 !s100 fHh5S5o2jBa1]5h6[LX3F3
+IISn1AB^Nm5>a?M[?bR8=O3
 R10
-Inlbmm80g>iHnY]zmASWjJ1
-R11
-R12
 Z24 w1714602755
-Z25 8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/DataArray.v
-Z26 FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/DataArray.v
-!i122 1488
+Z25 8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v
+Z26 F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v
+!i122 1537
 L0 12 5
-R14
+R12
+R13
 r1
 !s85 0
 31
-Z27 !s108 1714615634.000000
-Z28 !s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/DataArray.v|
-Z29 !s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/DataArray.v|
-!i113 1
-R17
+R22
+Z27 !s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v|
+Z28 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/DataArray.v|
+!i113 0
+R16
 R6
 n@block
 vblockEnable
-R9
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v
+R21
 !i10b 1
 !s100 902Y7ZXDB9m3NPFz[[TN42
+ILEPQ=Zg>I6UFmPUk7^mB`0
 R10
-IiFJNXXYAGT7FbLTdDUhZj1
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v
+!i122 1531
+L0 1 11
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/blockEnable.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/blockEnable.v
-!i122 1483
-L0 1 11
-R14
 r1
 !s85 0
 31
-R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/blockEnable.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/blockEnable.v|
-!i113 1
-R17
+R22
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/blockEnable.v|
+!i113 0
+R16
 R6
 nblock@enable
 vcache_controller
-!s110 1714622697
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v
+!s110 1714709372
 !i10b 1
-!s100 RmmXG=j[lZKg80aQo[ddC2
+!s100 lK>:>dV]THg38;d0j89mZ2
+I?1dgh@oBE4Z32cZohV6lb1
 R10
-IaiFnZPTTIPJ<<@`TV7bXJ3
-R11
+w1714708384
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v
+!i122 1579
+L0 1 161
 R12
-w1714622635
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_controller.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_controller.v
-!i122 1523
-L0 1 157
-R14
+R13
 r1
 !s85 0
 31
-!s108 1714622697.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_controller.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_controller.v|
-!i113 1
-R17
+!s108 1714709372.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_controller.v|
+!i113 0
+R16
 R6
 vcache_fill_FSM
-!s110 1714617580
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v
+!s110 1714700362
 !i10b 1
-!s100 hW2hR5`ZYM:3Ma545Z^zG2
+!s100 R55YlDlg?M58UNK`bWIKP3
+Ifz]jG58BeY8`VEgcIO>5N1
 R10
-II[bH5znzF;9XUg1^]ODnf3
-R11
+w1714697766
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v
+!i122 1572
+L0 1 47
 R12
-w1714616977
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_fill_FSM.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_fill_FSM.v
-!i122 1518
-L0 1 46
-R14
+R13
 r1
 !s85 0
 31
-!s108 1714617580.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_fill_FSM.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cache_fill_FSM.v|
-!i113 1
-R17
+!s108 1714700362.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cache_fill_FSM.v|
+!i113 0
+R16
 R6
 ncache_fill_@f@s@m
 vControl
-R9
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v
+R21
 !i10b 1
 !s100 WK8k7i9Bm3`=fgJIjaDgN2
+I3Mb:<PCfcclQnSJBYA^Vh3
 R10
-I79`dXT]<a;RoHCkAc<;8D3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v
+!i122 1534
+L0 6 110
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Control.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Control.v
-!i122 1486
-L0 6 110
-R14
 r1
 !s85 0
 31
-R15
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Control.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Control.v|
-!i113 1
-R17
+R22
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Control.v|
+!i113 0
+R16
 R6
 n@control
 vcpu
-!s110 1714615796
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v
+!s110 1714713778
 !i10b 1
-!s100 hj1:Bm0jcJj@8k>bV9b4l3
+!s100 Q<5SP=IgC@;Ge0z^87o0g1
+IDX0kGLZ72DLDB]TI_jOHB1
 R10
-IK46a4kbXSARn[Fkd:oNn^3
-R11
+w1714713763
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v
+!i122 1584
+L0 6 218
 R12
-w1714615771
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cpu.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cpu.v
-!i122 1516
-L0 6 217
-R14
+R13
 r1
 !s85 0
 31
-!s108 1714615796.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cpu.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/cpu.v|
-!i113 1
-R17
+!s108 1714713778.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/cpu.v|
+!i113 0
+R16
 R6
 vcpu_ptb
-Z30 !s110 1714615635
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v
+Z29 !s110 1714691949
 !i10b 1
 !s100 zi:?izUoP5LFjTocKMzgP1
+I^b2>a;R2@h3[LaYFifI:W0
 R10
-I1A6BZEI^4QhIEJC5CJ>RT3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v
+!i122 1554
+L0 1 218
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase3-testbench.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase3-testbench.v
-!i122 1506
-L0 1 218
-R14
 r1
 !s85 0
 31
-Z31 !s108 1714615635.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase3-testbench.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase3-testbench.v|
-!i113 1
-R17
+Z30 !s108 1714691949.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase3-testbench.v|
+!i113 0
+R16
 R6
 vcpu_tb
-R30
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v
+R29
 !i10b 1
 !s100 =H9^Pi;GCMlTJ>j9hzzIT1
+IOn[QB7CI@e>>dPX_cz4>Z3
 R10
-IzmY49@1eF7CN1MlNH0d6B1
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v
+!i122 1552
+L0 1 186
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase1-testbench.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase1-testbench.v
-!i122 1504
-L0 1 186
-R14
 r1
 !s85 0
 31
-R31
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase1-testbench.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/project-phase1-testbench.v|
-!i113 1
-R17
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/project-phase1-testbench.v|
+!i113 0
+R16
 R6
 vDataArray
 R23
+R21
 !i10b 1
 !s100 A@^AW]0TmRoSVVMmT79a80
+ImYAz[8kdHU6nCXRUY2i]>1
 R10
-IbRgl]:7I1o2OH==7YEN0J3
-R11
-R12
 R24
 R25
 R26
-!i122 1488
-Z32 L0 6 4
-R14
+!i122 1537
+Z31 L0 6 4
+R12
+R13
 r1
 !s85 0
 31
+R22
 R27
 R28
-R29
-!i113 1
-R17
+!i113 0
+R16
 R6
 n@data@array
 vdcache
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v
+Z32 !s110 1714691948
 !i10b 1
 !s100 hmG>YGa0GFN[m;f_DjWFZ3
+IU`RZ]kOdL>IADASFljBeF1
 R10
-IL59l?O2`ML[e]HjFH_MCk3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v
+!i122 1538
+Z33 L0 1 17
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dcache.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dcache.v
-!i122 1489
-Z33 L0 1 17
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dcache.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dcache.v|
-!i113 1
-R17
+R22
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dcache.v|
+!i113 0
+R16
 R6
 vDCell
 R23
+R21
 !i10b 1
 !s100 Yl?BU__KS`EJWRzj9ilz70
+IDo`FT^aaJmaC_PPJ:NJLj0
 R10
-IlTBCRNFFbFk935@_hNI5;0
-R11
-R12
 R24
 R25
 R26
-!i122 1488
+!i122 1537
 L0 25 5
-R14
+R12
+R13
 r1
 !s85 0
 31
+R22
 R27
 R28
-R29
-!i113 1
-R17
+!i113 0
+R16
 R6
 n@d@cell
 vdff
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v
+R21
 !i10b 1
 !s100 Z9V@F2c50oH6kZfdURZd60
+I=`kXHbggDMi0?N[ZCORe31
 R10
-I=6dI8Uja0V3FDZ:W=gg][0
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v
+!i122 1536
+L0 3 17
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/D-Flip-Flop.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/D-Flip-Flop.v
-!i122 1490
-L0 3 17
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/D-Flip-Flop.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/D-Flip-Flop.v|
-!i113 1
-R17
+R22
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/D-Flip-Flop.v|
+!i113 0
+R16
 R6
 vdmemory1c
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v
+R32
 !i10b 1
 !s100 HKCW?4YUCBBXm<;A19;V32
+I1IHSDFKkEM=T>AC2RkTNI0
 R10
-I3bFYlYU`NZCk]mBd[6`RD0
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v
+!i122 1539
+Z34 L0 31 38
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dmemory.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dmemory.v
-!i122 1491
-Z34 L0 31 38
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dmemory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/dmemory.v|
-!i113 1
-R17
+Z35 !s108 1714691948.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/dmemory.v|
+!i113 0
+R16
 R6
 vDWord
 R23
+R21
 !i10b 1
 !s100 k10XSaM_0VBZS^<2n?Nej3
+IoL[d?US4Yf1H4=2f<]7dU1
 R10
-I=_3>>GEOG@eYL=e^;^B`c0
-R11
-R12
 R24
 R25
 R26
-!i122 1488
+!i122 1537
 L0 20 3
-R14
+R12
+R13
 r1
 !s85 0
 31
+R22
 R27
 R28
-R29
-!i113 1
-R17
+!i113 0
+R16
 R6
 n@d@word
 vForwardingUnit
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v
+!s110 1714714047
 !i10b 1
-!s100 bU=W1_kEE[UC67a?lGM;52
+!s100 eJ^1OWcCHFlzHBGXU3[oV0
+IbQ`M>?n@l5Cg0QP4[@`]L0
 R10
-IQdAgcW1EDH1>3]5ZhRJGX3
-R11
+w1714714033
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v
+!i122 1587
+L0 1 26
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ForwardingUnit.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ForwardingUnit.v
-!i122 1493
-L0 1 26
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ForwardingUnit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ForwardingUnit.v|
-!i113 1
-R17
+!s108 1714714047.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ForwardingUnit.v|
+!i113 0
+R16
 R6
 n@forwarding@unit
 vfull_adder_1bit
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v
+R32
 !i10b 1
 !s100 WN4M^lz?8kX_P@GVTobbO1
+I^:MGcGaDh0f=]KQ;gcnWI2
 R10
-IW]_To@5KOAS:cHW6zcMcX1
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v
+!i122 1540
+L0 6 8
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/FA.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/FA.v
-!i122 1492
-L0 6 8
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/FA.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/FA.v|
-!i113 1
-R17
+R35
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/FA.v|
+!i113 0
+R16
 R6
 vhazard
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v
+R32
 !i10b 1
 !s100 nL41SIFh@OzUn]fI6MgGf2
+I:Z?`5CBc?[mIlC;0XCo972
 R10
-IRTEKk9OV@CTBK`=iYXhcl2
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v
+!i122 1542
+L0 1 15
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/hazard.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/hazard.v
-!i122 1494
-L0 1 15
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/hazard.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/hazard.v|
-!i113 1
-R17
+R35
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/hazard.v|
+!i113 0
+R16
 R6
 vicache
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v
+R32
 !i10b 1
 !s100 j=TnZ@[jcBf0bKnQ;X[4E0
+IMUcSD?YjYM`Q1l36L_DQf3
 R10
-IhNkB@@D;>bg031<DfFP>R2
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v
+!i122 1543
+R33
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/icache.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/icache.v
-!i122 1495
-R33
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/icache.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/icache.v|
-!i113 1
-R17
+R35
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/icache.v|
+!i113 0
+R16
 R6
 vimemory1c
-R23
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v
+R32
 !i10b 1
 !s100 WOdC;0OWccneoB0:Gh>a81
+IeWhRQ22>b[WI88KRioA;F2
 R10
-IY?PC?_XmoMiMChLG8C:f21
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v
+!i122 1544
+R34
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/imemory.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/imemory.v
-!i122 1496
-R34
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/imemory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/imemory.v|
-!i113 1
-R17
+R35
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/imemory.v|
+!i113 0
+R16
 R6
 vLW_SW_Testbench
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv
 R8
-R30
+R32
 !i10b 1
 !s100 B>4a]McG5de2]`[VgK[4o1
-R10
-IMa8;Hi<T=V;4[Fh<9VUkl0
-R11
+InSNR5<>^EGE2liz60YfEH2
 S1
+R10
+R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv
+!i122 1545
+L0 1 70
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/LW_SW_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/LW_SW_tb.sv
-!i122 1497
-L0 1 70
-R14
 r1
 !s85 0
 31
-R27
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/LW_SW_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/LW_SW_tb.sv|
-!i113 1
-R16
+R35
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/LW_SW_tb.sv|
+!i113 0
+R15
 R6
 n@l@w_@s@w_@testbench
 vMBlock
-R30
+Z36 2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v
+R32
 !i10b 1
 !s100 a:^Hg2jX[YlX8;Q]L=16K3
+IgNO1MmUd4?7X=X0_CPzXF2
 R10
-IN^X[C=57@i@3[^eCOl`hk3
-R11
-R12
-Z35 w1714602752
-Z36 8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/MetaDataArray.v
-Z37 FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/MetaDataArray.v
-!i122 1498
+Z37 w1714602752
+Z38 8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v
+Z39 F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v
+!i122 1546
 L0 11 3
-R14
+R12
+R13
 r1
 !s85 0
 31
-R31
-Z38 !s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/MetaDataArray.v|
-Z39 !s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/MetaDataArray.v|
-!i113 1
-R17
+R35
+Z40 !s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v|
+Z41 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/MetaDataArray.v|
+!i113 0
+R16
 R6
 n@m@block
 vMCell
-R30
+R36
+R32
 !i10b 1
 !s100 odikg9[aH?o]JF8ZK?T772
+ITR4S8FUTPa=TjPOPg??jj1
 R10
-IX`S21hzRVSIOjDmAPm@5m0
-R11
-R12
-R35
-R36
 R37
-!i122 1498
+R38
+R39
+!i122 1546
 L0 15 5
-R14
+R12
+R13
 r1
 !s85 0
 31
-R31
-R38
-R39
-!i113 1
-R17
+R35
+R40
+R41
+!i113 0
+R16
 R6
 n@m@cell
 vmemory1c
@@ -997,14 +1034,14 @@ vmemory1c
 !i10b 1
 !s100 mP`1<P`g8jdYJmW@VIe8K2
 IiGQ`h<en9]X;GDOU;Q^FP3
-R19
+R17
 w1709421403
 8I:/ece552/project/memory.v
 FI:/ece552/project/memory.v
 !i122 739
 R34
-R11
-R20
+R12
+R18
 r1
 !s85 0
 31
@@ -1012,153 +1049,153 @@ r1
 !s107 I:/ece552/project/memory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/memory.v|
 !i113 0
-R22
+R20
 R6
 vmemory4c
-R30
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v
+!s110 1714709447
 !i10b 1
-!s100 f19WZTZb0<MaI5`=1D9n00
+!s100 lVkiP9ZV<Y1SL^Ee7LJGd2
+Ilif4>hlW3VB?n4N[B912L2
 R10
-IQ;MVM4gMjZF8h;c_<J26h0
-R11
+w1714709430
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v
+!i122 1581
+L0 24 69
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/multicycle_memory.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/multicycle_memory.v
-!i122 1499
-L0 24 69
-R14
 r1
 !s85 0
 31
-R31
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/multicycle_memory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/multicycle_memory.v|
-!i113 1
-R17
+!s108 1714709447.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/multicycle_memory.v|
+!i113 0
+R16
 R6
 vMetaDataArray
-R30
+R36
+R32
 !i10b 1
 !s100 V_O`<GYZ]NNGJ47`bNLn83
+I[[>nmiobDHGm?A4]]5W5R2
 R10
-I68=GBP5dTgQUYQSK^Pg@U3
-R11
-R12
-R35
-R36
 R37
-!i122 1498
-R32
-R14
+R38
+R39
+!i122 1546
+R31
+R12
+R13
 r1
 !s85 0
 31
-R31
-R38
-R39
-!i113 1
-R17
+R35
+R40
+R41
+!i113 0
+R16
 R6
 n@meta@data@array
 vPADDSB
-R30
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v
+R29
 !i10b 1
 !s100 d^R`hFV>PV3foF@Ii46IO1
+ID98<PD^ZJhYMWKzUVd_4F2
 R10
-IYFND_3FOafaSSLmDz=59b0
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v
+!i122 1548
+Z42 L0 6 19
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB.v
-!i122 1500
-Z40 L0 6 19
-R14
 r1
 !s85 0
 31
-R31
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB.v|
-!i113 1
-R17
+R35
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB.v|
+!i113 0
+R16
 R6
 n@p@a@d@d@s@b
 vPADDSB_tb
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv
 R8
-R30
+R29
 !i10b 1
 !s100 _<kNb1?daa^72`_TNo>Za0
-R10
-I3]nOc[Df5@AUDf?JVHP0S3
-R11
+I<Yf[k`:RkO7f^^JXP4?zm1
 S1
+R10
+R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv
+!i122 1549
+L0 6 133
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB_tb.sv
-!i122 1501
-L0 6 133
-R14
 r1
 !s85 0
 31
-R31
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PADDSB_tb.sv|
-!i113 1
-R16
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PADDSB_tb.sv|
+!i113 0
+R15
 R6
 n@p@a@d@d@s@b_tb
 vPC_control
-R30
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v
+!s110 1714713779
 !i10b 1
-!s100 10aUHH]R7[CcUUCFL2iXf1
+!s100 U:;VI=n`E=jNS:AlWJHlg2
+IUdG4H>a?S_8CiC8QhF83N2
 R10
-IMd>9zSZ_O;B_7<Z6^6<Bd3
-R11
+w1714712717
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v
+!i122 1586
+L0 6 64
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control.v
-!i122 1502
-L0 6 64
-R14
 r1
 !s85 0
 31
-R31
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control.v|
-!i113 1
-R17
+!s108 1714713779.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control.v|
+!i113 0
+R16
 R6
 n@p@c_control
 vPC_control_tb
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv
 R8
-R30
+R29
 !i10b 1
 !s100 02B^Xf:Q2g^@jm41?H;4o3
-R10
-IP:RBNXjbX0gY0<3H;>Lm`2
-R11
+I`e6AVd3_HNfb09Fd2fMDz1
 S1
+R10
+R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv
+!i122 1551
+L0 1 34
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control_tb.sv
-!i122 1503
-L0 1 34
-R14
 r1
 !s85 0
 31
-R31
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/PC_control_tb.sv|
-!i113 1
-R16
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/PC_control_tb.sv|
+!i113 0
+R15
 R6
 n@p@c_control_tb
 vPSA_16bit
@@ -1166,14 +1203,14 @@ vPSA_16bit
 !i10b 1
 !s100 Bd;chfH1AB?VaRbnRODFo0
 Iz1@bHg0D[[5dYJD_;Q<hm1
-R19
+R17
 w1708304266
 8I:/ece552/project/PSA_16bit.v
 FI:/ece552/project/PSA_16bit.v
 !i122 23
 L0 6 22
-R11
-R20
+R12
+R18
 r1
 !s85 0
 31
@@ -1181,179 +1218,179 @@ r1
 !s107 I:/ece552/project/PSA_16bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/PSA_16bit.v|
 !i113 0
-R22
+R20
 R6
 n@p@s@a_16bit
 vReadDecoder_4_16
-Z41 !s110 1714615636
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v
+R29
 !i10b 1
 !s100 @aK]6jLEZChcU;GEe9m:d3
+IQ1gaG`Md=Hbi:Zi^Y<eA82
 R10
-IU^R`Rm=CbKHdfiV_Y[jQW2
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v
+!i122 1555
+L0 6 13
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ReadDecoder_4_16.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ReadDecoder_4_16.v
-!i122 1507
-L0 6 13
-R14
 r1
 !s85 0
 31
-Z42 !s108 1714615636.000000
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ReadDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/ReadDecoder_4_16.v|
-!i113 1
-R17
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/ReadDecoder_4_16.v|
+!i113 0
+R16
 R6
 n@read@decoder_4_16
 vRED
-R41
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v
+R29
 !i10b 1
 !s100 ZeHWfeeZI7XjIjK`J6WWd2
+IUhLW1[hTiUN^e3aXgK1a?2
 R10
-IEg`jBFFKMSj@l7j1l3fHm1
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v
+!i122 1556
+L0 6 26
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED.v
-!i122 1508
-L0 6 26
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED.v|
-!i113 1
-R17
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED.v|
+!i113 0
+R16
 R6
 n@r@e@d
 vRED_tb
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv
 R8
-R41
+R29
 !i10b 1
 !s100 D;>MKzE:IkWS1S9ncJd8L3
-R10
-ID=bA4C:d]i7O3;41Tj[S@2
-R11
+Ib0NQR1^UmWjEnJ@4@`DfE2
 S1
+R10
+R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv
+!i122 1557
+L0 6 32
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED_tb.sv
-!i122 1509
-L0 6 32
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RED_tb.sv|
-!i113 1
-R16
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RED_tb.sv|
+!i113 0
+R15
 R6
 n@r@e@d_tb
 vRegister
-R41
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v
+Z43 !s110 1714691950
 !i10b 1
 !s100 lFBebeJ90K?Rg59_YabO62
+ImA=8hAocSTa]Q5KoR8e=b0
 R10
-IF1>PgVH[88MBSFhFWK>2_3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v
+!i122 1558
+L0 6 10
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Register.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Register.v
-!i122 1510
-L0 6 10
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Register.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Register.v|
-!i113 1
-R17
+R30
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Register.v|
+!i113 0
+R16
 R6
 n@register
 vRegisterFile
-R41
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v
+R43
 !i10b 1
 !s100 8:Fz`<dDM]g10T?3ZYm>82
+Iio4zX7]PVE61Qejo4IfA<0
 R10
-Idc?z>Za<XA6a]D67m<D_g3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v
+!i122 1559
+L0 6 27
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RegisterFile.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RegisterFile.v
-!i122 1511
-L0 6 27
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/RegisterFile.v|
-!i113 1
-R17
+Z44 !s108 1714691950.000000
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/RegisterFile.v|
+!i113 0
+R16
 R6
 n@register@file
 vShifter
-R41
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v
+R43
 !i10b 1
 !s100 9X1]X]YfTSai:kjMTZ;ei1
+IbCP0nIoGHUmXPCenP>WkR2
 R10
-IYzNNM4cjP0A5HIXmP=6BR3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v
+!i122 1560
+L0 6 23
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter.v
-!i122 1512
-L0 6 23
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter.v|
-!i113 1
-R17
+R44
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter.v|
+!i113 0
+R16
 R6
 n@shifter
 vShifter_tb
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv
 R8
-R41
+R43
 !i10b 1
 !s100 Ln2UW0^E`<bm9:D`C1E8@0
-R10
-IL`zY0;oYmHh?:;U=VFQ^W0
-R11
+IOED5V0hg_HPBX`?1>U6cm1
 S1
+R10
+R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv
+!i122 1561
+L0 6 47
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter_tb.sv
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter_tb.sv
-!i122 1513
-L0 6 47
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/Shifter_tb.sv|
-!i113 1
-R16
+R44
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/Shifter_tb.sv|
+!i113 0
+R15
 R6
 n@shifter_tb
 vsub_4bit
@@ -1361,14 +1398,14 @@ vsub_4bit
 !i10b 1
 !s100 74c^=;zoK^;<QMVVm5=Zb0
 IeQ35CSF4IXXi4UPALUR^D2
-R19
+R17
 w1708918981
 8I:\ece552\project\sub_4bit.v
 FI:\ece552\project\sub_4bit.v
 !i122 377
-R40
-R11
-R20
+R42
+R12
+R18
 r1
 !s85 0
 31
@@ -1376,69 +1413,69 @@ r1
 !s107 I:\ece552\project\sub_4bit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:\ece552\project\sub_4bit.v|
 !i113 0
-R22
+R20
 R6
 vwordEnable
-R41
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v
+R43
 !i10b 1
 !s100 6`jmE^kO;<YkR[B9NTi4d1
+IWZnfX=cViao<5R:fYA;iA3
 R10
-IT4E8ddce1aD9lg[=@W4in0
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v
+!i122 1562
+L0 1 9
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/wordEnable.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/wordEnable.v
-!i122 1514
-L0 1 9
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/wordEnable.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/wordEnable.v|
-!i113 1
-R17
+R44
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/wordEnable.v|
+!i113 0
+R16
 R6
 nword@enable
 vWriteDecoder_4_16
-R41
+2/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v
+R43
 !i10b 1
 !s100 6D<R`A;MnXf9di@i?;gnD3
+IW`KnBU?BT_MYB2cT]g7?d2
 R10
-IVjR4jBOOngMPOjeGdTYk`3
 R11
+8/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v
+F/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v
+!i122 1563
+L0 6 15
 R12
 R13
-8A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/WriteDecoder_4_16.v
-FA:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/WriteDecoder_4_16.v
-!i122 1515
-L0 6 15
-R14
 r1
 !s85 0
 31
-R42
-!s107 A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/WriteDecoder_4_16.v|
-!s90 -reportprogress|300|-work|work|-stats=none|A:/iCloud/iCloudDrive/vscode/ECE552/ece552-group-project/phase3/ece552-group-project/WriteDecoder_4_16.v|
-!i113 1
-R17
+R44
+!s107 /filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/filespace/d/dlnavarro/Desktop/ECE552/Project_Phase3/ece552-group-project/WriteDecoder_4_16.v|
+!i113 0
+R16
 R6
 n@write@decoder_4_16
 vXOR
-Z43 !s110 1709413836
+Z45 !s110 1709413836
 !i10b 1
 !s100 nG0YI9>Bg]5XEKhGCRd^H1
 I^ALGYT=_aj7VN7oi>eF:F3
-R19
+R17
 w1708381287
 8I:/ece552/project/XOR.v
 FI:/ece552/project/XOR.v
 !i122 691
 L0 6 7
-R11
-R20
+R12
+R18
 r1
 !s85 0
 31
@@ -1446,24 +1483,24 @@ r1
 !s107 I:/ece552/project/XOR.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|I:/ece552/project/XOR.v|
 !i113 0
-R22
+R20
 R6
 n@x@o@r
 vXOR_tb
-R18
-R43
+R8
+R45
 !i10b 1
 !s100 DM7Q[egzl1OMQa0HOF^:c0
 I`>4]i>X8COAN]@3F1m]DH3
 S1
-R19
+R17
 w1708657436
 8I:/ece552/project/XOR_tb.sv
 FI:/ece552/project/XOR_tb.sv
 !i122 692
 L0 1 33
-R11
-R20
+R12
+R18
 r1
 !s85 0
 31
@@ -1471,6 +1508,6 @@ r1
 !s107 I:/ece552/project/XOR_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|I:/ece552/project/XOR_tb.sv|
 !i113 0
-R21
+R19
 R6
 n@x@o@r_tb

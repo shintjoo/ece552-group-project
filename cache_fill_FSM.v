@@ -1,4 +1,4 @@
-module cache_fill_FSM(clk, rst_n, miss_detected, miss_address, fsm_busy, write_data_array, write_tag_array,memory_address, memory_data, memory_data_valid, wrd_en);
+module cache_fill_FSM(clk, rst_n, miss_detected, miss_address, fsm_busy, write_data_array, write_tag_array,memory_address, memory_data, memory_data_valid, wrd_en, stall);
 input clk, rst_n;
 input miss_detected;            // active high when tag match logic detects a miss
 input [15:0] miss_address;      // address that missed the cache
@@ -10,7 +10,7 @@ output write_data_array;        // write enable to cache data array to signal wh
 output write_tag_array;         // write enable to cache tag array to signal when all words are filled in to data array
 output [15:0] memory_address;   // address to read from memory
 output [7:0] wrd_en;
-
+output stall;
 
 wire state, next_state;
 wire [3:0] count, next_count, inc_count, addr, next_addr, inc_addr;
@@ -40,6 +40,7 @@ addsub_16bit out_mem_adder(.Sum(memory_address), .A({{12{1'b0}},addr}), .B({miss
 wordEnable instWordEn(.b_offset(count[2:0]), .wordEn(wrd_en));
 // outputs
 assign fsm_busy = state;
+assign stall = state | (~state & next_state);
 assign write_data_array = (memory_data_valid & next_state);
 assign write_tag_array = ((count == 4'h8) & state);
 

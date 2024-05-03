@@ -25,6 +25,7 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
 
     wire D_fsm_busy, D_FSMDataEn;
     wire [15:0] D_memToRead;
+    wire D_stall;
 
 
     // Instruction Cache intermediates
@@ -46,6 +47,7 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
 
     wire I_fsm_busy, I_FSMMetaEn, I_FSMDataEn;
     wire [15:0] I_memToRead;
+    wire I_stall;
 
     // Memory intermediates
     wire [15:0] mainMemOut, mainMemAddr;
@@ -75,7 +77,7 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     //data cache input signals
     assign D_MetaDataIn1 =  ~dataMiss ? {D_MetaDataOut1[7:2], ~dataHit1, D_MetaDataOut1[0]} : (~D_MetaDataOut1[1]) ? {D_tag, 1'b0, 1'b1} : D_MetaDataOut1; // {tag, LRU, valid}
     assign D_MetaDataIn2 =  ~dataMiss ? {D_MetaDataOut2[7:2], ~dataHit2, D_MetaDataOut2[0]} :  (D_MetaDataOut1[1]) ? {D_tag, 1'b0, 1'b1} : D_MetaDataOut2;
-    assign D_DataIn = dataMiss ? mainMemOut : memDataIn; //check if there was cache miss. Yes: Data in from memory, no: update with input value dataIn
+    assign D_DataIn = (dataMiss) ? mainMemOut : memDataIn; //check if there was cache miss. Yes: Data in from memory, no: update with input value dataIn
 
     assign D_MetaWrite1 = D_FSMMetaEn; //enable write to LRU
     assign D_MetaWrite2 = D_FSMMetaEn;
@@ -91,10 +93,11 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
                     .BlockEnable(D_BlockEnable), .MetaDataOut1(D_MetaDataOut1), .MetaDataOut2(D_MetaDataOut2), .DataIn(D_DataIn), 
                     .DataWrite1(D_DataWrite1), .DataWrite2(D_DataWrite2), .WordEnable(D_WordEnable), .DataOut1(D_DataOut1), .DataOut2(D_DataOut2));
 
-    cache_fill_FSM dataCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(dataMiss), .miss_address(mem_addr), .fsm_busy(D_fsm_busy), 
-                    .write_data_array(D_FSMDataEn), .write_tag_array(D_FSMMetaEn), .memory_address(D_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid), .wrd_en(D_FSM_wrd_en));
+    cache_fill_FSM dataCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(dataMiss & ~I_fsm_busy), .miss_address(mem_addr), .fsm_busy(D_fsm_busy), 
+                    .write_data_array(D_FSMDataEn), .write_tag_array(D_FSMMetaEn), .memory_address(D_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid), 
+                    .wrd_en(D_FSM_wrd_en), .stall(D_stall));
 
-    assign MEMStall = D_fsm_busy;
+    assign MEMStall = D_stall | dataMiss;
     assign memDataOut = dataMiss ? (16'h0000) : (dataHit1 ? D_DataOut1 : D_DataOut2);
 
     /**
@@ -130,18 +133,19 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     assign I_WordEnable = (instMiss) ? I_FSM_wrd_en : I_inst_wrd_en;
     
     // i think that instHit needs to be removed.
-    assign I_DataWrite1 = (I_FSMDataEn & ~I_MetaDataOut2[1] & instMiss) | (memWrite & instHit1); //update the inst array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
-    assign I_DataWrite2 = (I_FSMDataEn & I_MetaDataOut2[1] & instMiss) | (memWrite & instHit2);
+    assign I_DataWrite1 = (I_FSMDataEn & ~I_MetaDataOut2[1] & instMiss); //update the inst array if you miss or hit //OR if it's LRU, LRU if it's meta is 1
+    assign I_DataWrite2 = (I_FSMDataEn & I_MetaDataOut2[1] & instMiss);
 
 
     icache instCache(.clk(clk), .rst(rst), .MetaDataIn1(I_MetaDataIn1), .MetaDataIn2(I_MetaDataIn2), .MetaWrite1(I_MetaWrite1), .MetaWrite2(I_MetaWrite2), 
                     .BlockEnable(I_BlockEnable), .MetaDataOut1(I_MetaDataOut1), .MetaDataOut2(I_MetaDataOut2), .DataIn(I_DataIn), 
                     .DataWrite1(I_DataWrite1), .DataWrite2(I_DataWrite2), .WordEnable(I_WordEnable), .DataOut1(I_DataOut1), .DataOut2(I_DataOut2));
 
-    cache_fill_FSM instCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(instMiss), .miss_address(ins_addr), .fsm_busy(I_fsm_busy), 
-                    .write_data_array(I_FSMDataEn), .write_tag_array(I_FSMMetaEn), .memory_address(I_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid), .wrd_en(I_FSM_wrd_en));
+    cache_fill_FSM instCacheFSM(.clk(clk), .rst_n(~rst), .miss_detected(instMiss & ~D_fsm_busy), .miss_address(ins_addr), .fsm_busy(I_fsm_busy), 
+                    .write_data_array(I_FSMDataEn), .write_tag_array(I_FSMMetaEn), .memory_address(I_memToRead), .memory_data(mainMemOut), .memory_data_valid(mainMemValid), 
+                    .wrd_en(I_FSM_wrd_en), .stall (I_stall));
 
-    assign IFStall = I_fsm_busy;
+    assign IFStall = I_stall;
     assign instDataOut = instMiss ? (16'h0000) : (instHit1 ? I_DataOut1 : I_DataOut2);
 
     /**
@@ -152,6 +156,6 @@ module cache_controller(clk, rst, memRead, memWrite, ins_addr, mem_addr, memData
     assign mainMemEnable = (D_fsm_busy | I_fsm_busy) & (dataMiss | instMiss | memWrite); //enable if withe Cache is in the WAIT state AND if theres is a miss or a memWrite
     assign mainMemWR = (memWrite & ~dataMiss);
 
-    memory4c mainMem(.data_out(mainMemOut), .data_in(memDataIn), .addr(mainMemAddr), .enable(mainMemEnable), .wr(mainMemWR), .clk(clk), .rst(rst), .data_valid(mainMemValid));
+    memory4c mainMem(.data_out(mainMemOut), .data_in(memDataIn), .addr(mainMemAddr), .enable(mainMemEnable | mainMemWR), .wr(mainMemWR), .clk(clk), .rst(rst), .data_valid(mainMemValid));
     
 endmodule

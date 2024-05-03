@@ -29,35 +29,35 @@ always @ (*) begin
     error = 0;
     case(C) 
         3'b000: begin
-            branch_imm = {{6{I[8]}}, I << 1};
-            pc_choose = (~F[1]) ? ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)) : PC_in ;
+            branch_imm = {{7{I[8]}}, I << 1};
+            pc_choose = (~F[1]) ? ((branch) ?  pc_branch : ((branch_reg) ? regAddr : PC_in)) : PC_in ;
         end
         3'b001: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = (~F[0] && F[1] && ~F[2]) ? ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)) : PC_in;
         end
         3'b010: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = (~F[0] && ~F[1]) ? ((branch) ?  pc_branch : ((branch_reg) ? regAddr : PC_in)) : PC_in;
         end
         3'b011: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = (F[0] && ~F[1]) ? ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)) : PC_in;
         end
         3'b100: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = ((F[1] || (~F[0] && ~F[1]))) ?  ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)) : PC_in;
         end
         3'b101: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = ((F[0] || F[1])) ?  ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)): PC_in;
         end
         3'b110: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose = (F[2]) ?  ((branch) ?  pc_branch : ((branch_reg)? regAddr : PC_in)) : PC_in;
         end
         3'b111: begin
-            branch_imm = {{6{I[8]}}, I << 1};
+            branch_imm = {{7{I[8]}}, I << 1};
             pc_choose =  (branch) ?  pc_branch : regAddr;
         end
         default: begin
